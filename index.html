@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#17383d">
 <meta name="description" content="ランダム装備とビルド構築を楽しむ、テキスト主体の半自動ハクスラ。">
-<title>モルネッタ | 1.1.6</title>
+<title>モルネッタ | 1.1.9</title>
 <style>
-/* style.css */
 :root{color-scheme:dark;--bg:#0e1725;--night:#101b2b;--panel:#182639;--panel-2:#1d2c41;--line:#344257;--line-soft:#2a394e;--text:#eee9df;--muted:#b8bcc5;--subtle:#8e9bad;--amber:#e0b881;--amber-pale:#f0d6a8;--mint:#9bc7b5;--red:#d58f8b;--blue:#a5bce0;--radius:15px;--tap:46px;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:15px}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);background:radial-gradient(circle at 70% -12%,#253651 0%,transparent 42%),var(--bg);line-height:1.65;min-height:100vh}button,select,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:not-allowed}button,select{-webkit-tap-highlight-color:transparent}button:focus-visible,select:focus-visible,input:focus-visible,label.file-import:focus-within{outline:2px solid var(--amber);outline-offset:3px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.35}h1{font-size:1.5rem;letter-spacing:.09em;font-weight:700}h2{font-size:1.45rem;font-weight:680;letter-spacing:.04em}h3{font-size:1.04rem;font-weight:650}small{font-size:.76rem}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.icon{width:20px;height:20px;display:inline-block;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.icon-lg{width:27px;height:27px}.icon-inline{width:15px;height:15px;vertical-align:-2px}.app-shell{max-width:1080px;margin:auto;padding:0 21px}.masthead{padding:32px 0 22px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--line-soft)}.brand-mark{width:49px;height:49px;border-radius:15px;border:1px solid #9c8058;color:var(--amber);display:grid;place-items:center;background:#222b39;flex-shrink:0}.eyebrow,.label{color:var(--amber);font-size:.68rem;letter-spacing:.15em;font-weight:700}.masthead .eyebrow{margin:0 0 5px}.tagline{color:var(--subtle);font-size:.79rem;margin-top:5px}.version{color:var(--subtle);font-weight:400;margin-left:8px}.app-layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:36px;padding:28px 0 20px}.nav{display:flex;flex-direction:column;gap:7px;position:sticky;top:24px;align-self:start}.nav-button{min-height:var(--tap);display:flex;align-items:center;gap:14px;background:transparent;color:var(--muted);border:1px solid transparent;border-radius:12px;padding:10px 14px;text-align:left;transition:background .14s,color .14s,border .14s}.nav-button:hover{background:#223147;color:var(--text)}.nav-button.is-current{background:#2a3442;color:var(--amber-pale);border-color:#746043}.nav-button span{font-size:.91rem}.main-content{min-width:0;max-width:680px;width:100%;margin:auto}.page[hidden]{display:none!important}.page{display:grid;gap:14px;animation:fadein .18s ease-out}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 2px 4px}.page-heading .eyebrow{margin-bottom:6px}.chip{padding:4px 11px;color:var(--amber-pale);background:#3b3540;border:1px solid #64556a;border-radius:20px;white-space:nowrap;font-size:.78rem}.glass{background:linear-gradient(150deg,#1a293c,#162336);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px}.split-line,.section-top{display:flex;justify-content:space-between;align-items:start;gap:14px}.section-top{align-items:center;margin-bottom:10px}.section-top small,.helper{color:var(--subtle);font-size:.76rem}.name-line{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.name-line strong{font-size:1.04rem}.name-line small{color:var(--amber)}.little-status{font-size:.71rem;color:var(--mint);border:1px solid #54705f;background:#263c3e;padding:2px 9px;border-radius:20px;white-space:nowrap}.meter-label{margin:14px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:.79rem}.meter-label strong{color:var(--text);font-size:.83rem;font-variant-numeric:tabular-nums}.meter{height:8px;background:#394456;border-radius:20px;overflow:hidden}.meter-fill{height:100%;border-radius:20px;transition:width .22s ease}.meter-fill.hp{background:linear-gradient(90deg,#70a892,#b6d7bc)}.meter-fill.enemy{background:linear-gradient(90deg,#ad6865,#d9a39a)}.focus-cells{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.focus-cell{height:9px;border-radius:5px;background:#394355}.focus-cell.full{background:#d6af73}.enemy-card{background:linear-gradient(150deg,#202939,#1a2434);border-color:#46505a}.enemy-card h3{margin-top:5px}.enemy-type{font-size:.67rem;letter-spacing:.1em;color:#c2a691;border:1px solid #766052;border-radius:8px;padding:4px 8px}.enemy-descr{font-size:.84rem;color:var(--muted);margin-top:12px}.status-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;min-height:0}.status-tag{font-size:.73rem;border:1px solid #567e72;color:#b4d6be;border-radius:7px;padding:2px 7px}.status-tag.warning{border-color:#ae8765;color:#f0c7a0}.log-card{padding-bottom:14px}.combat-log{list-style:none;display:flex;flex-direction:column-reverse;gap:0;max-height:216px;overflow:auto;padding:0;margin:0;scrollbar-color:#647086 transparent}.combat-log li{padding:7px 2px;border-top:1px solid #ffffff0c;font-size:.85rem;color:#cbd0d8;line-height:1.5;overflow-wrap:anywhere}.combat-log li:first-child{color:var(--text)}.combat-log li.important{color:var(--amber-pale)}.combat-log li.positive{color:var(--mint)}.combat-log li.danger{color:#e6a6a0}.combat-log li.log-hint{color:var(--subtle)}.controls-card{padding-bottom:14px}.actions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.action-btn{min-height:76px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:9px 3px;background:#24354a;color:var(--text);border:1px solid #455369;border-radius:12px}.action-btn:hover:not(:disabled){background:#2f4159}.action-btn.queued{color:var(--amber-pale);border-color:var(--amber);box-shadow:0 0 0 1px #e0b88155 inset}.action-btn span{font-size:.79rem;white-space:nowrap}.action-btn small{color:var(--subtle);font-size:.7rem;white-space:nowrap}.action-btn .icon{color:var(--amber);width:19px;height:19px}.battle-toolbar{display:grid;grid-template-columns:1fr 1fr 61px;gap:9px;margin-top:14px}.btn{min-height:var(--tap);display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:11px;padding:8px 13px;border:1px solid #46546a;color:var(--text);background:#2b3a4e;font-size:.84rem;font-weight:600;white-space:nowrap}.btn .icon{width:17px;height:17px}.btn.primary{color:#21242d;background:#d8b77f;border-color:#e2c591}.btn.primary:hover:not(:disabled){background:#f0cf98}.btn.secondary:hover:not(:disabled){background:#354861}.btn.quiet{color:var(--muted);padding:6px 5px}.small-note{color:var(--subtle);font-size:.78rem;line-height:1.72;margin-top:12px}.alert-strip{display:flex;align-items:start;gap:12px;padding:13px;border:1px solid #bb9464;background:#493d35;border-radius:12px;color:#f2d8b7}.alert-strip[hidden]{display:none}.alert-strip p{font-size:.79rem;margin-top:4px;color:#f0d9c3}.alert-strip strong{font-size:.84rem}.item-card,.settings-card,.record-card{display:grid;gap:12px}.item-title{display:flex;align-items:center;gap:10px;color:var(--amber-pale)}.item-details{font-size:.82rem;color:var(--muted)}.flavor{font-size:.83rem;font-style:italic;color:#c2bac1;border-left:2px solid #77684f;padding-left:12px}.item-tally{font-size:.82rem;color:var(--mint);padding:9px 12px;background:#25384a;border-radius:9px}.gear-options{display:grid;gap:9px}.gear-choice{width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;padding:14px;background:#213047;color:var(--text);display:grid;gap:5px;min-height:var(--tap)}.gear-choice.is-equipped{border-color:#d6b47b;background:#302f38}.gear-choice strong{font-size:.88rem}.gear-choice span{color:var(--muted);font-size:.78rem}.gear-choice em{color:var(--amber);font-size:.73rem;font-style:normal}.history-list{margin:0;padding-left:1.3rem;color:var(--muted);font-size:.85rem;display:grid;gap:7px}.form-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--line-soft);font-size:.88rem}.form-row span{min-width:0}.form-row select{max-width:160px;width:44%;min-height:42px;background:#233349;color:var(--text);border:1px solid #50617a;border-radius:10px;padding:7px}.check-row input{width:21px;height:21px;accent-color:#d8b77f}.rules-summary{background:#24354a;color:var(--muted);border:1px dashed #54677c;padding:13px;border-radius:10px;font-size:.82rem;line-height:1.8}.settings-card>p:not(.small-note){font-size:.86rem;color:var(--muted)}.settings-card h3{color:var(--amber-pale)}.utility-row{display:flex;flex-wrap:wrap;gap:8px}.file-import{position:relative;cursor:pointer}.file-import input{position:absolute;width:1px;height:1px;opacity:0}.text-danger{border:0;background:transparent;padding:8px 0;text-align:left;min-height:42px;color:#e6a6a0;font-size:.82rem;width:max-content}.record-prose{font-size:.87rem;color:var(--muted)}.stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat-box{border:1px solid var(--line-soft);border-radius:10px;padding:10px;background:#203149}.stat-box span{display:block;color:var(--subtle);font-size:.76rem}.stat-box strong{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--text)}.title-entry{padding:11px 0;border-top:1px solid var(--line-soft);font-size:.88rem;display:flex;justify-content:space-between;gap:10px}.title-entry span{color:var(--subtle);font-size:.76rem}.title-entry strong{color:var(--amber)}.title-select{margin-top:6px;min-height:38px;border:1px solid #765e45;border-radius:8px;background:#3c3540;color:var(--amber-pale);font-size:.78rem;padding:6px 11px}.site-footer{border-top:1px solid var(--line-soft);padding:22px 0 32px;color:#7f8fa4;font-size:.72rem;letter-spacing:.08em}.site-footer span{letter-spacing:0;margin-left:8px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,12px);border:1px solid #8b724e;background:#383645;color:var(--amber-pale);padding:10px 16px;box-shadow:0 12px 26px #080f1e8c;border-radius:12px;max-width:min(92vw,440px);text-align:center;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:10;font-size:.85rem}.toast.visible{opacity:1;transform:translate(-50%,0)}
 @keyframes fadein{from{opacity:.55}to{opacity:1}}
@@ -19,7 +18,6 @@
 
 </style>
 <style>
-/* toybox.css */
 /*
   名前のない迷宮 — トイボックス冒険譚 UI v0.2
   追加の画像・フォント・外部JSなし。元のゲームロジックを変更しないCSSテーマ。
@@ -328,7 +326,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* loot.css */
 /* v0.3: Inventory extension only. Base toybox theme, all SVG icons unchanged. */
 .loot-card{border-color:#e6bf74;background:linear-gradient(155deg,#406b65,#254952);display:grid;gap:12px}
 .loot-found{display:flex;align-items:center;gap:12px;color:#ffe4a4;font-size:1.05rem;overflow-wrap:anywhere}
@@ -386,7 +383,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* skills.css */
 [hidden]{display:none!important}
 /* v0.4 additions: all original toybox colors and SVG icon shapes remain unchanged. */
 .action-btn[data-action="ignite"]{background:linear-gradient(160deg,#ffc284,#e88a55);border-color:#ffdeb2;border-bottom-color:#a65b3c;color:#482817}
@@ -412,7 +408,6 @@ h2 {font-size:1.43rem;}
 
 </style>
   <style>
-/* chronicle.css */
 /* v0.4.4 記録画面の補助表現のみ。迷宮UIと既存のSVGは変更しません。 */
 .chronicle-style{padding:13px 14px;background:#fff6dd;border:1px solid #cba974;border-radius:10px;box-shadow:2px 3px 0 #e4c996;display:grid;gap:7px}
 .chronicle-overline{font-size:.69rem;color:#876949;letter-spacing:.1em;font-weight:700}
@@ -427,7 +422,6 @@ h2 {font-size:1.43rem;}
 
 </style>
   <style>
-/* expedition.css */
 /* v0.5.0 — 既存のトイボックスUIを保ちながら追加した探索パネルのみ */
 .expedition-board{border-color:#d8b16f;background:linear-gradient(148deg,#386963,#244e54);box-shadow:inset 0 2px #ffffff24,0 3px 0 #14343a}
 .expedition-board h3{color:#ffe4a4}.expedition-board .section-top small{text-align:right}
@@ -467,7 +461,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* inventory-care.css */
 /* v0.5.2: storage quality of life. Existing toybox palette and SVGs untouched. */
 .item-lock-mark{background:#a1dbc0!important;color:#173e35!important}
 .bulk-care{margin-top:12px;border-top:2px dashed #92ba9c;padding-top:13px;display:grid;gap:10px}
@@ -483,7 +476,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* storage.css */
 /* v0.9.8: toybox-compatible storage shelf; existing SVG and colors unchanged */
 .storage-shelf{margin-top:14px;border:2px solid #9bbba4;border-radius:13px;padding:10px;background:rgba(21,60,62,.45)}
 .storage-shelf summary{display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer;min-height:44px;color:#ffe6ac;font-weight:800}
@@ -497,7 +489,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* usability.css */
 /* v0.9.9 – compact, readable controls. Existing toybox palette & SVGs unchanged. */
 .inventory-quick-find{margin:10px 0 12px;display:grid;gap:8px}
 .inventory-quick-find label{display:flex;flex-direction:column;gap:5px;color:#e7f0d7;font-size:.78rem;font-weight:700}
@@ -521,7 +512,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* narrative.css */
 /* v0.9.10: journal-only presentation; existing combat/toybox styles remain unchanged. */
 .narrative-card {position:relative;}
 .narrative-card .history-list {display:grid;gap:9px;}
@@ -532,7 +522,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* record-portrait.css */
 /* v1.0.3: 旅人の記録の肖像画。戦闘・古物商の画像レイアウトには影響しません。 */
 .page[data-panel="records"] .record-card .record-identity {
   display:grid;
@@ -575,7 +564,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* market.css */
 /* v0.5.3: 新規の古物商パネルだけ。既存デザインの上書きなし */
 .shop-card{border:2px solid #d6ab67;background:linear-gradient(148deg,#38665e,#2b5357);box-shadow:inset 0 2px #ffffff22,0 3px 0 #14343a}
 .shop-card h3{color:#ffe2a6}.shop-prose{font-size:.84rem;color:#e9e6d4;line-height:1.7;margin:8px 0 12px}
@@ -597,13 +585,11 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* growth.css */
 /* v0.7.0 — growth controls only. Existing toybox design is left unchanged. */
 .growth-card{position:relative}.growth-xp-track{height:11px;border-radius:8px;background:#d9c9a5;overflow:hidden;border:1px solid #bca577;margin:12px 0 8px}.growth-xp-track>div{height:100%;width:0;background:linear-gradient(90deg,#7b9b72,#d4ad60);transition:width .25s}.growth-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;color:var(--muted,#796d58);font-size:.83rem}.growth-training-buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:14px 0}.growth-train{min-width:0;min-height:54px;padding:8px 6px;border-radius:9px;border:2px solid #ae8a54;border-bottom-width:4px;background:#f2d996;color:#514029;font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;white-space:normal}.growth-train:disabled{opacity:.48;cursor:default}.growth-train:not(:disabled):active{transform:translateY(2px);border-bottom-width:2px}.growth-subtitle{margin:14px 0 6px}.growth-skills{list-style:none;padding:0;margin:0}.growth-skills li{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(113,86,52,.2);font-size:.88rem}.growth-skills li strong{color:#746441;font-size:.77rem;flex-shrink:0}@media(max-width:355px){.growth-training-buttons{grid-template-columns:1fr}.growth-train{min-height:44px}.growth-meta{font-size:.75rem}}
 
 </style>
 <style>
-/* mastery.css */
 /* v0.7.1: records only. Existing combat and navigation designs are untouched. */
 .mastery-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .mastery-entry{padding:10px 12px;border:1px solid rgba(132,105,63,.35);border-radius:9px;background:rgba(255,243,211,.15);min-width:0}
@@ -615,7 +601,6 @@ h2 {font-size:1.43rem;}
 
 </style>
   <style>
-/* keepsakes.css */
 /* v0.7.2 装備の来歴用の紙面。既存ナビ・戦闘UIには影響しない。 */
 .item-journey{margin:10px 0 14px;padding:13px 14px;color:#4d402f;background:#fff0cb;border:1px solid #cba971;border-radius:10px;box-shadow:2px 3px 0 #d7b980;overflow-wrap:anywhere}
 .item-journey .journey-eyebrow{color:#8a6438;letter-spacing:.07em;font-size:.7rem;font-weight:800;margin:0 0 4px}
@@ -630,7 +615,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* comparison.css */
 /* v0.8.1: Read-only build comparison. Retains all existing SVG icons and toybox colors. */
 .synergy-panel{margin-top:12px;display:grid;gap:10px;padding:13px;border:2px solid #a8c7a0;border-bottom:4px solid #638b82;border-radius:13px;background:linear-gradient(155deg,#255157,#1c444b)}
 .synergy-panel-top{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center}
@@ -644,7 +628,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* depths.css */
 /* v0.9.0: trial-specific styles only. All established UI stays intact. */
 .trial-launch{background:linear-gradient(180deg,#8a6cad,#664f89);border:2px solid #c8b0eb;color:#fff5d9;box-shadow:inset 0 2px #ffffff52,0 4px #3f345b;font-weight:800}
 .trial-launch .icon{color:#ffe6a9}
@@ -653,7 +636,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* trial-seals.css */
 /* v0.9.1: new entrance options only; established UI and SVG remain unchanged. */
 .trial-seal-panel{display:grid;gap:6px;flex-basis:100%;padding:12px;border:1px solid #78938a;border-radius:12px;background:rgba(16,55,57,.55)}
 .trial-seal-panel[hidden]{display:none!important}
@@ -664,7 +646,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* catalog.css */
 /* v0.9.2 — miniature field guide. Existing toybox theme and navigation remain unchanged. */
 .catalog-card{overflow:hidden}
 .catalog-goals{display:grid;gap:9px;margin:12px 0 16px}
@@ -697,7 +678,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* research.css */
 /* v0.9.3 — field research, maintaining the parchment catalog visual language. */
 .research-card{overflow:hidden}
 .research-card .section-top{flex-wrap:wrap;align-items:center}
@@ -725,7 +705,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* guild-counter.css */
 /* v1.0.4: ギルドカウンターの受付猫。既存の調査章・依頼やほかのタブには影響しない。 */
 #record-research .guild-counter-intro {
   display:grid;
@@ -760,7 +739,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* tab-layout.css */
 /* v1.0.5: tabs only. Reuses existing toybox & paper surfaces. */
 .gear-quick-nav{display:flex;align-items:center;flex-wrap:wrap;gap:7px;padding:10px;border:1px solid #83aaa0;border-radius:12px;background:#214c4d}
 .gear-quick-nav span{font-size:.76rem;color:#f0dda9;font-weight:800;margin-right:4px}
@@ -781,7 +759,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* action-guide.css */
 /* v1.0.6: clarify each action without changing toybox colors, icons, or combat logic. */
 .controls-card .section-top{margin-bottom:9px}
 .action-intro{font-size:.82rem;color:#f5eed4;line-height:1.65;margin:0 0 10px}
@@ -803,7 +780,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* economy-plus.css */
 /* v0.9.5: additional shop services only, inherited toybox styles untouched. */
 .shop-tuning{border-top:2px dashed #91b09a;margin-top:14px;padding-top:14px;display:grid;gap:9px}
 .shop-tuning .shop-ware-title{color:#ffdfa0}
@@ -814,7 +790,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* touch-scroll.css */
 /* v0.9.13 — touch device vertical scroll consistency
    A single natural page scrollbar for large text/card lists on coarse-pointer devices.
    Desktop retains bounded inner scrolling for compact layouts. */
@@ -836,7 +811,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* ui-rework.css */
 /* v1.1.0 — responsive interface layer. Existing game colors, assets and SVG kept. */
 :root{--ui-space:16px;--ui-ink:#4d3729;--ui-paper:#f8e8c8}
 /* Common hierarchy: light surfaces for reading; restrained borders on secondary cards. */
@@ -966,7 +940,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* inventory-clarity.css */
 
 /* 装備一覧視認性改善: 色=レア度 / 輪郭=選択 / バッジ=装備状態。
    元のトイボックス配色に合わせ、通常時の文字コントラストを確保。 */
@@ -1092,7 +1065,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* gear-detail-clarity.css */
 /* v1.1.2 – selected item: read value first, expand secondary details only on demand. */
 .page[data-panel="gear"] .detail-card{gap:12px;min-width:0;align-content:start;scroll-margin-top:18px}
 .page[data-panel="gear"] .detail-card .detail-head{gap:12px;align-items:center}
@@ -1152,7 +1124,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* event-wallet.css */
 /* v1.1.3 – coin availability appears only in events that spend provisional coins. */
 .expedition-event-wallet{margin:7px 0 14px;padding:12px 14px;border:1px solid #cbb57a;border-radius:10px;background:linear-gradient(150deg,#194147,#1d4144);color:#f9eed7;display:grid;gap:7px}
 .expedition-event-wallet[hidden]{display:none!important}
@@ -1171,7 +1142,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* gear-flow.css */
 /* v1.1.4 equipment navigation: preserve the current fantasy theme. */
 .gear-return-list{display:none}
 .gear-filter-hidden[hidden]{display:none!important}
@@ -1194,7 +1164,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* game-guide.css */
 /* v1.1.5 — independently accessible, responsive in-game handbook */
 .nav .guide-open-button{
   display:flex;align-items:center;gap:14px;text-align:left;min-height:48px;
@@ -1280,7 +1249,6 @@ h2 {font-size:1.43rem;}
 
 </style>
 <style>
-/* world-fragments.css */
 /* モルネッタ 1.1.7 - 世界の断章。探索と読み物の視覚階層を分ける。 */
 #expedition-fragment-paper[hidden]{display:none!important}
 #expedition-event .btn[hidden]{display:none!important}
@@ -1310,6 +1278,52 @@ h2 {font-size:1.43rem;}
 .fragment-archive-footer{color:#766a58;font-size:.77rem;line-height:1.7;margin-top:12px}
 @media(max-width:400px){.fragment-paper{padding:15px 12px}.fragment-paper-body,.fragment-text{font-size:.88rem}.fragment-list-item summary{padding:11px 9px}}
 @media(prefers-reduced-motion:reduce){.fragment-list-item{scroll-behavior:auto}}
+
+</style>
+<style>
+/* モルネッタ 1.1.8 — future-friendly public dungeon selection */
+#dungeon-map[hidden],#record-fragments[hidden],#guide-hidden-corridor[hidden],
+#trial-seal-panel[hidden],.battle-toolbar[hidden]{display:none!important}
+.dungeon-map{padding:19px;background:linear-gradient(135deg,#275255,#224449);border:2px solid #c9a66c;border-bottom-width:4px}
+.dungeon-map-header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.dungeon-map-header .label{color:#ead298}.dungeon-map-header h3{color:#fff2d8;font-size:1.17rem;margin-top:4px}
+.dungeon-map-count{font-size:.74rem;color:#dcebd9;background:#164044;border:1px solid #79a39b;border-radius:999px;padding:5px 10px;white-space:normal}
+.dungeon-map-lead{font-size:.83rem;color:#dce8dc;line-height:1.7;margin:10px 0 14px}
+.dungeon-map-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.dungeon-destination{display:flex;flex-direction:column;gap:11px;min-width:0;padding:15px;border:1px solid #a4b5a0;border-bottom:4px solid #6e8273;border-radius:12px;background:linear-gradient(155deg,#315f5b,#25494e)}
+.dungeon-destination[data-dungeon="trial"]{background:linear-gradient(155deg,#394e5a,#2a404a);border-color:#a7a9a1;border-bottom-color:#717980}
+.dungeon-destination.is-locked{background:linear-gradient(145deg,#2a4148,#23383f);border-color:#71898a;border-bottom-color:#526468}
+.dungeon-destination.is-cleared{border-color:#e2c081}
+.dungeon-destination-header{display:grid;grid-template-columns:40px minmax(0,1fr);align-items:start;column-gap:9px;row-gap:8px}
+.dungeon-symbol{display:grid;place-items:center;width:40px;height:40px;border:1px solid #e9d4a88a;background:#172f36b0;border-radius:10px;color:#f1d9a1}
+.dungeon-destination-heading{min-width:0}
+.dungeon-destination-heading h4{font-size:1.04rem;color:#fff1d1;line-height:1.4;overflow-wrap:anywhere;margin:4px 0 0}
+.dungeon-difficulty{color:#e8d39f;font-size:.72rem;font-weight:700;letter-spacing:.025em}
+.dungeon-map-status{grid-column:1/-1;justify-self:start;padding:3px 9px;border-radius:999px;border:1px solid #88bd9b;background:#1c5549;color:#d9f2df;font-size:.72rem;font-weight:800}
+.is-locked .dungeon-map-status{border-color:#9faeaf;background:#41575b;color:#e4e9e9}
+.is-cleared .dungeon-map-status{border-color:#e3c58d;background:#5b513e;color:#ffecbe}
+.dungeon-description{line-height:1.75;font-size:.85rem;color:#e1ebe5;flex:1}
+.dungeon-record{border:1px solid #acbba07e;border-radius:8px;background:#173c43a3;padding:9px;color:#fff0c5;font-size:.77rem;line-height:1.65;min-height:44px}
+.is-locked .dungeon-record{background:#183840;color:#f4dfb6;border-color:#c6b28e}
+.dungeon-launch{margin-top:auto}
+.dungeon-launch .btn{display:flex;width:100%;min-height:48px;white-space:normal;line-height:1.45;font-weight:800}
+.dungeon-launch .btn:disabled{opacity:1;background:#42545c;border:1px solid #7a8c8d;color:#d6dfe0;cursor:not-allowed}
+.dungeon-destination .trial-seal-panel{grid-column:unset;background:#1b343d;padding:10px;border-radius:9px}
+.dungeon-destination .trial-seal-panel select{width:100%;min-width:0}
+.dungeon-destination .trial-seal-panel label,.dungeon-destination .trial-seal-panel small{color:#f0e6cb}
+.dungeon-map-footnote{font-size:.73rem;color:#d7e5db;margin-top:12px}
+.battle-toolbar.battle-operations{grid-template-columns:minmax(0,1fr) 72px;margin-top:0}
+.battle-toolbar.battle-operations #pause-button{font-weight:800}
+[data-record-jump="record-fragments"][hidden]{display:none!important}
+@media(max-width:760px){.dungeon-map-grid{grid-template-columns:1fr}.dungeon-map{padding:14px}.dungeon-destination{padding:12px}.dungeon-map-header h3{font-size:1.12rem}.battle-toolbar.battle-operations{grid-template-columns:1fr 55px}}
+@media(min-width:761px) and (max-width:1000px){.dungeon-map-grid{grid-template-columns:1fr}}
+
+/* The third public destination is independent of the first two. */
+.dungeon-destination[data-dungeon="bell"]{background:linear-gradient(155deg,#454759,#303f51);border-color:#b7a4c0;border-bottom-color:#766c8b}
+.dungeon-destination[data-dungeon="bell"].is-locked{background:linear-gradient(155deg,#333e4b,#273640);border-color:#798493}
+@media(min-width:761px){.dungeon-map-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+@media(min-width:1160px){.dungeon-map-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 </style>
 
@@ -1343,6 +1357,7 @@ h2 {font-size:1.43rem;}
  <symbol id="ic-hammer" viewBox="0 0 24 24"><path d="m3 6 4-4 6 6-4 4-6-6Zm8 4 10 10-2 2L9 12M14 3l7 7-3 3-7-7"/></symbol>
  <symbol id="ic-save" viewBox="0 0 24 24"><path d="M4 3h13l3 3v15H4V3Zm3 0v7h10V3M7 21v-8h10v8"/></symbol>
  <symbol id="ic-refresh" viewBox="0 0 24 24"><path d="M20 7a9 9 0 1 0 2 7m-2-12v5h-5"/></symbol>
+ <symbol id="ic-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4M12 2v-1M2 5l2-2m16 0 2 2"/></symbol>
  <symbol id="ic-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.2 9.2a2.9 2.9 0 1 1 5.1 2.3c-1.3 1-2.3 1.4-2.3 3"/><path d="M12 18h.01"/></symbol>
 
  <symbol id="ic-gear-weapon" viewBox="0 0 24 24"><path d="M12 2l3 5v8H9V7l3-5Z M12 5v8 M5 15h14 M12 15v6 M9.5 22h5"/></symbol>
@@ -1353,7 +1368,7 @@ h2 {font-size:1.43rem;}
 <div class="app-shell">
  <header class="masthead">
   <div class="brand-mark"><svg class="icon icon-lg"><use href="#ic-gate"/></svg></div>
-  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.7</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
+  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.9</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
  </header>
  <div class="app-layout">
   <nav class="nav" aria-label="画面を切り替える">
@@ -1365,7 +1380,38 @@ h2 {font-size:1.43rem;}
   </nav>
   <main class="main-content" id="main-content">
    <section class="page" data-panel="battle" aria-label="戦闘画面">
-    <div class="page-heading"><div><p class="eyebrow">EXPLORATION</p><h2>苔むす石の回廊</h2></div><span class="chip" id="floor-label">第1戦</span></div>
+    <div class="page-heading"><div><p class="eyebrow">EXPLORATION</p><h2 id="battle-page-title">冒険の地図</h2></div><span class="chip" id="floor-label">探索準備</span></div>
+    <section class="dungeon-map glass" id="dungeon-map" aria-labelledby="dungeon-map-title">
+      <div class="dungeon-map-header"><div><p class="label">ADVENTURE MAP</p><h3 id="dungeon-map-title">冒険の地図</h3></div><span class="dungeon-map-count" id="dungeon-map-count">公開された探索先 2か所</span></div>
+      <p class="dungeon-map-lead">迷宮には、まだ踏み入れていない道がある。行き先を選んで旅立とう。</p>
+      <div class="dungeon-map-grid" id="dungeon-map-grid">
+        <article class="dungeon-destination" id="dungeon-card-normal" data-dungeon="normal" aria-label="通常迷宮">
+          <div class="dungeon-destination-header"><span class="dungeon-symbol" aria-hidden="true"><svg class="icon"><use href="#ic-leaf"/></svg></span><div class="dungeon-destination-heading"><p class="dungeon-difficulty">標準 / 全10階層</p><h4>苔むす石の回廊</h4></div><span class="dungeon-map-status" id="dungeon-status-normal">探索可能</span></div>
+          <p class="dungeon-description">ここから始まる十階層の迷宮。道を選び、装備を集め、奥の門へ進む。</p>
+          <p class="dungeon-record" id="dungeon-record-normal">まだ踏破の記録はありません。</p>
+          <div class="dungeon-launch"><button type="button" class="btn primary" id="start-button"><svg class="icon"><use href="#ic-play"/></svg><span id="start-label">探索を始める</span></button></div>
+        </article>
+        <article class="dungeon-destination is-locked" id="dungeon-card-trial" data-dungeon="trial" aria-label="深層試練">
+          <div class="dungeon-destination-header"><span class="dungeon-symbol" aria-hidden="true"><svg class="icon"><use href="#ic-gate"/></svg></span><div class="dungeon-destination-heading"><p class="dungeon-difficulty">高難度 / 全5階層（11〜15階）</p><h4>星の門・深層試練</h4></div><span class="dungeon-map-status" id="dungeon-status-trial">未解放</span></div>
+          <p class="dungeon-description">通常迷宮のさらに奥へ。強敵と、特別な試練が待ち受ける。</p>
+          <p class="dungeon-record" id="dungeon-record-trial">解放条件：通常迷宮を1回踏破</p>
+          <div id="trial-seal-panel" class="trial-seal-panel" hidden>
+            <label for="trial-seal-select">星の門の試練</label>
+            <select id="trial-seal-select" aria-label="深層試練の種類">
+              <option value="standard">通常の試練</option><option value="mist">星霧の試練</option><option value="echo">反響の試練</option><option value="ember">残り火の試練</option>
+            </select><small id="trial-seal-help">初回踏破後に選択できます。</small>
+          </div>
+          <div class="dungeon-launch"><button type="button" class="btn trial-launch" id="trial-start-button" disabled><svg class="icon"><use href="#ic-gate"/></svg><span id="dungeon-trial-launch-label">解放後に挑戦できます</span></button></div>
+        </article>
+        <article class="dungeon-destination is-locked" id="dungeon-card-bell" data-dungeon="bell" aria-label="鳴らずの鐘楼">
+          <div class="dungeon-destination-header"><span class="dungeon-symbol" aria-hidden="true"><svg class="icon"><use href="#ic-bell"/></svg></span><div class="dungeon-destination-heading"><p class="dungeon-difficulty">高難度＋ / 全5鐘室</p><h4>鳴らずの鐘楼</h4></div><span class="dungeon-map-status" id="dungeon-status-bell">未解放</span></div>
+          <p class="dungeon-description">何も鳴らない大鐘がある。敵の大技は気配だけが伝わり、技名と被害予測が伏せられる。装備と戦術を整えて挑もう。</p>
+          <p class="dungeon-record" id="dungeon-record-bell">解放条件：星の門・深層試練を1回踏破</p>
+          <div class="dungeon-launch"><button type="button" class="btn trial-launch" id="bell-start-button" disabled><svg class="icon"><use href="#ic-bell"/></svg><span id="dungeon-bell-launch-label">解放後に挑戦できます</span></button></div>
+        </article>
+      </div>
+      <p class="dungeon-map-footnote">ここには、旅人が知っている公開の探索先だけを表示します。</p>
+    </section>
     <div class="glass expedition-board" id="expedition-board" aria-label="探索状況">
       <div class="section-top"><h3 id="expedition-title">迷宮の入口</h3><small id="expedition-info">十階層の探索</small></div>
       <div class="expedition-meter"><div id="expedition-progress"></div></div>
@@ -1457,18 +1503,6 @@ h2 {font-size:1.43rem;}
      </div>
      <p class="action-footnote">色の薄いボタンは、集中力不足・再使用待ちなどで今は選べません。選んだ行動は次の自分のターンに反映されます。</p>
      <div class="battle-toolbar">
-      <button type="button" class="btn primary" id="start-button"><svg class="icon"><use href="#ic-play"/></svg><span id="start-label">探索を始める</span></button>
-      <div id="trial-seal-panel" class="trial-seal-panel" hidden>
-       <label for="trial-seal-select">星の門の試練</label>
-       <select id="trial-seal-select" aria-label="深層試練の種類">
-        <option value="standard">通常の試練</option>
-        <option value="mist">星霧の試練</option>
-        <option value="echo">反響の試練</option>
-        <option value="ember">残り火の試練</option>
-       </select>
-       <small id="trial-seal-help">初回踏破後に選択できます。</small>
-      </div>
-      <button type="button" class="btn trial-launch" id="trial-start-button" hidden><svg class="icon"><use href="#ic-gate"/></svg><span>深層試練へ（11〜15階）</span></button>
       <button type="button" class="btn secondary" id="pause-button" disabled><svg class="icon"><use href="#ic-pause"/></svg><span id="pause-label">一時停止</span></button>
       <button type="button" class="btn quiet" id="speed-button" title="戦闘速度を切り替える">1×</button>
      </div>
@@ -1628,7 +1662,7 @@ h2 {font-size:1.43rem;}
       <button type="button" data-record-jump="record-mastery">熟練</button>
       <button type="button" data-record-jump="record-history">探索</button>
       <button type="button" data-record-jump="record-stories">小さな物語</button>
-      <button type="button" data-record-jump="record-fragments">世界の断章</button>
+      <button type="button" data-record-jump="record-fragments" hidden>世界の断章</button>
       <button type="button" data-record-jump="record-titles">異名</button>
       <button type="button" data-record-jump="record-save">保存</button>
     </nav>
@@ -1679,7 +1713,7 @@ h2 {font-size:1.43rem;}
     </div>
     <div class="glass record-card" id="record-history"><p class="label">EXPEDITION HISTORY</p><h3>探索の歩み</h3><div class="stats-grid" id="expedition-stats"></div></div>
     <div class="glass record-card"><p class="label">ENVIRONMENT DISCOVERIES</p><h3>見つけた迷宮の区域</h3><p class="small-note">初めて訪れた区域が、探索手帳に残ります。</p><ul class="history-list" id="environment-discoveries"></ul></div>
-    <div class="glass record-card fragment-archive" id="record-fragments" aria-label="世界の断章">
+    <div class="glass record-card fragment-archive" id="record-fragments" aria-label="世界の断章" hidden>
       <p class="label">FRAGMENTS OF THE WORLD</p>
       <div class="section-top"><h3>世界の断章</h3><strong id="fragment-count">0 / 12</strong></div>
       <p class="small-note" id="fragment-intro">迷宮のどこかに、まだ読まれていない文書がある。</p>
@@ -1723,19 +1757,19 @@ h2 {font-size:1.43rem;}
      <p class="guide-chapter-kicker">01 / START HERE</p><h3>まずは、迷宮へ一歩。</h3>
      <p>あなたは名もなき旅人。迷宮を探索して装備を見つけ、戦い方を育て、その歩みを記録していく半自動の冒険ゲームです。明確な終わりを急ぐ必要はありません。</p>
      <ol class="guide-steps">
-      <li><strong>「戦闘」で探索を始める。</strong> 戦闘は基本的に自動で進みます。</li>
+      <li><strong>「戦闘」→「冒険の地図」で探索先を選ぶ。</strong> 戦闘は基本的に自動で進みます。</li>
       <li><strong>装備と古銭を持ち帰る。</strong> 戦いの合間に道を選び、帰還するか奥へ進みます。</li>
       <li><strong>「装備」で装備と戦術を整える。</strong> 新しい武具を比べ、好きなスキルの組み合わせを探します。</li>
       <li><strong>「ギルド」で準備と依頼を確認する。</strong> 冒険の記録は「記録」から読み返せます。</li>
      </ol>
-     <div class="guide-tip"><strong>迷ったときは</strong><span>まずは「戦闘」→「探索を始める」。自分で技を選ばなくても冒険できます。</span></div>
+     <div class="guide-tip"><strong>迷ったときは</strong><span>まずは「戦闘」→「冒険の地図」→「探索を始める」。自分で技を選ばなくても冒険できます。</span></div>
     </section>
     <section class="guide-chapter" id="guide-explore">
      <p class="guide-chapter-kicker">02 / EXPLORATION</p><h3>迷宮の探索</h3>
      <p>通常の迷宮は<strong>全10階層</strong>。戦闘が終わると探索イベントや分かれ道が現れます。「整備された側道」は安全寄り、「報酬のある道」は次の敵が強くなる代わりに報酬を狙える道です。</p>
      <div class="guide-info-grid"><div><strong>進む</strong><span>次の階層へ進みます。戦闘は自動で始まります。</span></div><div><strong>帰還する</strong><span>帰還できる地点で探索を終了し、収集品を確保します。</span></div><div><strong>戦利品</strong><span>探索中の装備・古銭は仮確保。探索終了時に持ち帰ります。</span></div><div><strong>力尽きたとき</strong><span>獲得装備は原則1点まで、古銭は半分を回収します。以前の所持装備や記録は失われません。</span></div></div>
      <p>通常迷宮を初めて踏破すると<strong>深層試練（11〜15階層）</strong>が解放されます。さらに進むと追加の試練も選べます。</p>
-     <p><strong>余白の回廊：</strong>深層試練を初めて踏破したあと、再び深層を訪れるとまれに奇妙な扉が現れます。扉の先で見つけた文書は「記録」→「冒険の物語」→「世界の断章」に収められ、途中帰還や敗北でも失われません。</p>
+     <p id="guide-hidden-corridor" hidden><strong>余白の回廊：</strong>深層の奥で拾った断章は「記録」→「冒険の物語」→「世界の断章」に収められます。一度見つけた文書は、途中帰還や敗北でも失われません。</p>
     </section>
     <section class="guide-chapter" id="guide-combat">
      <p class="guide-chapter-kicker">03 / BATTLE BASICS</p><h3>戦闘と「次の行動」</h3>
@@ -1771,6 +1805,7 @@ h2 {font-size:1.43rem;}
      <p>「ギルド」の<strong>古物商の店</strong>では、次回の探索を助ける薬草包や探し物の灯りなどを準備できます。<strong>ギルドカウンター</strong>では、発見に応じた調査章や巡回依頼の報酬を受け取れます。</p>
      <div class="guide-tip"><strong>大切：古銭は2種類の状態があります</strong><span>探索中に拾った古銭はまだ<strong>仮確保</strong>です。迷宮内の支払いイベントには、その探索で拾った分だけを使います。拠点で持っている古銭は使えません。帰還すると古銭を確保でき、ギルドでの購入や装備の手入れに使えます。</span></div>
      <p>「星図の写し」は通常迷宮では消費されず、深層試練を踏破したときに追加装備を狙う準備品です。購入・受注・報酬受取には拠点へ帰還する必要があります。</p>
+     <p><strong>鳴らずの鐘楼</strong>は深層試練を1回踏破すると開放される高難度の探索先です。敵の大技は気配で分かりますが、技名と被害予測が伏せられます。自動戦術と防御・中断は通常どおり使えます。</p>
     </section>
     <section class="guide-chapter" id="guide-records">
      <p class="guide-chapter-kicker">07 / RECORDS & SAVE</p><h3>冒険を記録し、続きを守る</h3>
@@ -1791,7 +1826,6 @@ h2 {font-size:1.43rem;}
 
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <script>
-/* script.js */
 "use strict";
 (() => {
   const SAVE_KEY = "namelessLabyrinthCombat_v01";
@@ -1957,7 +1991,8 @@ h2 {font-size:1.43rem;}
   const CATALOG_LIMIT=1000000;
   const ENEMY_CATALOG=()=>[
     ...Object.entries(ENEMY_TYPES).map(([id,foe])=>({id,name:foe.name,...foe})),
-    ...Object.entries(DEPTH_ENEMIES).map(([floor,foe])=>({id:`depth-${floor}`,name:foe.name,floor:Number(floor),...foe}))
+    ...Object.entries(DEPTH_ENEMIES).map(([floor,foe])=>({id:`depth-${floor}`,name:foe.name,floor:Number(floor),...foe})),
+    ...Object.entries(BELL_ENEMIES).map(([floor,foe])=>({id:`bell-${floor}`,name:foe.name,floor:Number(floor),...foe}))
   ];
   function emptyCatalog(){return {enemies:{},items:{},abilities:{},notices:[]};}
   function safeCatalogEntry(value){
@@ -2152,6 +2187,15 @@ h2 {font-size:1.43rem;}
     14:{name:"残響の編み手",type:"normal",pattern:"drain",desc:"糸のような音が集中を乱す。",attackName:"響きの糸",hp:1.30,atk:1.28,def:1.16,poisonResist:.15},
     15:{name:"忘れられた星の門守",type:"boss",pattern:"heavy",desc:"見知らぬ門の向こうで、古い星がひとつ灯った。",attackName:"星灯の槍",heavyName:"星の終止符",hp:2.00,atk:1.38,def:1.35,poisonResist:.30,burnResist:.25}
   };
+  // Public high-difficulty dungeon. The bell tower has its own encounters and stage range;
+  // no old expedition can silently become this dungeon on load.
+  const BELL_ENEMIES={
+    16:{name:"無音の歩哨",type:"normal",pattern:"heavy",desc:"鎧を擦る音だけがする。振り上げた一撃の名は聞き取れない。",attackName:"黙した鉄槌",heavyName:"消えた鐘声",hp:1.52,atk:1.27,def:1.20},
+    17:{name:"裂鐘の双影",type:"normal",pattern:"swift",desc:"反響のずれた足音が迫る。三拍目には二つの影が重なる。",attackName:"二重の残響",hp:1.37,atk:1.34,def:1.12,poisonResist:.15},
+    18:{name:"鈍色の調律師",type:"elite",pattern:"heavy",desc:"錆びた音叉を構え、耳ではなく足元の振動を測っている。",attackName:"音叉の斬撃",heavyName:"沈黙の和音",hp:1.72,atk:1.31,def:1.32,burnResist:.20},
+    19:{name:"鐘陰の忘れ手",type:"normal",pattern:"drain",desc:"指先が空を撫でるたび、旅人の集中がかすかに乱れる。",attackName:"残音の糸",hp:1.46,atk:1.42,def:1.19,poisonResist:.15},
+    20:{name:"鐘を待つもの",type:"boss",pattern:"heavy",desc:"鳴るはずのない大鐘の下で、長い影だけがこちらを向く。",attackName:"鋳鉄の大剣",heavyName:"最後の一打",hp:2.18,atk:1.49,def:1.41,poisonResist:.27,burnResist:.24}
+  };
   // Five-floor trial modifiers; no damage type is ever fully disabled.
   const TRIAL_SEALS={
     standard:{name:"通常の試練",desc:"これまでどおりの深層試練。",hp:1,attack:1,poison:0,burn:0,coin:1},
@@ -2276,10 +2320,10 @@ h2 {font-size:1.43rem;}
     }
     result.wins=Math.min(result.wins,result.battles);
     result.bossWins=Math.min(result.bossWins,result.wins);
-    result.deepestFloor=Math.min(15,result.deepestFloor);
+    result.deepestFloor=Math.min(20,result.deepestFloor);
     result.regions=Array.isArray(value.regions)?[...new Set(value.regions.filter(id=>Object.hasOwn(ENVIRONMENTS,id)))].slice(0,8):[];
     const safePoint=point=>point&&typeof point==="object"&&typeof point.enemy==="string"
-      ?{floor:Math.max(0,Math.min(15,finiteInt(point.floor))),enemy:point.enemy.slice(0,60)}:null;
+      ?{floor:Math.max(0,Math.min(20,finiteInt(point.floor))),enemy:point.enemy.slice(0,60)}:null;
     result.firstUse=safePoint(value.firstUse);result.firstBoss=safePoint(value.firstBoss);
     for(const key of ["lastRunId","lastBattleId"])result[key]=typeof value[key]==="string"?value[key].slice(0,64):null;
     return result;
@@ -2296,7 +2340,7 @@ h2 {font-size:1.43rem;}
       .filter(item=>item&&!seen.has(item.id)&&seen.add(item.id));
   }
   function registerItemBattleStart(b){
-    const floor=state.expedition?.floor||Math.min(15,b.stage),foe=b.enemy?.name||"魔物";
+    const floor=state.expedition?.floor||Math.min(20,b.stage),foe=b.enemy?.name||"魔物";
     const region=state.expedition?environmentAt(floor):null;
     for(const item of equippedForBattle(b)){
       const journey=item.journey||(item.journey=newItemJourney());
@@ -2319,7 +2363,7 @@ h2 {font-size:1.43rem;}
   function registerItemVictory(b){
     // Old mid-battle saves did not yet count a battle start. Register at victory once.
     if(equippedForBattle(b).some(item=>item.journey?.lastBattleId!==b.id))registerItemBattleStart(b);
-    const floor=state.expedition?.floor||Math.min(15,b.stage),foe=b.enemy?.name||"魔物";
+    const floor=state.expedition?.floor||Math.min(20,b.stage),foe=b.enemy?.name||"魔物";
     for(const item of equippedForBattle(b)){
       const journey=item.journey||(item.journey=newItemJourney());
       journey.wins++;
@@ -2609,11 +2653,19 @@ h2 {font-size:1.43rem;}
   let fragmentRenderKey="";
   function renderFragments(){
     const found=state.fragments.ids.map(id=>FRAGMENT_BY_ID[id]).filter(Boolean);
+    const discovered=found.length>0;
+    // Discovery is the only key: a trial clear alone must not reveal hidden lore.
+    $("record-fragments").hidden=!discovered;
+    $("guide-hidden-corridor").hidden=!discovered;
+    const legacyLink=document.querySelector('[data-record-jump="record-fragments"]');
+    if(legacyLink)legacyLink.hidden=!discovered;
+    if(!discovered){
+      fragmentRenderKey="";
+      $("fragment-list").replaceChildren();
+      return;
+    }
     setText("fragment-count",`${found.length} / ${WORLD_FRAGMENTS.length}`);
-    const unlocked=state.expeditionStats.trialClears>0;
-    $("fragment-intro").textContent=unlocked?
-      "深層のどこかで拾った断章。未発見の題名は分かりません。発見した文書は、敗北や途中帰還でも失われません。":
-      "深層試練を初めて踏破すると、迷宮の奥に別の道が見つかるかもしれません。";
+    $("fragment-intro").textContent="深層で見つけた断章。未発見の題名は伏せられています。発見した文書は敗北や途中帰還でも失われません。";
     $("fragment-sort").value=fragmentSort;
     const key=JSON.stringify([state.fragments.ids,fragmentSort]);
     if(key===fragmentRenderKey)return;
@@ -2645,7 +2697,7 @@ h2 {font-size:1.43rem;}
         basicAttacks:0, guardsUsed:0, healsUsed:0, poisonSkillsUsed:0, fireSkillsUsed:0,
         riposteUsed:0, bindUsed:0, flurryUsedNew:0 },
       unlockedTitles: [], selectedTitle: null,
-      memories: [], logs: [], battle: null, expedition:null, expeditionStats:{runs:0,clears:0,retreats:0,defeats:0,deepest:0,bankedShards:0,safeRoutes:0,riskyRoutes:0,storyFinds:0,storyCompletions:0,storyDeclines:0,storyInterrupted:0,trialRuns:0,trialClears:0,trialDefeats:0,trialRetreats:0,trialDeepest:0,sealClears:{mist:0,echo:0,ember:0}},regionsSeen:[],storyHistory:[]
+      memories: [], logs: [], battle: null, expedition:null, expeditionStats:{runs:0,clears:0,retreats:0,defeats:0,deepest:0,bankedShards:0,safeRoutes:0,riskyRoutes:0,storyFinds:0,storyCompletions:0,storyDeclines:0,storyInterrupted:0,trialRuns:0,trialClears:0,trialDefeats:0,trialRetreats:0,trialDeepest:0,bellRuns:0,bellClears:0,bellDefeats:0,bellRetreats:0,bellDeepest:0,sealClears:{mist:0,echo:0,ember:0}},regionsSeen:[],storyHistory:[]
     };
   }
   function finiteInt(v, fallback = 0) { return Number.isFinite(v) ? Math.floor(v) : fallback; }
@@ -2762,7 +2814,7 @@ h2 {font-size:1.43rem;}
     }
     s.storyHistory=Array.isArray(s.storyHistory)?s.storyHistory.filter(x=>x&&typeof x.text==="string"&&["key","moss"].includes(x.kind))
       .slice(0,24).map(x=>({id:Math.max(0,finiteInt(x.id)),kind:x.kind,ending:String(x.ending||"記録").slice(0,28),text:x.text.slice(0,240),floor:Math.max(1,Math.min(10,finiteInt(x.floor,1)))})):[];
-    s.regionsSeen=Array.isArray(s.regionsSeen)?[...new Set(s.regionsSeen.filter(id=>Object.hasOwn(ENVIRONMENTS,id)))].slice(0,8):[];
+    s.regionsSeen=Array.isArray(s.regionsSeen)?[...new Set(s.regionsSeen.filter(id=>Object.hasOwn(ENVIRONMENTS,id)))].slice(0,12):[];
     s.expeditionStats={...base.expeditionStats,...s.expeditionStats};
     for(const k of Object.keys(base.expeditionStats)){
       if(k==="sealClears")continue;
@@ -2773,11 +2825,19 @@ h2 {font-size:1.43rem;}
     if(s.expeditionStats.trialClears<1)s.settings.trialSeal="standard";
     const r=s.expedition;
     if(r){
-      if(!r||typeof r!=="object"||!Number.isInteger(r.floor)||r.floor<1||r.floor>15)throw Error("探索データが不正です");
-      r.mode=r.mode==="trial"&&r.floor>=11?"trial":"normal";
+      if(!r||typeof r!=="object"||!Number.isInteger(r.floor)||r.floor<1||r.floor>20)throw Error("探索データが不正です");
+      // A declared dungeon mode must own the saved floor. Never migrate a bad run
+      // to a different dungeon or award another dungeon's clear record.
+      if(r.mode==="bell"){
+        if(r.floor<16||r.floor>20)throw Error("鐘楼の探索データが不正です");
+      }else if(r.mode==="trial"){
+        if(r.floor<11||r.floor>15)throw Error("深層試練の探索データが不正です");
+      }else{
+        r.mode="normal";
+        if(r.floor>10)throw Error("通常迷宮の階層が不正です");
+      }
       r.seal=r.mode==="trial"&&Object.hasOwn(TRIAL_SEALS,r.seal)?r.seal:"standard";
       // A historical v15 trial was always standard, even if the saved profile now selects a seal.
-      if(r.mode==="normal"&&r.floor>10)throw Error("通常迷宮の階層が不正です");
       r.phase=["combat","event","choice"].includes(r.phase)?r.phase:"choice";
       r.id=typeof r.id==="string"&&r.id.length<=64?r.id:`legacy-run-${s.nextId++}`;
       r.loot=Array.isArray(r.loot)?r.loot.slice(0,Math.max(0,MAX_INVENTORY-s.inventory.length)):[];
@@ -2819,9 +2879,9 @@ h2 {font-size:1.43rem;}
       r.event=(FLOOR_EVENT_IDS.includes(r.event)||STORY_EVENT_IDS.includes(r.event)&&r.story||r.event==="margin_door"&&r.margin&&["offered","inside","found"].includes(r.margin.status))?r.event:null;
       r.routeOffer=Object.hasOwn(RISK_ROUTES,r.routeOffer)?r.routeOffer:null;
       r.route=(r.route&&typeof r.route==="object"&&["safe",...RISK_ROUTE_IDS].includes(r.route.kind)&&r.route.floor===r.floor)?{kind:r.route.kind,floor:r.floor}:null;
-      r.routeHistory=Array.isArray(r.routeHistory)?r.routeHistory.filter(h=>h&&Number.isInteger(h.floor)&&h.floor>=2&&h.floor<=15&&["safe",...RISK_ROUTE_IDS].includes(h.kind)).slice(-9).map(h=>({floor:h.floor,kind:h.kind})):[];
+      r.routeHistory=Array.isArray(r.routeHistory)?r.routeHistory.filter(h=>h&&Number.isInteger(h.floor)&&h.floor>=2&&h.floor<=20&&["safe",...RISK_ROUTE_IDS].includes(h.kind)).slice(-9).map(h=>({floor:h.floor,kind:h.kind})):[];
       if(r.phase==="choice"&&!r.routeOffer)r.routeOffer=routeOfferFor(r);
-      r.visited=Array.isArray(r.visited)?r.visited.filter(n=>Number.isInteger(n)&&n>=1&&n<=15).slice(-15):[];
+      r.visited=Array.isArray(r.visited)?r.visited.filter(n=>Number.isInteger(n)&&n>=1&&n<=20).slice(-20):[];
       r.lastEvent=FLOOR_EVENT_IDS.includes(r.lastEvent)||STORY_EVENT_IDS.includes(r.lastEvent)?r.lastEvent:null;
       if(r.phase==="combat" && !s.battle?.active)r.phase="choice";
       if(r.phase==="event"&&!r.event)r.phase="choice";
@@ -3060,10 +3120,12 @@ h2 {font-size:1.43rem;}
     winds:{name:"忘却の風穴",short:"自分の直接攻撃+10%、敵の攻撃力+5%。",desc:"吹き抜ける風が、どちらの刃も速くする。",directFactor:1.10,enemyAttack:1.05},
     dusk:{name:"薄明の灯殿",short:"会心率+4%、敵の攻撃力+7%。",desc:"小さな灯りが魔物の目を覚ましてしまう。",critBonus:.04,enemyAttack:1.07},
     starvein:{name:"砕けた星脈",short:"直接攻撃+7%、回復量-5%。",desc:"星の破片が刃を鋭くするが、身体は乾いていく。",directFactor:1.07,healFactor:.95},
-    lastgate:{name:"星の門",short:"防御時の軽減+5ポイント、敵の攻撃力+10%。",desc:"門前の静寂は、守りを試してくる。",guardFactor:.05,enemyAttack:1.10}
+    lastgate:{name:"星の門",short:"防御時の軽減+5ポイント、敵の攻撃力+10%。",desc:"門前の静寂は、守りを試してくる。",guardFactor:.05,enemyAttack:1.10},
+    bellfog:{name:"響かない螺旋",short:"敵の攻撃力+6%。鐘の残響で大技の名称と被害予測が分かりません。",desc:"音が吸い込まれ、足元の振動だけが襲撃を知らせる。",enemyAttack:1.06},
+    bellhall:{name:"欠けた鐘室",short:"自分の直接攻撃+5%、敵の攻撃力+8%。大技の気配は分かります。",desc:"鐘の縁は砕けているが、振動だけがいつまでも消えない。",directFactor:1.05,enemyAttack:1.08}
   };
-  const FLOOR_ENV_IDS=["lantern","lantern","spores","spores","crystals","crystals","garden","garden","winds","winds","dusk","dusk","starvein","starvein","lastgate"];
-  function environmentAt(floor){return FLOOR_ENV_IDS[Math.max(0,Math.min(14,Number(floor)||1)-1)]||"lantern";}
+  const FLOOR_ENV_IDS=["lantern","lantern","spores","spores","crystals","crystals","garden","garden","winds","winds","dusk","dusk","starvein","starvein","lastgate","bellfog","bellfog","bellhall","bellhall","bellhall"];
+  function environmentAt(floor){return FLOOR_ENV_IDS[Math.max(0,Math.min(19,Number(floor)||1)-1)]||"lantern";}
   function currentEnvironment(){
     const b=state.battle;
     if(b?.active&&Object.hasOwn(ENVIRONMENTS,b.environmentId))return ENVIRONMENTS[b.environmentId];
@@ -3077,7 +3139,7 @@ h2 {font-size:1.43rem;}
     const id=environmentAt(floor);
     if(state.regionsSeen.includes(id))return;
     state.regionsSeen.push(id);
-    recordMoment("environment",`第${floor}階層で『${ENVIRONMENTS[id].name}』を初めて訪れた。${ENVIRONMENTS[id].desc}`,{stage:floor,foe:"",once:`environment-${id}`});
+    recordMoment("environment",`${state.expedition?.mode==="bell"?`第${floor-15}鐘室`:`第${floor}階層`}で『${ENVIRONMENTS[id].name}』を初めて訪れた。${ENVIRONMENTS[id].desc}`,{stage:floor,foe:"",once:`environment-${id}`});
   }
   const FLOOR_EVENT_FLOORS=new Set([2,3,4,6,7,8,9]);
   const FLOOR_EVENT_IDS=["chest","shrine","rune","cache","altar","crossing"];
@@ -3104,7 +3166,7 @@ h2 {font-size:1.43rem;}
       state.expeditionStats.storyFinds++;
       if(choice==="take"){
         st.status="carried";addLog("真鍮の鍵を拾った。小さな歯が、かすかに温かい。","important");
-        recordMoment("story",`第${r.floor}階層で、持ち主のいない真鍮の鍵を拾った。`,{stage:r.floor,foe:""});
+        recordMoment("story",`${displayRunFloor(r)}で、持ち主のいない真鍮の鍵を拾った。`,{stage:r.floor,foe:""});
       }else{
         st.status="declined";state.expeditionStats.storyDeclines++;
         archiveStory(r,"見送った","石段にあった真鍮の鍵を、そのまま残して先へ進んだ。");
@@ -3116,7 +3178,7 @@ h2 {font-size:1.43rem;}
         const cost=Math.min(state.hero.hp-1,Math.max(1,Math.floor(state.hero.maxHp*.06)));
         state.hero.hp-=Math.max(0,cost);st.status="carried";
         addLog(`苔玉を助けた。手当てでHPを${cost}失った。苔玉は奥へ転がっていった。`,"important");
-        recordMoment("story",`第${r.floor}階層で道に迷った苔玉を助けた。`,{stage:r.floor,foe:""});
+        recordMoment("story",`${displayRunFloor(r)}で道に迷った苔玉を助けた。`,{stage:r.floor,foe:""});
       }else{
         st.status="declined";state.expeditionStats.storyDeclines++;
         archiveStory(r,"見送った","小さな苔玉を見つけたが、立ち止まらず先に進んだ。");
@@ -3127,22 +3189,22 @@ h2 {font-size:1.43rem;}
       if(choice==="take"){
         r.shards+=12;
         const item=givePendingItem("真鍮の鍵で開いた小部屋", "真鍮の鍵を拾った冒険の奥で見つけた品。");
-        archiveStory(r,"開いた扉",`第${r.floor}階層で、以前拾った真鍮の鍵が小部屋の扉を開いた。${item?"装備と古銭12枚を見つけた":"鞄がいっぱいで装備は古銭8枚に交換され、合わせて古銭20枚を得た"}。`);
+        archiveStory(r,"開いた扉",`${displayRunFloor(r)}で、以前拾った真鍮の鍵が小部屋の扉を開いた。${item?"装備と古銭12枚を見つけた":"鞄がいっぱいで装備は古銭8枚に交換され、合わせて古銭20枚を得た"}。`);
       }else{
         r.shards+=6;
-        archiveStory(r,"扉を残した",`第${r.floor}階層で鍵穴を見つけたが、扉は開けず、近くにあった古銭6枚を持ち帰ることにした。`);
+        archiveStory(r,"扉を残した",`${displayRunFloor(r)}で鍵穴を見つけたが、扉は開けず、近くにあった古銭6枚を持ち帰ることにした。`);
       }
       addLog("真鍮の鍵の旅に、ひとつの結末が訪れた。","important");
     }else if(event==="moss_return"&&st.kind==="moss"&&st.status==="carried"){
       st.status="resolved";state.expeditionStats.storyCompletions++;
       if(choice==="take"){
         const item=givePendingItem("苔玉が教えてくれた隠し棚", "かつて助けた苔玉が案内してくれた場所で発見した品。");
-        archiveStory(r,"再会と贈り物",`第${r.floor}階層で、以前助けた苔玉が隠された武具棚へ案内してくれた。${item?"そこに装備が眠っていた。":"鞄がいっぱいだったため装備は古銭8枚に交換された。"}`);
+        archiveStory(r,"再会と贈り物",`${displayRunFloor(r)}で、以前助けた苔玉が隠された武具棚へ案内してくれた。${item?"そこに装備が眠っていた。":"鞄がいっぱいだったため装備は古銭8枚に交換された。"}`);
       }else{
         const heal=environmentHeal(Math.floor(state.hero.maxHp*.35));
         const gained=Math.min(state.hero.maxHp-state.hero.hp,heal);
         state.hero.hp+=gained;r.shards+=8;
-        archiveStory(r,"再会とひと休み",`第${r.floor}階層で苔玉と再会し、安全な休息地に導かれた。HP${gained}回復、古銭8枚を得た。`);
+        archiveStory(r,"再会とひと休み",`${displayRunFloor(r)}で苔玉と再会し、安全な休息地に導かれた。HP${gained}回復、古銭8枚を得た。`);
       }
       addLog("苔玉は小さく跳ねて、また暗がりへ消えていった。","important");
     }else{return false;}
@@ -3157,7 +3219,7 @@ h2 {font-size:1.43rem;}
   function routeOfferFor(r){return Object.hasOwn(RISK_ROUTES,r.routeOffer)?r.routeOffer:RISK_ROUTE_IDS[(r.floor+((r.visited||[]).length))%RISK_ROUTE_IDS.length];}
   function prepareRouteOffer(r){r.routeOffer=RISK_ROUTE_IDS[Math.floor(rand()*RISK_ROUTE_IDS.length)];}
   function selectFloorEvent(r){
-    if(!FLOOR_EVENT_FLOORS.has(r.floor) && !(r.mode==="trial"&&r.floor>=11&&r.floor<=14))return null;
+    if(!FLOOR_EVENT_FLOORS.has(r.floor) && !(r.mode==="trial"&&r.floor>=11&&r.floor<=14) && !(r.mode==="bell"&&r.floor>=16&&r.floor<=19))return null;
     if(r.story){
       const story=r.story;
       const event=story.status==="unseen"&&r.floor===story.originFloor
@@ -3171,21 +3233,36 @@ h2 {font-size:1.43rem;}
     r.lastEvent=chosen;
     return chosen;
   }
-  const FLOOR_NAMES=["入口の石段","きらめく水路","苔の休息地","忘れられた碑文","鉄の番所","ひび割れた宝物庫","木漏れ日の廃庭","ささやく刻印","鍵の眠る通路","無名の門","小さな灯殿","霧の渡り場","星屑の甲冑廊","響きの織り場","星の門前"];
+  const FLOOR_NAMES=["入口の石段","きらめく水路","苔の休息地","忘れられた碑文","鉄の番所","ひび割れた宝物庫","木漏れ日の廃庭","ささやく刻印","鍵の眠る通路","無名の門","小さな灯殿","霧の渡り場","星屑の甲冑廊","響きの織り場","星の門前","欠けた踊り場","歪んだ螺旋階段","灰色の調律室","音を失った鐘室","鳴らずの大鐘"];
+  // Public dungeon definitions, single source for unlock/range/UI/records.
+  // Hide secret *rooms* by never registering them here.
+  const PUBLIC_DUNGEONS=Object.freeze([
+    {id:"normal",title:"苔むす石の回廊",difficulty:"標準",first:1,last:10,clears:"clears",deepest:"deepest",unlock:()=>true},
+    {id:"trial",title:"星の門・深層試練",difficulty:"高難度",first:11,last:15,clears:"trialClears",deepest:"trialDeepest",unlock:()=>state.expeditionStats.clears>0},
+    {id:"bell",title:"鳴らずの鐘楼",difficulty:"高難度＋",first:16,last:20,clears:"bellClears",deepest:"bellDeepest",unlock:()=>state.expeditionStats.trialClears>0}
+  ]);
+  const dungeonDef=id=>PUBLIC_DUNGEONS.find(x=>x.id===id)||PUBLIC_DUNGEONS[0];
+  const dungeonForRun=r=>dungeonDef(r?.mode||"normal");
+  const dungeonFloorIndex=r=>(r?.floor||1)-dungeonForRun(r).first+1;
+  const displayRunFloor=r=>r.mode==="bell"?`第${dungeonFloorIndex(r)}鐘室`:`第${r.floor}階層`;
   function beginExpedition(mode="normal"){
     if(hasActiveBattle()||state.expedition)return;
-    if(mode==="trial"&&state.expeditionStats.clears<1){toast("十階層を踏破すると深層試練が解放されます");return;}
-    if(mode!=="trial")mode="normal";
+    if(!PUBLIC_DUNGEONS.some(x=>x.id===mode))mode="normal";
+    const dungeon=dungeonDef(mode);
+    if(!dungeon.unlock()){
+      toast(mode==="bell"?"星の門・深層試練を踏破すると鐘楼が解放されます":"十階層を踏破すると深層試練が解放されます");return;
+    }
     const supplies={...state.economy.prepared,chart:mode==="trial"&&state.economy.prepared.chart};
     const seal=mode==="trial"&&state.expeditionStats.trialClears>0&&Object.hasOwn(TRIAL_SEALS,state.settings.trialSeal)?state.settings.trialSeal:"standard";
-    const r={id:`run-${state.nextId++}`,mode,seal,floor:mode==="trial"?11:1,phase:"combat",loot:[],shards:0,event:null,lastEvent:null,visited:[],supplies,route:null,routeOffer:null,routeHistory:[],story:makeStoryPlan()};
+    const r={id:`run-${state.nextId++}`,mode,seal,floor:dungeon.first,phase:"combat",loot:[],shards:0,event:null,lastEvent:null,visited:[],supplies,route:null,routeOffer:null,routeHistory:[],story:mode==="bell"?null:makeStoryPlan()};
     r.margin=planMargin(r);
     state.expedition=r;
     rememberRegion(r.floor);
     state.economy.prepared={herbs:false,lantern:false,chart:mode!=="trial"&&state.economy.prepared.chart};
     state.expeditionStats.runs++;
     if(mode==="trial")state.expeditionStats.trialRuns++;
-    addLog(mode==="trial"?`深層試練『${TRIAL_SEALS[seal].name}』へ。五つの戦いの先には、星の門が待っている。`:"探索の幕が上がる。十階層の迷宮へ。戦利品は帰還するまで仮確保される。","important");
+    if(mode==="bell")state.expeditionStats.bellRuns++;
+    addLog(mode==="trial"?`深層試練『${TRIAL_SEALS[seal].name}』へ。五つの戦いの先には、星の門が待っている。`:mode==="bell"?"鳴らずの鐘楼に踏み入る。音が欠けたこの場所では、大技の名前と被害予測が分からない。五つの鐘室を越えよう。":"探索の幕が上がる。十階層の迷宮へ。戦利品は帰還するまで仮確保される。","important");
     newBattle();
   }
   function givePendingItem(source,originNote=null,options={}){
@@ -3201,7 +3278,7 @@ h2 {font-size:1.43rem;}
   function finishExpedition(outcome){
     const r=state.expedition;if(!r)return;
     stopTimer();
-    const clear=outcome==="clear",failure=outcome==="defeat",trial=r.mode==="trial";
+    const clear=outcome==="clear",failure=outcome==="defeat",trial=r.mode==="trial",bell=r.mode==="bell";
     // Count only runs that reached the relevant floors without a door.
     // A defeat before floor 14 cannot silently consume the guarantee.
     if(trial&&r.margin&&r.margin.floor===null&&(r.visited||[]).includes(14)){
@@ -3209,12 +3286,16 @@ h2 {font-size:1.43rem;}
     }
 
     const seal=trial?(TRIAL_SEALS[r.seal]||TRIAL_SEALS.standard):TRIAL_SEALS.standard;
+    if(clear&&bell){
+      const draw=rand(),rewardRarity=draw<.12?"legendary":draw<.55?"epic":"rare";
+      givePendingItem("鐘の眠る部屋から見つけた装備", "鳴らずの鐘楼を踏破し、大鐘の下に眠る装備を見つけた。", {rarity:rewardRarity});
+    }
     if(clear&&trial){
       const rewardRarity=rand()<.10?"legendary":rand()<.45?"epic":"rare";
       givePendingItem("星の門から授かった戦利品",`深層試練『${seal.name}』の星の門を突破し、特別な戦利品として得た。`,{rarity:rewardRarity});
     }
     const checkpoint= r.floor%5===0;
-    const multiplier=trial?(clear?1.60*seal.coin:(!failure&&checkpoint?1.15:1)):(clear?1.35:(!failure&&checkpoint?1.20:1));
+    const multiplier=trial?(clear?1.60*seal.coin:(!failure&&checkpoint?1.15:1)):bell?(clear?1.70:(!failure&&checkpoint?1.15:1)):(clear?1.35:(!failure&&checkpoint?1.20:1));
     const gain=failure?Math.floor(r.shards/2):Math.floor(r.shards*multiplier);
     // v0.9.5: the Star Chart is consumed only on a trial entry, and pays out
     // only on its successful completion. No extra roll on retreat or defeat.
@@ -3243,31 +3324,34 @@ h2 {font-size:1.43rem;}
     const coins=gain+converted*8;
     state.expeditionStats.bankedShards+=coins;
     state.economy.coins=Math.min(COIN_CAP,state.economy.coins+coins);
-    if(!trial)state.expeditionStats.deepest=Math.max(state.expeditionStats.deepest,r.floor);
+    if(r.mode==="normal")state.expeditionStats.deepest=Math.max(state.expeditionStats.deepest,r.floor);
+    if(bell)state.expeditionStats.bellDeepest=Math.max(state.expeditionStats.bellDeepest,r.floor);
     if(r.story?.status==="carried"){
       r.story.status="interrupted";
       state.expeditionStats.storyInterrupted++;
       const item=r.story.kind==="key"?"真鍮の鍵を携えたまま":"苔玉との約束を胸に";
-      archiveStory(r,"道半ば",`${item}、第${r.floor}階層で探索を${failure?"終えることになった":"切り上げた"}。続きはまだ見つかっていない。`);
+      archiveStory(r,"道半ば",`${item}、${displayRunFloor(r)}で探索を${failure?"終えることになった":"切り上げた"}。続きはまだ見つかっていない。`);
     }
     if(clear){
       if(trial){
         state.expeditionStats.trialClears++;
         if(r.seal!=="standard")state.expeditionStats.sealClears[r.seal]++;
-      }else state.expeditionStats.clears++;
+      }else if(bell)state.expeditionStats.bellClears++;
+      else state.expeditionStats.clears++;
     }
-    else if(failure){state.expeditionStats.defeats++;if(trial)state.expeditionStats.trialDefeats++;}
-    else {state.expeditionStats.retreats++;if(trial)state.expeditionStats.trialRetreats++;}
+    else if(failure){state.expeditionStats.defeats++;if(trial)state.expeditionStats.trialDefeats++;if(bell)state.expeditionStats.bellDefeats++;}
+    else {state.expeditionStats.retreats++;if(trial)state.expeditionStats.trialRetreats++;if(bell)state.expeditionStats.bellRetreats++;}
     if(trial)state.expeditionStats.trialDeepest=Math.max(state.expeditionStats.trialDeepest,r.floor);
+    if(bell)state.expeditionStats.bellDeepest=Math.max(state.expeditionStats.bellDeepest,r.floor);
     state.expedition=null;
     if(clear){
-      addLog(`${trial?"深層試練・星の門を突破！":"第10階層を踏破！"} 装備${accepted}点、古銭${coins}枚を持ち帰った。`,`important`);
-      recordMoment("victory",`${trial?`星の門を越え、『${seal.name}』を踏破`:"十階層を踏破"}。古銭${coins}枚と装備${accepted}点を持ち帰った。`,{once:`expedition-${state.nextId++}`});
+      addLog(`${trial?"深層試練・星の門を突破！":bell?"鳴らずの鐘楼を踏破！":"第10階層を踏破！"} 装備${accepted}点、古銭${coins}枚を持ち帰った。`,`important`);
+      recordMoment("victory",`${trial?`星の門を越え、『${seal.name}』を踏破`:bell?"鳴らずの鐘楼を踏破":"十階層を踏破"}。古銭${coins}枚と装備${accepted}点を持ち帰った。`,{once:`expedition-${state.nextId++}`});
     }else if(failure){
       addLog(`探索失敗。装備${accepted}点と古銭${coins}枚を辛うじて回収した。`,"danger");
     }else{
-      addLog(`第${r.floor}階層から無事帰還。装備${accepted}点、古銭${coins}枚を持ち帰った。`,"positive");
-      if(checkpoint)recordMoment("victory",`第${r.floor}階層の帰還地点から、戦利品を携えて無事に帰った。`,{once:`retreat-${state.nextId++}`});
+      addLog(`${displayRunFloor(r)}から無事帰還。装備${accepted}点、古銭${coins}枚を持ち帰った。`,"positive");
+      if(checkpoint)recordMoment("victory",`${displayRunFloor(r)}の帰還地点から、戦利品を携えて無事に帰った。`,{once:`retreat-${state.nextId++}`});
     }
     state.hero.hp=state.hero.maxHp;
     state.hero.focus=3;
@@ -3276,13 +3360,14 @@ h2 {font-size:1.43rem;}
   function expeditionVictory(){
     const r=state.expedition;if(!r)return;
     r.visited.push(r.floor);
-    r.shards+=r.mode==="trial"?15+(r.floor-10)*5:5+r.floor*2;
+    r.shards+=r.mode==="trial"?15+(r.floor-10)*5:r.mode==="bell"?25+(r.floor-15)*6:5+r.floor*2;
     const recoveryRate=r.supplies?.herbs?.20:.15;
     const env=ENVIRONMENTS[environmentAt(r.floor)];
     const adjustedRate=recoveryRate*(1+(env.restBonus||0))*(env.healFactor||1);
     const recovery=Math.min(state.hero.maxHp-state.hero.hp,Math.floor(state.hero.maxHp*adjustedRate));
     if(recovery>0){state.hero.hp+=recovery;addLog(`階層突破の小休止。HPが${recovery}回復した。${r.supplies?.herbs?"薬草包の助けがあった。":""}`,"positive");}
     if(r.mode==="trial")state.expeditionStats.trialDeepest=Math.max(state.expeditionStats.trialDeepest,r.floor);
+    else if(r.mode==="bell")state.expeditionStats.bellDeepest=Math.max(state.expeditionStats.bellDeepest,r.floor);
     else state.expeditionStats.deepest=Math.max(state.expeditionStats.deepest,r.floor);
     // Route rewards belong only to the floor where the route was taken.
     if(r.route?.floor===r.floor){
@@ -3294,7 +3379,7 @@ h2 {font-size:1.43rem;}
         if(reward.extraLoot==="chance"&&rand()<.35)givePendingItem("棘の向こうで見つけた装備");
       }
     }
-    if(r.floor===(r.mode==="trial"?15:10)){finishExpedition("clear");return;}
+    if(r.floor===dungeonForRun(r).last){finishExpedition("clear");return;}
     r.route=null;
     if(r.mode==="trial"&&r.margin?.status==="waiting"&&r.margin.floor===r.floor){
       r.margin.status="offered";r.margin.offered=true;
@@ -3304,8 +3389,8 @@ h2 {font-size:1.43rem;}
     r.phase=r.event?"event":"choice";
     if(r.phase==="choice")prepareRouteOffer(r);
     if(r.event==="margin_door")addLog("石壁の向こうに、紙をめくる音のする細い扉を見つけた。","important");
-    else if(r.event)addLog(`第${r.floor}階層に、${{chest:"鍵のかかった宝箱",shrine:"静かな休息地",rune:"古い碑文",cache:"埃をかぶった武具棚",altar:"竜骨の祭壇",crossing:"崩れた渡り廊下",key_found:"光る小さなもの",key_vault:"鍵穴のある扉",moss_found:"小さな苔玉",moss_return:"懐かしい苔玉"}[r.event]}を見つけた。`,"important");
-    else addLog(`第${r.floor}階層を突破した。次の階へ進むか、帰還できる。`,"positive");
+    else if(r.event)addLog(`${displayRunFloor(r)}に、${{chest:"鍵のかかった宝箱",shrine:"静かな休息地",rune:"古い碑文",cache:"埃をかぶった武具棚",altar:"竜骨の祭壇",crossing:"崩れた渡り廊下",key_found:"光る小さなもの",key_vault:"鍵穴のある扉",moss_found:"小さな苔玉",moss_return:"懐かしい苔玉"}[r.event]}を見つけた。`,"important");
+    else addLog(`${displayRunFloor(r)}を突破した。次の階へ進むか、帰還できる。`,"positive");
   }
   function resolveFloorEvent(choice){
     const r=state.expedition;
@@ -3359,7 +3444,7 @@ h2 {font-size:1.43rem;}
   }
   function nextFloor(kind="safe"){
     const r=state.expedition;
-    if(!r||r.phase!=="choice"||hasActiveBattle()||r.floor>=(r.mode==="trial"?15:10))return;
+    if(!r||r.phase!=="choice"||hasActiveBattle()||r.floor>=dungeonForRun(r).last)return;
     if(kind!=="safe"&&kind!=="risk")return;
     const actual=kind==="safe"?"safe":routeOfferFor(r);
     const dest=r.floor+1;
@@ -3372,7 +3457,7 @@ h2 {font-size:1.43rem;}
     recordMoment("path",`第${dest}階層へ向かう際に『${label}』を選んだ。`,{stage:dest,foe:""});
     r.floor=dest;r.phase="combat";r.routeOffer=null;
     rememberRegion(dest);
-    addLog(`『${label}』を通って第${r.floor}階層、『${FLOOR_NAMES[r.floor-1]}』へ踏み込んだ。`,`important`);
+    addLog(`『${label}』を通って${displayRunFloor(r)}、『${FLOOR_NAMES[r.floor-1]}』へ踏み込んだ。`,`important`);
     newBattle();
   }
   function returnToCamp(){
@@ -3397,8 +3482,9 @@ h2 {font-size:1.43rem;}
     }
     // A new encounter starts with enough Focus to establish a build early.
     state.hero.focus = 3;
-    const foeId=activeFloor>=11&&activeFloor<=15?`depth-${activeFloor}`:encounterKind(activeFloor);
-    const template=activeFloor>=11&&activeFloor<=15?DEPTH_ENEMIES[activeFloor]:ENEMY_TYPES[foeId];
+    const bell=state.expedition?.mode==="bell";
+    const foeId=bell?`bell-${activeFloor}`:activeFloor>=11&&activeFloor<=15?`depth-${activeFloor}`:encounterKind(activeFloor);
+    const template=bell?BELL_ENEMIES[activeFloor]:activeFloor>=11&&activeFloor<=15?DEPTH_ENEMIES[activeFloor]:ENEMY_TYPES[foeId];
     const enemyHp=Math.round((190 + tier*14)*template.hp);
     const enemy={catalogId:foeId,name:template.name,maxHp:enemyHp,hp:enemyHp,
       attack:Math.round((19+tier*2)*template.atk),defense:Math.round((18+Math.floor(tier/2)*3)*template.def),
@@ -3430,7 +3516,7 @@ h2 {font-size:1.43rem;}
     };
     registerItemBattleStart(state.battle);
     catalogMeet(foeId);
-    addLog(`${state.expedition?`第${activeFloor}階層／`:""}第${stage}戦。${state.battle.enemy.name}が現れた。${enemy.type==="boss"?"【ボス】":enemy.type==="elite"?"【強敵】":""}`, "important");
+    addLog(`${state.expedition?`${displayRunFloor(state.expedition)}／`:""}第${stage}戦。${state.battle.enemy.name}が現れた。${enemy.type==="boss"?"【ボス】":enemy.type==="elite"?"【強敵】":""}`, "important");
     if(env)addLog(`環境『${env.name}』：${env.short}`,"important");
     if(state.expedition?.mode==="trial"&&state.expedition.seal!=="standard")addLog(`試練の変化『${seal.name}』：${seal.desc}`,"important");
     if(enemy.poisonResist)addLog(`${enemy.name}は毒に耐性がある。`,"normal");
@@ -3698,7 +3784,7 @@ h2 {font-size:1.43rem;}
       enemyHit(2.5,foe.heavyName,ctx);
     }else if(foe.pattern==="heavy"&&n%3===0){
       foe.charging=true;
-      addLog(`${foe.name}が『${foe.heavyName}』を構えた。次の敵行動に大技が来る！`,"danger");
+      addLog(state.expedition?.mode==="bell"?`${foe.name}が構えた。残響に紛れ、技の名は分からないが、大技が来る！`:`${foe.name}が『${foe.heavyName}』を構えた。次の敵行動に大技が来る！`,"danger");
     }else if(foe.pattern==="swift"&&n%3===0){
       didStrike=true;
       addLog(`${foe.name}が素早く踏み込む。二連撃！`,"important");
@@ -3869,6 +3955,34 @@ h2 {font-size:1.43rem;}
   function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"})[c]);}
   const $=id=>document.getElementById(id);
   function setText(id,v){$(id).textContent=v;}
+  function renderDungeonMap(){
+    const running=Boolean(state.expedition);
+    $("dungeon-map").hidden=running;
+    const toolbar=document.querySelector('.battle-toolbar');
+    if(toolbar)toolbar.hidden=!running;
+    setText("battle-page-title",running?dungeonForRun(state.expedition).title:"冒険の地図");
+    setText("dungeon-map-count",`探索先 ${PUBLIC_DUNGEONS.length}か所`);
+    const stats=state.expeditionStats;
+    for(const place of PUBLIC_DUNGEONS){
+      const card=$("dungeon-card-"+place.id);
+      const available=place.unlock();
+      card.classList.toggle("is-locked",!available);
+      card.classList.toggle("is-cleared",stats[place.clears]>0);
+      setText("dungeon-status-"+place.id,!available?"未解放":stats[place.clears]>0?"踏破済み":"探索可能");
+    }
+    setText("dungeon-record-normal",stats.clears>0?`踏破 ${stats.clears}回 ／ 最深到達 第${stats.deepest}階層`:
+      stats.deepest>0?`最深到達 第${stats.deepest}階層 ／ 踏破はまだありません`:"まだ踏破の記録はありません。まずは第10階層を目指そう。");
+    setText("dungeon-record-trial",stats.clears<1?"解放条件：通常迷宮を1回踏破":stats.trialClears>0?
+      `踏破 ${stats.trialClears}回 ／ 最深到達 第${stats.trialDeepest}階層`:
+      stats.trialDeepest>0?`最深到達 第${stats.trialDeepest}階層 ／ 踏破はまだありません`:"解放済み。星の門で待つ強敵へ挑戦できる。");
+    setText("dungeon-trial-launch-label",stats.clears<1?"解放後に挑戦できます":"深層試練へ出発");
+    const bellAvailable=dungeonDef("bell").unlock();
+    $("bell-start-button").disabled=!bellAvailable;
+    setText("dungeon-record-bell",!bellAvailable?"解放条件：星の門・深層試練を1回踏破":stats.bellClears>0?
+      `踏破 ${stats.bellClears}回 ／ 最深到達 第${stats.bellDeepest-15}鐘室`:
+      stats.bellDeepest>0?`最深到達 第${stats.bellDeepest-15}鐘室 ／ 踏破はまだありません`:"解放済み。五つの鐘室に挑戦できる。");
+    setText("dungeon-bell-launch-label",bellAvailable?"鐘楼へ出発":"解放後に挑戦できます");
+  }
   function renderExpedition(){
     const r=state.expedition,stats=state.expeditionStats;
     const box=$("expedition-board");
@@ -3882,7 +3996,7 @@ h2 {font-size:1.43rem;}
       title.textContent="迷宮の入口";
       info.textContent=`十階層の探索 / 最深到達 ${stats.deepest}階 / 完走 ${stats.clears}回`;
       const trialButton=$("trial-start-button");
-      trialButton.hidden=stats.clears<1;
+      trialButton.hidden=false;
       trialButton.disabled=stats.clears<1;
       $("trial-seal-panel").hidden=stats.clears<1;
       $("trial-seal-select").disabled=stats.trialClears<1;
@@ -3899,10 +4013,10 @@ h2 {font-size:1.43rem;}
     $("expedition-environment").hidden=false;
     $("expedition-environment-name").textContent=`区域：${env.name}`;
     $("expedition-environment-effect").textContent=env.short;
-    title.textContent=`${r.mode==="trial"?`深層試練・${TRIAL_SEALS[r.seal].name}・`:""}第${r.floor}階層 — ${FLOOR_NAMES[r.floor-1]}`;
-    info.textContent=`${r.phase==="combat"?"敵との戦闘中":r.phase==="event"?"探索中に発見したもの":"分かれ道"} / ${r.mode==="trial"?r.floor-10:r.floor} / ${r.mode==="trial"?5:10}`;
+    title.textContent=`${r.mode==="trial"?`深層試練・${TRIAL_SEALS[r.seal].name}・`:r.mode==="bell"?"鳴らずの鐘楼・":""}${r.mode==="bell"?`第${dungeonFloorIndex(r)}鐘室`:`${displayRunFloor(r)}`} — ${FLOOR_NAMES[r.floor-1]}`;
+    info.textContent=`${r.phase==="combat"?"敵との戦闘中":r.phase==="event"?"探索中に発見したもの":"分かれ道"} / ${dungeonFloorIndex(r)} / ${dungeonForRun(r).last-dungeonForRun(r).first+1}`;
     hint.textContent=r.phase==="combat"?"敵を倒すと進路を選べます。戦闘中は途中帰還できません。":r.phase==="event"?"どちらかを選ぶと次へ進めます。":"進むほど古銭と装備が増えますが、敗北すれば失います。";
-    $("expedition-progress").style.width=`${Math.round(((r.mode==="trial"?r.floor-11:r.floor-1)+(r.phase==="combat"?0:1))*(r.mode==="trial"?20:10))}%`;
+    $("expedition-progress").style.width=`${Math.round(((dungeonFloorIndex(r)-1)+(r.phase==="combat"?0:1))*100/(dungeonForRun(r).last-dungeonForRun(r).first+1))}%`;
     $("expedition-cargo").textContent=`仮確保：装備${r.loot.length}点 / 古銭${r.shards}枚${r.loot.length?`（最新：${r.loot[r.loot.length-1].name}）`:""}${r.supplies?.herbs||r.supplies?.lantern?` / 探索の支度：${[r.supplies.herbs?"薬草包":null,r.supplies.lantern?"探し物の灯り":null].filter(Boolean).join("・")}`:""}${r.route?.floor===r.floor?` / 選択した道：${r.route.kind==="safe"?"整備された側道":RISK_ROUTES[r.route.kind]?.name||"不明"}`:""}`;
     if(r.phase==="event"){
       $("expedition-event").hidden=false;
@@ -3958,7 +4072,7 @@ h2 {font-size:1.43rem;}
   function renderBattle(){
     const b=state.battle, hero=state.hero, active=hasActiveBattle();
     const displayed=b && b.active ? b : null;
-    setText("floor-label",state.expedition?`第${state.expedition.floor}階層 / ${state.expedition.mode==="trial"?15:10}`:`第${b?b.stage:state.stats.wins+1}戦`);
+    setText("floor-label",state.expedition?state.expedition.mode==="bell"?`第${dungeonFloorIndex(state.expedition)}鐘室 / 5`:`第${state.expedition.floor}階層 / ${dungeonForRun(state.expedition).last}`:"探索準備");
     setText("player-name",hero.name);
     const selected=TITLES.find(t=>t.id===state.selectedTitle);
     setText("title-label",selected ? `『${selected.name}』` : "異名なし");
@@ -3971,7 +4085,8 @@ h2 {font-size:1.43rem;}
     setText("enemy-phase",b?.enemy.charging?"CHARGING":b?.enemy.type==="boss"?"BOSS":b?.enemy.type==="elite"?"ELITE":"NORMAL");
     setText("enemy-hp-label",b?`${b.enemy.hp} / ${b.enemy.maxHp}`:"-- / --");
     $("enemy-hp-fill").style.width=b?`${pct(b.enemy.hp,b.enemy.maxHp)}%`:"100%";
-    setText("enemy-descr",!b?"奥から、重たい足音が聞こえる。":b.enemy.charging?`『${b.enemy.heavyName}』の予告！ 次の敵行動に注意。`:b.active?b.enemy.desc:b.outcome==="defeat"?"敗北した。再出発に備えてHPが回復した。":"敵が倒れ、迷宮に静けさが戻った。");
+    const muffled=state.expedition?.mode==="bell";
+    setText("enemy-descr",!b?"奥から、重たい足音が聞こえる。":b.enemy.charging?(muffled?"鐘楼の振動が強まる。大技の気配は分かるが、技の名は聞き取れない。":`『${b.enemy.heavyName}』の予告！ 次の敵行動に注意。`):b.active?b.enemy.desc:b.outcome==="defeat"?"敗北した。再出発に備えてHPが回復した。":"敵が倒れ、迷宮に静けさが戻った。");
     const tags=[];
     if(b && poisonCount(b.enemy))tags.push(`<span class="status-tag">毒 ${poisonCount(b.enemy)}/5</span>`);
     if(b && burnCount(b.enemy))tags.push(`<span class="status-tag status-burn">燃焼 ${burnCount(b.enemy)}/5</span>`);
@@ -3988,9 +4103,9 @@ h2 {font-size:1.43rem;}
     $("danger-forecast").hidden=!threat;
     if(threat){
       const recommended=chooseAuto();
-      setText("forecast-hit",`次の大技：予想 ${threat.hit} ダメージ`);
-      setText("forecast-guard",`防御時：予想 ${threat.afterGuard} ダメージ`);
-      setText("forecast-advice",`自動判断：${ACTION_NAMES[recommended]} / ${state.settings.responseMode==="cautious"?"慎重":state.settings.responseMode==="bold"?"攻勢":"均衡"}型。影縫いで体勢を${b.enemy.staggerLimit}まで削ると中断できます。`);
+      setText("forecast-hit",muffled?"次の大技：鐘の残響で威力が読めない":`次の大技：予想 ${threat.hit} ダメージ`);
+      setText("forecast-guard",muffled?"防御時：被害予測は不明（防御は有効）":`防御時：予想 ${threat.afterGuard} ダメージ`);
+      setText("forecast-advice",`${muffled?"鐘楼では技名・威力だけが伏せられます。自動防御・大技中断は通常どおり有効。 ":""}自動判断：${ACTION_NAMES[recommended]} / ${state.settings.responseMode==="cautious"?"慎重":state.settings.responseMode==="bold"?"攻勢":"均衡"}型。影縫いで体勢を${b.enemy.staggerLimit}まで削ると中断できます。`);
     }
     const alert=$("pause-alert");
     alert.hidden=!(active && b.paused && ["lowhp","charge","resume"].includes(b.pauseReason));
@@ -4035,6 +4150,7 @@ h2 {font-size:1.43rem;}
     setText("pause-label",b?.paused?"再開する":"一時停止");
     setText("speed-button",`${state.settings.speed===1800?"1×":state.settings.speed===900?"2×":"4×"}`);
     renderExpedition();
+    renderDungeonMap();
     const item=state.inventory.find(x=>x.id===state.lastDropId);
     const notice=$("loot-notice");notice.hidden=!(b&&!b.active&&state.hero.hp>0&&item);
     if(!notice.hidden){setText("loot-name",item.name);setText("loot-rarity",RARITIES[item.rarity].name);}
@@ -4571,7 +4687,7 @@ h2 {font-size:1.43rem;}
     $("environment-discoveries").innerHTML=state.regionsSeen.length
       ?state.regionsSeen.map(id=>`<li><strong>${escapeHTML(ENVIRONMENTS[id].name)}</strong> — ${escapeHTML(ENVIRONMENTS[id].desc)}</li>`).join("")
       :"<li>まだ見つけた区域はありません。</li>";
-    $("expedition-stats").innerHTML=[["星霧の踏破",rs.sealClears.mist],["反響の踏破",rs.sealClears.echo],["残り火の踏破",rs.sealClears.ember],["深層試練の挑戦",rs.trialRuns],["深層試練の踏破",rs.trialClears],["星の門への到達",rs.trialDeepest?`${rs.trialDeepest}階`:"未到達"],["手持ちの古銭",state.economy.coins],["安全な道を選んだ回数",rs.safeRoutes],["危険な道を選んだ回数",rs.riskyRoutes],["物語との出会い",rs.storyFinds],["物語の結末",rs.storyCompletions],["見送った縁",rs.storyDeclines],["道半ばの物語",rs.storyInterrupted],["古銭の支出",state.economy.spent],["装備の特性調律",state.economy.tunings],["星図を購入した回数",state.economy.chartsBought],["処分品から回収",state.economy.salvaged],["挑戦",rs.runs],["最深到達",`${rs.deepest}階`],["完全踏破",rs.clears],["帰還",rs.retreats],["持ち帰った古銭",rs.bankedShards],["探索失敗",rs.defeats]].map(([a,b])=>`<div class="stat-box"><span>${a}</span><strong>${b}</strong></div>`).join("");
+    $("expedition-stats").innerHTML=[["鐘楼の挑戦",rs.bellRuns],["鐘楼の踏破",rs.bellClears],["鐘楼の最深到達",rs.bellDeepest?`${rs.bellDeepest-15}鐘室`:"未到達"],["鐘楼の撤退",rs.bellRetreats],["鐘楼の探索失敗",rs.bellDefeats],["星霧の踏破",rs.sealClears.mist],["反響の踏破",rs.sealClears.echo],["残り火の踏破",rs.sealClears.ember],["深層試練の挑戦",rs.trialRuns],["深層試練の踏破",rs.trialClears],["星の門への到達",rs.trialDeepest?`${rs.trialDeepest}階`:"未到達"],["手持ちの古銭",state.economy.coins],["安全な道を選んだ回数",rs.safeRoutes],["危険な道を選んだ回数",rs.riskyRoutes],["物語との出会い",rs.storyFinds],["物語の結末",rs.storyCompletions],["見送った縁",rs.storyDeclines],["道半ばの物語",rs.storyInterrupted],["古銭の支出",state.economy.spent],["装備の特性調律",state.economy.tunings],["星図を購入した回数",state.economy.chartsBought],["処分品から回収",state.economy.salvaged],["挑戦",rs.runs],["最深到達",`${rs.deepest}階`],["完全踏破",rs.clears],["帰還",rs.retreats],["持ち帰った古銭",rs.bankedShards],["探索失敗",rs.defeats]].map(([a,b])=>`<div class="stat-box"><span>${a}</span><strong>${b}</strong></div>`).join("");
     const st=state.stats;
     setText("record-name",state.selectedTitle?`${TITLES.find(t=>t.id===state.selectedTitle)?.name||""}の旅人`:"名もなき旅人");
     const profile=currentFightingStyle();
@@ -4628,7 +4744,7 @@ h2 {font-size:1.43rem;}
         return;
       }
       const saved=save();
-      downloadJSON(JSON.stringify(state,null,2),"mornetta_backup_1_1_7.json");
+      downloadJSON(JSON.stringify(state,null,2),"mornetta_backup_1_1_9.json");
       toast(saved?"バックアップを書き出しました":"自動保存は失敗しましたが、JSONバックアップの書き出しを開始しました");
     }catch(err){console.warn("バックアップ書き出し失敗:",err);toast("バックアップの書き出しを開始できませんでした");}
   }
@@ -4659,6 +4775,7 @@ h2 {font-size:1.43rem;}
     document.querySelectorAll(".nav-button").forEach(btn=>btn.addEventListener("click",()=>showPage(btn.dataset.page)));
     $("start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition();});
     $("trial-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("trial");});
+    $("bell-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("bell");});
     $("trial-seal-select").addEventListener("change",e=>{
       if(hasActiveBattle()||state.expedition||state.expeditionStats.trialClears<1||!Object.hasOwn(TRIAL_SEALS,e.target.value))return;
       state.settings.trialSeal=e.target.value;save();render();
@@ -4872,7 +4989,6 @@ h2 {font-size:1.43rem;}
 
 </script>
 <script>
-/* ui-rework.js */
 "use strict";
 /* UI-only organization of existing DOM nodes. Gameplay, IDs and save format unchanged. */
 (() => {
@@ -4893,7 +5009,7 @@ h2 {font-size:1.43rem;}
     const combatants=make('div','battle-combatants');
     const controls=$('.controls-card',battle), logs=$('.log-card',battle);
     toolbar.classList.add('battle-operations');
-    battle.querySelector('.page-heading').after(toolbar,layout);
+    battle.querySelector('.page-heading').after($('#dungeon-map',battle),toolbar,layout);
     layout.append(scene,console);
     for(const selector of ['#expedition-board']) scene.append($(selector,battle));
     combatants.append($('.adventurer-card',battle),$('#enemy-card',battle));
@@ -5001,7 +5117,6 @@ h2 {font-size:1.43rem;}
 
 </script>
 <script>
-/* gear-detail-ui.js */
 "use strict";
 /* Secondary equipment information is accessible with native details.
    All existing buttons and data IDs are moved intact; none are replaced. */
@@ -5057,7 +5172,6 @@ h2 {font-size:1.43rem;}
 
 </script>
 <script>
-/* gear-flow.js */
 "use strict";
 /* v1.1.4 - Pure UI navigation; the saved game state and action handlers remain in script.js. */
 (() => {
@@ -5108,7 +5222,6 @@ h2 {font-size:1.43rem;}
 
 </script>
 <script>
-/* game-guide.js */
 "use strict";
 /* Game guide is display-only. No game state, save keys or combat functions are touched. */
 (() => {
