@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#17383d">
 <meta name="description" content="ランダム装備とビルド構築を楽しむ、テキスト主体の半自動ハクスラ。">
 <title>モルネッタ | 1.1.6</title>
-      <style>
+<style>
 /* style.css */
 :root{color-scheme:dark;--bg:#0e1725;--night:#101b2b;--panel:#182639;--panel-2:#1d2c41;--line:#344257;--line-soft:#2a394e;--text:#eee9df;--muted:#b8bcc5;--subtle:#8e9bad;--amber:#e0b881;--amber-pale:#f0d6a8;--mint:#9bc7b5;--red:#d58f8b;--blue:#a5bce0;--radius:15px;--tap:46px;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:15px}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);background:radial-gradient(circle at 70% -12%,#253651 0%,transparent 42%),var(--bg);line-height:1.65;min-height:100vh}button,select,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:not-allowed}button,select{-webkit-tap-highlight-color:transparent}button:focus-visible,select:focus-visible,input:focus-visible,label.file-import:focus-within{outline:2px solid var(--amber);outline-offset:3px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.35}h1{font-size:1.5rem;letter-spacing:.09em;font-weight:700}h2{font-size:1.45rem;font-weight:680;letter-spacing:.04em}h3{font-size:1.04rem;font-weight:650}small{font-size:.76rem}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.icon{width:20px;height:20px;display:inline-block;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.icon-lg{width:27px;height:27px}.icon-inline{width:15px;height:15px;vertical-align:-2px}.app-shell{max-width:1080px;margin:auto;padding:0 21px}.masthead{padding:32px 0 22px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--line-soft)}.brand-mark{width:49px;height:49px;border-radius:15px;border:1px solid #9c8058;color:var(--amber);display:grid;place-items:center;background:#222b39;flex-shrink:0}.eyebrow,.label{color:var(--amber);font-size:.68rem;letter-spacing:.15em;font-weight:700}.masthead .eyebrow{margin:0 0 5px}.tagline{color:var(--subtle);font-size:.79rem;margin-top:5px}.version{color:var(--subtle);font-weight:400;margin-left:8px}.app-layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:36px;padding:28px 0 20px}.nav{display:flex;flex-direction:column;gap:7px;position:sticky;top:24px;align-self:start}.nav-button{min-height:var(--tap);display:flex;align-items:center;gap:14px;background:transparent;color:var(--muted);border:1px solid transparent;border-radius:12px;padding:10px 14px;text-align:left;transition:background .14s,color .14s,border .14s}.nav-button:hover{background:#223147;color:var(--text)}.nav-button.is-current{background:#2a3442;color:var(--amber-pale);border-color:#746043}.nav-button span{font-size:.91rem}.main-content{min-width:0;max-width:680px;width:100%;margin:auto}.page[hidden]{display:none!important}.page{display:grid;gap:14px;animation:fadein .18s ease-out}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 2px 4px}.page-heading .eyebrow{margin-bottom:6px}.chip{padding:4px 11px;color:var(--amber-pale);background:#3b3540;border:1px solid #64556a;border-radius:20px;white-space:nowrap;font-size:.78rem}.glass{background:linear-gradient(150deg,#1a293c,#162336);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px}.split-line,.section-top{display:flex;justify-content:space-between;align-items:start;gap:14px}.section-top{align-items:center;margin-bottom:10px}.section-top small,.helper{color:var(--subtle);font-size:.76rem}.name-line{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.name-line strong{font-size:1.04rem}.name-line small{color:var(--amber)}.little-status{font-size:.71rem;color:var(--mint);border:1px solid #54705f;background:#263c3e;padding:2px 9px;border-radius:20px;white-space:nowrap}.meter-label{margin:14px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:.79rem}.meter-label strong{color:var(--text);font-size:.83rem;font-variant-numeric:tabular-nums}.meter{height:8px;background:#394456;border-radius:20px;overflow:hidden}.meter-fill{height:100%;border-radius:20px;transition:width .22s ease}.meter-fill.hp{background:linear-gradient(90deg,#70a892,#b6d7bc)}.meter-fill.enemy{background:linear-gradient(90deg,#ad6865,#d9a39a)}.focus-cells{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.focus-cell{height:9px;border-radius:5px;background:#394355}.focus-cell.full{background:#d6af73}.enemy-card{background:linear-gradient(150deg,#202939,#1a2434);border-color:#46505a}.enemy-card h3{margin-top:5px}.enemy-type{font-size:.67rem;letter-spacing:.1em;color:#c2a691;border:1px solid #766052;border-radius:8px;padding:4px 8px}.enemy-descr{font-size:.84rem;color:var(--muted);margin-top:12px}.status-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;min-height:0}.status-tag{font-size:.73rem;border:1px solid #567e72;color:#b4d6be;border-radius:7px;padding:2px 7px}.status-tag.warning{border-color:#ae8765;color:#f0c7a0}.log-card{padding-bottom:14px}.combat-log{list-style:none;display:flex;flex-direction:column-reverse;gap:0;max-height:216px;overflow:auto;padding:0;margin:0;scrollbar-color:#647086 transparent}.combat-log li{padding:7px 2px;border-top:1px solid #ffffff0c;font-size:.85rem;color:#cbd0d8;line-height:1.5;overflow-wrap:anywhere}.combat-log li:first-child{color:var(--text)}.combat-log li.important{color:var(--amber-pale)}.combat-log li.positive{color:var(--mint)}.combat-log li.danger{color:#e6a6a0}.combat-log li.log-hint{color:var(--subtle)}.controls-card{padding-bottom:14px}.actions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.action-btn{min-height:76px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:9px 3px;background:#24354a;color:var(--text);border:1px solid #455369;border-radius:12px}.action-btn:hover:not(:disabled){background:#2f4159}.action-btn.queued{color:var(--amber-pale);border-color:var(--amber);box-shadow:0 0 0 1px #e0b88155 inset}.action-btn span{font-size:.79rem;white-space:nowrap}.action-btn small{color:var(--subtle);font-size:.7rem;white-space:nowrap}.action-btn .icon{color:var(--amber);width:19px;height:19px}.battle-toolbar{display:grid;grid-template-columns:1fr 1fr 61px;gap:9px;margin-top:14px}.btn{min-height:var(--tap);display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:11px;padding:8px 13px;border:1px solid #46546a;color:var(--text);background:#2b3a4e;font-size:.84rem;font-weight:600;white-space:nowrap}.btn .icon{width:17px;height:17px}.btn.primary{color:#21242d;background:#d8b77f;border-color:#e2c591}.btn.primary:hover:not(:disabled){background:#f0cf98}.btn.secondary:hover:not(:disabled){background:#354861}.btn.quiet{color:var(--muted);padding:6px 5px}.small-note{color:var(--subtle);font-size:.78rem;line-height:1.72;margin-top:12px}.alert-strip{display:flex;align-items:start;gap:12px;padding:13px;border:1px solid #bb9464;background:#493d35;border-radius:12px;color:#f2d8b7}.alert-strip[hidden]{display:none}.alert-strip p{font-size:.79rem;margin-top:4px;color:#f0d9c3}.alert-strip strong{font-size:.84rem}.item-card,.settings-card,.record-card{display:grid;gap:12px}.item-title{display:flex;align-items:center;gap:10px;color:var(--amber-pale)}.item-details{font-size:.82rem;color:var(--muted)}.flavor{font-size:.83rem;font-style:italic;color:#c2bac1;border-left:2px solid #77684f;padding-left:12px}.item-tally{font-size:.82rem;color:var(--mint);padding:9px 12px;background:#25384a;border-radius:9px}.gear-options{display:grid;gap:9px}.gear-choice{width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;padding:14px;background:#213047;color:var(--text);display:grid;gap:5px;min-height:var(--tap)}.gear-choice.is-equipped{border-color:#d6b47b;background:#302f38}.gear-choice strong{font-size:.88rem}.gear-choice span{color:var(--muted);font-size:.78rem}.gear-choice em{color:var(--amber);font-size:.73rem;font-style:normal}.history-list{margin:0;padding-left:1.3rem;color:var(--muted);font-size:.85rem;display:grid;gap:7px}.form-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--line-soft);font-size:.88rem}.form-row span{min-width:0}.form-row select{max-width:160px;width:44%;min-height:42px;background:#233349;color:var(--text);border:1px solid #50617a;border-radius:10px;padding:7px}.check-row input{width:21px;height:21px;accent-color:#d8b77f}.rules-summary{background:#24354a;color:var(--muted);border:1px dashed #54677c;padding:13px;border-radius:10px;font-size:.82rem;line-height:1.8}.settings-card>p:not(.small-note){font-size:.86rem;color:var(--muted)}.settings-card h3{color:var(--amber-pale)}.utility-row{display:flex;flex-wrap:wrap;gap:8px}.file-import{position:relative;cursor:pointer}.file-import input{position:absolute;width:1px;height:1px;opacity:0}.text-danger{border:0;background:transparent;padding:8px 0;text-align:left;min-height:42px;color:#e6a6a0;font-size:.82rem;width:max-content}.record-prose{font-size:.87rem;color:var(--muted)}.stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat-box{border:1px solid var(--line-soft);border-radius:10px;padding:10px;background:#203149}.stat-box span{display:block;color:var(--subtle);font-size:.76rem}.stat-box strong{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--text)}.title-entry{padding:11px 0;border-top:1px solid var(--line-soft);font-size:.88rem;display:flex;justify-content:space-between;gap:10px}.title-entry span{color:var(--subtle);font-size:.76rem}.title-entry strong{color:var(--amber)}.title-select{margin-top:6px;min-height:38px;border:1px solid #765e45;border-radius:8px;background:#3c3540;color:var(--amber-pale);font-size:.78rem;padding:6px 11px}.site-footer{border-top:1px solid var(--line-soft);padding:22px 0 32px;color:#7f8fa4;font-size:.72rem;letter-spacing:.08em}.site-footer span{letter-spacing:0;margin-left:8px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,12px);border:1px solid #8b724e;background:#383645;color:var(--amber-pale);padding:10px 16px;box-shadow:0 12px 26px #080f1e8c;border-radius:12px;max-width:min(92vw,440px);text-align:center;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:10;font-size:.85rem}.toast.visible{opacity:1;transform:translate(-50%,0)}
@@ -17,7 +17,8 @@
 
 .adventurer-hero{display:grid;grid-template-columns:minmax(0,1fr) 108px;gap:14px;align-items:center}.adventurer-status-block{min-width:0}.adventurer-portrait-wrap{justify-self:end}.adventurer-portrait{margin:0;width:108px;aspect-ratio:1/1;overflow:hidden}.adventurer-portrait img{display:block;width:100%;height:100%;object-fit:cover}.adventurer-status-block .meter-label:first-of-type{margin-top:10px}@media (max-width:520px){.adventurer-hero{grid-template-columns:minmax(0,1fr) 92px;gap:11px}.adventurer-portrait{width:92px}}@media (max-width:360px){.adventurer-hero{grid-template-columns:1fr;gap:12px}.adventurer-portrait-wrap{justify-self:start}.adventurer-portrait{width:104px}}
 
-
+</style>
+<style>
 /* toybox.css */
 /*
   名前のない迷宮 — トイボックス冒険譚 UI v0.2
@@ -325,7 +326,8 @@ h2 {font-size:1.43rem;}
 }
 @media(prefers-reduced-motion:reduce){.action-btn,.btn{transition:none;}}
 
-
+</style>
+<style>
 /* loot.css */
 /* v0.3: Inventory extension only. Base toybox theme, all SVG icons unchanged. */
 .loot-card{border-color:#e6bf74;background:linear-gradient(155deg,#406b65,#254952);display:grid;gap:12px}
@@ -382,7 +384,8 @@ h2 {font-size:1.43rem;}
   #inventory-list{max-height:none;overflow:visible;overscroll-behavior:auto;}
 }
 
-
+</style>
+<style>
 /* skills.css */
 [hidden]{display:none!important}
 /* v0.4 additions: all original toybox colors and SVG icon shapes remain unchanged. */
@@ -407,7 +410,8 @@ h2 {font-size:1.43rem;}
 .danger-forecast span{font-size:.84rem;color:#cfe6dc}
 .danger-forecast p{font-size:.77rem;line-height:1.65;color:#d5e5dc}
 
-
+</style>
+  <style>
 /* chronicle.css */
 /* v0.4.4 記録画面の補助表現のみ。迷宮UIと既存のSVGは変更しません。 */
 .chronicle-style{padding:13px 14px;background:#fff6dd;border:1px solid #cba974;border-radius:10px;box-shadow:2px 3px 0 #e4c996;display:grid;gap:7px}
@@ -421,7 +425,8 @@ h2 {font-size:1.43rem;}
 .record-card .history-list,.page[data-panel="gear"] .detail-card .history-list{list-style:none;padding-left:0;gap:8px}
 @media(max-width:350px){.chronicle-entry{padding:9px}.chronicle-style{padding:11px}}
 
-
+</style>
+  <style>
 /* expedition.css */
 /* v0.5.0 — 既存のトイボックスUIを保ちながら追加した探索パネルのみ */
 .expedition-board{border-color:#d8b16f;background:linear-gradient(148deg,#386963,#244e54);box-shadow:inset 0 2px #ffffff24,0 3px 0 #14343a}
@@ -460,7 +465,8 @@ h2 {font-size:1.43rem;}
 .expedition-story>.icon{flex:0 0 18px;width:18px;height:18px;margin-top:2px}
 .expedition-story p{margin:0;font-size:.82rem;line-height:1.65}
 
-
+</style>
+<style>
 /* inventory-care.css */
 /* v0.5.2: storage quality of life. Existing toybox palette and SVGs untouched. */
 .item-lock-mark{background:#a1dbc0!important;color:#173e35!important}
@@ -475,7 +481,8 @@ h2 {font-size:1.43rem;}
 #gear-protect-note{font-size:.78rem}
 @media(max-width:380px){.gear-actions .btn{min-width:100%;flex-basis:100%}}
 
-
+</style>
+<style>
 /* storage.css */
 /* v0.9.8: toybox-compatible storage shelf; existing SVG and colors unchanged */
 .storage-shelf{margin-top:14px;border:2px solid #9bbba4;border-radius:13px;padding:10px;background:rgba(21,60,62,.45)}
@@ -488,7 +495,8 @@ h2 {font-size:1.43rem;}
 #gear-retrieve:not([hidden]){background:#b5dec1;color:#204a3d;border-color:#75b0a1}
 @media(max-width:390px){.storage-shelf{padding:9px}.storage-shelf summary{font-size:.91rem}}
 
-
+</style>
+<style>
 /* usability.css */
 /* v0.9.9 – compact, readable controls. Existing toybox palette & SVGs unchanged. */
 .inventory-quick-find{margin:10px 0 12px;display:grid;gap:8px}
@@ -511,7 +519,8 @@ h2 {font-size:1.43rem;}
 .record-quick-nav button:focus-visible{outline:2px solid #ffd68d;outline-offset:2px}
 .record-card[id^="record-"]{scroll-margin-top:14px}
 
-
+</style>
+<style>
 /* narrative.css */
 /* v0.9.10: journal-only presentation; existing combat/toybox styles remain unchanged. */
 .narrative-card {position:relative;}
@@ -521,7 +530,8 @@ h2 {font-size:1.43rem;}
 .narrative-card .small-note {margin-bottom:12px;}
 @media(max-width:360px){.narrative-card .chronicle-entry{padding-left:9px;}}
 
-
+</style>
+<style>
 /* record-portrait.css */
 /* v1.0.3: 旅人の記録の肖像画。戦闘・古物商の画像レイアウトには影響しません。 */
 .page[data-panel="records"] .record-card .record-identity {
@@ -563,7 +573,8 @@ h2 {font-size:1.43rem;}
   .page[data-panel="records"] .record-card .record-traveler-portrait { justify-self:start;width:110px; }
 }
 
-
+</style>
+<style>
 /* market.css */
 /* v0.5.3: 新規の古物商パネルだけ。既存デザインの上書きなし */
 .shop-card{border:2px solid #d6ab67;background:linear-gradient(148deg,#38665e,#2b5357);box-shadow:inset 0 2px #ffffff22,0 3px 0 #14343a}
@@ -584,12 +595,14 @@ h2 {font-size:1.43rem;}
 
 .shop-intro{display:grid;grid-template-columns:minmax(0,1fr) 122px;gap:14px;align-items:center;margin:8px 0 12px}.shop-copy{min-width:0}.shop-prose{margin:0}.shopkeeper-portrait{margin:0;justify-self:end;width:122px;border:2px solid #dbc084;border-bottom:4px solid #9f7645;border-radius:16px;background:#efe3c6;overflow:hidden;box-shadow:0 4px 0 #24484b,0 10px 16px #0d21252b}.shopkeeper-portrait img{display:block;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;background:#efe3c6}.shopkeeper-portrait figcaption{padding:7px 8px 8px;font-size:.72rem;line-height:1.2;text-align:center;color:#5f4225;background:linear-gradient(180deg,#f3e3bc,#e7cd92);border-top:1px solid #c69c67;font-weight:700}.shop-purse{margin-top:2px}@media(max-width:520px){.shop-intro{grid-template-columns:minmax(0,1fr) 102px;gap:11px}.shopkeeper-portrait{width:102px}}@media(max-width:370px){.shop-intro{grid-template-columns:1fr}.shopkeeper-portrait{justify-self:start;width:122px}}
 
-
+</style>
+<style>
 /* growth.css */
 /* v0.7.0 — growth controls only. Existing toybox design is left unchanged. */
 .growth-card{position:relative}.growth-xp-track{height:11px;border-radius:8px;background:#d9c9a5;overflow:hidden;border:1px solid #bca577;margin:12px 0 8px}.growth-xp-track>div{height:100%;width:0;background:linear-gradient(90deg,#7b9b72,#d4ad60);transition:width .25s}.growth-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;color:var(--muted,#796d58);font-size:.83rem}.growth-training-buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:14px 0}.growth-train{min-width:0;min-height:54px;padding:8px 6px;border-radius:9px;border:2px solid #ae8a54;border-bottom-width:4px;background:#f2d996;color:#514029;font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;white-space:normal}.growth-train:disabled{opacity:.48;cursor:default}.growth-train:not(:disabled):active{transform:translateY(2px);border-bottom-width:2px}.growth-subtitle{margin:14px 0 6px}.growth-skills{list-style:none;padding:0;margin:0}.growth-skills li{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 2px;border-bottom:1px solid rgba(113,86,52,.2);font-size:.88rem}.growth-skills li strong{color:#746441;font-size:.77rem;flex-shrink:0}@media(max-width:355px){.growth-training-buttons{grid-template-columns:1fr}.growth-train{min-height:44px}.growth-meta{font-size:.75rem}}
 
-
+</style>
+<style>
 /* mastery.css */
 /* v0.7.1: records only. Existing combat and navigation designs are untouched. */
 .mastery-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
@@ -600,7 +613,8 @@ h2 {font-size:1.43rem;}
 .mastery-track>span{display:block;height:100%;border-radius:12px;background:#748e68;transition:width .2s}
 @media(max-width:355px){.mastery-entry{padding:9px}}
 
-
+</style>
+  <style>
 /* keepsakes.css */
 /* v0.7.2 装備の来歴用の紙面。既存ナビ・戦闘UIには影響しない。 */
 .item-journey{margin:10px 0 14px;padding:13px 14px;color:#4d402f;background:#fff0cb;border:1px solid #cba971;border-radius:10px;box-shadow:2px 3px 0 #d7b980;overflow-wrap:anywhere}
@@ -614,7 +628,8 @@ h2 {font-size:1.43rem;}
 .item-journey .journey-landmarks{margin:10px 0 0;padding-top:8px;border-top:1px dashed #c9a773;font-size:.74rem;color:#70583a;line-height:1.65}
 @media(max-width:350px){.item-journey{padding:10px}.journey-stat small{font-size:.6rem}.journey-stat strong{font-size:.75rem}}
 
-
+</style>
+<style>
 /* comparison.css */
 /* v0.8.1: Read-only build comparison. Retains all existing SVG icons and toybox colors. */
 .synergy-panel{margin-top:12px;display:grid;gap:10px;padding:13px;border:2px solid #a8c7a0;border-bottom:4px solid #638b82;border-radius:13px;background:linear-gradient(155deg,#255157,#1c444b)}
@@ -627,7 +642,8 @@ h2 {font-size:1.43rem;}
 .synergy-tactics{display:grid;gap:10px}.synergy-overview{border-radius:9px;background:#1c454c;padding:10px;font-size:.79rem;color:#fbe1ad;line-height:1.6}
 @media(max-width:350px){.synergy-panel{padding:10px}.synergy-columns{gap:5px}.synergy-box{padding:8px}.synergy-box strong{font-size:.8rem}}
 
-
+</style>
+<style>
 /* depths.css */
 /* v0.9.0: trial-specific styles only. All established UI stays intact. */
 .trial-launch{background:linear-gradient(180deg,#8a6cad,#664f89);border:2px solid #c8b0eb;color:#fff5d9;box-shadow:inset 0 2px #ffffff52,0 4px #3f345b;font-weight:800}
@@ -635,7 +651,8 @@ h2 {font-size:1.43rem;}
 .trial-launch:not([disabled]):active{transform:translateY(2px);box-shadow:0 2px #3f345b}
 .trial-launch[hidden]{display:none!important}
 
-
+</style>
+<style>
 /* trial-seals.css */
 /* v0.9.1: new entrance options only; established UI and SVG remain unchanged. */
 .trial-seal-panel{display:grid;gap:6px;flex-basis:100%;padding:12px;border:1px solid #78938a;border-radius:12px;background:rgba(16,55,57,.55)}
@@ -645,7 +662,8 @@ h2 {font-size:1.43rem;}
 .trial-seal-panel select:disabled{opacity:.65}
 .trial-seal-panel small{color:#dcf0e7;line-height:1.45;font-size:.81rem}
 
-
+</style>
+<style>
 /* catalog.css */
 /* v0.9.2 — miniature field guide. Existing toybox theme and navigation remain unchanged. */
 .catalog-card{overflow:hidden}
@@ -677,7 +695,8 @@ h2 {font-size:1.43rem;}
 .catalog-empty{padding:16px 10px;color:#7e684a;font-size:.85rem}
 @media(max-width:360px){.catalog-tab{font-size:.77rem}.catalog-entry-body strong{font-size:.83rem}.catalog-detail{padding-left:12px}}
 
-
+</style>
+<style>
 /* research.css */
 /* v0.9.3 — field research, maintaining the parchment catalog visual language. */
 .research-card{overflow:hidden}
@@ -704,7 +723,8 @@ h2 {font-size:1.43rem;}
 .research-fold summary span{font-size:.7rem;font-weight:400;color:#896b45}
 .research-fold .research-milestones{margin-top:12px}
 
-
+</style>
+<style>
 /* guild-counter.css */
 /* v1.0.4: ギルドカウンターの受付猫。既存の調査章・依頼やほかのタブには影響しない。 */
 #record-research .guild-counter-intro {
@@ -738,7 +758,8 @@ h2 {font-size:1.43rem;}
   #record-research .guild-counter-portrait {justify-self:start;width:124px;}
 }
 
-
+</style>
+<style>
 /* tab-layout.css */
 /* v1.0.5: tabs only. Reuses existing toybox & paper surfaces. */
 .gear-quick-nav{display:flex;align-items:center;flex-wrap:wrap;gap:7px;padding:10px;border:1px solid #83aaa0;border-radius:12px;background:#214c4d}
@@ -758,7 +779,8 @@ h2 {font-size:1.43rem;}
 .page[data-panel="records"] .save-card .btn.secondary:hover:not(:disabled){background:#795d40}
 #gear-current,#gear-inventory,#gear-tactics,#record-save{scroll-margin-top:22px}
 
-
+</style>
+<style>
 /* action-guide.css */
 /* v1.0.6: clarify each action without changing toybox colors, icons, or combat logic. */
 .controls-card .section-top{margin-bottom:9px}
@@ -779,7 +801,8 @@ h2 {font-size:1.43rem;}
 @media(max-width:600px){.actions-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.action-btn{min-height:148px;padding:12px 8px 9px}.action-btn .action-name{font-size:.88rem}.action-btn .action-effect{font-size:.77rem}}
 @media(max-width:350px){.actions-grid{gap:7px}.action-btn{min-height:151px;padding:10px 5px 9px}.action-btn .action-name{font-size:.84rem}.action-btn .action-focus{font-size:.72rem;padding:4px 5px}.action-btn .action-effect{font-size:.74rem}.action-btn .action-state{font-size:.7rem}}
 
-
+</style>
+<style>
 /* economy-plus.css */
 /* v0.9.5: additional shop services only, inherited toybox styles untouched. */
 .shop-tuning{border-top:2px dashed #91b09a;margin-top:14px;padding-top:14px;display:grid;gap:9px}
@@ -789,7 +812,8 @@ h2 {font-size:1.43rem;}
 .shop-tuning .btn{justify-self:start;min-height:48px;max-width:100%;white-space:normal}
 .shop-tuning .btn:disabled{opacity:.55;cursor:not-allowed}
 
-
+</style>
+<style>
 /* touch-scroll.css */
 /* v0.9.13 — touch device vertical scroll consistency
    A single natural page scrollbar for large text/card lists on coarse-pointer devices.
@@ -810,7 +834,8 @@ h2 {font-size:1.43rem;}
   }
 }
 
-
+</style>
+<style>
 /* ui-rework.css */
 /* v1.1.0 — responsive interface layer. Existing game colors, assets and SVG kept. */
 :root{--ui-space:16px;--ui-ink:#4d3729;--ui-paper:#f8e8c8}
@@ -939,7 +964,8 @@ h2 {font-size:1.43rem;}
 .page[data-panel="records"] .growth-meta strong{color:#674e36}
 .page[data-panel="records"] .growth-card .small-note{color:#675039}
 
-
+</style>
+<style>
 /* inventory-clarity.css */
 
 /* 装備一覧視認性改善: 色=レア度 / 輪郭=選択 / バッジ=装備状態。
@@ -1064,7 +1090,8 @@ h2 {font-size:1.43rem;}
   .page[data-panel="gear"] .inventory-list .inventory-item{transition:none;}
 }
 
-
+</style>
+<style>
 /* gear-detail-clarity.css */
 /* v1.1.2 – selected item: read value first, expand secondary details only on demand. */
 .page[data-panel="gear"] .detail-card{gap:12px;min-width:0;align-content:start;scroll-margin-top:18px}
@@ -1123,7 +1150,8 @@ h2 {font-size:1.43rem;}
 }
 @media(prefers-reduced-motion:reduce){.gear-detail-chevron{transition:none}}
 
-
+</style>
+<style>
 /* event-wallet.css */
 /* v1.1.3 – coin availability appears only in events that spend provisional coins. */
 .expedition-event-wallet{margin:7px 0 14px;padding:12px 14px;border:1px solid #cbb57a;border-radius:10px;background:linear-gradient(150deg,#194147,#1d4144);color:#f9eed7;display:grid;gap:7px}
@@ -1141,7 +1169,8 @@ h2 {font-size:1.43rem;}
 .expedition-event-wallet .event-wallet-note{margin:4px 0 0;font-size:.75rem;line-height:1.65;color:#dae4d5}
 @media(max-width:390px){.expedition-event-wallet{padding:10px 11px}.event-wallet-current>span{font-size:.79rem}.event-wallet-current strong{font-size:1.12rem}}
 
-
+</style>
+<style>
 /* gear-flow.css */
 /* v1.1.4 equipment navigation: preserve the current fantasy theme. */
 .gear-return-list{display:none}
@@ -1163,7 +1192,8 @@ h2 {font-size:1.43rem;}
   .gear-return-list{display:flex;justify-self:start;min-height:43px;max-width:100%;margin-bottom:2px;padding:8px 12px;white-space:normal}
 }
 
-
+</style>
+<style>
 /* game-guide.css */
 /* v1.1.5 — independently accessible, responsive in-game handbook */
 .nav .guide-open-button{
@@ -1249,6 +1279,44 @@ h2 {font-size:1.43rem;}
 @media(max-width:760px){.masthead .version{display:inline;margin-left:6px;font-size:.68rem;letter-spacing:.05em}}
 
 </style>
+<style>
+/* world-fragments.css */
+/* モルネッタ 1.1.7 - 世界の断章。探索と読み物の視覚階層を分ける。 */
+#expedition-fragment-paper[hidden]{display:none!important}
+#expedition-event .btn[hidden]{display:none!important}
+#expedition-event-desc{white-space:pre-line}
+.fragment-paper{border:2px solid #bfa279;border-radius:11px;background:#f5e9ce;color:#47392a;padding:19px 17px;margin:12px 0 16px;box-shadow:inset 0 0 0 3px #fff8e4,0 3px 9px #0c202548}
+.fragment-paper-kind{font-size:.73rem!important;color:#896644!important;font-weight:700;letter-spacing:.06em;margin:0 0 7px!important}
+.fragment-paper-title{font-family:serif;font-size:1.18rem;color:#4c3524;margin:0 0 10px;line-height:1.4}
+.fragment-paper-desc{font-size:.81rem!important;color:#806a52!important;border-bottom:1px solid #c8b496;padding-bottom:10px;margin-bottom:16px!important}
+.fragment-paper-body{font-size:.94rem;line-height:1.95;white-space:pre-line;overflow-wrap:anywhere;font-family:serif}
+.fragment-archive-controls{display:flex;align-items:center;gap:10px;margin:13px 0 14px}
+.fragment-archive-controls label{font-weight:700;font-size:.81rem}
+.fragment-archive-controls select{border:1px solid #b99b67;border-radius:8px;background:#fff7e6;color:#4c392a;padding:9px;font-size:.84rem;min-height:40px}
+.fragment-list{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.fragment-list-item{border:1px solid #bea77a;border-radius:10px;background:#f4ead6;overflow:hidden}
+.fragment-list-item summary{display:grid;grid-template-columns:25px minmax(0,1fr) 20px;align-items:center;gap:9px;padding:12px;color:#4d3928;cursor:pointer;list-style:none;min-height:56px}
+.fragment-list-item summary::-webkit-details-marker{display:none}
+.fragment-list-item summary:focus-visible{outline:3px solid #986d39;outline-offset:-3px}
+.fragment-list-item summary strong,.fragment-list-item summary small{display:block;overflow-wrap:anywhere}
+.fragment-list-item summary strong{font-size:.88rem}
+.fragment-list-item summary small{font-size:.72rem;margin-top:4px;color:#846548}
+.fragment-list-symbol{color:#986c2b;text-align:center;font-size:1.12rem}
+.fragment-reading{padding:12px 16px 19px;border-top:1px solid #d2bd91;color:#4d3928}
+.fragment-description{color:#846c55;font-size:.82rem;margin:0 0 14px}
+.fragment-text{line-height:2;white-space:pre-line;overflow-wrap:anywhere;font-family:serif;font-size:.93rem}
+.fragment-unknown{display:flex;gap:11px;align-items:center;border:1px dashed #b9aa8a;border-radius:9px;padding:11px 14px;min-height:45px;color:#766b5d;background:#eee6d6;font-size:.8rem}
+.fragment-unknown .icon{width:17px;height:17px}
+.fragment-archive-footer{color:#766a58;font-size:.77rem;line-height:1.7;margin-top:12px}
+@media(max-width:400px){.fragment-paper{padding:15px 12px}.fragment-paper-body,.fragment-text{font-size:.88rem}.fragment-list-item summary{padding:11px 9px}}
+@media(prefers-reduced-motion:reduce){.fragment-list-item{scroll-behavior:auto}}
+
+</style>
+
+
+
+
+
 </head>
 <body>
 <!-- ページ内で共有するSVGシンボル。外部の画像・アイコンライブラリを使用しません。 -->
@@ -1285,7 +1353,7 @@ h2 {font-size:1.43rem;}
 <div class="app-shell">
  <header class="masthead">
   <div class="brand-mark"><svg class="icon icon-lg"><use href="#ic-gate"/></svg></div>
-  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.6</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
+  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.7</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
  </header>
  <div class="app-layout">
   <nav class="nav" aria-label="画面を切り替える">
@@ -1326,6 +1394,10 @@ h2 {font-size:1.43rem;}
           </div>
           <p class="event-wallet-note">今回の探索で拾った古銭を使います。拠点の古銭はこのイベントでは使えません。</p>
         </div>
+        <section class="fragment-paper" id="expedition-fragment-paper" hidden aria-live="polite">
+          <p class="fragment-paper-kind"></p><h4 class="fragment-paper-title"></h4>
+          <p class="fragment-paper-desc"></p><div class="fragment-paper-body"></div>
+        </section>
         <div class="expedition-options"><button type="button" class="btn primary" id="expedition-event-take"></button><button type="button" class="btn secondary" id="expedition-event-leave"></button></div>
       </div>
       <div class="expedition-choice" id="expedition-choice" hidden>
@@ -1556,6 +1628,7 @@ h2 {font-size:1.43rem;}
       <button type="button" data-record-jump="record-mastery">熟練</button>
       <button type="button" data-record-jump="record-history">探索</button>
       <button type="button" data-record-jump="record-stories">小さな物語</button>
+      <button type="button" data-record-jump="record-fragments">世界の断章</button>
       <button type="button" data-record-jump="record-titles">異名</button>
       <button type="button" data-record-jump="record-save">保存</button>
     </nav>
@@ -1606,6 +1679,14 @@ h2 {font-size:1.43rem;}
     </div>
     <div class="glass record-card" id="record-history"><p class="label">EXPEDITION HISTORY</p><h3>探索の歩み</h3><div class="stats-grid" id="expedition-stats"></div></div>
     <div class="glass record-card"><p class="label">ENVIRONMENT DISCOVERIES</p><h3>見つけた迷宮の区域</h3><p class="small-note">初めて訪れた区域が、探索手帳に残ります。</p><ul class="history-list" id="environment-discoveries"></ul></div>
+    <div class="glass record-card fragment-archive" id="record-fragments" aria-label="世界の断章">
+      <p class="label">FRAGMENTS OF THE WORLD</p>
+      <div class="section-top"><h3>世界の断章</h3><strong id="fragment-count">0 / 12</strong></div>
+      <p class="small-note" id="fragment-intro">迷宮のどこかに、まだ読まれていない文書がある。</p>
+      <div class="fragment-archive-controls"><label for="fragment-sort">並び順</label><select id="fragment-sort" aria-label="断章の並び順"><option value="found">発見順</option><option value="category">テーマ別</option></select></div>
+      <ul class="fragment-list" id="fragment-list"></ul>
+      <p class="fragment-archive-footer">断章はひとつずつ別の場所で見つかります。すべて集めても、真相が自動的に明かされることはありません。</p>
+    </div>
     <div class="glass record-card" id="record-stories"><p class="label">SMALL TALES</p><h3>迷宮で結ばれた縁</h3><p class="small-note">出会いの選択と、後の階層で起きたことを記録します。途中帰還で終わった物語も残ります。</p><ul class="history-list" id="story-chronicles"></ul></div>
     <div class="glass record-card" id="record-titles"><p class="label">EPITHETS</p><h3>異名の手帳</h3><div id="titles-list"></div><p class="small-note">毒・燃焼・連撃・反撃に加えて、大技の中断や防御、ボス討伐も異名につながります。</p></div>
     <div class="glass record-card narrative-card"><p class="label">THE FIRST FOOTPRINTS</p><h3>旅の節目</h3><p class="small-note">最初の勝利や門守との初対面など、実際の記録から節目を残します。過去に記録されていない出来事は補いません。</p><ul class="history-list" id="chronicle-highlights"><li>この旅の節目は、これから記録されます。</li></ul></div>
@@ -1654,6 +1735,7 @@ h2 {font-size:1.43rem;}
      <p>通常の迷宮は<strong>全10階層</strong>。戦闘が終わると探索イベントや分かれ道が現れます。「整備された側道」は安全寄り、「報酬のある道」は次の敵が強くなる代わりに報酬を狙える道です。</p>
      <div class="guide-info-grid"><div><strong>進む</strong><span>次の階層へ進みます。戦闘は自動で始まります。</span></div><div><strong>帰還する</strong><span>帰還できる地点で探索を終了し、収集品を確保します。</span></div><div><strong>戦利品</strong><span>探索中の装備・古銭は仮確保。探索終了時に持ち帰ります。</span></div><div><strong>力尽きたとき</strong><span>獲得装備は原則1点まで、古銭は半分を回収します。以前の所持装備や記録は失われません。</span></div></div>
      <p>通常迷宮を初めて踏破すると<strong>深層試練（11〜15階層）</strong>が解放されます。さらに進むと追加の試練も選べます。</p>
+     <p><strong>余白の回廊：</strong>深層試練を初めて踏破したあと、再び深層を訪れるとまれに奇妙な扉が現れます。扉の先で見つけた文書は「記録」→「冒険の物語」→「世界の断章」に収められ、途中帰還や敗北でも失われません。</p>
     </section>
     <section class="guide-chapter" id="guide-combat">
      <p class="guide-chapter-kicker">03 / BATTLE BASICS</p><h3>戦闘と「次の行動」</h3>
@@ -2354,10 +2436,199 @@ h2 {font-size:1.43rem;}
   let catalogExpandedKey=null; // reading a catalog entry survives automatic battle redraws.
   let state;
 
+
+  // 余白の回廊: 本文はセーブに重複格納しない。文書IDだけを保存する。
+  const WORLD_FRAGMENTS = [
+  {
+    "id": "A-01",
+    "category": "消された名前",
+    "title": "名前のない名簿",
+    "desc": "端が焦げた帰還者名簿。七つの欄に筆跡がある。",
+    "body": "帰還者、七名。\n\n帰還者、七名。\n\n何度数え直しても、七名。\n\nけれど食堂には、今朝も八つの椅子があった。誰かが上着を掛けたままにしている。\n\n私は数を間違えたのだろうか。それとも、椅子のほうが人を数えているのだろうか。"
+  },
+  {
+    "id": "A-02",
+    "category": "消された名前",
+    "title": "訂正票・第八欄",
+    "desc": "朱色の印が重なった事務用の小紙片。",
+    "body": "帰還簿の第八欄について、問い合わせが続いている。\n\n誤植ではない。記入漏れでもない。\n\n欄を削るよう指示した者の署名は、別紙に移した。別紙の保管場所については、今後問い合わせないこと。\n\nなお、食堂の席数まで七にする必要はない。"
+  },
+  {
+    "id": "A-03",
+    "category": "消された名前",
+    "title": "宛名を欠いた手紙",
+    "desc": "封をされないまま折り畳まれた便箋。",
+    "body": "そちらの天気はどうですか。\n\nこちらでは、窓際の鉢がまた枯れました。水をやりすぎたのかもしれません。相変わらず、私には加減が分かりません。\n\nあなたの名前を書きかけて、消しました。\n\n書くと、あの扉が聞いてしまう気がしたのです。\n\nこれは迷信でしょうか。迷信でも、今は構いません。"
+  },
+  {
+    "id": "A-04",
+    "category": "消された名前",
+    "title": "厨房の申し立て",
+    "desc": "油染みの残る献立表の裏側。",
+    "body": "当番長へ。\n\nパンを七人分に減らすのは承知しました。しかしスープ皿まで七枚にするのは反対です。\n\n八枚目をしまうと、朝になるたび戸棚の外へ出ています。皿に足がないことは、こちらも知っています。\n\nしばらく八枚のままにしていただけませんか。\n\n厨房係より。追伸、洗うのは私です。"
+  },
+  {
+    "id": "B-01",
+    "category": "星の門の記録",
+    "title": "門守への申し送り",
+    "desc": "何度も綴じ直した薄い指示書。",
+    "body": "門を開けてはならない。\n\n門の向こうから声がしても、返事をしてはならない。\n\nただし、あの者が戻ったときだけは——\n\nここから先は、読む必要がない。\n\n追記。この最後の一行は、誰が書いた。"
+  },
+  {
+    "id": "B-02",
+    "category": "星の門の記録",
+    "title": "星灯の点検票",
+    "desc": "青、灰、赤のインクで印の付いた金属札。",
+    "body": "霧の日、灯は青白い。\n\n反響の強い日、灯の周りで足音だけが遅れる。\n\n残り火の夜、何も燃えていないのに煤が出る。\n\n以上、異常なし。\n\n追伸。点検票の「異常なし」は、我々が無事だという意味ではない。"
+  },
+  {
+    "id": "B-03",
+    "category": "星の門の記録",
+    "title": "交代願い",
+    "desc": "受理印のない申請書。",
+    "body": "門前勤務の交代を希望する。\n\n理由：待つ仕事は、戦う仕事より疲れる。\n\n追記：交代者に私の槍は貸す。椅子も貸す。灯の消し方も教える。\n\nただし、最後の呼びかけだけは代わりに聞かせたくない。\n\n申請は取り下げる。"
+  },
+  {
+    "id": "B-04",
+    "category": "星の門の記録",
+    "title": "届かなかった返事",
+    "desc": "表に「門前へ」と書かれた封書。封蝋は割れていない。",
+    "body": "戻らなくてよい、と言ったのではありません。\n\nいつ戻ってもよいように、灯を残してほしいと言ったのです。\n\nその違いがあなたに届くまで、何度でも書きます。\n\n……この手紙を預けた人は、門の場所を知らないそうです。"
+  },
+  {
+    "id": "C-01",
+    "category": "道具が覚えていること",
+    "title": "古物商の古い覚え書き",
+    "desc": "店の印が押された帳面の切れ端。年代は読めない。",
+    "body": "剣は嘘をつかない。\n\nただし、正しいことを覚えているとも限らない。\n\n昨日預かった短剣は、まだ誰も使っていないはずなのに、三人分の別れを知っていた。\n\n値札を付けるのが、いよいよ難しくなってきた。"
+  },
+  {
+    "id": "C-02",
+    "category": "道具が覚えていること",
+    "title": "鳴らない鈴の取扱票",
+    "desc": "丁寧な絵の付いた注意札。",
+    "body": "この鈴は鳴りません。不良品ではありません。\n\nふった回数を数える必要もありません。\n\nもし音が聞こえた場合は、何の音に似ていたか書き留めてください。\n\n前回の報告は「玄関で靴を脱ぐ音」でした。次回も同じとは限りません。"
+  },
+  {
+    "id": "C-03",
+    "category": "道具が覚えていること",
+    "title": "逆さまの砂時計",
+    "desc": "砂時計の台座の下に挟まれた整備メモ。",
+    "body": "砂が落ちない。上下を替えても落ちない。\n\n硝子の中に小さな傷が増えている。見つけた日に三本、今日は四本。\n\n誰かが使った跡なのだろうか。\n\n砂時計のくせに、時間より人を数えているようで気に入らない。"
+  },
+  {
+    "id": "C-04",
+    "category": "道具が覚えていること",
+    "title": "方位磁針の裏蓋",
+    "desc": "欠けた方位磁針の裏に、細い針で刻まれた文字。",
+    "body": "北は帰る方角ではない。\n\n道を見失ったら、持っているものを確かめなさい。\n\nその傷をつけた日のことを、あなたが忘れてもかまわない。\n\n物が覚えているなら、帰り道はまだ消えていない。\n\n——ただし、覚えているのが誰の道なのかは、確かめたほうがいい。"
+  }
+];
+  const FRAGMENT_BY_ID=Object.fromEntries(WORLD_FRAGMENTS.map(x=>[x.id,x]));
+  const FRAGMENT_CATEGORIES=["消された名前","星の門の記録","道具が覚えていること"];
+  const EMPTY_FRAGMENTS=()=>({ids:[],misses:0});
+  function normalizeFragments(raw){
+    const obj=raw&&typeof raw==="object"?raw:{};
+    const ids=Array.isArray(obj.ids)?[...new Set(obj.ids.filter(id=>typeof id==="string"&&Object.hasOwn(FRAGMENT_BY_ID,id)))].slice(0,12):[];
+    return {ids,misses:Math.max(0,Math.min(3,finiteInt(obj.misses)))};
+  }
+  // Separate from the seeded battle/loot RNG to avoid consuming its sequence.
+  function fragmentRandom(){
+    try { if(typeof crypto!=="undefined"&&crypto.getRandomValues){
+      const data=new Uint32Array(1);crypto.getRandomValues(data);return data[0]/4294967296;
+    }}catch(_error){}
+    return Math.random();
+  }
+  function planMargin(r){
+    if(r.mode!=="trial"||state.expeditionStats.trialClears<1||state.fragments.ids.length>=WORLD_FRAGMENTS.length)return null;
+    const appears=state.fragments.misses>=3||fragmentRandom()<.30;
+    return {floor:appears?12+Math.floor(fragmentRandom()*3):null,status:"waiting",step:0,docId:null,offered:false};
+  }
+  function afterMargin(r){
+    r.event=null;r.phase="choice";
+    if(r.margin)r.margin.status="done";
+    prepareRouteOffer(r);save();render();
+  }
+  function discoverFragment(r){
+    const unfound=WORLD_FRAGMENTS.filter(x=>!state.fragments.ids.includes(x.id));
+    if(!unfound.length){afterMargin(r);return;}
+    const doc=unfound[Math.floor(fragmentRandom()*unfound.length)];
+    state.fragments.ids.push(doc.id);
+    r.margin.docId=doc.id;r.margin.status="found";
+    addLog(`余白の回廊で『${doc.title}』を見つけた。世界の断章に収めた。`,"important");
+    // Save immediately, even before the player reads or leaves the corridor.
+    save();render();
+  }
+  function resolveMargin(choice){
+    const r=state.expedition;
+    if(!r||r.phase!=="event"||r.event!=="margin_door"||hasActiveBattle()||!["take","leave"].includes(choice))return;
+    const margin=r.margin;
+    if(!margin){afterMargin(r);return;}
+    if(choice==="leave"||margin.status==="found"){afterMargin(r);return;}
+    if(margin.status==="offered"){
+      margin.status="inside";margin.step=0;
+    }else if(margin.status==="inside"&&margin.step<2){
+      margin.step++;
+    }else if(margin.status==="inside"&&margin.step===2){
+      discoverFragment(r);return;
+    }
+    save();render();
+  }
+  function renderMarginEvent(r){
+    const margin=r.margin||{status:"offered",step:0};
+    const title=$("expedition-event-title"),desc=$("expedition-event-desc");
+    const primary=$("expedition-event-take"),secondary=$("expedition-event-leave");
+    $("expedition-event-wallet").hidden=true;
+    $("expedition-fragment-paper").hidden=true;
+    secondary.hidden=false;primary.disabled=false;
+    if(margin.status==="offered"){
+      title.textContent="余白の回廊";
+      desc.textContent=state.fragments.ids.length===0?"戦いが終わったあと、何もない石壁から紙をめくる音がする。目を凝らすと、いつの間にか細い扉が現れていた。\n取っ手はない。ただ、誰かが指でなぞった跡が残っている。":"また、紙をめくる音が聞こえる。石壁に細い扉が現れていた。向こうには、まだ読まれていないものがあるらしい。";
+      primary.textContent="扉に触れてみる";secondary.textContent="先へ進む";
+    }else if(margin.status==="inside"){
+      const scenes=[
+        ["人のいない廊下","足元には乾いた足跡がある。こちらへ向かうものが七組、戻っていくものが八組。数え直すと、どちらも七組になった。","足跡の先を調べる"],
+        ["八つ目の椅子","突き当たりには小さな食堂がある。椅子は八つ。卓上の皿は七枚。片隅の椅子だけ、誰かがついさっき立ったように温かい。","奥の棚を探す"],
+        ["まだ乾かない紙","木の棚に古い書類が残されている。埃の中で、紙の一枚だけが不自然なほど白い。書かれた文字は、あなたを待っていたように見える。","文書を手に取る"]
+      ];
+      const v=scenes[Math.max(0,Math.min(2,margin.step))];
+      title.textContent=v[0];desc.textContent=v[1];primary.textContent=v[2];secondary.textContent="回廊を出る";
+    }else if(margin.status==="found"){
+      const doc=FRAGMENT_BY_ID[margin.docId];
+      title.textContent="世界の断章を発見";
+      desc.textContent="拾い上げた文書の文字は、すべて読む前からどこか懐かしかった。これはもう、冒険の記録に残っている。";
+      const paper=$("expedition-fragment-paper");paper.hidden=false;
+      paper.querySelector(".fragment-paper-kind").textContent=doc?.category||"世界の断章";
+      paper.querySelector(".fragment-paper-title").textContent=doc?.title||"名のない紙片";
+      paper.querySelector(".fragment-paper-desc").textContent=doc?.desc||"";
+      paper.querySelector(".fragment-paper-body").textContent=doc?.body||"";
+      primary.textContent="文書を閉じて先へ進む";secondary.hidden=true;
+    }
+  }
+  let fragmentSort="found";
+  let fragmentRenderKey="";
+  function renderFragments(){
+    const found=state.fragments.ids.map(id=>FRAGMENT_BY_ID[id]).filter(Boolean);
+    setText("fragment-count",`${found.length} / ${WORLD_FRAGMENTS.length}`);
+    const unlocked=state.expeditionStats.trialClears>0;
+    $("fragment-intro").textContent=unlocked?
+      "深層のどこかで拾った断章。未発見の題名は分かりません。発見した文書は、敗北や途中帰還でも失われません。":
+      "深層試練を初めて踏破すると、迷宮の奥に別の道が見つかるかもしれません。";
+    $("fragment-sort").value=fragmentSort;
+    const key=JSON.stringify([state.fragments.ids,fragmentSort]);
+    if(key===fragmentRenderKey)return;
+    fragmentRenderKey=key;
+    const entries=fragmentSort==="category"?[...found].sort((a,b)=>FRAGMENT_CATEGORIES.indexOf(a.category)-FRAGMENT_CATEGORIES.indexOf(b.category)||a.id.localeCompare(b.id)):found;
+    const rows=entries.map(doc=>`<li class="fragment-list-item"><details><summary><span class="fragment-list-symbol" aria-hidden="true">✦</span><span><strong>${escapeHTML(doc.title)}</strong><small>${escapeHTML(doc.category)}</small></span><span aria-hidden="true">⌄</span></summary><div class="fragment-reading"><p class="fragment-description">${escapeHTML(doc.desc)}</p><div class="fragment-text">${escapeHTML(doc.body)}</div></div></details></li>`).join("");
+    const unknown=Array.from({length:12-found.length},()=>`<li class="fragment-unknown"><svg class="icon" aria-hidden="true"><use href="#ic-book"/></svg><span>未発見の断章</span></li>`).join("");
+    $("fragment-list").innerHTML=rows+unknown;
+  }
+
   function defaultState() {
     return {
       version: 20, seed: 79314371, nextId: 1,
       research:initialResearch(),
+      fragments:EMPTY_FRAGMENTS(),
       catalog:{...emptyCatalog(),items:{shortsword:{found:1,defeated:0},venom:{found:1,defeated:0},keen:{found:1,defeated:0}}},
       hero: { name: "名もなき旅人", hp: 120, maxHp: 120, focus: 1, maxFocus: 5, attackBase: 40, defense: 15 },
       equipment: { slots: {weapon:"w-first",armor:null,charm:"c-venom",relic:null} },
@@ -2401,6 +2672,7 @@ h2 {font-size:1.43rem;}
     d.version=20;
     const s={...base,...d,hero:{...base.hero,...d.hero},equipment:{...base.equipment,slots:{...base.equipment.slots,...d.equipment.slots}},settings:{...base.settings,...d.settings},stats:{...base.stats,...d.stats},ui:{...base.ui,...d.ui},
       economy:{...base.economy,...d.economy,prepared:{...base.economy.prepared,...d.economy?.prepared}}};
+    s.fragments=normalizeFragments(d.fragments);
     s.growth=normalizeGrowth(d.growth,s.stats.wins,legacyGrowth);
     s.mastery=normalizeMastery(d.mastery,s.stats,legacyMastery);
     if(!s.growth.unlocked.every(id=>ACTIVE_SKILLS.includes(id)))throw Error("習得データが不正です");
@@ -2534,7 +2806,17 @@ h2 {font-size:1.43rem;}
         &&Number.isInteger(story.payoffFloor)&&story.payoffFloor>=7&&story.payoffFloor<=9
         &&story.payoffFloor>story.originFloor
         ?{kind:story.kind,status:story.status,originFloor:story.originFloor,payoffFloor:story.payoffFloor}:null;
-      r.event=(FLOOR_EVENT_IDS.includes(r.event)||STORY_EVENT_IDS.includes(r.event)&&r.story)?r.event:null;
+      // Legacy saves have no margin plan. A new deep trial will plan the next door.
+      const rawMargin=r.margin;
+      r.margin=rawMargin&&typeof rawMargin==="object"&&r.mode==="trial"?{
+        floor:[12,13,14].includes(rawMargin.floor)?rawMargin.floor:null,
+        status:["waiting","offered","inside","found","done"].includes(rawMargin.status)?rawMargin.status:"waiting",
+        step:Math.max(0,Math.min(2,finiteInt(rawMargin.step))),
+        docId:typeof rawMargin.docId==="string"&&s.fragments.ids.includes(rawMargin.docId)&&Object.hasOwn(FRAGMENT_BY_ID,rawMargin.docId)?rawMargin.docId:null,
+        offered:rawMargin.offered===true
+      }:null;
+      if(r.margin?.status==="found"&&!r.margin.docId){r.margin.status="inside";r.margin.step=2;}
+      r.event=(FLOOR_EVENT_IDS.includes(r.event)||STORY_EVENT_IDS.includes(r.event)&&r.story||r.event==="margin_door"&&r.margin&&["offered","inside","found"].includes(r.margin.status))?r.event:null;
       r.routeOffer=Object.hasOwn(RISK_ROUTES,r.routeOffer)?r.routeOffer:null;
       r.route=(r.route&&typeof r.route==="object"&&["safe",...RISK_ROUTE_IDS].includes(r.route.kind)&&r.route.floor===r.floor)?{kind:r.route.kind,floor:r.floor}:null;
       r.routeHistory=Array.isArray(r.routeHistory)?r.routeHistory.filter(h=>h&&Number.isInteger(h.floor)&&h.floor>=2&&h.floor<=15&&["safe",...RISK_ROUTE_IDS].includes(h.kind)).slice(-9).map(h=>({floor:h.floor,kind:h.kind})):[];
@@ -2897,6 +3179,7 @@ h2 {font-size:1.43rem;}
     const supplies={...state.economy.prepared,chart:mode==="trial"&&state.economy.prepared.chart};
     const seal=mode==="trial"&&state.expeditionStats.trialClears>0&&Object.hasOwn(TRIAL_SEALS,state.settings.trialSeal)?state.settings.trialSeal:"standard";
     const r={id:`run-${state.nextId++}`,mode,seal,floor:mode==="trial"?11:1,phase:"combat",loot:[],shards:0,event:null,lastEvent:null,visited:[],supplies,route:null,routeOffer:null,routeHistory:[],story:makeStoryPlan()};
+    r.margin=planMargin(r);
     state.expedition=r;
     rememberRegion(r.floor);
     state.economy.prepared={herbs:false,lantern:false,chart:mode!=="trial"&&state.economy.prepared.chart};
@@ -2919,6 +3202,12 @@ h2 {font-size:1.43rem;}
     const r=state.expedition;if(!r)return;
     stopTimer();
     const clear=outcome==="clear",failure=outcome==="defeat",trial=r.mode==="trial";
+    // Count only runs that reached the relevant floors without a door.
+    // A defeat before floor 14 cannot silently consume the guarantee.
+    if(trial&&r.margin&&r.margin.floor===null&&(r.visited||[]).includes(14)){
+      state.fragments.misses=Math.min(3,state.fragments.misses+1);
+    }
+
     const seal=trial?(TRIAL_SEALS[r.seal]||TRIAL_SEALS.standard):TRIAL_SEALS.standard;
     if(clear&&trial){
       const rewardRarity=rand()<.10?"legendary":rand()<.45?"epic":"rare";
@@ -3007,10 +3296,15 @@ h2 {font-size:1.43rem;}
     }
     if(r.floor===(r.mode==="trial"?15:10)){finishExpedition("clear");return;}
     r.route=null;
-    r.event=selectFloorEvent(r);
+    if(r.mode==="trial"&&r.margin?.status==="waiting"&&r.margin.floor===r.floor){
+      r.margin.status="offered";r.margin.offered=true;
+      state.fragments.misses=0;
+      r.event="margin_door";
+    }else r.event=selectFloorEvent(r);
     r.phase=r.event?"event":"choice";
     if(r.phase==="choice")prepareRouteOffer(r);
-    if(r.event)addLog(`第${r.floor}階層に、${{chest:"鍵のかかった宝箱",shrine:"静かな休息地",rune:"古い碑文",cache:"埃をかぶった武具棚",altar:"竜骨の祭壇",crossing:"崩れた渡り廊下",key_found:"光る小さなもの",key_vault:"鍵穴のある扉",moss_found:"小さな苔玉",moss_return:"懐かしい苔玉"}[r.event]}を見つけた。`,"important");
+    if(r.event==="margin_door")addLog("石壁の向こうに、紙をめくる音のする細い扉を見つけた。","important");
+    else if(r.event)addLog(`第${r.floor}階層に、${{chest:"鍵のかかった宝箱",shrine:"静かな休息地",rune:"古い碑文",cache:"埃をかぶった武具棚",altar:"竜骨の祭壇",crossing:"崩れた渡り廊下",key_found:"光る小さなもの",key_vault:"鍵穴のある扉",moss_found:"小さな苔玉",moss_return:"懐かしい苔玉"}[r.event]}を見つけた。`,"important");
     else addLog(`第${r.floor}階層を突破した。次の階へ進むか、帰還できる。`,"positive");
   }
   function resolveFloorEvent(choice){
@@ -3018,6 +3312,7 @@ h2 {font-size:1.43rem;}
     if(!r||r.phase!=="event"||hasActiveBattle())return;
     const event=r.event;
     if(!["take","leave"].includes(choice))return;
+    if(event==="margin_door"){resolveMargin(choice);return;}
     if(STORY_EVENT_IDS.includes(event)){
       if(!resolveStoryEvent(event,choice))return;
     }else if(event==="chest"){
@@ -3611,6 +3906,12 @@ h2 {font-size:1.43rem;}
     $("expedition-cargo").textContent=`仮確保：装備${r.loot.length}点 / 古銭${r.shards}枚${r.loot.length?`（最新：${r.loot[r.loot.length-1].name}）`:""}${r.supplies?.herbs||r.supplies?.lantern?` / 探索の支度：${[r.supplies.herbs?"薬草包":null,r.supplies.lantern?"探し物の灯り":null].filter(Boolean).join("・")}`:""}${r.route?.floor===r.floor?` / 選択した道：${r.route.kind==="safe"?"整備された側道":RISK_ROUTES[r.route.kind]?.name||"不明"}`:""}`;
     if(r.phase==="event"){
       $("expedition-event").hidden=false;
+      $("expedition-fragment-paper").hidden=true;
+      $("expedition-event-leave").hidden=false;
+      if(r.event==="margin_door"){
+        renderMarginEvent(r);
+        return;
+      }
       const texts={
         chest:["扉のない小部屋に古びた宝箱がある。罠があるかもしれない。","宝箱を開ける（装備を獲得、25%で負傷）","古銭4枚だけ拾う"],
         shrine:["冷たい水が湧いている。ここなら少し休めそうだ。","水を飲む（HPを30%回復）","祈りの古銭12枚を拾う"],
@@ -4263,6 +4564,7 @@ h2 {font-size:1.43rem;}
 
   function renderRecords(){
     const rs=state.expeditionStats;
+    renderFragments();
     $("story-chronicles").innerHTML=state.storyHistory.length
       ?state.storyHistory.slice(0,12).map(x=>`<li><strong>${escapeHTML(STORY_DATA[x.kind].name)} — ${escapeHTML(x.ending)}</strong><div class="helper">第${x.floor}階層 / ${escapeHTML(x.text)}</div></li>`).join("")
       :"<li>迷宮での小さな物語は、まだ始まっていません。</li>";
@@ -4326,7 +4628,7 @@ h2 {font-size:1.43rem;}
         return;
       }
       const saved=save();
-      downloadJSON(JSON.stringify(state,null,2),"mornetta_backup_1_1_6.json");
+      downloadJSON(JSON.stringify(state,null,2),"mornetta_backup_1_1_7.json");
       toast(saved?"バックアップを書き出しました":"自動保存は失敗しましたが、JSONバックアップの書き出しを開始しました");
     }catch(err){console.warn("バックアップ書き出し失敗:",err);toast("バックアップの書き出しを開始できませんでした");}
   }
@@ -4361,6 +4663,7 @@ h2 {font-size:1.43rem;}
       if(hasActiveBattle()||state.expedition||state.expeditionStats.trialClears<1||!Object.hasOwn(TRIAL_SEALS,e.target.value))return;
       state.settings.trialSeal=e.target.value;save();render();
     });
+    $("fragment-sort").addEventListener("change",e=>{fragmentSort=e.target.value==="category"?"category":"found";renderFragments();});
     $("expedition-event-take").addEventListener("click",()=>resolveFloorEvent("take"));
     $("expedition-event-leave").addEventListener("click",()=>resolveFloorEvent("leave"));
     $("expedition-next").addEventListener("click",()=>nextFloor("safe"));
@@ -4424,7 +4727,7 @@ h2 {font-size:1.43rem;}
     $("record-quick-nav").addEventListener("click",e=>{
       const btn=e.target.closest("button[data-record-jump]");if(!btn)return;
       const id=btn.dataset.recordJump;
-      if(!["record-catalog","record-save","record-growth","record-mastery","record-history","record-stories","record-titles"].includes(id))return;
+      if(!["record-catalog","record-save","record-growth","record-mastery","record-history","record-stories","record-fragments","record-titles"].includes(id))return;
       document.getElementById(id)?.scrollIntoView({behavior:"smooth",block:"start"});
     });
     $("battle-log-count").addEventListener("change",e=>{
@@ -4567,7 +4870,8 @@ h2 {font-size:1.43rem;}
   window.__namelessTest = Object.freeze({snapshot:()=>JSON.parse(JSON.stringify(state)),damageFormula});
 })();
 
-
+</script>
+<script>
 /* ui-rework.js */
 "use strict";
 /* UI-only organization of existing DOM nodes. Gameplay, IDs and save format unchanged. */
@@ -4695,7 +4999,8 @@ h2 {font-size:1.43rem;}
   }catch(err){console.error('UIレイアウト初期化エラー:',err);}
 })();
 
-
+</script>
+<script>
 /* gear-detail-ui.js */
 "use strict";
 /* Secondary equipment information is accessible with native details.
@@ -4750,7 +5055,8 @@ h2 {font-size:1.43rem;}
   document.documentElement.dataset.gearDetailClarity='ready';
 })();
 
-
+</script>
+<script>
 /* gear-flow.js */
 "use strict";
 /* v1.1.4 - Pure UI navigation; the saved game state and action handlers remain in script.js. */
@@ -4800,7 +5106,8 @@ h2 {font-size:1.43rem;}
   document.documentElement.dataset.gearFlow='ready';
 })();
 
-
+</script>
+<script>
 /* game-guide.js */
 "use strict";
 /* Game guide is display-only. No game state, save keys or combat functions are touched. */
