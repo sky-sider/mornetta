@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#17383d">
 <meta name="description" content="ランダム装備とビルド構築を楽しむ、テキスト主体の半自動ハクスラ。">
-<title>モルネッタ | 1.1.9</title>
+<title>モルネッタ | 1.1.12</title>
 <style>
 :root{color-scheme:dark;--bg:#0e1725;--night:#101b2b;--panel:#182639;--panel-2:#1d2c41;--line:#344257;--line-soft:#2a394e;--text:#eee9df;--muted:#b8bcc5;--subtle:#8e9bad;--amber:#e0b881;--amber-pale:#f0d6a8;--mint:#9bc7b5;--red:#d58f8b;--blue:#a5bce0;--radius:15px;--tap:46px;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:15px}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);background:radial-gradient(circle at 70% -12%,#253651 0%,transparent 42%),var(--bg);line-height:1.65;min-height:100vh}button,select,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:not-allowed}button,select{-webkit-tap-highlight-color:transparent}button:focus-visible,select:focus-visible,input:focus-visible,label.file-import:focus-within{outline:2px solid var(--amber);outline-offset:3px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.35}h1{font-size:1.5rem;letter-spacing:.09em;font-weight:700}h2{font-size:1.45rem;font-weight:680;letter-spacing:.04em}h3{font-size:1.04rem;font-weight:650}small{font-size:.76rem}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.icon{width:20px;height:20px;display:inline-block;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.icon-lg{width:27px;height:27px}.icon-inline{width:15px;height:15px;vertical-align:-2px}.app-shell{max-width:1080px;margin:auto;padding:0 21px}.masthead{padding:32px 0 22px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--line-soft)}.brand-mark{width:49px;height:49px;border-radius:15px;border:1px solid #9c8058;color:var(--amber);display:grid;place-items:center;background:#222b39;flex-shrink:0}.eyebrow,.label{color:var(--amber);font-size:.68rem;letter-spacing:.15em;font-weight:700}.masthead .eyebrow{margin:0 0 5px}.tagline{color:var(--subtle);font-size:.79rem;margin-top:5px}.version{color:var(--subtle);font-weight:400;margin-left:8px}.app-layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:36px;padding:28px 0 20px}.nav{display:flex;flex-direction:column;gap:7px;position:sticky;top:24px;align-self:start}.nav-button{min-height:var(--tap);display:flex;align-items:center;gap:14px;background:transparent;color:var(--muted);border:1px solid transparent;border-radius:12px;padding:10px 14px;text-align:left;transition:background .14s,color .14s,border .14s}.nav-button:hover{background:#223147;color:var(--text)}.nav-button.is-current{background:#2a3442;color:var(--amber-pale);border-color:#746043}.nav-button span{font-size:.91rem}.main-content{min-width:0;max-width:680px;width:100%;margin:auto}.page[hidden]{display:none!important}.page{display:grid;gap:14px;animation:fadein .18s ease-out}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 2px 4px}.page-heading .eyebrow{margin-bottom:6px}.chip{padding:4px 11px;color:var(--amber-pale);background:#3b3540;border:1px solid #64556a;border-radius:20px;white-space:nowrap;font-size:.78rem}.glass{background:linear-gradient(150deg,#1a293c,#162336);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px}.split-line,.section-top{display:flex;justify-content:space-between;align-items:start;gap:14px}.section-top{align-items:center;margin-bottom:10px}.section-top small,.helper{color:var(--subtle);font-size:.76rem}.name-line{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.name-line strong{font-size:1.04rem}.name-line small{color:var(--amber)}.little-status{font-size:.71rem;color:var(--mint);border:1px solid #54705f;background:#263c3e;padding:2px 9px;border-radius:20px;white-space:nowrap}.meter-label{margin:14px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:.79rem}.meter-label strong{color:var(--text);font-size:.83rem;font-variant-numeric:tabular-nums}.meter{height:8px;background:#394456;border-radius:20px;overflow:hidden}.meter-fill{height:100%;border-radius:20px;transition:width .22s ease}.meter-fill.hp{background:linear-gradient(90deg,#70a892,#b6d7bc)}.meter-fill.enemy{background:linear-gradient(90deg,#ad6865,#d9a39a)}.focus-cells{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.focus-cell{height:9px;border-radius:5px;background:#394355}.focus-cell.full{background:#d6af73}.enemy-card{background:linear-gradient(150deg,#202939,#1a2434);border-color:#46505a}.enemy-card h3{margin-top:5px}.enemy-type{font-size:.67rem;letter-spacing:.1em;color:#c2a691;border:1px solid #766052;border-radius:8px;padding:4px 8px}.enemy-descr{font-size:.84rem;color:var(--muted);margin-top:12px}.status-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;min-height:0}.status-tag{font-size:.73rem;border:1px solid #567e72;color:#b4d6be;border-radius:7px;padding:2px 7px}.status-tag.warning{border-color:#ae8765;color:#f0c7a0}.log-card{padding-bottom:14px}.combat-log{list-style:none;display:flex;flex-direction:column-reverse;gap:0;max-height:216px;overflow:auto;padding:0;margin:0;scrollbar-color:#647086 transparent}.combat-log li{padding:7px 2px;border-top:1px solid #ffffff0c;font-size:.85rem;color:#cbd0d8;line-height:1.5;overflow-wrap:anywhere}.combat-log li:first-child{color:var(--text)}.combat-log li.important{color:var(--amber-pale)}.combat-log li.positive{color:var(--mint)}.combat-log li.danger{color:#e6a6a0}.combat-log li.log-hint{color:var(--subtle)}.controls-card{padding-bottom:14px}.actions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.action-btn{min-height:76px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:9px 3px;background:#24354a;color:var(--text);border:1px solid #455369;border-radius:12px}.action-btn:hover:not(:disabled){background:#2f4159}.action-btn.queued{color:var(--amber-pale);border-color:var(--amber);box-shadow:0 0 0 1px #e0b88155 inset}.action-btn span{font-size:.79rem;white-space:nowrap}.action-btn small{color:var(--subtle);font-size:.7rem;white-space:nowrap}.action-btn .icon{color:var(--amber);width:19px;height:19px}.battle-toolbar{display:grid;grid-template-columns:1fr 1fr 61px;gap:9px;margin-top:14px}.btn{min-height:var(--tap);display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:11px;padding:8px 13px;border:1px solid #46546a;color:var(--text);background:#2b3a4e;font-size:.84rem;font-weight:600;white-space:nowrap}.btn .icon{width:17px;height:17px}.btn.primary{color:#21242d;background:#d8b77f;border-color:#e2c591}.btn.primary:hover:not(:disabled){background:#f0cf98}.btn.secondary:hover:not(:disabled){background:#354861}.btn.quiet{color:var(--muted);padding:6px 5px}.small-note{color:var(--subtle);font-size:.78rem;line-height:1.72;margin-top:12px}.alert-strip{display:flex;align-items:start;gap:12px;padding:13px;border:1px solid #bb9464;background:#493d35;border-radius:12px;color:#f2d8b7}.alert-strip[hidden]{display:none}.alert-strip p{font-size:.79rem;margin-top:4px;color:#f0d9c3}.alert-strip strong{font-size:.84rem}.item-card,.settings-card,.record-card{display:grid;gap:12px}.item-title{display:flex;align-items:center;gap:10px;color:var(--amber-pale)}.item-details{font-size:.82rem;color:var(--muted)}.flavor{font-size:.83rem;font-style:italic;color:#c2bac1;border-left:2px solid #77684f;padding-left:12px}.item-tally{font-size:.82rem;color:var(--mint);padding:9px 12px;background:#25384a;border-radius:9px}.gear-options{display:grid;gap:9px}.gear-choice{width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;padding:14px;background:#213047;color:var(--text);display:grid;gap:5px;min-height:var(--tap)}.gear-choice.is-equipped{border-color:#d6b47b;background:#302f38}.gear-choice strong{font-size:.88rem}.gear-choice span{color:var(--muted);font-size:.78rem}.gear-choice em{color:var(--amber);font-size:.73rem;font-style:normal}.history-list{margin:0;padding-left:1.3rem;color:var(--muted);font-size:.85rem;display:grid;gap:7px}.form-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--line-soft);font-size:.88rem}.form-row span{min-width:0}.form-row select{max-width:160px;width:44%;min-height:42px;background:#233349;color:var(--text);border:1px solid #50617a;border-radius:10px;padding:7px}.check-row input{width:21px;height:21px;accent-color:#d8b77f}.rules-summary{background:#24354a;color:var(--muted);border:1px dashed #54677c;padding:13px;border-radius:10px;font-size:.82rem;line-height:1.8}.settings-card>p:not(.small-note){font-size:.86rem;color:var(--muted)}.settings-card h3{color:var(--amber-pale)}.utility-row{display:flex;flex-wrap:wrap;gap:8px}.file-import{position:relative;cursor:pointer}.file-import input{position:absolute;width:1px;height:1px;opacity:0}.text-danger{border:0;background:transparent;padding:8px 0;text-align:left;min-height:42px;color:#e6a6a0;font-size:.82rem;width:max-content}.record-prose{font-size:.87rem;color:var(--muted)}.stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat-box{border:1px solid var(--line-soft);border-radius:10px;padding:10px;background:#203149}.stat-box span{display:block;color:var(--subtle);font-size:.76rem}.stat-box strong{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--text)}.title-entry{padding:11px 0;border-top:1px solid var(--line-soft);font-size:.88rem;display:flex;justify-content:space-between;gap:10px}.title-entry span{color:var(--subtle);font-size:.76rem}.title-entry strong{color:var(--amber)}.title-select{margin-top:6px;min-height:38px;border:1px solid #765e45;border-radius:8px;background:#3c3540;color:var(--amber-pale);font-size:.78rem;padding:6px 11px}.site-footer{border-top:1px solid var(--line-soft);padding:22px 0 32px;color:#7f8fa4;font-size:.72rem;letter-spacing:.08em}.site-footer span{letter-spacing:0;margin-left:8px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,12px);border:1px solid #8b724e;background:#383645;color:var(--amber-pale);padding:10px 16px;box-shadow:0 12px 26px #080f1e8c;border-radius:12px;max-width:min(92vw,440px);text-align:center;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:10;font-size:.85rem}.toast.visible{opacity:1;transform:translate(-50%,0)}
@@ -1331,6 +1331,64 @@ h2 {font-size:1.43rem;}
 
 
 
+<style>
+/* v1.1.11: skill choice guide only. No combat/save data changes. */
+.skill-editor{gap:12px}
+.skill-editor .small-note{margin-top:0}
+.skill-editor-lead{font-size:.85rem;line-height:1.8;color:#e6f4e8}
+.skill-preset-head{display:flex;align-items:baseline;justify-content:space-between;gap:7px;flex-wrap:wrap;margin-top:5px}
+.skill-preset-head strong{color:#ffe1a0;font-size:.87rem}
+.skill-preset-head small{color:#c9ddd7;font-size:.74rem}
+.skill-preset-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.skill-preset-card{appearance:none;width:100%;min-width:0;border:2px solid #80a79d;background:#234c51;color:#f4f4e6;border-radius:12px;padding:12px;display:grid;gap:6px;text-align:left;align-content:start;min-height:132px;white-space:normal}
+.skill-preset-card:hover:not(:disabled){background:#315d5c;border-color:#ffe0a1}
+.skill-preset-card.is-current{border-color:#f3d598;background:#375f57;box-shadow:inset 0 0 0 1px #f3d59845}
+.skill-preset-card:disabled{opacity:.68}
+.skill-preset-top{display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap}
+.skill-preset-name{color:#ffe4ae;font-size:.88rem;font-weight:750}
+.skill-preset-status{border:1px solid #8aaea6;background:#1b4448;border-radius:18px;font-size:.67rem;line-height:1.35;padding:2px 7px;color:#ebf4e1}
+.skill-preset-card.is-current .skill-preset-status{border-color:#ffe0a1;color:#ffeac4}
+.skill-preset-description{font-size:.77rem;line-height:1.55;color:#e6efe5}
+.skill-preset-skills{font-size:.73rem;line-height:1.5;color:#ffe7bd;font-weight:650}
+.skill-preset-feedback{font-size:.78rem;line-height:1.7;color:#e2f2e6;border:1px dashed #789a90;border-radius:9px;padding:9px 11px}
+.skill-preset-current{white-space:normal;text-align:center}
+.skill-editor-help{font-size:.78rem!important;line-height:1.7;color:#d7e8df!important}
+.skill-editor .skill-slot-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.skill-editor .skill-slot-choice{border:1px solid #759d92;background:#21474d;border-radius:12px;padding:9px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.skill-editor .skill-slot-choice select{font-size:.84rem;min-height:46px;border-color:#9ec3b6;background:#28565b;padding:6px;width:100%}
+.skill-slot-label{font-weight:700;font-size:.75rem;color:#ffdf9d}
+.skill-role-tag{display:inline-flex;align-items:center;width:max-content;max-width:100%;font-size:.69rem;color:#163939;background:#b8dcd0;border-radius:6px;padding:2px 6px;font-weight:700}
+.skill-meta{font-size:.75rem;line-height:1.55;color:#f8dfb5}
+.skill-explanation{font-size:.76rem;line-height:1.7;color:#e2f1e7;overflow-wrap:anywhere}
+.skill-usage{margin-top:auto;border-top:1px dashed #739c92;padding-top:7px;color:#d1e9db;font-size:.72rem;line-height:1.65;overflow-wrap:anywhere}
+.skill-auto-summary{background:#1c4349;border:1px solid #6c968a;border-radius:10px;padding:12px;display:grid;gap:7px}
+.skill-auto-summary strong{font-size:.83rem;color:#ffe3a5}
+.skill-auto-summary p{font-size:.79rem;line-height:1.68;color:#ecf3e5;margin:0}
+.skill-auto-summary .skill-auto-warning{color:#ffe0a6}
+.skill-catalog-fold{border-top:1px dashed #83a399;margin-top:4px;padding-top:10px}
+.skill-catalog-fold summary{cursor:pointer;color:#ffe2ab;font-weight:650;font-size:.8rem;min-height:30px}
+.skill-catalog-quick{display:grid;gap:7px;margin-top:10px}
+.skill-catalog-row{display:grid;grid-template-columns:minmax(110px,160px) minmax(0,1fr);gap:8px;padding:9px;border:1px solid #729b8d;border-radius:9px;background:#21484d}
+.skill-catalog-row strong{font-size:.8rem;color:#ffdf9d;display:block}
+.skill-catalog-row small{font-size:.7rem;color:#d4e6d6}
+.skill-catalog-row p{font-size:.77rem;color:#e2ede3;line-height:1.65}
+@media(max-width:600px){.skill-editor .skill-slot-grid{grid-template-columns:1fr}.skill-editor .skill-slot-choice{display:grid;grid-template-columns:minmax(0,100px) minmax(0,1fr);align-items:start;gap:5px 10px}.skill-slot-label{grid-column:1}.skill-slot-choice select{grid-column:2;grid-row:1}.skill-role-tag{grid-column:1}.skill-meta{grid-column:2}.skill-explanation,.skill-usage{grid-column:1/-1}.skill-explanation{margin-top:3px}}
+@media(max-width:430px){.skill-preset-grid{grid-template-columns:1fr}.skill-preset-card{min-height:0;padding:11px}.skill-catalog-row{grid-template-columns:1fr;gap:4px}}
+@media(max-width:350px){.skill-editor .skill-slot-grid{grid-template-columns:1fr}.skill-editor .skill-slot-choice{grid-template-columns:1fr}.skill-slot-choice select,.skill-meta,.skill-explanation,.skill-usage,.skill-role-tag,.skill-slot-label{grid-column:1}.skill-slot-choice select{grid-row:auto}.skill-preset-head{display:grid}}
+</style>
+<style>
+/* v1.1.12: tactics desktop grid repair. Group the short cards into an independent
+   column so the tall skill guide does not create a phantom empty grid row. */
+.gear-tactics-stack{display:contents}
+.gear-tactics-layout > .gear-tactics-stack > .settings-card:not(.synergy-tactics){order:1}
+.gear-tactics-layout > .skill-editor{order:2}
+.gear-tactics-layout > .gear-tactics-stack > .synergy-tactics{order:3}
+@media (min-width:1050px){
+  .gear-tactics-layout > .gear-tactics-stack{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-content:start;min-width:0}
+  .gear-tactics-layout > .gear-tactics-stack > .settings-card{min-width:0}
+  .gear-tactics-layout > .skill-editor{min-width:0}
+}
+</style>
 </head>
 <body>
 <!-- ページ内で共有するSVGシンボル。外部の画像・アイコンライブラリを使用しません。 -->
@@ -1368,7 +1426,7 @@ h2 {font-size:1.43rem;}
 <div class="app-shell">
  <header class="masthead">
   <div class="brand-mark"><svg class="icon icon-lg"><use href="#ic-gate"/></svg></div>
-  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.9</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
+  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.12</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
  </header>
  <div class="app-layout">
   <nav class="nav" aria-label="画面を切り替える">
@@ -1600,11 +1658,20 @@ h2 {font-size:1.43rem;}
       <label class="form-row check-row"><span>③ 大技予告中は集中力を温存</span><input type="checkbox" id="reserve-focus"></label>
       <div class="rules-summary" id="rules-summary"></div>
     </div>
-    <div class="glass settings-card"><h3>スキル編成（3枠）</h3><p class="small-note" id="growth-tactics-note"></p>
-      <p class="small-note">通常攻撃と防御はいつでも使用可能。アクティブスキルは3つを選びます。</p>
+    <div class="glass settings-card skill-editor" aria-labelledby="skill-editor-heading">
+      <h3 id="skill-editor-heading">スキル編成（3枠）</h3>
+      <p class="small-note" id="growth-tactics-note"></p>
+      <p class="skill-editor-lead">まずは、どんな戦い方をしたいか選んでみましょう。あとから技を1つずつ入れ替えられます。</p>
+      <div class="skill-preset-head"><strong>戦い方から選ぶ</strong><small>選ぶと自動戦術と3枠をまとめて設定</small></div>
+      <div id="skill-preset-grid" class="skill-preset-grid" aria-label="おすすめの戦い方"></div>
+      <button type="button" id="apply-skill-preset" class="btn secondary skill-preset-current">現在の自動戦術に合う3枠をセット</button>
+      <div class="skill-preset-feedback" id="skill-preset-feedback" aria-live="polite"></div>
+      <div class="skill-preset-head"><strong>自分で3つの技を選ぶ</strong><small>枠順で自動使用の優先度は変わりません</small></div>
+      <p class="skill-editor-help">通常攻撃・防御はいつでも使えます。3枠には別々のアクティブスキルを選びます。</p>
       <div class="skill-slot-grid" id="skill-slot-grid"></div>
-      <button type="button" id="apply-skill-preset" class="btn secondary">選択中の戦術におすすめの編成を適用</button>
-      <p class="small-note" id="skill-slot-note"></p>
+      <p class="small-note" id="skill-slot-note" aria-live="polite"></p>
+      <div class="skill-auto-summary" id="skill-auto-summary" aria-live="polite"></div>
+      <details class="skill-catalog-fold"><summary>まだ習得していない技も含め、全7種類を比較する</summary><div id="skill-catalog-quick" class="skill-catalog-quick"></div></details>
     </div>
     <section class="glass settings-card synergy-tactics" aria-label="装備とスキルの連動確認">
       <p class="label">BUILD SYNERGY</p><h3>いまの編成で活きる装備効果</h3>
@@ -2190,11 +2257,11 @@ h2 {font-size:1.43rem;}
   // Public high-difficulty dungeon. The bell tower has its own encounters and stage range;
   // no old expedition can silently become this dungeon on load.
   const BELL_ENEMIES={
-    16:{name:"無音の歩哨",type:"normal",pattern:"heavy",desc:"鎧を擦る音だけがする。振り上げた一撃の名は聞き取れない。",attackName:"黙した鉄槌",heavyName:"消えた鐘声",hp:1.52,atk:1.27,def:1.20},
-    17:{name:"裂鐘の双影",type:"normal",pattern:"swift",desc:"反響のずれた足音が迫る。三拍目には二つの影が重なる。",attackName:"二重の残響",hp:1.37,atk:1.34,def:1.12,poisonResist:.15},
-    18:{name:"鈍色の調律師",type:"elite",pattern:"heavy",desc:"錆びた音叉を構え、耳ではなく足元の振動を測っている。",attackName:"音叉の斬撃",heavyName:"沈黙の和音",hp:1.72,atk:1.31,def:1.32,burnResist:.20},
-    19:{name:"鐘陰の忘れ手",type:"normal",pattern:"drain",desc:"指先が空を撫でるたび、旅人の集中がかすかに乱れる。",attackName:"残音の糸",hp:1.46,atk:1.42,def:1.19,poisonResist:.15},
-    20:{name:"鐘を待つもの",type:"boss",pattern:"heavy",desc:"鳴るはずのない大鐘の下で、長い影だけがこちらを向く。",attackName:"鋳鉄の大剣",heavyName:"最後の一打",hp:2.18,atk:1.49,def:1.41,poisonResist:.27,burnResist:.24}
+    16:{name:"無音の歩哨",type:"normal",pattern:"heavy",desc:"鎧を擦る音だけがする。振り上げた一撃の名は聞き取れない。",attackName:"黙した鉄槌",heavyName:"消えた鐘声",hp:1.44,atk:1.21,def:1.20},
+    17:{name:"裂鐘の双影",type:"normal",pattern:"swift",desc:"反響のずれた足音が迫る。三拍目には二つの影が重なる。",attackName:"二重の残響",hp:1.30,atk:1.27,def:1.12,poisonResist:.15},
+    18:{name:"鈍色の調律師",type:"elite",pattern:"heavy",desc:"錆びた音叉を構え、耳ではなく足元の振動を測っている。",attackName:"音叉の斬撃",heavyName:"沈黙の和音",hp:1.63,atk:1.24,def:1.32,burnResist:.20},
+    19:{name:"鐘陰の忘れ手",type:"normal",pattern:"drain",desc:"指先が空を撫でるたび、旅人の集中がかすかに乱れる。",attackName:"残音の糸",hp:1.39,atk:1.35,def:1.19,poisonResist:.15},
+    20:{name:"鐘を待つもの",type:"boss",pattern:"heavy",desc:"鳴るはずのない大鐘の下で、長い影だけがこちらを向く。",attackName:"鋳鉄の大剣",heavyName:"最後の一打",hp:2.07,atk:1.42,def:1.41,poisonResist:.27,burnResist:.24}
   };
   // Five-floor trial modifiers; no damage type is ever fully disabled.
   const TRIAL_SEALS={
@@ -4539,12 +4606,61 @@ h2 {font-size:1.43rem;}
     }).join("");
     setText("growth-tactics-note",`冒険者 Lv.${g.level} / 未習得スキルは編成できません。`);
   }
+  // v1.1.11: purely explanatory metadata; effects and AI remain in SKILLS/chooseAuto.
+  const SKILL_HELP={
+    poison:{role:"継続攻撃",desc:"敵を1回攻撃して毒を2段階付与。毒は敵の行動開始時に継続ダメージを与えます。",tip:"長期戦で少しずつ削る技。"},
+    heal:{role:"回復",desc:"最大HPの約20％を回復。HPが満タンのときは使用できません。",tip:"HPが減ったときの保険。"},
+    ignite:{role:"継続攻撃",desc:"小威力の1回攻撃と燃焼2段階を付与。燃焼は継続ダメージを与えます。",tip:"炎刃と組み合わせると威力を引き出せます。"},
+    flame:{role:"高威力攻撃",desc:"強い1回攻撃。相手の燃焼段階が多いほど威力が上がります。",tip:"燃焼を付与してから使うのが効果的。"},
+    flurry:{role:"連続攻撃",desc:"威力を分けた3連続攻撃。攻撃が複数回当たることを活かします。",tip:"連撃型の主力技。"},
+    riposte:{role:"防御・反撃",desc:"次に受ける攻撃のダメージを軽減し、反撃を構えます。",tip:"敵の攻撃を利用して反撃。"},
+    bind:{role:"妨害",desc:"1回攻撃し、敵の体勢を大きく削ります。体勢を崩すと大技を中断できます。",tip:"大技を止めるための一手。"}
+  };
+  const PRESET_HELP={
+    poison:{name:"毒で粘り強く",desc:"毒で削りながら、回復・反撃で持久戦。",point:"毒穿ち＋応急処置＋返し刃"},
+    flame:{name:"炎を重ねて大きく攻める",desc:"火種で燃焼を付け、炎刃の威力を引き出す。",point:"火種＋炎刃＋応急処置"},
+    combo:{name:"連撃で攻める",desc:"連続斬りで手数を増やす、攻撃重視の戦い方。",point:"連続斬り＋応急処置＋返し刃"},
+    counter:{name:"守りながら反撃",desc:"返し刃で応戦し、影縫いで危険な大技を止める。",point:"返し刃＋影縫い＋応急処置"}
+  };
+  function skillAutoGuide(id){
+    const style=state.settings.combatStyle,settings=state.settings;
+    if(id==="heal")return settings.healThreshold===0?"自動回復は基本OFF。ただし大技への危険対応では使う場合があります。":`HP${settings.healThreshold}％以下を目安に自動回復します。大技時は危険度も考慮します。`;
+    if(id==="bind")return "大技予告中に中断できると判断した場合などに自動使用。それ以外は手動が中心です。";
+    if(id==="poison"&&style==="poison")return settings.poisonThreshold<0?"毒穿ちの自動使用をOFFにしています。":"毒型で優先。敵の毒量・集中力・再使用待ちに応じて使います。";
+    if(id==="ignite"&&style==="flame")return settings.burnThreshold<0?"火種の自動使用をOFFにしています。":"炎型で優先。敵の燃焼量や集中力に応じて使います。";
+    if(id==="flame"&&style==="flame")return "炎型で優先。敵の燃焼が2段階以上のときに狙います。";
+    if(id==="flurry"&&style==="combo")return "連撃型で優先。集中力と再使用待ちを確認して使います。";
+    if(id==="riposte"&&style==="counter")return "反撃型で優先。反撃準備中でないときに使います。";
+    return "この戦術では基本的に手動用。装備固有の能力によっては自動使用される場合もあります。";
+  }
   function renderTactics(){
-    const active=hasActiveBattle()||Boolean(state.expedition);
+    const active=hasActiveBattle()||Boolean(state.expedition),style=state.settings.combatStyle;
+    $("skill-preset-grid").innerHTML=Object.entries(PRESET_HELP).map(([key,info])=>{
+      const learnable=SKILL_PRESETS[key].every(levelUnlocked);
+      const requiredLevel=Math.max(...SKILL_PRESETS[key].map(id=>SKILL_UNLOCK_LEVEL[id]));
+      const exact=style===key&&SKILL_PRESETS[key].every((id,i)=>state.settings.skillSlots[i]===id);
+      const chosen=style===key;
+      return `<button type="button" class="skill-preset-card${exact?" is-current":""}" data-skill-preset="${key}" ${active||!learnable?'disabled':''} aria-pressed="${exact}" aria-label="${info.name}。${learnable?'この編成を適用':`Lv.${requiredLevel}で解放`}"><span class="skill-preset-top"><span class="skill-preset-name">${info.name}</span><span class="skill-preset-status">${!learnable?`Lv.${requiredLevel}で解放`:exact?"設定中":chosen?"戦術選択中":"この編成を使う"}</span></span><span class="skill-preset-description">${info.desc}</span><span class="skill-preset-skills">${info.point}</span></button>`;
+    }).join("");
+    const current=PRESET_HELP[style];
+    const exact=SKILL_PRESETS[style].every((id,i)=>state.settings.skillSlots[i]===id);
+    const learnable=SKILL_PRESETS[style].every(levelUnlocked);
+    $("apply-skill-preset").disabled=active||!learnable;
+    setText("skill-preset-feedback",active?"探索中の編成は固定です。帰還後に変更できます。":!learnable?`現在の戦術「${current.name}」のおすすめ技には未習得のものがあります。`:exact?`現在は「${current.name}」のおすすめ編成です。自由に入れ替えて試すこともできます。`:`現在の戦術は「${current.name}」。スキルは自由編成中です。おすすめに戻すこともできます。`);
     const grid=$("skill-slot-grid");
-    grid.innerHTML=state.settings.skillSlots.map((id,index)=>`<label class="skill-slot-choice"><span>スキル${index+1}</span><select data-skill-slot="${index}" ${active?"disabled":""}>${ACTIVE_SKILLS.map(skillId=>`<option value="${skillId}" ${skillId===id?"selected":""} ${levelUnlocked(skillId)?"":"disabled"}>${ACTION_NAMES[skillId]}${levelUnlocked(skillId)?"":`（Lv.${SKILL_UNLOCK_LEVEL[skillId]}で習得）`}</option>`).join("")}</select></label>`).join("");
-    $("apply-skill-preset").disabled=active||!SKILL_PRESETS[state.settings.combatStyle].every(levelUnlocked);
-    setText("skill-slot-note",active?"探索中は編成を変更できません。次の探索から適用されます。":"通常攻撃・防御は固定。習得したスキルから3つを選べます。");
+    grid.innerHTML=state.settings.skillSlots.map((id,index)=>{
+      const info=SKILL_HELP[id],skill=SKILLS[id];
+      const options=ACTIVE_SKILLS.map(skillId=>`<option value="${skillId}" ${skillId===id?'selected':''} ${levelUnlocked(skillId)?'':"disabled"}>${ACTION_NAMES[skillId]}${levelUnlocked(skillId)?'':`（Lv.${SKILL_UNLOCK_LEVEL[skillId]}で習得）`}</option>`).join('');
+      return `<label class="skill-slot-choice"><span class="skill-slot-label">スキル枠 ${index+1}</span><select data-skill-slot="${index}" aria-label="スキル枠${index+1}の技を選ぶ" ${active?'disabled':''}>${options}</select><span class="skill-role-tag">${info.role}</span><span class="skill-meta">集中力 −${skill.cost} ／ 再使用まで${skill.cooldown-1}行動</span><span class="skill-explanation">${info.desc}</span><span class="skill-usage"><strong>自動戦闘：</strong>${skillAutoGuide(id)}</span></label>`;
+    }).join('');
+    setText("skill-slot-note",active?"探索中は編成を変更できません。ここに表示されているのは次回出発時の設定です。":"スキルを選び直すとすぐに保存されます。同じ技を複数の枠に設定することはできません。枠の順番は自動戦闘の優先順位に影響しません。");
+    const missing=({poison:["poison"],flame:["ignite","flame"],combo:["flurry"],counter:["riposte"]})[style].filter(id=>!state.settings.skillSlots.includes(id));
+    const disabledCore=style==="poison"&&state.settings.poisonThreshold<0||style==="flame"&&state.settings.burnThreshold<0;
+    $("skill-auto-summary").innerHTML=`<strong>この編成での自動戦闘</strong><p>主に「${current.name}」の方針で行動します。通常攻撃・防御は3枠に関係なく使用できます。編成した技をすべて均等に自動使用するわけではありません。</p>${missing.length?`<p class="skill-auto-warning">注意：${missing.map(id=>ACTION_NAMES[id]).join('・')}が編成されていないため、選択中の戦術を十分に活かせません。</p>`:""}${disabledCore?'<p class="skill-auto-warning">注意：戦術の主力技を自動で使わない設定になっています。</p>':''}`;
+    $("skill-catalog-quick").innerHTML=ACTIVE_SKILLS.map(id=>{
+      const info=SKILL_HELP[id],skill=SKILLS[id];
+      return `<div class="skill-catalog-row"><div><strong>${skill.name}</strong><small>${info.role} ／ ${levelUnlocked(id)?'習得済み':`Lv.${SKILL_UNLOCK_LEVEL[id]}で習得`}</small></div><p>${info.desc} 集中力−${skill.cost}、再使用まで${skill.cooldown-1}行動。</p></div>`;
+    }).join('');
     $("heal-threshold").value=String(state.settings.healThreshold);
     $("poison-threshold").value=String(state.settings.poisonThreshold);
     $("burn-threshold").value=String(state.settings.burnThreshold);
@@ -4552,10 +4668,8 @@ h2 {font-size:1.43rem;}
     $("reserve-focus").checked=state.settings.reserveFocus;
     $("response-mode").value=state.settings.responseMode;
     const h=state.settings.healThreshold?`HP${state.settings.healThreshold}%以下なら回復を優先`:'自動回復なし';
-    const style={poison:"毒を蓄積する",flame:"集中力4から火種→炎刃",combo:"連続斬りを優先",counter:"返し刃を構える"}[state.settings.combatStyle];
-    const required={poison:["poison"],flame:["ignite","flame"],combo:["flurry"],counter:["riposte"]}[state.settings.combatStyle];
-    const missing=required.filter(x=>!state.settings.skillSlots.includes(x));
-    setText("rules-summary",`${h} → ${style} → それ以外は通常攻撃。${state.settings.reserveFocus?"大技予告中は集中力2を温存します。":""} 大技の自動対応は${{cautious:"慎重",balanced:"均衡",bold:"攻勢"}[state.settings.responseMode]}。 ${missing.length?"注意：この戦術に必要な「"+missing.map(x=>ACTION_NAMES[x]).join("・")+"」が編成されていません。":""} 編成したスキルだけが自動・手動で使用できます。`);
+    const summaryStyle={poison:"毒を蓄積する",flame:"集中力4から火種→炎刃",combo:"連続斬りを優先",counter:"返し刃を構える"}[style];
+    setText("rules-summary",`${h} → ${summaryStyle} → それ以外は通常攻撃。${state.settings.reserveFocus?"大技予告中は集中力2を温存します。":""} 大技の自動対応は${{cautious:"慎重",balanced:"均衡",bold:"攻勢"}[state.settings.responseMode]}。 ${missing.length?"注意：この戦術に必要な「"+missing.map(x=>ACTION_NAMES[x]).join("・")+"」が編成されていません。":""} 編成したスキルだけが自動・手動で使用できます。`);
     renderTacticSynergy();
   }
   function renderMoment(entry){
@@ -4929,6 +5043,17 @@ h2 {font-size:1.43rem;}
       state.settings.skillSlots=[...SKILL_PRESETS[state.settings.combatStyle]];
       save();render();toast("おすすめ編成を設定しました");
     });
+    $("skill-preset-grid").addEventListener("click",e=>{
+      const button=e.target.closest("button[data-skill-preset]");if(!button)return;
+      if(hasActiveBattle()||state.expedition){toast("探索中は編成を変更できません");return;}
+      const style=button.dataset.skillPreset;
+      if(!Object.hasOwn(SKILL_PRESETS,style)||!SKILL_PRESETS[style].every(levelUnlocked)){
+        toast("この戦い方に必要なスキルはまだ習得していません");return;
+      }
+      state.settings.combatStyle=style;
+      state.settings.skillSlots=[...SKILL_PRESETS[style]];
+      save();render();toast(`「${PRESET_HELP[style].name}」を設定しました`);
+    });
     $("skill-slot-grid").addEventListener("change",e=>{
       const select=e.target.closest("select[data-skill-slot]");if(!select||hasActiveBattle()||state.expedition)return;
       const index=Number(select.dataset.skillSlot),id=select.value;
@@ -5048,8 +5173,18 @@ h2 {font-size:1.43rem;}
     panes.tactics.append(tacticsHeading);
     const tacticsContent=make('div','gear-tactics-layout');
     panes.tactics.append(tacticsContent);
-    // The former tactics cards follow their heading directly.
-    for(const card of all('.settings-card',gear))tacticsContent.append(card);
+    // Keep the two independent desktop columns from sharing a grid row height.
+    // On narrow screens CSS flattens the stack and restores reading order:
+    // auto tactics -> skill editor -> build synergy.
+    const tacticsCards=all('.settings-card',gear);
+    const tacticsStack=make('div','gear-tactics-stack');
+    tacticsContent.append(tacticsStack);
+    const autoCard=tacticsCards.find(card=>!card.classList.contains('skill-editor')&&!card.classList.contains('synergy-tactics'));
+    const skillCard=tacticsCards.find(card=>card.classList.contains('skill-editor'));
+    const synergyCard=tacticsCards.find(card=>card.classList.contains('synergy-tactics'));
+    if(autoCard)tacticsStack.append(autoCard);
+    if(synergyCard)tacticsStack.append(synergyCard);
+    if(skillCard)tacticsContent.append(skillCard);
     const setView=(id)=>{
       if(!panes[id]) return;
       for(const [key,pane] of Object.entries(panes))pane.hidden=key!==id;
