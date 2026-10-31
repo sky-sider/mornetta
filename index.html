@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#17383d">
 <meta name="description" content="ランダム装備とビルド構築を楽しむ、テキスト主体の半自動ハクスラ。">
-<title>モルネッタ | 1.1.58</title>
+<title>モルネッタ | 1.1.59</title>
 <style>
 :root{color-scheme:dark;--bg:#0e1725;--night:#101b2b;--panel:#182639;--panel-2:#1d2c41;--line:#344257;--line-soft:#2a394e;--text:#eee9df;--muted:#b8bcc5;--subtle:#8e9bad;--amber:#e0b881;--amber-pale:#f0d6a8;--mint:#9bc7b5;--red:#d58f8b;--blue:#a5bce0;--radius:15px;--tap:46px;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:15px}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);background:radial-gradient(circle at 70% -12%,#253651 0%,transparent 42%),var(--bg);line-height:1.65;min-height:100vh}button,select,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:not-allowed}button,select{-webkit-tap-highlight-color:transparent}button:focus-visible,select:focus-visible,input:focus-visible,label.file-import:focus-within{outline:2px solid var(--amber);outline-offset:3px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.35}h1{font-size:1.5rem;letter-spacing:.09em;font-weight:700}h2{font-size:1.45rem;font-weight:680;letter-spacing:.04em}h3{font-size:1.04rem;font-weight:650}small{font-size:.76rem}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.icon{width:20px;height:20px;display:inline-block;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.icon-lg{width:27px;height:27px}.icon-inline{width:15px;height:15px;vertical-align:-2px}.app-shell{max-width:1080px;margin:auto;padding:0 21px}.masthead{padding:32px 0 22px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--line-soft)}.brand-mark{width:49px;height:49px;border-radius:15px;border:1px solid #9c8058;color:var(--amber);display:grid;place-items:center;background:#222b39;flex-shrink:0}.eyebrow,.label{color:var(--amber);font-size:.68rem;letter-spacing:.15em;font-weight:700}.masthead .eyebrow{margin:0 0 5px}.tagline{color:var(--subtle);font-size:.79rem;margin-top:5px}.version{color:var(--subtle);font-weight:400;margin-left:8px}.app-layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:36px;padding:28px 0 20px}.nav{display:flex;flex-direction:column;gap:7px;position:sticky;top:24px;align-self:start}.nav-button{min-height:var(--tap);display:flex;align-items:center;gap:14px;background:transparent;color:var(--muted);border:1px solid transparent;border-radius:12px;padding:10px 14px;text-align:left;transition:background .14s,color .14s,border .14s}.nav-button:hover{background:#223147;color:var(--text)}.nav-button.is-current{background:#2a3442;color:var(--amber-pale);border-color:#746043}.nav-button span{font-size:.91rem}.main-content{min-width:0;max-width:680px;width:100%;margin:auto}.page[hidden]{display:none!important}.page{display:grid;gap:14px;animation:fadein .18s ease-out}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 2px 4px}.page-heading .eyebrow{margin-bottom:6px}.chip{padding:4px 11px;color:var(--amber-pale);background:#3b3540;border:1px solid #64556a;border-radius:20px;white-space:nowrap;font-size:.78rem}.glass{background:linear-gradient(150deg,#1a293c,#162336);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px}.split-line,.section-top{display:flex;justify-content:space-between;align-items:start;gap:14px}.section-top{align-items:center;margin-bottom:10px}.section-top small,.helper{color:var(--subtle);font-size:.76rem}.name-line{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.name-line strong{font-size:1.04rem}.name-line small{color:var(--amber)}.little-status{font-size:.71rem;color:var(--mint);border:1px solid #54705f;background:#263c3e;padding:2px 9px;border-radius:20px;white-space:nowrap}.meter-label{margin:14px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:.79rem}.meter-label strong{color:var(--text);font-size:.83rem;font-variant-numeric:tabular-nums}.meter{height:8px;background:#394456;border-radius:20px;overflow:hidden}.meter-fill{height:100%;border-radius:20px;transition:width .22s ease}.meter-fill.hp{background:linear-gradient(90deg,#70a892,#b6d7bc)}.meter-fill.enemy{background:linear-gradient(90deg,#ad6865,#d9a39a)}.focus-cells{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.focus-cell{height:9px;border-radius:5px;background:#394355}.focus-cell.full{background:#d6af73}.enemy-card{background:linear-gradient(150deg,#202939,#1a2434);border-color:#46505a}.enemy-card h3{margin-top:5px}.enemy-type{font-size:.67rem;letter-spacing:.1em;color:#c2a691;border:1px solid #766052;border-radius:8px;padding:4px 8px}.enemy-descr{font-size:.84rem;color:var(--muted);margin-top:12px}.status-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;min-height:0}.status-tag{font-size:.73rem;border:1px solid #567e72;color:#b4d6be;border-radius:7px;padding:2px 7px}.status-tag.warning{border-color:#ae8765;color:#f0c7a0}.log-card{padding-bottom:14px}.combat-log{list-style:none;display:flex;flex-direction:column-reverse;gap:0;max-height:216px;overflow:auto;padding:0;margin:0;scrollbar-color:#647086 transparent}.combat-log li{padding:7px 2px;border-top:1px solid #ffffff0c;font-size:.85rem;color:#cbd0d8;line-height:1.5;overflow-wrap:anywhere}.combat-log li:first-child{color:var(--text)}.combat-log li.important{color:var(--amber-pale)}.combat-log li.positive{color:var(--mint)}.combat-log li.danger{color:#e6a6a0}.combat-log li.log-hint{color:var(--subtle)}.controls-card{padding-bottom:14px}.actions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.action-btn{min-height:76px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:9px 3px;background:#24354a;color:var(--text);border:1px solid #455369;border-radius:12px}.action-btn:hover:not(:disabled){background:#2f4159}.action-btn.queued{color:var(--amber-pale);border-color:var(--amber);box-shadow:0 0 0 1px #e0b88155 inset}.action-btn span{font-size:.79rem;white-space:nowrap}.action-btn small{color:var(--subtle);font-size:.7rem;white-space:nowrap}.action-btn .icon{color:var(--amber);width:19px;height:19px}.battle-toolbar{display:grid;grid-template-columns:1fr 1fr 61px;gap:9px;margin-top:14px}.btn{min-height:var(--tap);display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:11px;padding:8px 13px;border:1px solid #46546a;color:var(--text);background:#2b3a4e;font-size:.84rem;font-weight:600;white-space:nowrap}.btn .icon{width:17px;height:17px}.btn.primary{color:#21242d;background:#d8b77f;border-color:#e2c591}.btn.primary:hover:not(:disabled){background:#f0cf98}.btn.secondary:hover:not(:disabled){background:#354861}.btn.quiet{color:var(--muted);padding:6px 5px}.small-note{color:var(--subtle);font-size:.78rem;line-height:1.72;margin-top:12px}.alert-strip{display:flex;align-items:start;gap:12px;padding:13px;border:1px solid #bb9464;background:#493d35;border-radius:12px;color:#f2d8b7}.alert-strip[hidden]{display:none}.alert-strip p{font-size:.79rem;margin-top:4px;color:#f0d9c3}.alert-strip strong{font-size:.84rem}.item-card,.settings-card,.record-card{display:grid;gap:12px}.item-title{display:flex;align-items:center;gap:10px;color:var(--amber-pale)}.item-details{font-size:.82rem;color:var(--muted)}.flavor{font-size:.83rem;font-style:italic;color:#c2bac1;border-left:2px solid #77684f;padding-left:12px}.item-tally{font-size:.82rem;color:var(--mint);padding:9px 12px;background:#25384a;border-radius:9px}.gear-options{display:grid;gap:9px}.gear-choice{width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;padding:14px;background:#213047;color:var(--text);display:grid;gap:5px;min-height:var(--tap)}.gear-choice.is-equipped{border-color:#d6b47b;background:#302f38}.gear-choice strong{font-size:.88rem}.gear-choice span{color:var(--muted);font-size:.78rem}.gear-choice em{color:var(--amber);font-size:.73rem;font-style:normal}.history-list{margin:0;padding-left:1.3rem;color:var(--muted);font-size:.85rem;display:grid;gap:7px}.form-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--line-soft);font-size:.88rem}.form-row span{min-width:0}.form-row select{max-width:160px;width:44%;min-height:42px;background:#233349;color:var(--text);border:1px solid #50617a;border-radius:10px;padding:7px}.check-row input{width:21px;height:21px;accent-color:#d8b77f}.rules-summary{background:#24354a;color:var(--muted);border:1px dashed #54677c;padding:13px;border-radius:10px;font-size:.82rem;line-height:1.8}.settings-card>p:not(.small-note){font-size:.86rem;color:var(--muted)}.settings-card h3{color:var(--amber-pale)}.utility-row{display:flex;flex-wrap:wrap;gap:8px}.file-import{position:relative;cursor:pointer}.file-import input{position:absolute;width:1px;height:1px;opacity:0}.text-danger{border:0;background:transparent;padding:8px 0;text-align:left;min-height:42px;color:#e6a6a0;font-size:.82rem;width:max-content}.record-prose{font-size:.87rem;color:var(--muted)}.stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat-box{border:1px solid var(--line-soft);border-radius:10px;padding:10px;background:#203149}.stat-box span{display:block;color:var(--subtle);font-size:.76rem}.stat-box strong{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--text)}.title-entry{padding:11px 0;border-top:1px solid var(--line-soft);font-size:.88rem;display:flex;justify-content:space-between;gap:10px}.title-entry span{color:var(--subtle);font-size:.76rem}.title-entry strong{color:var(--amber)}.title-select{margin-top:6px;min-height:38px;border:1px solid #765e45;border-radius:8px;background:#3c3540;color:var(--amber-pale);font-size:.78rem;padding:6px 11px}.site-footer{border-top:1px solid var(--line-soft);padding:22px 0 32px;color:#7f8fa4;font-size:.72rem;letter-spacing:.08em}.site-footer span{letter-spacing:0;margin-left:8px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,12px);border:1px solid #8b724e;background:#383645;color:var(--amber-pale);padding:10px 16px;box-shadow:0 12px 26px #080f1e8c;border-radius:12px;max-width:min(92vw,440px);text-align:center;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:10;font-size:.85rem}.toast.visible{opacity:1;transform:translate(-50%,0)}
@@ -1926,6 +1926,23 @@ h2 {font-size:1.43rem;}
   overflow-wrap: anywhere;
 }
 </style>
+<style id="shop-bag-expansion-styles-1-1-59">
+.shop-bag-expansion{margin-top:17px;padding:15px;border:2px solid #9fb49e;border-radius:13px;background:linear-gradient(145deg,#28504c,#1c4449);display:grid;gap:10px;min-width:0}
+.shop-bag-expansion .bag-upgrade-title{display:flex;align-items:center;flex-wrap:wrap;justify-content:space-between;gap:8px}
+.shop-bag-expansion .bag-upgrade-title strong{font-size:.97rem;color:#ffe4ae}
+.shop-bag-expansion .bag-upgrade-title .bag-capacity{font-size:.83rem;color:#f9edd3;background:#1c373c;border:1px solid #799d90;border-radius:9px;padding:4px 10px;font-variant-numeric:tabular-nums}
+.shop-bag-expansion .bag-upgrade-desc{font-size:.81rem;color:#edf0dc;line-height:1.7}
+.shop-bag-expansion .bag-upgrade-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.shop-bag-expansion .bag-step{border:1px solid #77968b;background:#23444a;padding:9px 10px;border-radius:10px;display:grid;gap:2px;color:#e1e8d8;font-size:.75rem;min-width:0}
+.shop-bag-expansion .bag-step strong{color:#ffe7b2;font-size:.82rem}
+.shop-bag-expansion .bag-step.is-done{border-color:#dfb875;background:#3e554b}
+.shop-bag-expansion .bag-step.is-now{border-color:#ffd28a;box-shadow:inset 0 0 0 1px #ffd28a55}
+.shop-bag-expansion .bag-step span{color:#bcd0bd}
+.shop-bag-expansion #shop-bag-buy{width:100%;min-height:48px;white-space:normal;text-align:center;line-height:1.5}
+.shop-bag-expansion #shop-bag-buy:disabled{opacity:.55;cursor:not-allowed}
+.shop-bag-expansion #shop-bag-status{font-size:.76rem;color:#d3dec9;line-height:1.6}
+@media(max-width:360px){.shop-bag-expansion{padding:11px}.shop-bag-expansion .bag-upgrade-steps{gap:6px}.shop-bag-expansion .bag-step{padding:8px}}
+</style>
 </head>
 <body>
 <!-- ページ内で共有するSVGシンボル。外部の画像・アイコンライブラリを使用しません。 -->
@@ -1963,7 +1980,7 @@ h2 {font-size:1.43rem;}
 <div class="app-shell">
  <header class="masthead">
   <div class="brand-mark"><svg class="icon icon-lg"><use href="#ic-gate"/></svg></div>
-  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.58</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
+  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.59</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
  </header>
  <div class="app-layout">
   <nav class="nav" aria-label="画面を切り替える">
@@ -2300,6 +2317,17 @@ h2 {font-size:1.43rem;}
         <article class="shop-ware"><div class="shop-ware-title"><svg class="icon"><use href="#ic-spark"/></svg><strong>星図の写し</strong></div><p>次の深層試練の踏破で装備を1点追加発見（レア65%・エピック30%・レジェンダリー5%）。失敗時は報酬なし。通常迷宮では消費されません。鞄が満杯なら古銭480枚を返却します。</p><button type="button" class="btn secondary" id="shop-buy-chart">古銭480枚で用意</button><small id="shop-chart-status">未準備</small></article>
       </div>
       <p class="small-note" id="shop-note">準備品は各1つまで。星図は通常迷宮では消費されず、次の深層試練で使用します。</p>
+      <section class="shop-bag-expansion" id="shop-bag-expansion" aria-label="旅人の鞄の拡張">
+        <div class="bag-upgrade-title"><strong><svg class="icon icon-inline" aria-hidden="true"><use href="#ic-bag"/></svg> 旅人の鞄の拡張</strong><span class="bag-capacity" id="shop-bag-capacity">鞄 80 / 100枠</span></div>
+        <p class="bag-upgrade-desc">「荷物が増えたのかい。古銭を出してくれれば、もう少し入るように直してあげるよ。」<br>買った枠はずっと使えます。保管箱の60枠は変わりません。</p>
+        <div class="bag-upgrade-steps" aria-label="拡張の段階">
+          <div class="bag-step" id="shop-bag-step-1"><strong>80 → 90枠</strong><span>古銭500枚</span></div>
+          <div class="bag-step" id="shop-bag-step-2"><strong>90 → 100枠</strong><span>古銭1,000枚</span></div>
+        </div>
+        <button type="button" class="btn primary" id="shop-bag-buy">古銭500枚で90枠へ</button>
+        <p id="shop-bag-status" role="status" aria-live="polite">第1段階：古銭500枚で10枠増やせます。</p>
+      </section>
+
     </section>
     <div class="glass record-card research-card" id="record-research" aria-label="ギルドカウンター">
       <p class="label">GUILD COUNTER / COMMISSIONS</p>
@@ -2509,7 +2537,7 @@ h2 {font-size:1.43rem;}
      <p><strong>図鑑達成の記念品</strong>：各迷宮の固有装備3種類を発見すると、記念品1つと専用の異名1つを自動で獲得します。記念品は「記録 → 記念品」の専用棚に永久保存され、鞄や保管箱を圧迫しません。「異名の手帳」や記念品の棚から好きな異名を名乗れます。過去のセーブですでに3種類を発見していた場合も、図鑑記録をもとに獲得済みとして扱います。記念品は収集の証で、戦闘能力は変化しません。</p>
      <p><strong>装備バランス監査（1.1.57）</strong>：同じ品質でも基礎性能と固定特性、戦術の相性で使い勝手が異なります。苔織りの胴着はHP重視、眠らずの花衣は防御とHPの両立型です。低レア装備や序盤の装備が、終盤の高品質装備より弱いのは段階的な成長として意図された仕様です。</p>
      <p><strong>装備の調査（35種類）</strong>：共通装備20種類と迷宮固有装備15種類、計35種類の未発見が残り3種類以下になると、公開迷宮を4回踏破するごとに「調査の手がかり」を1件獲得できます。「記録 → 迷宮図鑑」から未発見の35種類のうち1点をレアで受け取れます。鞄が満杯なら保管箱へ入り、両方満杯でも手がかりは保存されます。根の聖域限定の護符だけは対象外です。</p>
-     <div class="guide-info-grid"><div><strong>いまの装備</strong><span>4部位の装備を確認します。</span></div><div><strong>所持品と比較</strong><span>一覧から選んで、性能・効果・来歴を確認します。</span></div><div><strong>鞄と保管箱</strong><span>鞄80点、記念品の保管箱60点。装備中の品は保管できません。</span></div><div><strong>手入れ・調律</strong><span>古銭を使って装備を育てたり、追加特性を変更したりできます。</span></div></div>
+     <div class="guide-info-grid"><div><strong>いまの装備</strong><span>4部位の装備を確認します。</span></div><div><strong>所持品と比較</strong><span>一覧から選んで、性能・効果・来歴を確認します。</span></div><div><strong>鞄と保管箱</strong><span>鞄は80点から始まり、古物商に古銭500枚・1,000枚を支払うと90点・100点まで拡張できます。保管箱は60点。装備中の品は保管できません。</span></div><div><strong>手入れ・調律</strong><span>古銭を使って装備を育てたり、追加特性を変更したりできます。</span></div></div>
      <p><strong>複合ビルド向け特性</strong>：灰刃は燃焼中の連撃、蛇返しは毒状態での反撃、星喰いは毒と燃焼の共存、静寂は大技の中断を助けます。装備の「相性」表示で、実際に使うスキルと組み合わせて確認できます。発動条件がそろわないと効果はありません。</p>
      <p><strong>根の聖域</strong>は「眠らない温室」で根の抜け道を選ぶと奥の区画で見つかります。安全に装備と古銭を拾って帰還するか、追加の強敵「聖域の守り手」に挑んで初回勝利限定の<strong>根継ぎの護符</strong>を受け取るか選べます。専用護符は直接鞄に入り、鞄が満杯なら保管箱へ送られます。護符の「芽吹き」は探索中に一度だけ発動します。</p>
      <p><strong>集中力を助ける装備</strong>もあります。例えば「毒霧の護符」は毒の付与成功時に集中力を1回復します（同じ行動では1回まで）。追加特性「三拍子」は連続斬りの3撃目で集中力を回復し、技自体の回復効果とも組み合わせられます。</p>
@@ -2517,7 +2545,7 @@ h2 {font-size:1.43rem;}
     </section>
     <section class="guide-chapter" id="guide-guild">
      <p class="guide-chapter-kicker">06 / GUILD & COINS</p><h3>ギルドと古銭の使い方</h3>
-     <p>「ギルド」の<strong>古物商の店</strong>では探索の準備品を購入でき、<strong>ギルドカウンター</strong>では調査章や巡回依頼の報酬を受け取れます。その下の<strong>鍛錬所</strong>では、戦闘経験でレベルアップした際に得られる鍛錬点を、刃・守り・体力へ割り振れます。鍛錬は拠点でのみ可能で、振り直しはできません。</p>
+     <p>「ギルド」の<strong>古物商の店</strong>では探索の準備品を購入でき、古銭で<strong>鞄を80→90→100枠へ永久拡張</strong>できます。必要枚数は500枚、次に1,000枚です。また、<strong>ギルドカウンター</strong>では調査章や巡回依頼の報酬を受け取れます。その下の<strong>鍛錬所</strong>では、戦闘経験でレベルアップした際に得られる鍛錬点を、刃・守り・体力へ割り振れます。鍛錬は拠点でのみ可能で、振り直しはできません。</p>
      <div class="guide-tip"><strong>大切：古銭は2種類の状態があります</strong><span>探索中に拾った古銭はまだ<strong>仮確保</strong>です。迷宮内の支払いイベントには、その探索で拾った分だけを使います。拠点で持っている古銭は使えません。帰還すると古銭を確保でき、ギルドでの購入や装備の手入れに使えます。</span></div>
      <p>「星図の写し」は通常迷宮では消費されず、深層試練を踏破したときに追加装備を狙う準備品です。購入・受注・報酬受取には拠点へ帰還する必要があります。</p>
     </section>
@@ -3112,7 +3140,12 @@ h2 {font-size:1.43rem;}
   };
   const hasLegendaryPower=item=>item?.rarity==="legendary"&&Object.hasOwn(LEGENDARY_EFFECTS,item.legendaryEffect);
   const PREFIXES = ["ささやく","忘れられた","星屑の","小さな","黄昏の","風渡る","古びた","旅路の","真鍮の","薄明の"];
-  const MAX_INVENTORY = 80;
+  const MAX_INVENTORY = 80; // Initial capacity. Two permanent upgrades add 10 slots each.
+  const BAG_UPGRADE_PRICES=[500,1000];
+  function bagCapacity(s=state){
+    const upgrades=s?.economy?.bagUpgrades;
+    return MAX_INVENTORY+10*(Number.isInteger(upgrades)?Math.max(0,Math.min(2,upgrades)):0);
+  }
   const MAX_STORAGE = 60; // Separate safe display shelf; items here cannot be equipped or sold.
   const MARKET_PRICES={herbs:36,lantern:54,chart:480};
   const MAX_TUNES_PER_ITEM=10;
@@ -3292,7 +3325,7 @@ h2 {font-size:1.43rem;}
   }
   function tryDrop(){
     const expedition=state.expedition;
-    if(state.inventory.length+(expedition?.loot.length||0)>=MAX_INVENTORY){
+    if(state.inventory.length+(expedition?.loot.length||0)>=bagCapacity()){
       if(expedition){expedition.shards+=5;addLog("鞄がいっぱい。代わりに古銭5枚を拾った。","important");}
       else addLog("鞄がいっぱいのため、戦利品を持ち帰れなかった。", "danger");
       return;
@@ -3640,7 +3673,7 @@ h2 {font-size:1.43rem;}
       growth:{xp:0,level:1,points:0,training:{blade:0,shield:0,vigor:0},unlocked:["poison","heal","riposte"]},
       mastery:initialMastery(),
       lootDryStreak:0,lastDropId:null,ui:{filter:"all",sort:"new",inspectedId:"w-first",bulkRarity:"uncommon",catalogSection:"enemies",catalogShowUnknown:true},
-      economy:{coins:0,spent:0,salvaged:0,polishes:0,tunings:0,chartsBought:0,prepared:{herbs:false,lantern:false,chart:false}},
+      economy:{coins:0,spent:0,salvaged:0,polishes:0,tunings:0,chartsBought:0,bagUpgrades:0,prepared:{herbs:false,lantern:false,chart:false}},
       settings: { speed: 1800, healThreshold: 35, poisonThreshold: 2, burnThreshold: 1, combatStyle: "poison", reserveFocus: false, responseMode: "balanced", trialSeal:"standard", skillSlots:["poison","heal","riposte"], skillVariants:normalizeSkillVariants(null) },
       stats: { wins: 0, losses: 0, kills: 0, poisonKills: 0, burnKills: 0, criticals: 0, poisonsApplied: 0, burnsApplied: 0, counterAttacks: 0, combosUsed: 0, closeWins: 0, skillsUsed: 0,
         interruptions:0, guardedHeavy:0, bossKills:0, eliteKills:0, legendaryBossRewardClaimed:false,
@@ -3694,8 +3727,9 @@ h2 {font-size:1.43rem;}
     if(!s.growth.unlocked.every(id=>ACTIVE_SKILLS.includes(id)))throw Error("習得データが不正です");
     if(legacyEconomy)s.economy.coins=Math.min(COIN_CAP,Math.max(0,oldCoinTotal));
     for(const key of ["coins","spent","salvaged","polishes","tunings","chartsBought"])s.economy[key]=Math.min(COIN_CAP,Math.max(0,finiteInt(s.economy[key])));
+    s.economy.bagUpgrades=Math.max(0,Math.min(2,finiteInt(s.economy.bagUpgrades)));
     for(const key of ["herbs","lantern","chart"])s.economy.prepared[key]=s.economy.prepared[key]===true;
-    if(!Array.isArray(s.inventory)||s.inventory.length>MAX_INVENTORY+5)throw Error("装備データが不正です");
+    if(!Array.isArray(s.inventory)||s.inventory.length>bagCapacity(s)+5)throw Error("装備データが不正です");
     if(d.storage!==undefined && (!Array.isArray(d.storage)||d.storage.length>MAX_STORAGE))throw Error("保管箱データが不正です");
     const ids=new Set();
     const normalizeHeldItem=item=>{
@@ -3753,7 +3787,7 @@ h2 {font-size:1.43rem;}
        xp:Number.isFinite(recap.xp)?Math.max(0,Math.min(100000,finiteInt(recap.xp))):null,
        levelBefore:Number.isFinite(recap.levelBefore)?Math.max(1,Math.min(LEVEL_CAP,finiteInt(recap.levelBefore))):null,
        levelAfter:Math.max(1,Math.min(LEVEL_CAP,finiteInt(recap.levelAfter,1))),
-       items:Math.max(0,Math.min(MAX_INVENTORY,finiteInt(recap.items))),
+       items:Math.max(0,Math.min(bagCapacity(s),finiteInt(recap.items))),
        coins:Math.max(0,Math.min(COIN_CAP,finiteInt(recap.coins))),
        skills:Array.isArray(recap.skills)?recap.skills.filter(x=>typeof x==="string").slice(0,7).map(x=>x.slice(0,35)):[]
      }:null;
@@ -3845,7 +3879,7 @@ h2 {font-size:1.43rem;}
        if(r.journeyStart&&typeof r.journeyStart==="object"){
          r.journeyStart={xp:Math.max(0,Math.min(1000000,finiteInt(r.journeyStart.xp))),level:Math.max(1,Math.min(LEVEL_CAP,finiteInt(r.journeyStart.level,1))),wins:Math.max(0,finiteInt(r.journeyStart.wins)),unlocked:Array.isArray(r.journeyStart.unlocked)?r.journeyStart.unlocked.filter(id=>ACTIVE_SKILLS.includes(id)):[]};
        }else r.journeyStart=null;
-      r.loot=Array.isArray(r.loot)?r.loot.slice(0,Math.max(0,MAX_INVENTORY-s.inventory.length)):[];
+      r.loot=Array.isArray(r.loot)?r.loot.slice(0,Math.max(0,bagCapacity(s)-s.inventory.length)):[];
       const pendingIds=new Set();
       r.loot=r.loot.filter(item=>{
         if(!item||typeof item.id!=="string"||ids.has(item.id)||pendingIds.has(item.id)||!itemBase(item.baseId)||item.slot!==itemBase(item.baseId).slot||!RARITIES[item.rarity])return false;
@@ -4545,7 +4579,7 @@ h2 {font-size:1.43rem;}
   }
   function givePendingItem(source,originNote=null,options={}){
     const r=state.expedition;if(!r)return;
-    if(state.inventory.length+r.loot.length>=MAX_INVENTORY){r.shards+=8;addLog("鞄がいっぱい。拾った品は古銭8枚に交換された。","important");return null;}
+    if(state.inventory.length+r.loot.length>=bagCapacity()){r.shards+=8;addLog("鞄がいっぱい。拾った品は古銭8枚に交換された。","important");return null;}
     const item=makeDrop(options);
     if(originNote)item.memories.unshift({id:state.nextId++,kind:"equipment",text:originNote,stage:r.floor,foe:"",weaponId:item.id});
     r.loot.push(item);
@@ -4573,12 +4607,12 @@ h2 {font-size:1.43rem;}
     if(!isAtCamp()){toast("調査品は帰還後に受け取れます");return;}
     const unseen=unseenResearchableBases();
     if(!state.catalog.collectionLeads||!unseen.length){toast("受け取れる調査品はありません");return;}
-    if(state.inventory.length>=MAX_INVENTORY&&state.storage.length>=MAX_STORAGE){toast("鞄と保管箱に空きを作ってください。手がかりは失われません");return;}
+    if(state.inventory.length>=bagCapacity()&&state.storage.length>=MAX_STORAGE){toast("鞄と保管箱に空きを作ってください。手がかりは失われません");return;}
     const base=unseen[Math.floor(rand()*unseen.length)];
     const item=makeDrop({baseId:base.id,rarity:"rare"});
     item.memories.unshift({id:state.nextId++,kind:"equipment",text:"繰り返しの踏破で得た手がかりをギルドへ持ち帰り、未発見の装備として受け取った。",stage:0,foe:"",weaponId:item.id});
     let destination;
-    if(state.inventory.length<MAX_INVENTORY){state.inventory.unshift(item);state.lastDropId=item.id;destination="鞄";}
+    if(state.inventory.length<bagCapacity()){state.inventory.unshift(item);state.lastDropId=item.id;destination="鞄";}
     else{state.storage.unshift(item);destination="保管箱";}
     state.catalog.collectionLeads--;
     catalogFoundItem(item);
@@ -4604,7 +4638,7 @@ h2 {font-size:1.43rem;}
     // v0.9.5: the Star Chart is consumed only on a trial entry, and pays out
     // only on its successful completion. No extra roll on retreat or defeat.
     if(clear&&trial&&r.supplies?.chart){
-      if(state.inventory.length+r.loot.length<MAX_INVENTORY){
+      if(state.inventory.length+r.loot.length<bagCapacity()){
         const draw=rand();
         const rarity=draw<.65?"rare":draw<.95?"epic":"legendary";
         const chartLoot=makeDrop({rarity});
@@ -4622,7 +4656,7 @@ h2 {font-size:1.43rem;}
     const picks=failure?r.loot.slice(0,1):r.loot;
     let accepted=0,converted=0;
     for(const item of picks){
-      if(state.inventory.length<MAX_INVENTORY){state.inventory.unshift(item);accepted++;state.lastDropId=item.id;}
+      if(state.inventory.length<bagCapacity()){state.inventory.unshift(item);accepted++;state.lastDropId=item.id;}
       else converted++;
     }
     const coins=gain+converted*8;
@@ -4733,7 +4767,7 @@ h2 {font-size:1.43rem;}
       const g=r.greenhouse;
       if(r.mode!=="greenhouse"||g?.sanctuary!=="offered")return;
       if(choice==="take"){
-        if(state.inventory.length>=MAX_INVENTORY&&state.storage.length>=MAX_STORAGE){toast("鞄と保管箱が満杯です。特別な護符を受け取る場所を空けてください");return;}
+        if(state.inventory.length>=bagCapacity()&&state.storage.length>=MAX_STORAGE){toast("鞄と保管箱が満杯です。特別な護符を受け取る場所を空けてください");return;}
         g.sanctuary="guardian";r.event=null;r.phase="combat";
         newBattle({guardian:true});return;
       }
@@ -5330,7 +5364,7 @@ h2 {font-size:1.43rem;}
           const item=makeDrop({baseId:"rootcharm",rarity:"legendary",legendaryEffect:"sprout",fixedName:"根継ぎの護符"});
           item.protected=true;
           rememberItemOnly(item,"眠らない温室の根の聖域で、守り手に初めて勝利して受け取った護符。","boss",r.floor,"根の聖域の守り手");
-          if(state.inventory.length<MAX_INVENTORY){state.inventory.unshift(item);state.lastDropId=item.id;}
+          if(state.inventory.length<bagCapacity()){state.inventory.unshift(item);state.lastDropId=item.id;}
           else if(state.storage.length<MAX_STORAGE)state.storage.unshift(item);
           else {throw Error("聖域の報酬をしまう場所がありません");}
           state.expeditionStats.rootGuardianGift=1;
@@ -5477,12 +5511,12 @@ h2 {font-size:1.43rem;}
     const points=state.growth.points;
     const hasHerbs=Boolean(state.economy.prepared.herbs);
     setText("departure-level",`Lv.${state.growth.level}`);
-    setText("departure-bag",`鞄 ${state.inventory.length} / ${MAX_INVENTORY}枠`);
+    setText("departure-bag",`鞄 ${state.inventory.length} / ${bagCapacity()}枠`);
     setText("departure-rare",`${rareCount} / 4部位`);
     setText("departure-points",`${points}点`);
     setText("departure-herbs",hasHerbs?"準備済み":"未準備");
     let hint;
-    if(state.inventory.length>=MAX_INVENTORY-15)hint=`鞄が${state.inventory.length}/${MAX_INVENTORY}枠です。満杯になると新しい装備を拾えず古銭に替わります。大切な品を保護し、不要品を整理しましょう。`;
+    if(state.inventory.length>=bagCapacity()-15)hint=`鞄が${state.inventory.length}/${bagCapacity()}枠です。満杯になると新しい装備を拾えず古銭に替わります。大切な品を保護し、不要品を整理しましょう。`;
     else if(missing>0)hint=`装備の空き部位が${missing}か所あります。拾った装備を見直してみましょう。`;
     else if(points>0)hint=`鍛錬点が${points}点あります。鍛錬所で能力を伸ばしてから出発することもできます。`;
     else if(!hasHerbs&&state.economy.coins>=MARKET_PRICES.herbs)hint="古物商で薬草包を準備すると、階層を越えるたびの回復が増えます。";
@@ -5593,7 +5627,7 @@ h2 {font-size:1.43rem;}
         $("expedition-event-desc").textContent="根の抜け道のしるしが、地の底の聖域を開いた。落ちている品と古銭20枚を手にして、ここから安全に帰還できる。しかし、根の守り手に勝てば、この場所でしか手に入らない『根継ぎの護符』を初回に必ず獲得できる。守り手に敗れれば探索も失敗する。";
         $("expedition-event-take").textContent=state.expeditionStats.rootGuardianGift?"守り手に再挑戦（古銭と装備）":"守り手に挑む（初回勝利：根継ぎの護符）";
         $("expedition-event-leave").textContent="品を拾って帰還（レア装備＋古銭20枚）";
-        const noSpace=state.inventory.length>=MAX_INVENTORY&&state.storage.length>=MAX_STORAGE;
+        const noSpace=state.inventory.length>=bagCapacity()&&state.storage.length>=MAX_STORAGE;
         $("expedition-event-take").disabled=noSpace;
         $("expedition-event-take").title=noSpace?"鞄と保管箱が満杯です。特別装備のために空きを作ってください。":"";
         return;
@@ -5965,6 +5999,36 @@ h2 {font-size:1.43rem;}
     state.economy.salvaged=Math.min(COIN_CAP,state.economy.salvaged+received);
     return received;
   }
+  // v1.1.59: two one-time, permanent expansions sold by the antiquarian.
+  // No upgrade can happen during an expedition, and older saves default to 80.
+  function buyBagExpansion(){
+    if(!isAtCamp()){toast("鞄は拠点に帰ってから拡張できます");return;}
+    if(saveReadOnly){toast("セーブを利用できないため、鞄を拡張できません");return;}
+    const stage=state.economy.bagUpgrades;
+    if(stage>=BAG_UPGRADE_PRICES.length){toast("鞄はすでに最大の100枠です");return;}
+    const cost=BAG_UPGRADE_PRICES[stage];
+    if(state.economy.coins<cost){toast(`古銭があと${cost-state.economy.coins}枚必要です`);return;}
+    const current=bagCapacity(),next=current+10;
+    if(!confirm(`古銭${cost}枚を使って、鞄を${current}枠から${next}枠へ拡張しますか？\n\n拡張は永久に有効です。`))return;
+    // Recheck conditions after the confirmation dialog.
+    if(!isAtCamp()||state.economy.bagUpgrades!==stage||state.economy.coins<cost)return;
+    const beforeCoins=state.economy.coins,beforeSpent=state.economy.spent;
+    const beforeLog=[...state.logs],beforeId=state.nextId;
+    state.economy.coins-=cost;
+    state.economy.spent=Math.min(COIN_CAP,state.economy.spent+cost);
+    state.economy.bagUpgrades=stage+1;
+    addLog(`古物商に古銭${cost}枚を支払い、鞄を${next}枠に広げてもらった。`,"positive");
+    if(!save()){
+      // Never pretend a one-time purchase survived if persistence failed.
+      state.economy.coins=beforeCoins;
+      state.economy.spent=beforeSpent;
+      state.economy.bagUpgrades=stage;
+      state.logs=beforeLog;
+      state.nextId=beforeId;
+      render();toast("保存に失敗したため、購入を取り消しました。古銭は減っていません");return;
+    }
+    render();toast(`鞄が${next}枠になりました！`);
+  }
   function buySupply(key){
     if(!Object.hasOwn(MARKET_PRICES,key)||!isAtCamp()){toast("拠点にいるときだけ準備できます");return;}
     if(state.economy.prepared[key]){toast("その品はすでに用意しています");return;}
@@ -6058,7 +6122,7 @@ h2 {font-size:1.43rem;}
   }
   function renderGear(){
     const active=hasActiveBattle()||Boolean(state.expedition);
-    setText("inventory-count",`鞄 ${state.inventory.length} / ${MAX_INVENTORY}`);
+    setText("inventory-count",`鞄 ${state.inventory.length} / ${bagCapacity()}`);
     setText("storage-count",`${state.storage.length} / ${MAX_STORAGE}点`);
     // Do not redraw up to 60 archive cards on every combat tick.
     function cardHead(item, equipped, stored=false){
@@ -6147,7 +6211,7 @@ h2 {font-size:1.43rem;}
     $("gear-store").hidden=stored;
     $("gear-store").disabled=active||eq||state.storage.length>=MAX_STORAGE;
     $("gear-retrieve").hidden=!stored;
-    $("gear-retrieve").disabled=active||state.inventory.length>=MAX_INVENTORY;
+    $("gear-retrieve").disabled=active||state.inventory.length>=bagCapacity();
     $("gear-storage-note").textContent=stored?"保管中。装備や手入れをするには鞄へ戻してください。":eq?"装備中の品は保管できません。":active?"保管箱の操作は帰還後に行えます。":state.storage.length>=MAX_STORAGE?"保管箱がいっぱいです。":"";
     $("gear-equip").hidden=stored;
     $("gear-equip").disabled=active||eq||stored;
@@ -6191,6 +6255,17 @@ h2 {font-size:1.43rem;}
       setText("shop-"+key+"-status",ready?(key==="chart"?"次の深層試練で消費・踏破時に追加装備":"出発時に消費・今回の探索限り有効"):(key==="chart"&&state.expeditionStats.clears<1?"通常十階層の踏破後に解放":"未準備"));
     }
     setText("shop-note",active?"探索中は新しい支度・装備の手入れ・調律ができません。": "準備品は各1つまで。星図は通常迷宮では消費されず、次の深層試練で使用します。");
+    const stage=state.economy.bagUpgrades,capacity=bagCapacity(),complete=stage>=2;
+    const cost=complete?0:BAG_UPGRADE_PRICES[stage];
+    setText("shop-bag-capacity",`鞄 ${capacity} / 100枠`);
+    for(let i=0;i<2;i++){
+      $("shop-bag-step-"+(i+1)).classList.toggle("is-done",i<stage);
+      $("shop-bag-step-"+(i+1)).classList.toggle("is-now",i===stage);
+    }
+    const bagButton=$("shop-bag-buy");
+    bagButton.disabled=active||complete||saveReadOnly||state.economy.coins<cost;
+    bagButton.textContent=complete?"鞄の拡張は完了しました":`古銭${cost.toLocaleString("ja-JP")}枚で${capacity+10}枠へ拡張`;
+    setText("shop-bag-status",complete?"2段階とも拡張済み。これからも100枠を使えます。":active?"探索中です。帰還後に古物商で拡張できます。":saveReadOnly?"セーブ領域を利用できないため、購入できません。":state.economy.coins<cost?`第${stage+1}段階：購入まで古銭があと${cost-state.economy.coins}枚必要です。`:`第${stage+1}段階：購入できます。次は${capacity+10}枠になります。`);
   }
   function renderGrowth(){
     const g=state.growth,limit=xpNeeded(Math.min(LEVEL_CAP,g.level+1));
@@ -6456,7 +6531,7 @@ h2 {font-size:1.43rem;}
     const researchMessage=complete?"35種類の装備調査は完了しました。":active
       ?`調査対象は残り${missing}種類。公開迷宮をあと${toNext}回踏破すると、未発見品の調査の手がかりを1つ獲得できます（4踏破ごと）。`
       :`調査対象は残り${missing}種類。残り3種類になると、4回の踏破ごとに未発見品の調査が始まります。`;
-    const space=state.inventory.length<MAX_INVENTORY||state.storage.length<MAX_STORAGE;
+    const space=state.inventory.length<bagCapacity()||state.storage.length<MAX_STORAGE;
     const claimable=leads>0&&!complete&&space&&isAtCamp();
     const buttonText=!isAtCamp()?"帰還後に受け取れます":!space?"鞄と保管箱を整理してください":complete?"35種類の装備をすべて発見済み":"未発見の装備を1点受け取る";
     $("catalog-region-goals").innerHTML=`<p class="catalog-region-heading">迷宮別・固有装備の発見 <small>（それぞれの迷宮でランダム入手）</small></p><div class="catalog-region-list">${regions.join("")}</div><p class="region-award-catalog-note">固有装備3種類の発見で、迷宮ごとの異名と記念品を獲得します。「記録 → 記念品」で確認できます。</p><div class="collection-research"><strong>装備の調査 ${35-missing}/35 ／ 手がかり ${leads}件</strong><p>${researchMessage}</p>${leads>0?`<button type="button" class="btn secondary" data-claim-collection ${claimable?"":"disabled"}>${buttonText}</button>`:""}<p>共通20種類と迷宮固有15種類が調査対象です。手がかりは保管でき、空き枠ができたら使用できます。根の聖域限定の護符は対象外です。</p></div>`;
@@ -6639,7 +6714,7 @@ h2 {font-size:1.43rem;}
     $("gear-retrieve").addEventListener("click",()=>{
       if(!isAtCamp()){toast("帰還後に取り出せます");return;}
       const id=state.ui.inspectedId,item=state.storage.find(x=>x.id===id);
-      if(!item||state.inventory.length>=MAX_INVENTORY){toast("鞄に空きがありません");return;}
+      if(!item||state.inventory.length>=bagCapacity()){toast("鞄に空きがありません");return;}
       if(!state.storage.includes(item)||state.inventory.some(x=>x.id===id))return;
       state.storage=state.storage.filter(x=>x.id!==id);state.inventory.unshift(item);
       save();render();toast("鞄に取り出しました");
@@ -6689,6 +6764,7 @@ h2 {font-size:1.43rem;}
     $("shop-buy-herbs").addEventListener("click",()=>buySupply("herbs"));
     $("shop-buy-lantern").addEventListener("click",()=>buySupply("lantern"));
     $("shop-buy-chart").addEventListener("click",()=>buySupply("chart"));
+    $("shop-bag-buy").addEventListener("click",buyBagExpansion);
     $("shop-tune").addEventListener("click",tuneSelected);
     $("shop-polish").addEventListener("click",polishSelected);
     $("bulk-remove").addEventListener("click",()=>{
