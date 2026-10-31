@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#17383d">
 <meta name="description" content="ランダム装備とビルド構築を楽しむ、テキスト主体の半自動ハクスラ。">
-<title>モルネッタ | 1.1.49</title>
+<title>モルネッタ | 1.1.50</title>
 <style>
 :root{color-scheme:dark;--bg:#0e1725;--night:#101b2b;--panel:#182639;--panel-2:#1d2c41;--line:#344257;--line-soft:#2a394e;--text:#eee9df;--muted:#b8bcc5;--subtle:#8e9bad;--amber:#e0b881;--amber-pale:#f0d6a8;--mint:#9bc7b5;--red:#d58f8b;--blue:#a5bce0;--radius:15px;--tap:46px;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:15px}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);background:radial-gradient(circle at 70% -12%,#253651 0%,transparent 42%),var(--bg);line-height:1.65;min-height:100vh}button,select,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:not-allowed}button,select{-webkit-tap-highlight-color:transparent}button:focus-visible,select:focus-visible,input:focus-visible,label.file-import:focus-within{outline:2px solid var(--amber);outline-offset:3px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.35}h1{font-size:1.5rem;letter-spacing:.09em;font-weight:700}h2{font-size:1.45rem;font-weight:680;letter-spacing:.04em}h3{font-size:1.04rem;font-weight:650}small{font-size:.76rem}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.icon{width:20px;height:20px;display:inline-block;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.icon-lg{width:27px;height:27px}.icon-inline{width:15px;height:15px;vertical-align:-2px}.app-shell{max-width:1080px;margin:auto;padding:0 21px}.masthead{padding:32px 0 22px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--line-soft)}.brand-mark{width:49px;height:49px;border-radius:15px;border:1px solid #9c8058;color:var(--amber);display:grid;place-items:center;background:#222b39;flex-shrink:0}.eyebrow,.label{color:var(--amber);font-size:.68rem;letter-spacing:.15em;font-weight:700}.masthead .eyebrow{margin:0 0 5px}.tagline{color:var(--subtle);font-size:.79rem;margin-top:5px}.version{color:var(--subtle);font-weight:400;margin-left:8px}.app-layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:36px;padding:28px 0 20px}.nav{display:flex;flex-direction:column;gap:7px;position:sticky;top:24px;align-self:start}.nav-button{min-height:var(--tap);display:flex;align-items:center;gap:14px;background:transparent;color:var(--muted);border:1px solid transparent;border-radius:12px;padding:10px 14px;text-align:left;transition:background .14s,color .14s,border .14s}.nav-button:hover{background:#223147;color:var(--text)}.nav-button.is-current{background:#2a3442;color:var(--amber-pale);border-color:#746043}.nav-button span{font-size:.91rem}.main-content{min-width:0;max-width:680px;width:100%;margin:auto}.page[hidden]{display:none!important}.page{display:grid;gap:14px;animation:fadein .18s ease-out}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 2px 4px}.page-heading .eyebrow{margin-bottom:6px}.chip{padding:4px 11px;color:var(--amber-pale);background:#3b3540;border:1px solid #64556a;border-radius:20px;white-space:nowrap;font-size:.78rem}.glass{background:linear-gradient(150deg,#1a293c,#162336);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px}.split-line,.section-top{display:flex;justify-content:space-between;align-items:start;gap:14px}.section-top{align-items:center;margin-bottom:10px}.section-top small,.helper{color:var(--subtle);font-size:.76rem}.name-line{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.name-line strong{font-size:1.04rem}.name-line small{color:var(--amber)}.little-status{font-size:.71rem;color:var(--mint);border:1px solid #54705f;background:#263c3e;padding:2px 9px;border-radius:20px;white-space:nowrap}.meter-label{margin:14px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:.79rem}.meter-label strong{color:var(--text);font-size:.83rem;font-variant-numeric:tabular-nums}.meter{height:8px;background:#394456;border-radius:20px;overflow:hidden}.meter-fill{height:100%;border-radius:20px;transition:width .22s ease}.meter-fill.hp{background:linear-gradient(90deg,#70a892,#b6d7bc)}.meter-fill.enemy{background:linear-gradient(90deg,#ad6865,#d9a39a)}.focus-cells{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.focus-cell{height:9px;border-radius:5px;background:#394355}.focus-cell.full{background:#d6af73}.enemy-card{background:linear-gradient(150deg,#202939,#1a2434);border-color:#46505a}.enemy-card h3{margin-top:5px}.enemy-type{font-size:.67rem;letter-spacing:.1em;color:#c2a691;border:1px solid #766052;border-radius:8px;padding:4px 8px}.enemy-descr{font-size:.84rem;color:var(--muted);margin-top:12px}.status-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;min-height:0}.status-tag{font-size:.73rem;border:1px solid #567e72;color:#b4d6be;border-radius:7px;padding:2px 7px}.status-tag.warning{border-color:#ae8765;color:#f0c7a0}.log-card{padding-bottom:14px}.combat-log{list-style:none;display:flex;flex-direction:column-reverse;gap:0;max-height:216px;overflow:auto;padding:0;margin:0;scrollbar-color:#647086 transparent}.combat-log li{padding:7px 2px;border-top:1px solid #ffffff0c;font-size:.85rem;color:#cbd0d8;line-height:1.5;overflow-wrap:anywhere}.combat-log li:first-child{color:var(--text)}.combat-log li.important{color:var(--amber-pale)}.combat-log li.positive{color:var(--mint)}.combat-log li.danger{color:#e6a6a0}.combat-log li.log-hint{color:var(--subtle)}.controls-card{padding-bottom:14px}.actions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.action-btn{min-height:76px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:9px 3px;background:#24354a;color:var(--text);border:1px solid #455369;border-radius:12px}.action-btn:hover:not(:disabled){background:#2f4159}.action-btn.queued{color:var(--amber-pale);border-color:var(--amber);box-shadow:0 0 0 1px #e0b88155 inset}.action-btn span{font-size:.79rem;white-space:nowrap}.action-btn small{color:var(--subtle);font-size:.7rem;white-space:nowrap}.action-btn .icon{color:var(--amber);width:19px;height:19px}.battle-toolbar{display:grid;grid-template-columns:1fr 1fr 61px;gap:9px;margin-top:14px}.btn{min-height:var(--tap);display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:11px;padding:8px 13px;border:1px solid #46546a;color:var(--text);background:#2b3a4e;font-size:.84rem;font-weight:600;white-space:nowrap}.btn .icon{width:17px;height:17px}.btn.primary{color:#21242d;background:#d8b77f;border-color:#e2c591}.btn.primary:hover:not(:disabled){background:#f0cf98}.btn.secondary:hover:not(:disabled){background:#354861}.btn.quiet{color:var(--muted);padding:6px 5px}.small-note{color:var(--subtle);font-size:.78rem;line-height:1.72;margin-top:12px}.alert-strip{display:flex;align-items:start;gap:12px;padding:13px;border:1px solid #bb9464;background:#493d35;border-radius:12px;color:#f2d8b7}.alert-strip[hidden]{display:none}.alert-strip p{font-size:.79rem;margin-top:4px;color:#f0d9c3}.alert-strip strong{font-size:.84rem}.item-card,.settings-card,.record-card{display:grid;gap:12px}.item-title{display:flex;align-items:center;gap:10px;color:var(--amber-pale)}.item-details{font-size:.82rem;color:var(--muted)}.flavor{font-size:.83rem;font-style:italic;color:#c2bac1;border-left:2px solid #77684f;padding-left:12px}.item-tally{font-size:.82rem;color:var(--mint);padding:9px 12px;background:#25384a;border-radius:9px}.gear-options{display:grid;gap:9px}.gear-choice{width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;padding:14px;background:#213047;color:var(--text);display:grid;gap:5px;min-height:var(--tap)}.gear-choice.is-equipped{border-color:#d6b47b;background:#302f38}.gear-choice strong{font-size:.88rem}.gear-choice span{color:var(--muted);font-size:.78rem}.gear-choice em{color:var(--amber);font-size:.73rem;font-style:normal}.history-list{margin:0;padding-left:1.3rem;color:var(--muted);font-size:.85rem;display:grid;gap:7px}.form-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--line-soft);font-size:.88rem}.form-row span{min-width:0}.form-row select{max-width:160px;width:44%;min-height:42px;background:#233349;color:var(--text);border:1px solid #50617a;border-radius:10px;padding:7px}.check-row input{width:21px;height:21px;accent-color:#d8b77f}.rules-summary{background:#24354a;color:var(--muted);border:1px dashed #54677c;padding:13px;border-radius:10px;font-size:.82rem;line-height:1.8}.settings-card>p:not(.small-note){font-size:.86rem;color:var(--muted)}.settings-card h3{color:var(--amber-pale)}.utility-row{display:flex;flex-wrap:wrap;gap:8px}.file-import{position:relative;cursor:pointer}.file-import input{position:absolute;width:1px;height:1px;opacity:0}.text-danger{border:0;background:transparent;padding:8px 0;text-align:left;min-height:42px;color:#e6a6a0;font-size:.82rem;width:max-content}.record-prose{font-size:.87rem;color:var(--muted)}.stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat-box{border:1px solid var(--line-soft);border-radius:10px;padding:10px;background:#203149}.stat-box span{display:block;color:var(--subtle);font-size:.76rem}.stat-box strong{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--text)}.title-entry{padding:11px 0;border-top:1px solid var(--line-soft);font-size:.88rem;display:flex;justify-content:space-between;gap:10px}.title-entry span{color:var(--subtle);font-size:.76rem}.title-entry strong{color:var(--amber)}.title-select{margin-top:6px;min-height:38px;border:1px solid #765e45;border-radius:8px;background:#3c3540;color:var(--amber-pale);font-size:.78rem;padding:6px 11px}.site-footer{border-top:1px solid var(--line-soft);padding:22px 0 32px;color:#7f8fa4;font-size:.72rem;letter-spacing:.08em}.site-footer span{letter-spacing:0;margin-left:8px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,12px);border:1px solid #8b724e;background:#383645;color:var(--amber-pale);padding:10px 16px;box-shadow:0 12px 26px #080f1e8c;border-radius:12px;max-width:min(92vw,440px);text-align:center;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:10;font-size:.85rem}.toast.visible{opacity:1;transform:translate(-50%,0)}
@@ -1376,7 +1376,7 @@ h2 {font-size:1.43rem;}
 .dungeon-destination[data-dungeon="bell"].is-locked{background:linear-gradient(155deg,#333e4b,#273640);border-color:#798493}
 @media(min-width:761px){.dungeon-map-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
-@media(min-width:1160px){.dungeon-map-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1160px){.dungeon-map-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 </style>
 
@@ -1863,6 +1863,9 @@ h2 {font-size:1.43rem;}
 .bulk-history-option:has(input:checked){border-color:#f1c17a;background:#574332}
 .bulk-history-option:has(input:checked) strong{color:#ffebbf}
 #bulk-preview{line-height:1.6}
+/* 1.1.50 - flooded library: independent palette; compatible with all existing destination cards. */
+.dungeon-destination[data-dungeon="library"]{background:linear-gradient(145deg,#215860,#294553);border-color:#8cc5bb;border-bottom-color:#4d8791}
+.dungeon-destination[data-dungeon="library"].is-locked{background:linear-gradient(145deg,#293f46,#263e43);border-color:#798f90}
 </style>
 </head>
 <body>
@@ -1901,7 +1904,7 @@ h2 {font-size:1.43rem;}
 <div class="app-shell">
  <header class="masthead">
   <div class="brand-mark"><svg class="icon icon-lg"><use href="#ic-gate"/></svg></div>
-  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.49</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
+  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.50</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
  </header>
  <div class="app-layout">
   <nav class="nav" aria-label="画面を切り替える">
@@ -1948,6 +1951,12 @@ h2 {font-size:1.43rem;}
             </select><small id="trial-seal-help">初回踏破後に選択できます。</small>
           </div>
           <div class="dungeon-launch"><button type="button" class="btn trial-launch" id="trial-start-button" disabled><svg class="icon"><use href="#ic-gate"/></svg><span id="dungeon-trial-launch-label">解放後に挑戦できます</span></button></div>
+        </article>
+        <article class="dungeon-destination is-locked" id="dungeon-card-library" data-dungeon="library" aria-label="潮待ちの書庫">
+          <div class="dungeon-destination-header"><span class="dungeon-symbol" aria-hidden="true"><svg class="icon"><use href="#ic-book"/></svg></span><div class="dungeon-destination-heading"><p class="dungeon-difficulty">変則 / 全5閲覧室</p><h4>潮待ちの書庫</h4></div><span class="dungeon-map-status" id="dungeon-status-library">未解放</span></div>
+          <p class="dungeon-description">潮が満ちるたび、本棚が沈む。乾いた通路で傷を癒すか、水没した書架で戦利品を探るか。選ぶ道が次の戦いを変える。</p>
+          <p class="dungeon-record" id="dungeon-record-library">解放条件：通常迷宮を1回踏破</p>
+          <div class="dungeon-launch"><button type="button" class="btn trial-launch" id="library-start-button" disabled><svg class="icon"><use href="#ic-book"/></svg><span id="dungeon-library-launch-label">解放後に挑戦できます</span></button></div>
         </article>
         <article class="dungeon-destination is-locked" id="dungeon-card-bell" data-dungeon="bell" aria-label="鳴らずの鐘楼">
           <div class="dungeon-destination-header"><span class="dungeon-symbol" aria-hidden="true"><svg class="icon"><use href="#ic-bell"/></svg></span><div class="dungeon-destination-heading"><p class="dungeon-difficulty">高難度＋ / 全5鐘室</p><h4>鳴らずの鐘楼</h4></div><span class="dungeon-map-status" id="dungeon-status-bell">未解放</span></div>
@@ -2372,6 +2381,7 @@ h2 {font-size:1.43rem;}
      <div class="guide-info-grid"><div><strong>進む</strong><span>次の階層へ進みます。戦闘は自動で始まります。</span></div><div><strong>帰還する</strong><span>帰還できる地点で探索を終了し、収集品を確保します。</span></div><div><strong>戦利品</strong><span>探索中の装備・古銭は仮確保。探索終了時に持ち帰ります。</span></div><div><strong>力尽きたとき</strong><span>獲得装備は原則1点まで、古銭は半分を回収します。以前の所持装備や記録は失われません。</span></div></div>
      <p>通常迷宮を初めて踏破すると<strong>深層試練（11〜15階層）</strong>が解放されます。さらに進むと追加の試練も選べます。</p>
      <p>ボスにも異なる攻略の糸口があります。通常迷宮の門守の石鎧は連続斬り3撃で一度だけ継ぎ目が崩れ、以後の防御力が少し下がります。星の門守は第二段階で大技を2回中断されると星灯が回復します。鐘楼の最後の敵は、毒か燃焼がある状態で大技を放つと衝撃が少し弱まり、両方なら効果が増します。ただし、どの技も攻略の必須条件ではありません。</p>
+     <p><strong>潮待ちの書庫</strong>は通常迷宮を1回踏破すると開放される、全5閲覧室の探索先です。乾いた区域は直接攻撃がわずかに強まり、水の満ちた区域では燃焼が弱まる一方、守りが少し頼りになります。各閲覧室の間では安全な通路で回復するか、水没した書架で次の敵を強め、装備と古銭を狙うかを選べます。</p>
      <p><strong>鳴らずの鐘楼</strong>は深層試練を1回踏破すると開放される高難度の探索先です。敵の大技は気配で分かりますが、技名と被害予測が伏せられます。自動戦術と防御・中断は通常どおり使えます。</p>
      <p>探索を終えると、冒険の地図の上に<strong>「前回の旅の足跡」</strong>が表示されます。途中帰還や敗北でも、戦闘経験・レベルアップ・持ち帰れた品を確認できます。不要なら閉じられ、次の探索を始めると表示が切り替わります。</p>
      <p>「冒険の地図」の<strong>旅立ちの支度</strong>には、現在のレベル・装備中のレア以上の数・鍛錬点・薬草包・鞄の空き具合が表示されます。高難度への挑戦が難しいときの確認用で、挑戦の条件ではありません。鞄が満杯に近いときは、装備を保護してから不要品を整理しましょう。</p>
@@ -2629,7 +2639,8 @@ h2 {font-size:1.43rem;}
   const ENEMY_CATALOG=()=>[
     ...Object.entries(ENEMY_TYPES).map(([id,foe])=>({id,name:foe.name,...foe})),
     ...Object.entries(DEPTH_ENEMIES).map(([floor,foe])=>({id:`depth-${floor}`,name:foe.name,floor:Number(floor),...foe})),
-    ...Object.entries(BELL_ENEMIES).map(([floor,foe])=>({id:`bell-${floor}`,name:foe.name,floor:Number(floor),...foe}))
+    ...Object.entries(BELL_ENEMIES).map(([floor,foe])=>({id:`bell-${floor}`,name:foe.name,floor:Number(floor),...foe})),
+    ...Object.entries(LIBRARY_ENEMIES).map(([floor,foe])=>({id:`library-${floor}`,name:foe.name,floor:Number(floor),...foe}))
   ];
   function emptyCatalog(){return {enemies:{},items:{},abilities:{},affixes:{},notices:[]};}
   // Additional traits are permanent discoveries, not objects to be kept in the bag.
@@ -2849,6 +2860,14 @@ h2 {font-size:1.43rem;}
     18:{name:"鈍色の調律師",type:"elite",pattern:"heavy",desc:"錆びた音叉を構え、耳ではなく足元の振動を測っている。",attackName:"音叉の斬撃",heavyName:"沈黙の和音",hp:1.63,atk:1.24,def:1.32,burnResist:.20},
     19:{name:"鐘陰の忘れ手",type:"normal",pattern:"drain",desc:"指先が空を撫でるたび、旅人の集中がかすかに乱れる。",attackName:"残音の糸",hp:1.39,atk:1.35,def:1.19,poisonResist:.15},
     20:{name:"鐘を待つもの",type:"boss",pattern:"heavy",desc:"鳴るはずのない大鐘の下で、長い影がこちらを向く。毒や炎がまとわりつくと、大技の振動が鈍る。",attackName:"鋳鉄の大剣",heavyName:"最後の一打",hp:2.07,atk:1.42,def:1.41,poisonResist:.27,burnResist:.24}
+  };
+  // Parallel midgame dungeon, available after first normal clear. Each chamber has its own encounter.
+  const LIBRARY_ENEMIES={
+    21:{name:"頁を抱く番兵",type:"normal",pattern:"shell",desc:"濡れた紙束を盾にしている。閉じた書物に刃が吸い込まれる。",attackName:"紙束の盾打ち",hp:1.10,atk:1.00,def:1.12,burnResist:.10},
+    22:{name:"水鏡の写字生",type:"normal",pattern:"drain",desc:"水に映る文字をなぞり、集中力を少しずつ奪う。",attackName:"滲む筆先",hp:1.04,atk:1.04,def:.94,poisonResist:.15},
+    23:{name:"潮間の頁喰い",type:"elite",pattern:"regenerate",desc:"破れた頁を飲み込み、濡れた傷を綴じ合わせる。",attackName:"鋸歯の咬撃",hp:1.34,atk:1.09,def:1.05},
+    24:{name:"沈殿する書記",type:"normal",pattern:"swift",desc:"水面に残る足跡が二つ。濡れた羽根ペンが二度閃く。",attackName:"双筆の突き",hp:1.16,atk:1.08,def:1.02,burnResist:.15},
+    25:{name:"最後の貸出人",type:"boss",pattern:"heavy",desc:"返されなかった一冊を抱え、閉館の時刻だけを守る。",attackName:"背表紙の一撃",heavyName:"閉架の宣告",hp:1.76,atk:1.21,def:1.16,poisonResist:.20,burnResist:.20}
   };
   // Five-floor trial modifiers; no damage type is ever fully disabled.
   const TRIAL_SEALS={
@@ -3470,7 +3489,7 @@ h2 {font-size:1.43rem;}
         basicAttacks:0, guardsUsed:0, healsUsed:0, poisonSkillsUsed:0, fireSkillsUsed:0,
         riposteUsed:0, bindUsed:0, flurryUsedNew:0 },
       unlockedTitles: [], selectedTitle: null,
-      memories: [], logs: [], battle: null, expedition:null, expeditionStats:{runs:0,clears:0,retreats:0,defeats:0,deepest:0,bankedShards:0,safeRoutes:0,riskyRoutes:0,storyFinds:0,storyCompletions:0,storyDeclines:0,storyInterrupted:0,trialRuns:0,trialClears:0,trialDefeats:0,trialRetreats:0,trialDeepest:0,bellRuns:0,bellClears:0,bellDefeats:0,bellRetreats:0,bellDeepest:0,sealClears:{mist:0,echo:0,ember:0}},regionsSeen:[],storyHistory:[]
+      memories: [], logs: [], battle: null, expedition:null, expeditionStats:{runs:0,clears:0,retreats:0,defeats:0,deepest:0,bankedShards:0,safeRoutes:0,riskyRoutes:0,storyFinds:0,storyCompletions:0,storyDeclines:0,storyInterrupted:0,trialRuns:0,trialClears:0,trialDefeats:0,trialRetreats:0,trialDeepest:0,bellRuns:0,bellClears:0,bellDefeats:0,bellRetreats:0,bellDeepest:0,libraryRuns:0,libraryClears:0,libraryDefeats:0,libraryRetreats:0,libraryDeepest:0,sealClears:{mist:0,echo:0,ember:0}},regionsSeen:[],storyHistory:[]
     };
   }
   function finiteInt(v, fallback = 0) { return Number.isFinite(v) ? Math.floor(v) : fallback; }
@@ -3620,13 +3639,15 @@ h2 {font-size:1.43rem;}
     if(s.expeditionStats.trialClears<1)s.settings.trialSeal="standard";
     const r=s.expedition;
     if(r){
-      if(!r||typeof r!=="object"||!Number.isInteger(r.floor)||r.floor<1||r.floor>20)throw Error("探索データが不正です");
+      if(!r||typeof r!=="object"||!Number.isInteger(r.floor)||r.floor<1||r.floor>25)throw Error("探索データが不正です");
       // A declared dungeon mode must own the saved floor. Never migrate a bad run
       // to a different dungeon or award another dungeon's clear record.
       if(r.mode==="bell"){
         if(r.floor<16||r.floor>20)throw Error("鐘楼の探索データが不正です");
       }else if(r.mode==="trial"){
         if(r.floor<11||r.floor>15)throw Error("深層試練の探索データが不正です");
+      }else if(r.mode==="library"){
+        if(r.floor<21||r.floor>25)throw Error("書庫の探索データが不正です");
       }else{
         r.mode="normal";
         if(r.floor>10)throw Error("通常迷宮の階層が不正です");
@@ -3676,11 +3697,11 @@ h2 {font-size:1.43rem;}
       }:null;
       if(r.margin?.status==="found"&&!r.margin.docId){r.margin.status="inside";r.margin.step=2;}
       r.event=(FLOOR_EVENT_IDS.includes(r.event)||REGIONAL_EVENT_IDS.includes(r.event)&&REGIONAL_EVENTS[r.event].mode===r.mode&&(!REGIONAL_EVENTS[r.event].seal||REGIONAL_EVENTS[r.event].seal===r.seal)||STORY_EVENT_IDS.includes(r.event)&&r.story||r.event==="margin_door"&&r.margin&&["offered","inside","found"].includes(r.margin.status))?r.event:null;
-      r.routeOffer=Object.hasOwn(RISK_ROUTES,r.routeOffer)?r.routeOffer:null;
-      r.route=(r.route&&typeof r.route==="object"&&["safe",...RISK_ROUTE_IDS].includes(r.route.kind)&&r.route.floor===r.floor)?{kind:r.route.kind,floor:r.floor}:null;
-      r.routeHistory=Array.isArray(r.routeHistory)?r.routeHistory.filter(h=>h&&Number.isInteger(h.floor)&&h.floor>=2&&h.floor<=20&&["safe",...RISK_ROUTE_IDS].includes(h.kind)).slice(-9).map(h=>({floor:h.floor,kind:h.kind})):[];
+      r.routeOffer=(r.mode==="library"?r.routeOffer==="flooded_shelves":RISK_ROUTE_IDS.includes(r.routeOffer))?r.routeOffer:null;
+      r.route=(r.route&&typeof r.route==="object"&&["safe",...RISK_ROUTE_IDS,"flooded_shelves"].includes(r.route.kind)&&r.route.floor===r.floor&&((r.mode==="library")||(r.route.kind!=="flooded_shelves")))?{kind:r.route.kind,floor:r.floor}:null;
+      r.routeHistory=Array.isArray(r.routeHistory)?r.routeHistory.filter(h=>h&&Number.isInteger(h.floor)&&h.floor>=2&&h.floor<=25&&["safe",...RISK_ROUTE_IDS,"flooded_shelves"].includes(h.kind)).slice(-9).map(h=>({floor:h.floor,kind:h.kind})):[];
       if(r.phase==="choice"&&!r.routeOffer)r.routeOffer=routeOfferFor(r);
-      r.visited=Array.isArray(r.visited)?r.visited.filter(n=>Number.isInteger(n)&&n>=1&&n<=20).slice(-20):[];
+      r.visited=Array.isArray(r.visited)?r.visited.filter(n=>Number.isInteger(n)&&n>=1&&n<=25).slice(-20):[];
       r.lastEvent=FLOOR_EVENT_IDS.includes(r.lastEvent)||REGIONAL_EVENT_IDS.includes(r.lastEvent)||STORY_EVENT_IDS.includes(r.lastEvent)?r.lastEvent:null;
       if(r.phase==="combat" && !s.battle?.active)r.phase="choice";
       if(r.phase==="event"&&!r.event)r.phase="choice";
@@ -4054,10 +4075,12 @@ h2 {font-size:1.43rem;}
     starvein:{name:"砕けた星脈",short:"直接攻撃+7%、回復量-5%。",desc:"星の破片が刃を鋭くするが、身体は乾いていく。",directFactor:1.07,healFactor:.95},
     lastgate:{name:"星の門",short:"防御時の軽減+5ポイント、敵の攻撃力+10%。",desc:"門前の静寂は、守りを試してくる。",guardFactor:.05,enemyAttack:1.10},
     bellfog:{name:"響かない螺旋",short:"敵の攻撃力+6%。鐘の残響で大技の名称と被害予測が分かりません。",desc:"音が吸い込まれ、足元の振動だけが襲撃を知らせる。",enemyAttack:1.06},
-    bellhall:{name:"欠けた鐘室",short:"自分の直接攻撃+5%、敵の攻撃力+8%。大技の気配は分かります。",desc:"鐘の縁は砕けているが、振動だけがいつまでも消えない。",directFactor:1.05,enemyAttack:1.08}
+    bellhall:{name:"欠けた鐘室",short:"自分の直接攻撃+5%、敵の攻撃力+8%。大技の気配は分かります。",desc:"鐘の縁は砕けているが、振動だけがいつまでも消えない。",directFactor:1.05,enemyAttack:1.08},
+    library_dry:{name:"潮の引いた書架",short:"直接攻撃+5%。乾いた床で足場を確保できる。",desc:"水が引き、本の背表紙だけが明るい。",directFactor:1.05},
+    library_flood:{name:"満ち潮の閲覧室",short:"燃焼ダメージ-10%、防御時の軽減+5ポイント。",desc:"本棚の脚に波が打ち寄せ、火の粉を飲み込む。",burnFactor:.90,guardFactor:.05}
   };
-  const FLOOR_ENV_IDS=["lantern","lantern","spores","spores","crystals","crystals","garden","garden","winds","winds","dusk","dusk","starvein","starvein","lastgate","bellfog","bellfog","bellhall","bellhall","bellhall"];
-  function environmentAt(floor){return FLOOR_ENV_IDS[Math.max(0,Math.min(19,Number(floor)||1)-1)]||"lantern";}
+  const FLOOR_ENV_IDS=["lantern","lantern","spores","spores","crystals","crystals","garden","garden","winds","winds","dusk","dusk","starvein","starvein","lastgate","bellfog","bellfog","bellhall","bellhall","bellhall","library_dry","library_flood","library_dry","library_flood","library_dry"];
+  function environmentAt(floor){return FLOOR_ENV_IDS[Math.max(0,Math.min(24,Number(floor)||1)-1)]||"lantern";}
   function currentEnvironment(){
     const b=state.battle;
     if(b?.active&&Object.hasOwn(ENVIRONMENTS,b.environmentId))return ENVIRONMENTS[b.environmentId];
@@ -4071,7 +4094,7 @@ h2 {font-size:1.43rem;}
     const id=environmentAt(floor);
     if(state.regionsSeen.includes(id))return;
     state.regionsSeen.push(id);
-    recordMoment("environment",`${state.expedition?.mode==="bell"?`第${floor-15}鐘室`:`第${floor}階層`}で『${ENVIRONMENTS[id].name}』を初めて訪れた。${ENVIRONMENTS[id].desc}`,{stage:floor,foe:"",once:`environment-${id}`});
+    recordMoment("environment",`${state.expedition?.mode==="bell"?`第${floor-15}鐘室`:state.expedition?.mode==="library"?`第${floor-20}閲覧室`:`第${floor}階層`}で『${ENVIRONMENTS[id].name}』を初めて訪れた。${ENVIRONMENTS[id].desc}`,{stage:floor,foe:"",once:`environment-${id}`});
   }
   const FLOOR_EVENT_FLOORS=new Set([2,3,4,6,7,8,9]);
   const FLOOR_EVENT_IDS=["chest","shrine","rune","cache","altar","crossing"];
@@ -4088,6 +4111,9 @@ h2 {font-size:1.43rem;}
     echo_footsteps:{mode:"trial",seal:"echo",name:"遅れてくる足音",desc:"一歩進むたび、数拍あとに別の足音が追いかけてくる。足跡の一つだけが、来た方向ではなく門へ続いている。",take:"足跡を追って調べる（HP9%消費／古銭22枚）",leave:"立ち止まり足音をやり過ごす（HP4%回復／古銭4枚）",takeEffect:{hurt:.09,coins:22},leaveEffect:{heal:.04,coins:4},takeText:"遅れてきた足音に合わせて進み、石の割れ目に隠れた古銭を拾った。",leaveText:"一度足を止めると、音だけが先に進んでいった。"},
     ember_ashes:{mode:"trial",seal:"ember",name:"消えない灰の地図",desc:"石床の上に、何も燃えていないのに灰が降る。灰は古い道をかたどり、触れると小さな火の粉が舞う。",take:"灰を払い道を探る（HP12%消費／35%で装備、ほかは古銭20枚）",leave:"灰の降らない場所で休む（HP4%回復）",takeEffect:{hurt:.12,loot:.35,coins:20},leaveEffect:{heal:.04},source:"残り火の試練の灰の下",origin:"残り火の試練で、火のない場所に積もった灰の下から拾い上げた品。",takeText:"灰の下には、火をくぐり抜けた旅人の落とし物が残されていた。",leaveText:"灰の地図を乱さずに離れた。火の粉はしばらく後ろで舞っていた。"},
     star_observer:{mode:"trial",name:"見張りのいない観測所",desc:"星の門へ向いた古い望遠鏡がある。覗き口は磨かれているのに、周囲には足跡がない。",take:"観測台の内部を調べる（HP8%消費／25%で装備、ほかは古銭20枚）",leave:"望遠鏡の横で休む（HP3%回復／古銭6枚）",takeEffect:{hurt:.08,loot:.25,coins:20},leaveEffect:{heal:.03,coins:6},source:"見張りのいない観測所の台座",origin:"星の門・深層試練の、見張りのいない観測所で見つけた品。",takeText:"誰もいない観測所の台座を開けた。磨かれた跡だけが新しかった。",leaveText:"望遠鏡を元の向きに直して、門を見据えたまま休んだ。"},
+    library_index:{mode:"library",name:"水に浮かぶ索引",desc:"書名だけが水面に並んでいる。索引の一行は、書架の底を指していた。",take:"水底の引き出しを探る（HP10%消費／35%で装備、ほかは古銭17枚）",leave:"索引を読みながら休む（HP5%回復）",takeEffect:{hurt:.10,loot:.35,coins:17},leaveEffect:{heal:.05},source:"潮待ちの書庫の水底の索引箱",origin:"潮待ちの書庫で、水面に浮かぶ索引を頼りに見つけた品。",takeText:"文字の沈む先を手で探り、引き出しの奥から品物を拾った。",leaveText:"索引を閉じずに、読める頁を一枚だけ見送った。"},
+    library_return:{mode:"library",name:"返却されない本",desc:"返却箱が半分水に沈んでいる。箱の中には貸出札が一枚だけ残されていた。",take:"箱を開ける（HP8%消費／古銭23枚）",leave:"貸出札を戻して休む（HP4%回復／古銭4枚）",takeEffect:{hurt:.08,coins:23},leaveEffect:{heal:.04,coins:4},takeText:"貸出箱の底には古銭があり、借り主の名前は流れて消えていた。",leaveText:"貸出札を箱に返した。誰かの帰りを待つように、蓋が静かに閉じた。"},
+    library_lamp:{mode:"library",name:"消えない読書灯",desc:"水のなかで灯りが揺れている。机の上には乾いた紙が一枚。",take:"灯りの下を調べる（HP12%消費／40%で装備、ほかは古銭14枚）",leave:"明かりを借りて休む（HP6%回復）",takeEffect:{hurt:.12,loot:.40,coins:14},leaveEffect:{heal:.06},source:"潮待ちの書庫の水中の読書灯",origin:"潮待ちの書庫で、水のなかでも消えない読書灯の下から拾った品。",takeText:"濡れない紙を持ち上げると、そこに旅人の忘れ物があった。",leaveText:"読書灯の近くで呼吸を整えた。明かりは水面より下に留まった。"},
     bell_clapper:{mode:"bell",name:"鐘のない撞木",desc:"大鐘を叩くはずの撞木が、鎖だけで空中に留められている。揺らしても音はしないが、床がかすかに震えた。",take:"鎖をたぐり寄せる（HP14%消費／35%で装備、ほかは古銭25枚）",leave:"鎖から離れて休む（HP4%回復／古銭4枚）",takeEffect:{hurt:.14,loot:.35,coins:25},leaveEffect:{heal:.04,coins:4},source:"鳴らずの鐘楼の撞木の鎖の奥",origin:"鳴らずの鐘楼で、音を発しない撞木の鎖をたぐり寄せて見つけた品。",takeText:"撞木に触れると腕だけが揺れ、聞こえない振動が石壁に伝わった。",leaveText:"鎖が揺れ終わるのを見届け、音を立てずに離れた。"},
     bell_ledger:{mode:"bell",name:"鳴らなかった日の記録",desc:"点検台帳には毎日同じ時刻が記されている。『本日も異常なし』の文字だけが、日を追うごとに細くなる。",take:"台帳の引き出しを調べる（HP8%消費／古銭24枚）",leave:"書き込みを読み休む（HP3%回復／古銭8枚）",takeEffect:{hurt:.08,coins:24},leaveEffect:{heal:.03,coins:8},takeText:"点検台帳の引き出しから古銭を見つけた。最後の日付だけが書かれていない。",leaveText:"台帳を閉じた。記録を続けた人の手の疲れまで見えた気がした。"},
     bell_floor:{mode:"bell",name:"床下の微かな合図",desc:"床石が一定の間隔で震えている。音はない。割れた隙間には、何度も指で叩いたような小さな傷がついていた。",take:"床石を持ち上げる（HP12%消費／30%で装備、ほかは古銭18枚）",leave:"振動の弱い場所で休む（HP4%回復／古銭5枚）",takeEffect:{hurt:.12,loot:.30,coins:18},leaveEffect:{heal:.04,coins:5},source:"鳴らずの鐘楼の傷だらけの床石",origin:"鳴らずの鐘楼で、何度も叩かれた傷のある床石の下から見つけた品。",takeText:"石を持ち上げると振動が止まった。代わりに手のひらが一度だけ震えた。",leaveText:"合図を覚えようと、床の震えを数えてから離れた。"}
@@ -4096,7 +4122,7 @@ h2 {font-size:1.43rem;}
   // v1.1.14: Keep only the last two *regional* encounters for each destination.
   // Persisting across expeditions helps variety without rerolling an already
   // saved event or changing the 68% local-event chance.
-  const REGIONAL_HISTORY_KEYS=["normal","trial_standard","trial_mist","trial_echo","trial_ember","bell"];
+  const REGIONAL_HISTORY_KEYS=["normal","trial_standard","trial_mist","trial_echo","trial_ember","bell","library"];
   const regionalHistoryKey=r=>r.mode==="trial"?`trial_${r.seal}`:r.mode;
   function emptyRegionalEventHistory(){
     return Object.fromEntries(REGIONAL_HISTORY_KEYS.map(key=>[key,[]]));
@@ -4243,13 +4269,14 @@ h2 {font-size:1.43rem;}
   const RISK_ROUTES={
     vault:{name:"宝箱の残る旧道",desc:"次の敵のHP+10%、攻撃+4%。勝てば装備を必ず1点追加発見。",hp:1.10,attack:1.04,coins:0,extraLoot:"guaranteed"},
     riches:{name:"古銭の響く坑道",desc:"次の敵のHP+7%、攻撃+8%。勝てば古銭22枚を追加。",hp:1.07,attack:1.08,coins:22},
-    shortcut:{name:"棘だらけの近道",desc:"次の敵のHP-12%、攻撃+13%。勝てば古銭11枚と35%で装備を追加発見。",hp:.88,attack:1.13,coins:11,extraLoot:"chance"}
+    shortcut:{name:"棘だらけの近道",desc:"次の敵のHP-12%、攻撃+13%。勝てば古銭11枚と35%で装備を追加発見。",hp:.88,attack:1.13,coins:11,extraLoot:"chance"},
+    flooded_shelves:{name:"水没した書架",desc:"次の敵のHP+8%、攻撃+6%。勝てば古銭14枚と55%で装備を追加発見。",hp:1.08,attack:1.06,coins:14,extraLoot:"chance_library"}
   };
-  const RISK_ROUTE_IDS=Object.keys(RISK_ROUTES);
-  function routeOfferFor(r){return Object.hasOwn(RISK_ROUTES,r.routeOffer)?r.routeOffer:RISK_ROUTE_IDS[(r.floor+((r.visited||[]).length))%RISK_ROUTE_IDS.length];}
-  function prepareRouteOffer(r){r.routeOffer=RISK_ROUTE_IDS[Math.floor(rand()*RISK_ROUTE_IDS.length)];}
+  const RISK_ROUTE_IDS=["vault","riches","shortcut"];
+  function routeOfferFor(r){if(r.mode==="library")return "flooded_shelves";return RISK_ROUTE_IDS.includes(r.routeOffer)?r.routeOffer:RISK_ROUTE_IDS[(r.floor+((r.visited||[]).length))%RISK_ROUTE_IDS.length];}
+  function prepareRouteOffer(r){r.routeOffer=r.mode==="library"?"flooded_shelves":RISK_ROUTE_IDS[Math.floor(rand()*RISK_ROUTE_IDS.length)];}
   function selectFloorEvent(r){
-    if(!FLOOR_EVENT_FLOORS.has(r.floor) && !(r.mode==="trial"&&r.floor>=11&&r.floor<=14) && !(r.mode==="bell"&&r.floor>=16&&r.floor<=19))return null;
+    if(!FLOOR_EVENT_FLOORS.has(r.floor) && !(r.mode==="trial"&&r.floor>=11&&r.floor<=14) && !(r.mode==="bell"&&r.floor>=16&&r.floor<=19) && !(r.mode==="library"&&r.floor>=21&&r.floor<=24))return null;
     if(r.story){
       const story=r.story;
       const event=story.status==="unseen"&&r.floor===story.originFloor
@@ -4274,28 +4301,29 @@ h2 {font-size:1.43rem;}
     r.lastEvent=chosen;
     return chosen;
   }
-  const FLOOR_NAMES=["入口の石段","きらめく水路","苔の休息地","忘れられた碑文","鉄の番所","ひび割れた宝物庫","木漏れ日の廃庭","ささやく刻印","鍵の眠る通路","無名の門","小さな灯殿","霧の渡り場","星屑の甲冑廊","響きの織り場","星の門前","欠けた踊り場","歪んだ螺旋階段","灰色の調律室","音を失った鐘室","鳴らずの大鐘"];
+  const FLOOR_NAMES=["入口の石段","きらめく水路","苔の休息地","忘れられた碑文","鉄の番所","ひび割れた宝物庫","木漏れ日の廃庭","ささやく刻印","鍵の眠る通路","無名の門","小さな灯殿","霧の渡り場","星屑の甲冑廊","響きの織り場","星の門前","欠けた踊り場","歪んだ螺旋階段","灰色の調律室","音を失った鐘室","鳴らずの大鐘","干上がった目録室","波打つ閲覧室","頁の漂う通路","水鏡の書架","閉館の間"];
   // Public dungeon definitions, single source for unlock/range/UI/records.
   // Hide secret *rooms* by never registering them here.
   const PUBLIC_DUNGEONS=Object.freeze([
     {id:"normal",title:"苔むす石の回廊",difficulty:"標準",first:1,last:10,clears:"clears",deepest:"deepest",unlock:()=>true},
     {id:"trial",title:"星の門・深層試練",difficulty:"高難度",first:11,last:15,clears:"trialClears",deepest:"trialDeepest",unlock:()=>state.expeditionStats.clears>0},
+    {id:"library",title:"潮待ちの書庫",difficulty:"変則",first:21,last:25,clears:"libraryClears",deepest:"libraryDeepest",unlock:()=>state.expeditionStats.clears>0},
     {id:"bell",title:"鳴らずの鐘楼",difficulty:"高難度＋",first:16,last:20,clears:"bellClears",deepest:"bellDeepest",unlock:()=>state.expeditionStats.trialClears>0}
   ]);
   const dungeonDef=id=>PUBLIC_DUNGEONS.find(x=>x.id===id)||PUBLIC_DUNGEONS[0];
   const dungeonForRun=r=>dungeonDef(r?.mode||"normal");
   const dungeonFloorIndex=r=>(r?.floor||1)-dungeonForRun(r).first+1;
-  const displayRunFloor=r=>r.mode==="bell"?`第${dungeonFloorIndex(r)}鐘室`:`第${r.floor}階層`;
+  const displayRunFloor=r=>r.mode==="bell"?`第${dungeonFloorIndex(r)}鐘室`:r.mode==="library"?`第${dungeonFloorIndex(r)}閲覧室`:`第${r.floor}階層`;
   function beginExpedition(mode="normal"){
     if(hasActiveBattle()||state.expedition)return;
     if(!PUBLIC_DUNGEONS.some(x=>x.id===mode))mode="normal";
     const dungeon=dungeonDef(mode);
     if(!dungeon.unlock()){
-      toast(mode==="bell"?"星の門・深層試練を踏破すると鐘楼が解放されます":"十階層を踏破すると深層試練が解放されます");return;
+      toast(mode==="bell"?"星の門・深層試練を踏破すると鐘楼が解放されます":mode==="library"?"通常迷宮を踏破すると書庫が解放されます":"十階層を踏破すると深層試練が解放されます");return;
     }
     const supplies={...state.economy.prepared,chart:mode==="trial"&&state.economy.prepared.chart};
     const seal=mode==="trial"&&state.expeditionStats.trialClears>0&&Object.hasOwn(TRIAL_SEALS,state.settings.trialSeal)?state.settings.trialSeal:"standard";
-    const r={id:`run-${state.nextId++}`,mode,seal,floor:dungeon.first,phase:"combat",loot:[],shards:0,event:null,lastEvent:null,visited:[],supplies,route:null,routeOffer:null,routeHistory:[],story:mode==="bell"?null:makeStoryPlan(),journeyStart:{xp:state.growth.xp,level:state.growth.level,wins:state.stats.wins,unlocked:[...state.growth.unlocked]}};
+    const r={id:`run-${state.nextId++}`,mode,seal,floor:dungeon.first,phase:"combat",loot:[],shards:0,event:null,lastEvent:null,visited:[],supplies,route:null,routeOffer:null,routeHistory:[],story:["bell","library"].includes(mode)?null:makeStoryPlan(),journeyStart:{xp:state.growth.xp,level:state.growth.level,wins:state.stats.wins,unlocked:[...state.growth.unlocked]}};
     r.margin=planMargin(r);
     state.expedition=r;
      state.ui.lastReturn=null;
@@ -4304,7 +4332,8 @@ h2 {font-size:1.43rem;}
     state.expeditionStats.runs++;
     if(mode==="trial")state.expeditionStats.trialRuns++;
     if(mode==="bell")state.expeditionStats.bellRuns++;
-    addLog(mode==="trial"?`深層試練『${TRIAL_SEALS[seal].name}』へ。五つの戦いの先には、星の門が待っている。`:mode==="bell"?"鳴らずの鐘楼に踏み入る。音が欠けたこの場所では、大技の名前と被害予測が分からない。五つの鐘室を越えよう。":"探索の幕が上がる。十階層の迷宮へ。戦利品は帰還するまで仮確保される。","important");
+    if(mode==="library")state.expeditionStats.libraryRuns++;
+    addLog(mode==="library"?"潮待ちの書庫へ。満ち潮と引き潮が交互に現れる。乾いた通路で整えるか、水没した書架を探るかを選ぼう。":mode==="trial"?`深層試練『${TRIAL_SEALS[seal].name}』へ。五つの戦いの先には、星の門が待っている。`:mode==="bell"?"鳴らずの鐘楼に踏み入る。音が欠けたこの場所では、大技の名前と被害予測が分からない。五つの鐘室を越えよう。":"探索の幕が上がる。十階層の迷宮へ。戦利品は帰還するまで仮確保される。","important");
     newBattle();
   }
   function givePendingItem(source,originNote=null,options={}){
@@ -4320,7 +4349,7 @@ h2 {font-size:1.43rem;}
   function finishExpedition(outcome){
     const r=state.expedition;if(!r)return;
     stopTimer();
-    const clear=outcome==="clear",failure=outcome==="defeat",trial=r.mode==="trial",bell=r.mode==="bell";
+    const clear=outcome==="clear",failure=outcome==="defeat",trial=r.mode==="trial",bell=r.mode==="bell",library=r.mode==="library";
     // Count only runs that reached the relevant floors without a door.
     // A defeat before floor 14 cannot silently consume the guarantee.
     if(trial&&r.margin&&r.margin.floor===null&&(r.visited||[]).includes(14)){
@@ -4332,12 +4361,16 @@ h2 {font-size:1.43rem;}
       const draw=rand(),rewardRarity=draw<.12?"legendary":draw<.55?"epic":"rare";
       givePendingItem("鐘の眠る部屋から見つけた装備", "鳴らずの鐘楼を踏破し、大鐘の下に眠る装備を見つけた。", {rarity:rewardRarity});
     }
+    if(clear&&library){
+      const roll=rand(),rewardRarity=roll<.05?"legendary":roll<.40?"epic":"rare";
+      givePendingItem("閉館の間から見つけた装備","潮待ちの書庫を最後まで歩き、返却されなかった品を持ち帰った。",{rarity:rewardRarity});
+    }
     if(clear&&trial){
       const rewardRarity=rand()<.10?"legendary":rand()<.45?"epic":"rare";
       givePendingItem("星の門から授かった戦利品",`深層試練『${seal.name}』の星の門を突破し、特別な戦利品として得た。`,{rarity:rewardRarity});
     }
     const checkpoint= r.floor%5===0;
-    const multiplier=trial?(clear?1.60*seal.coin:(!failure&&checkpoint?1.15:1)):bell?(clear?1.70:(!failure&&checkpoint?1.15:1)):(clear?1.35:(!failure&&checkpoint?1.20:1));
+    const multiplier=trial?(clear?1.60*seal.coin:(!failure&&checkpoint?1.15:1)):bell?(clear?1.70:(!failure&&checkpoint?1.15:1)):library?(clear?1.40:(!failure&&checkpoint?1.15:1)):(clear?1.35:(!failure&&checkpoint?1.20:1));
     const gain=failure?Math.floor(r.shards/2):Math.floor(r.shards*multiplier);
     // v0.9.5: the Star Chart is consumed only on a trial entry, and pays out
     // only on its successful completion. No extra roll on retreat or defeat.
@@ -4368,6 +4401,7 @@ h2 {font-size:1.43rem;}
     state.economy.coins=Math.min(COIN_CAP,state.economy.coins+coins);
     if(r.mode==="normal")state.expeditionStats.deepest=Math.max(state.expeditionStats.deepest,r.floor);
     if(bell)state.expeditionStats.bellDeepest=Math.max(state.expeditionStats.bellDeepest,r.floor);
+    if(library)state.expeditionStats.libraryDeepest=Math.max(state.expeditionStats.libraryDeepest,r.floor);
     if(r.story?.status==="carried"){
       r.story.status="interrupted";
       state.expeditionStats.storyInterrupted++;
@@ -4379,16 +4413,18 @@ h2 {font-size:1.43rem;}
         state.expeditionStats.trialClears++;
         if(r.seal!=="standard")state.expeditionStats.sealClears[r.seal]++;
       }else if(bell)state.expeditionStats.bellClears++;
+      else if(library)state.expeditionStats.libraryClears++;
       else state.expeditionStats.clears++;
     }
-    else if(failure){state.expeditionStats.defeats++;if(trial)state.expeditionStats.trialDefeats++;if(bell)state.expeditionStats.bellDefeats++;}
-    else {state.expeditionStats.retreats++;if(trial)state.expeditionStats.trialRetreats++;if(bell)state.expeditionStats.bellRetreats++;}
+    else if(failure){state.expeditionStats.defeats++;if(trial)state.expeditionStats.trialDefeats++;if(bell)state.expeditionStats.bellDefeats++;if(library)state.expeditionStats.libraryDefeats++;}
+    else {state.expeditionStats.retreats++;if(trial)state.expeditionStats.trialRetreats++;if(bell)state.expeditionStats.bellRetreats++;if(library)state.expeditionStats.libraryRetreats++;}
     if(trial)state.expeditionStats.trialDeepest=Math.max(state.expeditionStats.trialDeepest,r.floor);
     if(bell)state.expeditionStats.bellDeepest=Math.max(state.expeditionStats.bellDeepest,r.floor);
+    if(library)state.expeditionStats.libraryDeepest=Math.max(state.expeditionStats.libraryDeepest,r.floor);
     state.expedition=null;
     if(clear){
-      addLog(`${trial?"深層試練・星の門を突破！":bell?"鳴らずの鐘楼を踏破！":"第10階層を踏破！"} 装備${accepted}点、古銭${coins}枚を持ち帰った。`,`important`);
-      recordMoment("victory",`${trial?`星の門を越え、『${seal.name}』を踏破`:bell?"鳴らずの鐘楼を踏破":"十階層を踏破"}。古銭${coins}枚と装備${accepted}点を持ち帰った。`,{once:`expedition-${state.nextId++}`});
+      addLog(`${trial?"深層試練・星の門を突破！":bell?"鳴らずの鐘楼を踏破！":library?"潮待ちの書庫を踏破！":"第10階層を踏破！"} 装備${accepted}点、古銭${coins}枚を持ち帰った。`,`important`);
+      recordMoment("victory",`${trial?`星の門を越え、『${seal.name}』を踏破`:bell?"鳴らずの鐘楼を踏破":library?"潮待ちの書庫を踏破":"十階層を踏破"}。古銭${coins}枚と装備${accepted}点を持ち帰った。`,{once:`expedition-${state.nextId++}`});
     }else if(failure){
       addLog(`探索失敗。装備${accepted}点と古銭${coins}枚を辛うじて回収した。`,"danger");
     }else{
@@ -4414,7 +4450,7 @@ h2 {font-size:1.43rem;}
    function expeditionVictory(){
     const r=state.expedition;if(!r)return;
     r.visited.push(r.floor);
-    r.shards+=r.mode==="trial"?15+(r.floor-10)*5:r.mode==="bell"?25+(r.floor-15)*6:5+r.floor*2;
+    r.shards+=r.mode==="trial"?15+(r.floor-10)*5:r.mode==="bell"?25+(r.floor-15)*6:r.mode==="library"?12+(r.floor-20)*4:5+r.floor*2;
     // v1.1.46: Moderate expedition sustain tuning; affects completed floors only.
     const recoveryRate=r.supplies?.herbs?.25:.18;
     const env=ENVIRONMENTS[environmentAt(r.floor)];
@@ -4423,6 +4459,7 @@ h2 {font-size:1.43rem;}
     if(recovery>0){state.hero.hp+=recovery;addLog(`階層突破の小休止。HPが${recovery}回復した。${r.supplies?.herbs?"薬草包の助けがあった。":""}`,"positive");}
     if(r.mode==="trial")state.expeditionStats.trialDeepest=Math.max(state.expeditionStats.trialDeepest,r.floor);
     else if(r.mode==="bell")state.expeditionStats.bellDeepest=Math.max(state.expeditionStats.bellDeepest,r.floor);
+    else if(r.mode==="library")state.expeditionStats.libraryDeepest=Math.max(state.expeditionStats.libraryDeepest,r.floor);
     else state.expeditionStats.deepest=Math.max(state.expeditionStats.deepest,r.floor);
     // Route rewards belong only to the floor where the route was taken.
     if(r.route?.floor===r.floor){
@@ -4432,6 +4469,7 @@ h2 {font-size:1.43rem;}
         if(reward.coins)addLog(`${reward.name}の踏破報酬として古銭${reward.coins}枚を得た。`,"positive");
         if(reward.extraLoot==="guaranteed")givePendingItem("旧道の奥に眠る装備");
         if(reward.extraLoot==="chance"&&rand()<.35)givePendingItem("棘の向こうで見つけた装備");
+        if(r.mode==="library"&&reward.extraLoot==="chance_library"&&rand()<.55)givePendingItem("水没した書架の奥に残っていた装備","潮待ちの書庫で、波に沈む本棚の奥を探して手にした品。");
       }
     }
     if(r.floor===dungeonForRun(r).last){finishExpedition("clear");return;}
@@ -4510,8 +4548,8 @@ h2 {font-size:1.43rem;}
     r.routeHistory=r.routeHistory.slice(-9);
     if(kind==="safe")state.expeditionStats.safeRoutes++;
     else state.expeditionStats.riskyRoutes++;
-    const label=kind==="safe"?"整備された側道":RISK_ROUTES[actual].name;
-    recordMoment("path",`第${dest}階層へ向かう際に『${label}』を選んだ。`,{stage:dest,foe:""});
+    const label=kind==="safe"?(r.mode==="library"?"乾いた通路":"整備された側道"):RISK_ROUTES[actual].name;
+    recordMoment("path",`${r.mode==="library"?`第${dest-20}閲覧室`:`第${dest}階層`}へ向かう際に『${label}』を選んだ。`,{stage:dest,foe:""});
     r.floor=dest;r.phase="combat";r.routeOffer=null;
     rememberRegion(dest);
     addLog(`『${label}』を通って${displayRunFloor(r)}、『${FLOOR_NAMES[r.floor-1]}』へ踏み込んだ。`,`important`);
@@ -4540,8 +4578,9 @@ h2 {font-size:1.43rem;}
     // A new encounter starts with enough Focus to establish a build early.
     state.hero.focus = 3;
     const bell=state.expedition?.mode==="bell";
-    const foeId=bell?`bell-${activeFloor}`:activeFloor>=11&&activeFloor<=15?`depth-${activeFloor}`:encounterKind(activeFloor);
-    const template=bell?BELL_ENEMIES[activeFloor]:activeFloor>=11&&activeFloor<=15?DEPTH_ENEMIES[activeFloor]:ENEMY_TYPES[foeId];
+    const library=state.expedition?.mode==="library";
+    const foeId=bell?`bell-${activeFloor}`:library?`library-${activeFloor}`:activeFloor>=11&&activeFloor<=15?`depth-${activeFloor}`:encounterKind(activeFloor);
+    const template=bell?BELL_ENEMIES[activeFloor]:library?LIBRARY_ENEMIES[activeFloor]:activeFloor>=11&&activeFloor<=15?DEPTH_ENEMIES[activeFloor]:ENEMY_TYPES[foeId];
     const enemyHp=Math.round((190 + tier*14)*template.hp);
     const enemy={catalogId:foeId,name:template.name,maxHp:enemyHp,hp:enemyHp,
       attack:Math.round((19+tier*2)*template.atk),defense:Math.round((18+Math.floor(tier/2)*3)*template.def),
@@ -5165,6 +5204,12 @@ h2 {font-size:1.43rem;}
       `踏破 ${stats.bellClears}回 ／ 最深到達 第${stats.bellDeepest-15}鐘室`:
       stats.bellDeepest>0?`最深到達 第${stats.bellDeepest-15}鐘室 ／ 踏破はまだありません`:"解放済み。五つの鐘室に挑戦できる。");
     setText("dungeon-bell-launch-label",bellAvailable?"鐘楼へ出発":"解放後に挑戦できます");
+    const libraryAvailable=dungeonDef("library").unlock();
+    $("library-start-button").disabled=!libraryAvailable;
+    setText("dungeon-record-library",!libraryAvailable?"解放条件：通常迷宮を1回踏破":stats.libraryClears>0?
+      `踏破 ${stats.libraryClears}回 ／ 最深到達 第${stats.libraryDeepest-20}閲覧室`:
+      stats.libraryDeepest>0?`最深到達 第${stats.libraryDeepest-20}閲覧室 ／ 踏破はまだありません`:"解放済み。五つの閲覧室を探索できる。");
+    setText("dungeon-library-launch-label",libraryAvailable?"書庫へ出発":"解放後に挑戦できます");
   }
   function renderExpedition(){
     const r=state.expedition,stats=state.expeditionStats;
@@ -5196,11 +5241,11 @@ h2 {font-size:1.43rem;}
     $("expedition-environment").hidden=false;
     $("expedition-environment-name").textContent=`区域：${env.name}`;
     $("expedition-environment-effect").textContent=env.short;
-    title.textContent=`${r.mode==="trial"?`深層試練・${TRIAL_SEALS[r.seal].name}・`:r.mode==="bell"?"鳴らずの鐘楼・":""}${r.mode==="bell"?`第${dungeonFloorIndex(r)}鐘室`:`${displayRunFloor(r)}`} — ${FLOOR_NAMES[r.floor-1]}`;
+    title.textContent=`${r.mode==="trial"?`深層試練・${TRIAL_SEALS[r.seal].name}・`:r.mode==="bell"?"鳴らずの鐘楼・":r.mode==="library"?"潮待ちの書庫・":""}${r.mode==="bell"?`第${dungeonFloorIndex(r)}鐘室`:`${displayRunFloor(r)}`} — ${FLOOR_NAMES[r.floor-1]}`;
     info.textContent=`${r.phase==="combat"?"敵との戦闘中":r.phase==="event"?"探索中に発見したもの":"分かれ道"} / ${dungeonFloorIndex(r)} / ${dungeonForRun(r).last-dungeonForRun(r).first+1}`;
     hint.textContent=r.phase==="combat"?"敵を倒すと進路を選べます。戦闘中は途中帰還できません。":r.phase==="event"?"どちらかを選ぶと次へ進めます。":"進むほど古銭と装備が増えますが、敗北すれば失います。";
     $("expedition-progress").style.width=`${Math.round(((dungeonFloorIndex(r)-1)+(r.phase==="combat"?0:1))*100/(dungeonForRun(r).last-dungeonForRun(r).first+1))}%`;
-    $("expedition-cargo").textContent=`仮確保：装備${r.loot.length}点 / 古銭${r.shards}枚${r.loot.length?`（最新：${r.loot[r.loot.length-1].name}）`:""}${r.supplies?.herbs||r.supplies?.lantern?` / 探索の支度：${[r.supplies.herbs?"薬草包":null,r.supplies.lantern?"探し物の灯り":null].filter(Boolean).join("・")}`:""}${r.route?.floor===r.floor?` / 選択した道：${r.route.kind==="safe"?"整備された側道":RISK_ROUTES[r.route.kind]?.name||"不明"}`:""}`;
+    $("expedition-cargo").textContent=`仮確保：装備${r.loot.length}点 / 古銭${r.shards}枚${r.loot.length?`（最新：${r.loot[r.loot.length-1].name}）`:""}${r.supplies?.herbs||r.supplies?.lantern?` / 探索の支度：${[r.supplies.herbs?"薬草包":null,r.supplies.lantern?"探し物の灯り":null].filter(Boolean).join("・")}`:""}${r.route?.floor===r.floor?` / 選択した道：${r.route.kind==="safe"?(r.mode==="library"?"乾いた通路":"整備された側道"):RISK_ROUTES[r.route.kind]?.name||"不明"}`:""}`;
     if(r.phase==="event"){
       $("expedition-event").hidden=false;
       $("expedition-fragment-paper").hidden=true;
@@ -5245,7 +5290,7 @@ h2 {font-size:1.43rem;}
     }
     if(r.phase==="choice"){
       $("expedition-choice").hidden=false;
-      $("expedition-next").textContent=`整備された側道（HP10%回復）`;
+      $("expedition-next").textContent=r.mode==="library"?"乾いた通路（HP10%回復）":"整備された側道（HP10%回復）";
       const risky=RISK_ROUTES[routeOfferFor(r)];
       $("expedition-risk").textContent=risky.name;
       $("expedition-risk-hint").textContent=risky.desc;
@@ -5307,7 +5352,7 @@ h2 {font-size:1.43rem;}
   function renderBattle(){
     const b=state.battle, hero=state.hero, active=hasActiveBattle();
     const displayed=b && b.active ? b : null;
-    setText("floor-label",state.expedition?state.expedition.mode==="bell"?`第${dungeonFloorIndex(state.expedition)}鐘室 / 5`:`第${state.expedition.floor}階層 / ${dungeonForRun(state.expedition).last}`:"探索準備");
+    setText("floor-label",state.expedition?state.expedition.mode==="bell"?`第${dungeonFloorIndex(state.expedition)}鐘室 / 5`:state.expedition.mode==="library"?`第${dungeonFloorIndex(state.expedition)}閲覧室 / 5`:`第${state.expedition.floor}階層 / ${dungeonForRun(state.expedition).last}`:"探索準備");
     setText("player-name",hero.name);
     const selected=TITLES.find(t=>t.id===state.selectedTitle);
     setText("title-label",selected ? `『${selected.name}』` : "異名なし");
@@ -5401,6 +5446,7 @@ h2 {font-size:1.43rem;}
     }
     $("start-button").disabled=active||Boolean(state.expedition);
     $("trial-start-button").disabled=active||Boolean(state.expedition)||state.expeditionStats.clears<1;
+    $("library-start-button").disabled=active||Boolean(state.expedition)||state.expeditionStats.clears<1;
     setText("start-label",state.expedition?"探索進行中":active?"探索中…":"探索を始める");
     $("pause-button").disabled=!active;
     setText("pause-label",b?.paused?"再開する":"一時停止");
@@ -6052,7 +6098,7 @@ h2 {font-size:1.43rem;}
     $("environment-discoveries").innerHTML=state.regionsSeen.length
       ?state.regionsSeen.map(id=>`<li><strong>${escapeHTML(ENVIRONMENTS[id].name)}</strong> — ${escapeHTML(ENVIRONMENTS[id].desc)}</li>`).join("")
       :"<li>まだ見つけた区域はありません。</li>";
-    $("expedition-stats").innerHTML=[["鐘楼の挑戦",rs.bellRuns],["鐘楼の踏破",rs.bellClears],["鐘楼の最深到達",rs.bellDeepest?`${rs.bellDeepest-15}鐘室`:"未到達"],["鐘楼の撤退",rs.bellRetreats],["鐘楼の探索失敗",rs.bellDefeats],["星霧の踏破",rs.sealClears.mist],["反響の踏破",rs.sealClears.echo],["残り火の踏破",rs.sealClears.ember],["深層試練の挑戦",rs.trialRuns],["深層試練の踏破",rs.trialClears],["星の門への到達",rs.trialDeepest?`${rs.trialDeepest}階`:"未到達"],["手持ちの古銭",state.economy.coins],["安全な道を選んだ回数",rs.safeRoutes],["危険な道を選んだ回数",rs.riskyRoutes],["物語との出会い",rs.storyFinds],["物語の結末",rs.storyCompletions],["見送った縁",rs.storyDeclines],["道半ばの物語",rs.storyInterrupted],["古銭の支出",state.economy.spent],["装備の特性調律",state.economy.tunings],["星図を購入した回数",state.economy.chartsBought],["処分品から回収",state.economy.salvaged],["挑戦",rs.runs],["最深到達",`${rs.deepest}階`],["完全踏破",rs.clears],["帰還",rs.retreats],["持ち帰った古銭",rs.bankedShards],["探索失敗",rs.defeats]].map(([a,b])=>`<div class="stat-box"><span>${a}</span><strong>${b}</strong></div>`).join("");
+    $("expedition-stats").innerHTML=[["書庫の挑戦",rs.libraryRuns],["書庫の踏破",rs.libraryClears],["書庫の最深到達",rs.libraryDeepest?`${rs.libraryDeepest-20}閲覧室`:"未到達"],["書庫の撤退",rs.libraryRetreats],["書庫の探索失敗",rs.libraryDefeats],["鐘楼の挑戦",rs.bellRuns],["鐘楼の踏破",rs.bellClears],["鐘楼の最深到達",rs.bellDeepest?`${rs.bellDeepest-15}鐘室`:"未到達"],["鐘楼の撤退",rs.bellRetreats],["鐘楼の探索失敗",rs.bellDefeats],["星霧の踏破",rs.sealClears.mist],["反響の踏破",rs.sealClears.echo],["残り火の踏破",rs.sealClears.ember],["深層試練の挑戦",rs.trialRuns],["深層試練の踏破",rs.trialClears],["星の門への到達",rs.trialDeepest?`${rs.trialDeepest}階`:"未到達"],["手持ちの古銭",state.economy.coins],["安全な道を選んだ回数",rs.safeRoutes],["危険な道を選んだ回数",rs.riskyRoutes],["物語との出会い",rs.storyFinds],["物語の結末",rs.storyCompletions],["見送った縁",rs.storyDeclines],["道半ばの物語",rs.storyInterrupted],["古銭の支出",state.economy.spent],["装備の特性調律",state.economy.tunings],["星図を購入した回数",state.economy.chartsBought],["処分品から回収",state.economy.salvaged],["挑戦",rs.runs],["最深到達",`${rs.deepest}階`],["完全踏破",rs.clears],["帰還",rs.retreats],["持ち帰った古銭",rs.bankedShards],["探索失敗",rs.defeats]].map(([a,b])=>`<div class="stat-box"><span>${a}</span><strong>${b}</strong></div>`).join("");
     const st=state.stats;
     setText("record-name",state.selectedTitle?`${TITLES.find(t=>t.id===state.selectedTitle)?.name||""}の旅人`:"名もなき旅人");
     const profile=currentFightingStyle();
@@ -6149,6 +6195,7 @@ h2 {font-size:1.43rem;}
     $("start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition();});
     $("trial-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("trial");});
     $("bell-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("bell");});
+    $("library-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("library");});
     $("trial-seal-select").addEventListener("change",e=>{
       if(hasActiveBattle()||state.expedition||state.expeditionStats.trialClears<1||!Object.hasOwn(TRIAL_SEALS,e.target.value))return;
       state.settings.trialSeal=e.target.value;save();render();
