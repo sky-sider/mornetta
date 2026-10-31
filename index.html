@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#17383d">
 <meta name="description" content="ランダム装備とビルド構築を楽しむ、テキスト主体の半自動ハクスラ。">
-<title>モルネッタ | 1.1.42</title>
+<title>モルネッタ | 1.1.48</title>
 <style>
 :root{color-scheme:dark;--bg:#0e1725;--night:#101b2b;--panel:#182639;--panel-2:#1d2c41;--line:#344257;--line-soft:#2a394e;--text:#eee9df;--muted:#b8bcc5;--subtle:#8e9bad;--amber:#e0b881;--amber-pale:#f0d6a8;--mint:#9bc7b5;--red:#d58f8b;--blue:#a5bce0;--radius:15px;--tap:46px;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:15px}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);background:radial-gradient(circle at 70% -12%,#253651 0%,transparent 42%),var(--bg);line-height:1.65;min-height:100vh}button,select,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:not-allowed}button,select{-webkit-tap-highlight-color:transparent}button:focus-visible,select:focus-visible,input:focus-visible,label.file-import:focus-within{outline:2px solid var(--amber);outline-offset:3px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.35}h1{font-size:1.5rem;letter-spacing:.09em;font-weight:700}h2{font-size:1.45rem;font-weight:680;letter-spacing:.04em}h3{font-size:1.04rem;font-weight:650}small{font-size:.76rem}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.icon{width:20px;height:20px;display:inline-block;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.icon-lg{width:27px;height:27px}.icon-inline{width:15px;height:15px;vertical-align:-2px}.app-shell{max-width:1080px;margin:auto;padding:0 21px}.masthead{padding:32px 0 22px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--line-soft)}.brand-mark{width:49px;height:49px;border-radius:15px;border:1px solid #9c8058;color:var(--amber);display:grid;place-items:center;background:#222b39;flex-shrink:0}.eyebrow,.label{color:var(--amber);font-size:.68rem;letter-spacing:.15em;font-weight:700}.masthead .eyebrow{margin:0 0 5px}.tagline{color:var(--subtle);font-size:.79rem;margin-top:5px}.version{color:var(--subtle);font-weight:400;margin-left:8px}.app-layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:36px;padding:28px 0 20px}.nav{display:flex;flex-direction:column;gap:7px;position:sticky;top:24px;align-self:start}.nav-button{min-height:var(--tap);display:flex;align-items:center;gap:14px;background:transparent;color:var(--muted);border:1px solid transparent;border-radius:12px;padding:10px 14px;text-align:left;transition:background .14s,color .14s,border .14s}.nav-button:hover{background:#223147;color:var(--text)}.nav-button.is-current{background:#2a3442;color:var(--amber-pale);border-color:#746043}.nav-button span{font-size:.91rem}.main-content{min-width:0;max-width:680px;width:100%;margin:auto}.page[hidden]{display:none!important}.page{display:grid;gap:14px;animation:fadein .18s ease-out}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 2px 4px}.page-heading .eyebrow{margin-bottom:6px}.chip{padding:4px 11px;color:var(--amber-pale);background:#3b3540;border:1px solid #64556a;border-radius:20px;white-space:nowrap;font-size:.78rem}.glass{background:linear-gradient(150deg,#1a293c,#162336);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px}.split-line,.section-top{display:flex;justify-content:space-between;align-items:start;gap:14px}.section-top{align-items:center;margin-bottom:10px}.section-top small,.helper{color:var(--subtle);font-size:.76rem}.name-line{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.name-line strong{font-size:1.04rem}.name-line small{color:var(--amber)}.little-status{font-size:.71rem;color:var(--mint);border:1px solid #54705f;background:#263c3e;padding:2px 9px;border-radius:20px;white-space:nowrap}.meter-label{margin:14px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:.79rem}.meter-label strong{color:var(--text);font-size:.83rem;font-variant-numeric:tabular-nums}.meter{height:8px;background:#394456;border-radius:20px;overflow:hidden}.meter-fill{height:100%;border-radius:20px;transition:width .22s ease}.meter-fill.hp{background:linear-gradient(90deg,#70a892,#b6d7bc)}.meter-fill.enemy{background:linear-gradient(90deg,#ad6865,#d9a39a)}.focus-cells{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.focus-cell{height:9px;border-radius:5px;background:#394355}.focus-cell.full{background:#d6af73}.enemy-card{background:linear-gradient(150deg,#202939,#1a2434);border-color:#46505a}.enemy-card h3{margin-top:5px}.enemy-type{font-size:.67rem;letter-spacing:.1em;color:#c2a691;border:1px solid #766052;border-radius:8px;padding:4px 8px}.enemy-descr{font-size:.84rem;color:var(--muted);margin-top:12px}.status-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;min-height:0}.status-tag{font-size:.73rem;border:1px solid #567e72;color:#b4d6be;border-radius:7px;padding:2px 7px}.status-tag.warning{border-color:#ae8765;color:#f0c7a0}.log-card{padding-bottom:14px}.combat-log{list-style:none;display:flex;flex-direction:column-reverse;gap:0;max-height:216px;overflow:auto;padding:0;margin:0;scrollbar-color:#647086 transparent}.combat-log li{padding:7px 2px;border-top:1px solid #ffffff0c;font-size:.85rem;color:#cbd0d8;line-height:1.5;overflow-wrap:anywhere}.combat-log li:first-child{color:var(--text)}.combat-log li.important{color:var(--amber-pale)}.combat-log li.positive{color:var(--mint)}.combat-log li.danger{color:#e6a6a0}.combat-log li.log-hint{color:var(--subtle)}.controls-card{padding-bottom:14px}.actions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.action-btn{min-height:76px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:9px 3px;background:#24354a;color:var(--text);border:1px solid #455369;border-radius:12px}.action-btn:hover:not(:disabled){background:#2f4159}.action-btn.queued{color:var(--amber-pale);border-color:var(--amber);box-shadow:0 0 0 1px #e0b88155 inset}.action-btn span{font-size:.79rem;white-space:nowrap}.action-btn small{color:var(--subtle);font-size:.7rem;white-space:nowrap}.action-btn .icon{color:var(--amber);width:19px;height:19px}.battle-toolbar{display:grid;grid-template-columns:1fr 1fr 61px;gap:9px;margin-top:14px}.btn{min-height:var(--tap);display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:11px;padding:8px 13px;border:1px solid #46546a;color:var(--text);background:#2b3a4e;font-size:.84rem;font-weight:600;white-space:nowrap}.btn .icon{width:17px;height:17px}.btn.primary{color:#21242d;background:#d8b77f;border-color:#e2c591}.btn.primary:hover:not(:disabled){background:#f0cf98}.btn.secondary:hover:not(:disabled){background:#354861}.btn.quiet{color:var(--muted);padding:6px 5px}.small-note{color:var(--subtle);font-size:.78rem;line-height:1.72;margin-top:12px}.alert-strip{display:flex;align-items:start;gap:12px;padding:13px;border:1px solid #bb9464;background:#493d35;border-radius:12px;color:#f2d8b7}.alert-strip[hidden]{display:none}.alert-strip p{font-size:.79rem;margin-top:4px;color:#f0d9c3}.alert-strip strong{font-size:.84rem}.item-card,.settings-card,.record-card{display:grid;gap:12px}.item-title{display:flex;align-items:center;gap:10px;color:var(--amber-pale)}.item-details{font-size:.82rem;color:var(--muted)}.flavor{font-size:.83rem;font-style:italic;color:#c2bac1;border-left:2px solid #77684f;padding-left:12px}.item-tally{font-size:.82rem;color:var(--mint);padding:9px 12px;background:#25384a;border-radius:9px}.gear-options{display:grid;gap:9px}.gear-choice{width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;padding:14px;background:#213047;color:var(--text);display:grid;gap:5px;min-height:var(--tap)}.gear-choice.is-equipped{border-color:#d6b47b;background:#302f38}.gear-choice strong{font-size:.88rem}.gear-choice span{color:var(--muted);font-size:.78rem}.gear-choice em{color:var(--amber);font-size:.73rem;font-style:normal}.history-list{margin:0;padding-left:1.3rem;color:var(--muted);font-size:.85rem;display:grid;gap:7px}.form-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--line-soft);font-size:.88rem}.form-row span{min-width:0}.form-row select{max-width:160px;width:44%;min-height:42px;background:#233349;color:var(--text);border:1px solid #50617a;border-radius:10px;padding:7px}.check-row input{width:21px;height:21px;accent-color:#d8b77f}.rules-summary{background:#24354a;color:var(--muted);border:1px dashed #54677c;padding:13px;border-radius:10px;font-size:.82rem;line-height:1.8}.settings-card>p:not(.small-note){font-size:.86rem;color:var(--muted)}.settings-card h3{color:var(--amber-pale)}.utility-row{display:flex;flex-wrap:wrap;gap:8px}.file-import{position:relative;cursor:pointer}.file-import input{position:absolute;width:1px;height:1px;opacity:0}.text-danger{border:0;background:transparent;padding:8px 0;text-align:left;min-height:42px;color:#e6a6a0;font-size:.82rem;width:max-content}.record-prose{font-size:.87rem;color:var(--muted)}.stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat-box{border:1px solid var(--line-soft);border-radius:10px;padding:10px;background:#203149}.stat-box span{display:block;color:var(--subtle);font-size:.76rem}.stat-box strong{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--text)}.title-entry{padding:11px 0;border-top:1px solid var(--line-soft);font-size:.88rem;display:flex;justify-content:space-between;gap:10px}.title-entry span{color:var(--subtle);font-size:.76rem}.title-entry strong{color:var(--amber)}.title-select{margin-top:6px;min-height:38px;border:1px solid #765e45;border-radius:8px;background:#3c3540;color:var(--amber-pale);font-size:.78rem;padding:6px 11px}.site-footer{border-top:1px solid var(--line-soft);padding:22px 0 32px;color:#7f8fa4;font-size:.72rem;letter-spacing:.08em}.site-footer span{letter-spacing:0;margin-left:8px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,12px);border:1px solid #8b724e;background:#383645;color:var(--amber-pale);padding:10px 16px;box-shadow:0 12px 26px #080f1e8c;border-radius:12px;max-width:min(92vw,440px);text-align:center;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:10;font-size:.85rem}.toast.visible{opacity:1;transform:translate(-50%,0)}
@@ -1764,6 +1764,38 @@ h2 {font-size:1.43rem;}
 .guild-training-shortcut:focus-visible{outline:3px solid #ffe19c;outline-offset:3px}
 @media(max-width:460px){.guild-page-heading{align-items:flex-start}.guild-training-shortcut{font-size:.86rem}.guild-training-shortcut-points{font-size:.8rem}}
 
+/* 1.1.47 — Read-only pre-departure check. Never decides a player's build or locks a dungeon. */
+.departure-kit{
+  margin-top:14px;padding:14px 15px 13px;
+  border:1px solid #90ad9e;border-bottom:3px solid #648a81;border-radius:12px;
+  background:linear-gradient(140deg,#1b4447,#1b3d41);color:#f2ead4;
+}
+.departure-kit-heading{display:flex;gap:8px;align-items:baseline;justify-content:space-between;flex-wrap:wrap;margin-bottom:10px}
+.departure-kit-heading h4{margin:0;color:#f9e5b7;font-size:1rem}
+.departure-kit-heading span{color:#c7ddd0;font-size:.82rem}
+.departure-kit-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 0 12px}
+.departure-kit-metrics>div{min-width:0;padding:9px 8px;border:1px solid #628f89;border-radius:9px;background:#254d4d}
+.departure-kit-metrics small{display:block;color:#c9dcd1;font-size:.8rem;line-height:1.4}
+.departure-kit-metrics strong{display:block;margin-top:4px;color:#ffebb9;font-size:.93rem;line-height:1.4;overflow-wrap:anywhere}
+.departure-kit-hint{font-size:.89rem;line-height:1.75;color:#e5e7d9;margin:0 0 10px}
+.departure-kit-links{display:flex;gap:8px;flex-wrap:wrap}
+.departure-kit-links button{min-height:44px;padding:9px 14px;border:1px solid #bed4bf;border-bottom:3px solid #769b8b;border-radius:10px;background:#345c58;color:#fff3d7;font:inherit;font-size:.89rem;font-weight:700;cursor:pointer}
+.departure-kit-links button:focus-visible{outline:3px solid #f8d08a;outline-offset:2px}
+.departure-kit-footnote{color:#bbd2c7;font-size:.8rem;line-height:1.6;margin:10px 0 0}
+@media(max-width:700px){.departure-kit-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:370px){.departure-kit{padding:12px 10px}.departure-kit-metrics{gap:6px}.departure-kit-links button{flex:1}}
+
+
+
+/* v1.1.43: visible enemy tells. All calculated from current battle state. */
+.enemy-tell{margin:12px 0 10px;padding:10px 12px;border:1px solid #83aa9c;border-left:4px solid #b8d4a5;border-radius:9px;background:rgba(10,29,34,.48);min-width:0;}
+.enemy-tell.is-warning{border-left-color:#f0c681;border-color:#a48b6b;background:rgba(83,52,30,.28)}
+.enemy-tell-label{display:block;font-size:.77rem;color:#c7e2bf;font-weight:800;letter-spacing:.035em;margin-bottom:4px}
+.enemy-tell.is-warning .enemy-tell-label{color:#f9dca2}
+.enemy-tell-now{font-size:.91rem;line-height:1.6;color:#fff3d8;font-weight:750;margin:0 0 4px}
+.enemy-tell-tip{margin:0;color:#d8e6dd;font-size:.85rem;line-height:1.65;overflow-wrap:anywhere}
+@media(max-width:560px){.enemy-tell{padding:10px 11px}.enemy-tell-now{font-size:.91rem}.enemy-tell-tip{font-size:.85rem}}
+
 /* 1.1.39 — Training hall receptionist portrait and ADV-style speech bubble. */
 #guild-training .training-hall-intro.npc-dialogue-scene{
   display:grid;
@@ -1793,6 +1825,32 @@ h2 {font-size:1.43rem;}
 @media(max-width:360px){
   #guild-training .training-guide-portrait{width:112px;}
 }
+
+
+
+/* 1.1.48 — First journeys: factual recap, not a reward multiplier. */
+.run-recap{margin:0 0 18px;padding:15px;color:#513d2a;background:linear-gradient(145deg,#fff1ce,#f2ddb0);border:2px solid #cba774;border-bottom:4px solid #a68350;border-radius:15px;box-shadow:0 6px 12px #1b30252b;min-width:0;scroll-margin-top:18px}
+.run-recap[hidden],.first-steps[hidden]{display:none!important}
+.run-recap-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.run-recap .label{color:#856342;margin:0 0 5px;font-size:.79rem}
+.run-recap h3{margin:0;font:800 1.18rem/1.45 inherit;color:#50371e}
+.run-recap-dismiss{border:1px solid #bb996d;background:#f9e9c4;color:#65492d;border-radius:9px;min-height:39px;padding:6px 10px;font:inherit;font-size:.83rem;font-weight:750;cursor:pointer;flex-shrink:0}
+.run-recap-context{font-size:.9rem;line-height:1.65;color:#694d30;margin:8px 0 11px}
+.run-recap-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.run-recap-metrics>div{background:#fff8e9;border:1px solid #d7bb8e;border-radius:9px;padding:9px 10px;min-width:0}
+.run-recap-metrics small{display:block;color:#786040;font-size:.8rem;line-height:1.45}
+.run-recap-metrics strong{display:block;color:#533e23;font-size:1.02rem;line-height:1.55;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.run-recap-news{font-size:.89rem;line-height:1.65;font-weight:750;color:#695028;margin:10px 0 0}
+.run-recap-next{margin:11px 0 0;padding-top:10px;border-top:1px dashed #c8aa7d;font-size:.92rem;line-height:1.7;color:#553d27}
+.run-recap-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.run-recap-actions button{font:inherit;min-height:44px;padding:8px 12px;border:1px solid #8b744f;border-bottom:3px solid #735e3f;border-radius:9px;background:#31595a;color:#fff2d2;font-size:.85rem;font-weight:750;cursor:pointer}
+.run-recap-actions button:focus-visible,.run-recap-dismiss:focus-visible{outline:3px solid #b47935;outline-offset:2px}
+.first-steps{margin:11px 0 10px;padding:10px 11px;background:rgba(252,235,196,.15);border:1px solid #a9bda2;border-radius:10px;display:grid;gap:5px}
+.first-steps .first-steps-head{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.first-steps .first-steps-head strong{color:#fbe2a9;font-size:.9rem}
+.first-steps .first-steps-head span{color:#e3edcf;font-size:.8rem;font-weight:750}
+.first-steps p{color:#f0e5cc;margin:0;font-size:.84rem;line-height:1.6}
+@media(max-width:350px){.run-recap{padding:12px}.run-recap-metrics{gap:5px}.run-recap-metrics>div{padding:8px 6px}}
 
 </style>
 </head>
@@ -1832,7 +1890,7 @@ h2 {font-size:1.43rem;}
 <div class="app-shell">
  <header class="masthead">
   <div class="brand-mark"><svg class="icon icon-lg"><use href="#ic-gate"/></svg></div>
-  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.42</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
+  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.48</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
  </header>
  <div class="app-layout">
   <nav class="nav" aria-label="画面を切り替える">
@@ -1845,7 +1903,20 @@ h2 {font-size:1.43rem;}
   <main class="main-content" id="main-content">
    <section class="page" data-panel="battle" aria-label="戦闘画面">
     <div class="page-heading"><div><p class="eyebrow">EXPLORATION</p><h2 id="battle-page-title">冒険の地図</h2></div><span class="chip" id="floor-label">探索準備</span></div>
-    <section class="dungeon-map glass" id="dungeon-map" aria-labelledby="dungeon-map-title">
+    <section class="run-recap" id="run-recap" aria-labelledby="run-recap-title" hidden>
+       <div class="run-recap-top"><div><p class="label">LAST ADVENTURE / 旅の足跡</p><h3 id="run-recap-title">前回の冒険</h3></div><button id="run-recap-dismiss" class="run-recap-dismiss" type="button" aria-label="旅の足跡を閉じる">閉じる</button></div>
+       <p id="run-recap-context" class="run-recap-context"></p>
+       <div class="run-recap-metrics">
+         <div><small>到達した場所</small><strong id="run-recap-floor">—</strong></div>
+         <div><small>戦闘勝利</small><strong id="run-recap-wins">—</strong></div>
+         <div><small>獲得経験値</small><strong id="run-recap-xp">—</strong></div>
+         <div><small>持ち帰ったもの</small><strong id="run-recap-loot">—</strong></div>
+       </div>
+       <p id="run-recap-news" class="run-recap-news" hidden></p>
+       <p id="run-recap-next" class="run-recap-next"></p>
+       <div class="run-recap-actions"><button type="button" id="run-recap-gear">装備を確認する</button><button type="button" id="run-recap-training">鍛錬所へ</button></div>
+     </section>
+     <section class="dungeon-map glass" id="dungeon-map" aria-labelledby="dungeon-map-title">
       <div class="dungeon-map-header"><div><p class="label">ADVENTURE MAP</p><h3 id="dungeon-map-title">冒険の地図</h3></div><span class="dungeon-map-count" id="dungeon-map-count">公開された探索先 2か所</span></div>
       <p class="dungeon-map-lead">迷宮には、まだ踏み入れていない道がある。行き先を選んで旅立とう。</p>
       <div class="dungeon-map-grid" id="dungeon-map-grid">
@@ -1874,6 +1945,23 @@ h2 {font-size:1.43rem;}
           <div class="dungeon-launch"><button type="button" class="btn trial-launch" id="bell-start-button" disabled><svg class="icon"><use href="#ic-bell"/></svg><span id="dungeon-bell-launch-label">解放後に挑戦できます</span></button></div>
         </article>
       </div>
+
+      <section class="departure-kit" id="departure-kit" aria-labelledby="departure-kit-title">
+        <div class="departure-kit-heading"><h4 id="departure-kit-title">旅立ちの支度</h4><span id="departure-bag">鞄 3 / 80枠</span></div>
+        <div class="departure-kit-metrics">
+          <div><small>旅人の成長</small><strong id="departure-level">Lv.1</strong></div>
+          <div><small>装備中のレア以上</small><strong id="departure-rare">0 / 4部位</strong></div>
+          <div><small>使える鍛錬点</small><strong id="departure-points">0点</strong></div>
+          <div><small>薬草包</small><strong id="departure-herbs">未準備</strong></div>
+        </div>
+        <div class="first-steps" id="first-steps" hidden aria-live="polite">
+           <div class="first-steps-head"><strong>旅のはじまり</strong><span id="first-steps-progress">0 / 5探索</span></div>
+           <p id="first-steps-note"></p>
+         </div>
+         <p class="departure-kit-hint" id="departure-kit-hint">装備や鍛錬を整えてから旅立とう。</p>
+        <div class="departure-kit-links"><button type="button" id="departure-open-gear">装備を見直す</button><button type="button" id="departure-open-guild">ギルドで準備する</button></div>
+        <p class="departure-kit-footnote">レア度は目安のひとつ。追加効果と技の相性も大切です。装備の数やレベルによって挑戦を制限することはありません。</p>
+      </section>
       <p class="dungeon-map-footnote">ここには、旅人が知っている公開の探索先だけを表示します。</p>
     </section>
     <div class="glass expedition-board" id="expedition-board" aria-label="探索状況">
@@ -1936,6 +2024,11 @@ h2 {font-size:1.43rem;}
      <div class="meter-label"><span>敵の生命力</span><strong id="enemy-hp-label">-- / --</strong></div>
      <div class="meter"><div class="meter-fill enemy" id="enemy-hp-fill" style="width:100%"></div></div>
      <p class="enemy-descr" id="enemy-descr">奥から、重たい足音が聞こえる。</p>
+      <div class="enemy-tell" id="enemy-tell" hidden aria-label="敵の気配と戦い方の手がかり">
+       <span class="enemy-tell-label" id="enemy-tell-label">敵の気配</span>
+       <p class="enemy-tell-now" id="enemy-tell-now"></p>
+       <p class="enemy-tell-tip" id="enemy-tell-tip"></p>
+      </div>
      <div class="status-tags" id="enemy-status"></div>
     </div>
     <div class="danger-forecast glass" id="danger-forecast" hidden aria-live="polite"><strong id="forecast-hit"></strong><span id="forecast-guard"></span><p id="forecast-advice"></p></div>
@@ -2113,7 +2206,7 @@ h2 {font-size:1.43rem;}
       </div>
       <div class="shop-purse"><span>手持ちの古銭</span><strong id="shop-wallet">0 枚</strong></div>
       <div class="shop-wares">
-        <article class="shop-ware"><div class="shop-ware-title"><svg class="icon"><use href="#ic-leaf"/></svg><strong>薬草包</strong></div><p>次の探索で、階層突破時の小休止回復が15%→20%に。</p><button type="button" class="btn secondary" id="shop-buy-herbs">古銭36枚で用意</button><small id="shop-herbs-status">未準備</small></article>
+        <article class="shop-ware"><div class="shop-ware-title"><svg class="icon"><use href="#ic-leaf"/></svg><strong>薬草包</strong></div><p>次の探索で、階層突破時の小休止回復が18%→25%に。</p><button type="button" class="btn secondary" id="shop-buy-herbs">古銭36枚で用意</button><small id="shop-herbs-status">未準備</small></article>
         <article class="shop-ware"><div class="shop-ware-title"><svg class="icon"><use href="#ic-lantern"/></svg><strong>探し物の灯り</strong></div><p>次の探索で、通常の装備ドロップ率が65%→80%に。</p><button type="button" class="btn secondary" id="shop-buy-lantern">古銭54枚で用意</button><small id="shop-lantern-status">未準備</small></article>
         <article class="shop-ware"><div class="shop-ware-title"><svg class="icon"><use href="#ic-spark"/></svg><strong>星図の写し</strong></div><p>次の深層試練の踏破で装備を1点追加発見（レア65%・エピック30%・レジェンダリー5%）。失敗時は報酬なし。通常迷宮では消費されません。鞄が満杯なら古銭480枚を返却します。</p><button type="button" class="btn secondary" id="shop-buy-chart">古銭480枚で用意</button><small id="shop-chart-status">未準備</small></article>
       </div>
@@ -2261,16 +2354,19 @@ h2 {font-size:1.43rem;}
     </section>
     <section class="guide-chapter" id="guide-explore">
      <p class="guide-chapter-kicker">02 / EXPLORATION</p><h3>迷宮の探索</h3>
-     <p>通常の迷宮は<strong>全10階層</strong>。戦闘が終わると探索イベントや分かれ道が現れます。迷宮ごとに異なる発見があり、調べて報酬を狙うか、安全に休むかを選べます。発見した装備には、その場所の来歴が残ります。「整備された側道」は安全寄り、「報酬のある道」は次の敵が強くなる代わりに報酬を狙える道です。</p>
+     <p>通常の迷宮は<strong>全10階層</strong>。戦闘が終わると探索イベントや分かれ道が現れます。迷宮ごとに異なる発見があり、調べて報酬を狙うか、安全に休むかを選べます。発見した装備には、その場所の来歴が残ります。「整備された側道」は次の戦闘前に最大HPの約10%を回復できる安全寄りの道。「報酬のある道」は次の敵が強くなる代わりに報酬を狙える道です。</p>
      <div class="guide-info-grid"><div><strong>進む</strong><span>次の階層へ進みます。戦闘は自動で始まります。</span></div><div><strong>帰還する</strong><span>帰還できる地点で探索を終了し、収集品を確保します。</span></div><div><strong>戦利品</strong><span>探索中の装備・古銭は仮確保。探索終了時に持ち帰ります。</span></div><div><strong>力尽きたとき</strong><span>獲得装備は原則1点まで、古銭は半分を回収します。以前の所持装備や記録は失われません。</span></div></div>
      <p>通常迷宮を初めて踏破すると<strong>深層試練（11〜15階層）</strong>が解放されます。さらに進むと追加の試練も選べます。</p>
      <p>ボスにも異なる攻略の糸口があります。通常迷宮の門守の石鎧は連続斬り3撃で一度だけ継ぎ目が崩れ、以後の防御力が少し下がります。星の門守は第二段階で大技を2回中断されると星灯が回復します。鐘楼の最後の敵は、毒か燃焼がある状態で大技を放つと衝撃が少し弱まり、両方なら効果が増します。ただし、どの技も攻略の必須条件ではありません。</p>
      <p><strong>鳴らずの鐘楼</strong>は深層試練を1回踏破すると開放される高難度の探索先です。敵の大技は気配で分かりますが、技名と被害予測が伏せられます。自動戦術と防御・中断は通常どおり使えます。</p>
+     <p>探索を終えると、冒険の地図の上に<strong>「前回の旅の足跡」</strong>が表示されます。途中帰還や敗北でも、戦闘経験・レベルアップ・持ち帰れた品を確認できます。不要なら閉じられ、次の探索を始めると表示が切り替わります。</p>
+     <p>「冒険の地図」の<strong>旅立ちの支度</strong>には、現在のレベル・装備中のレア以上の数・鍛錬点・薬草包・鞄の空き具合が表示されます。高難度への挑戦が難しいときの確認用で、挑戦の条件ではありません。鞄が満杯に近いときは、装備を保護してから不要品を整理しましょう。</p>
      <p id="guide-hidden-corridor" hidden><strong>余白の回廊：</strong>深層の奥で拾った断章は「記録」→「冒険の物語」→「世界の断章」に収められます。一度見つけた文書は、途中帰還や敗北でも失われません。</p>
     </section>
     <section class="guide-chapter" id="guide-combat">
      <p class="guide-chapter-kicker">03 / BATTLE BASICS</p><h3>戦闘と「次の行動」</h3>
      <p>戦闘は設定した戦術に沿って自動で進みます。途中で<strong>一時停止</strong>したり、「行動を自分で選ぶ」から次の自分の行動を予約したりできます。敵が大技を予告したときは自動停止します。</p>
+     <p><strong>敵の気配</strong>には、魔物の行動の兆しと戦い方の手がかりが表示されます。これは確定した勝ち筋ではなく、次の敵行動を予測するための情報です。敵は毒・燃焼で行動前に倒れることもあります。</p>
      <p><strong>集中力</strong>は技を使うための資源で、最大5。通常攻撃で1増やせます。各技には再使用までの待ち時間があり、集中力が足りない技や再使用待ちの技は使えません。</p>
      <div class="guide-table-wrap"><table class="guide-actions-table"><thead><tr><th>行動</th><th>集中力</th><th>主な効果</th></tr></thead><tbody>
       <tr><th>通常攻撃</th><td>＋1</td><td>敵を攻撃して集中力をためる。</td></tr>
@@ -3445,6 +3541,18 @@ h2 {font-size:1.43rem;}
     s.ui.sort=["new","rarity","attack","protected"].includes(s.ui.sort)?s.ui.sort:"new";
     s.ui.bulkRarity=["common","uncommon","rare"].includes(s.ui.bulkRarity)?s.ui.bulkRarity:"uncommon";
     if(!s.inventory.some(x=>x.id===s.ui.inspectedId)&&!s.storage.some(x=>x.id===s.ui.inspectedId))s.ui.inspectedId=s.equipment.slots.weapon;
+     // Optional v1.1.48 display state; old saves remain valid.
+     const recap=s.ui.lastReturn;
+     s.ui.lastReturn=recap&&["clear","retreat","defeat"].includes(recap.outcome)?{
+       outcome:recap.outcome,place:String(recap.place||"迷宮").slice(0,50),floor:String(recap.floor||"道半ば").slice(0,40),
+       wins:Number.isFinite(recap.wins)?Math.max(0,Math.min(1000,finiteInt(recap.wins))):null,
+       xp:Number.isFinite(recap.xp)?Math.max(0,Math.min(100000,finiteInt(recap.xp))):null,
+       levelBefore:Number.isFinite(recap.levelBefore)?Math.max(1,Math.min(LEVEL_CAP,finiteInt(recap.levelBefore))):null,
+       levelAfter:Math.max(1,Math.min(LEVEL_CAP,finiteInt(recap.levelAfter,1))),
+       items:Math.max(0,Math.min(MAX_INVENTORY,finiteInt(recap.items))),
+       coins:Math.max(0,Math.min(COIN_CAP,finiteInt(recap.coins))),
+       skills:Array.isArray(recap.skills)?recap.skills.filter(x=>typeof x==="string").slice(0,7).map(x=>x.slice(0,35)):[]
+     }:null;
     s.hero.maxHp=Math.max(1,Math.min(100000,finiteInt(s.hero.maxHp,120)));
     s.hero.hp=Math.max(0,Math.min(s.hero.maxHp,finiteInt(s.hero.hp,120)));
     s.hero.focus=Math.max(0,Math.min(5,finiteInt(s.hero.focus,1)));
@@ -3512,7 +3620,11 @@ h2 {font-size:1.43rem;}
       r.seal=r.mode==="trial"&&Object.hasOwn(TRIAL_SEALS,r.seal)?r.seal:"standard";
       // A historical v15 trial was always standard, even if the saved profile now selects a seal.
       r.phase=["combat","event","choice"].includes(r.phase)?r.phase:"choice";
-      r.id=typeof r.id==="string"&&r.id.length<=64?r.id:`legacy-run-${s.nextId++}`;
+             r.id=typeof r.id==="string"&&r.id.length<=64?r.id:`legacy-run-${s.nextId++}`;
+       // The snapshot does not affect combat or loot; older ongoing runs lack it.
+       if(r.journeyStart&&typeof r.journeyStart==="object"){
+         r.journeyStart={xp:Math.max(0,Math.min(1000000,finiteInt(r.journeyStart.xp))),level:Math.max(1,Math.min(LEVEL_CAP,finiteInt(r.journeyStart.level,1))),wins:Math.max(0,finiteInt(r.journeyStart.wins)),unlocked:Array.isArray(r.journeyStart.unlocked)?r.journeyStart.unlocked.filter(id=>ACTIVE_SKILLS.includes(id)):[]};
+       }else r.journeyStart=null;
       r.loot=Array.isArray(r.loot)?r.loot.slice(0,Math.max(0,MAX_INVENTORY-s.inventory.length)):[];
       const pendingIds=new Set();
       r.loot=r.loot.filter(item=>{
@@ -3751,6 +3863,16 @@ h2 {font-size:1.43rem;}
       if(mode==="cautious"&&threat.canBind)return "bind";
     }else if(settings.healThreshold>0 && pct(hero.hp,hero.maxHp)<=settings.healThreshold && isReady("heal"))return "heal";
     const allowed=action=>isReady(action) && !(settings.reserveFocus && hero.focus-actionCost(action)<2 && b.enemy.charging);
+    // 1.1.44: Don't spend a precious three-hit skill against a temporarily
+    // closed shell when a basic strike can open it. Direct damage is otherwise
+    // cut by 45%. The rule never blocks a lethal Flurry or a queued manual move.
+    if(b.enemy.armorStance && (settings.combatStyle==="combo" || settings.combatStyle==="flameflurry")
+       && b.skillSlots.includes("flurry") && allowed("flurry")){
+      const mods=bonuses(true);
+      const strike=damageFormula(getHeroAtk(),(SKILLS.flurry.power+mods.flurryBonus)*masteryPower("flurry"),b.enemy.defense);
+      const flurryAgainstShell=Math.max(1,Math.floor(strike*.55*(currentEnvironment()?.directFactor||1)))*SKILLS.flurry.hits;
+      if(b.enemy.hp>flurryAgainstShell)return "attack";
+    }
     // v0.8.2: reserve Focus for genuine cross-build legendary combinations.
     // Only the equipment's actual battle loadout counts; absent skills do not
     // magically become available. Ordinary presets preserve their old AI.
@@ -3812,6 +3934,12 @@ h2 {font-size:1.43rem;}
       return "attack";
     }
     if(settings.combatStyle==="flameflurry"){
+      // The last bell tower guardian's heavy strike is weakened by active
+      // poison/burn. Preserve the earlier burn-oriented strategy for it.
+      // That is a distinct defensive matchup, not an arbitrary immunity.
+      if(state.expedition?.mode==="bell" && state.expedition.floor===20
+         && b.enemy.type==="boss"){
+
       const mods=bonuses(true);
       const worn=allEquipped(true);
       const hasEmberFocus=worn.some(item=>item.affixes?.includes("emberfocus"));
@@ -3829,14 +3957,35 @@ h2 {font-size:1.43rem;}
         // Conservative direct-hit estimate: no critical, status tick or item proc.
         const shortFight=b.enemy.hp<=safe*(fireSynergy?1.15:3.1);
         const burnResistant=b.enemy.burnResist >= 0.55;
-        const lateFight= b.enemy.actionsTaken>=3 && !fireSynergy;
-        if(shortFight || burnResistant || (false))return "flurry";
+        if(shortFight || burnResistant)return "flurry";
       }
       if(burnCount(b.enemy)>0 && allowed("flurry"))return "flurry";
       if(settings.burnThreshold>=0 && burnCount(b.enemy)<=settings.burnThreshold
          && hero.focus>= (hasEmberFocus?4:5) && allowed("ignite"))return "ignite";
       if(settings.burnThreshold<0 && allowed("flurry"))return "flurry";
       if(burnCount(b.enemy)===0 && b.cooldowns.ignite>0 && allowed("flurry"))return "flurry";
+      return "attack";
+          }
+      const mods=bonuses(true);
+      const worn=allEquipped(true);
+      const hasEmberFocus=worn.some(item=>item.affixes?.includes("emberfocus"));
+      const fireSynergy=mods.burnFlurryBonus>0||mods.burnPower>0||mods.burnDuration>0||mods.burnStack>0||mods.bonusBurn>0||hasEmberFocus;
+      const burning=burnCount(b.enemy);
+      if(burning>0 && allowed("flurry"))return "flurry";
+      // If three-hit damage is ready, use it before wasting turns seeking
+      // Focus 5 for a fire setup that the equipment cannot capitalize on.
+      if(allowed("flurry")){
+        const hit=damageFormula(getHeroAtk(),(SKILLS.flurry.power+mods.flurryBonus)*masteryPower("flurry"),b.enemy.defense);
+        const direct=Math.max(1,Math.floor(hit*(b.enemy.armorStance?.55:1)*(currentEnvironment()?.directFactor||1)))*SKILLS.flurry.hits;
+        if(!fireSynergy || b.enemy.type!=="normal" || b.enemy.hp<=direct*2.0 || b.enemy.charging)return "flurry";
+      }
+      // Ordinary foes leave space to develop the fire-and-flurry rhythm.
+      // Against elites/bosses, prioritize surviving their heavier attacks.
+      if(fireSynergy&&burning===0&&b.enemy.type==="normal"&&settings.burnThreshold>=0
+          &&hero.focus>=3&&allowed("ignite")&&!b.enemy.charging){
+        return "ignite";
+      }
+      if(allowed("flurry"))return "flurry";
       return "attack";
     }
     if(settings.combatStyle==="poisoncounter"){
@@ -4132,10 +4281,11 @@ h2 {font-size:1.43rem;}
     }
     const supplies={...state.economy.prepared,chart:mode==="trial"&&state.economy.prepared.chart};
     const seal=mode==="trial"&&state.expeditionStats.trialClears>0&&Object.hasOwn(TRIAL_SEALS,state.settings.trialSeal)?state.settings.trialSeal:"standard";
-    const r={id:`run-${state.nextId++}`,mode,seal,floor:dungeon.first,phase:"combat",loot:[],shards:0,event:null,lastEvent:null,visited:[],supplies,route:null,routeOffer:null,routeHistory:[],story:mode==="bell"?null:makeStoryPlan()};
+    const r={id:`run-${state.nextId++}`,mode,seal,floor:dungeon.first,phase:"combat",loot:[],shards:0,event:null,lastEvent:null,visited:[],supplies,route:null,routeOffer:null,routeHistory:[],story:mode==="bell"?null:makeStoryPlan(),journeyStart:{xp:state.growth.xp,level:state.growth.level,wins:state.stats.wins,unlocked:[...state.growth.unlocked]}};
     r.margin=planMargin(r);
     state.expedition=r;
-    rememberRegion(r.floor);
+     state.ui.lastReturn=null;
+     rememberRegion(r.floor);
     state.economy.prepared={herbs:false,lantern:false,chart:mode!=="trial"&&state.economy.prepared.chart};
     state.expeditionStats.runs++;
     if(mode==="trial")state.expeditionStats.trialRuns++;
@@ -4231,15 +4381,28 @@ h2 {font-size:1.43rem;}
       addLog(`${displayRunFloor(r)}から無事帰還。装備${accepted}点、古銭${coins}枚を持ち帰った。`,"positive");
       if(checkpoint)recordMoment("victory",`${displayRunFloor(r)}の帰還地点から、戦利品を携えて無事に帰った。`,{once:`retreat-${state.nextId++}`});
     }
-    state.hero.hp=state.hero.maxHp;
-    state.hero.focus=3;
-    save();render();
-  }
-  function expeditionVictory(){
+        // The recap reflects the actual return payout, including defeat rules.
+     const start=r.journeyStart;
+     const skills=start?state.growth.unlocked.filter(id=>!start.unlocked.includes(id)).map(id=>SKILLS[id]?.name).filter(Boolean):[];
+     state.ui.lastReturn={
+       outcome,place:dungeonForRun(r).title,floor:displayRunFloor(r),
+       wins:start?Math.max(0,state.stats.wins-start.wins):null,
+       xp:start?Math.max(0,state.growth.xp-start.xp):null,
+       levelBefore:start?.level??null,levelAfter:state.growth.level,
+       items:accepted,coins,skills,
+     };
+     state.hero.hp=state.hero.maxHp;
+     state.hero.focus=3;
+     save();render();
+     const recapEl=$("run-recap");
+     if(!document.querySelector('[data-panel="battle"]')?.hidden&&typeof recapEl?.scrollIntoView==="function")recapEl.scrollIntoView({behavior:"smooth",block:"start"});
+   }
+   function expeditionVictory(){
     const r=state.expedition;if(!r)return;
     r.visited.push(r.floor);
     r.shards+=r.mode==="trial"?15+(r.floor-10)*5:r.mode==="bell"?25+(r.floor-15)*6:5+r.floor*2;
-    const recoveryRate=r.supplies?.herbs?.20:.15;
+    // v1.1.46: Moderate expedition sustain tuning; affects completed floors only.
+    const recoveryRate=r.supplies?.herbs?.25:.18;
     const env=ENVIRONMENTS[environmentAt(r.floor)];
     const adjustedRate=recoveryRate*(1+(env.restBonus||0))*(env.healFactor||1);
     const recovery=Math.min(state.hero.maxHp-state.hero.hp,Math.floor(state.hero.maxHp*adjustedRate));
@@ -4356,7 +4519,7 @@ h2 {font-size:1.43rem;}
     if(state.expedition&&activeFloor>1)state.hero.hp=Math.max(1,Math.min(state.hero.maxHp,hpBefore));
     const route=state.expedition?.route;
     if(route?.kind==="safe"&&route.floor===activeFloor){
-      const heal=Math.min(state.hero.maxHp-state.hero.hp,environmentHeal(Math.floor(state.hero.maxHp*.08)));
+      const heal=Math.min(state.hero.maxHp-state.hero.hp,environmentHeal(Math.floor(state.hero.maxHp*.10)));
       state.hero.hp+=heal;
       addLog(`整備された側道でHPを${heal}回復した。`,"positive");
     }
@@ -4900,13 +5063,74 @@ h2 {font-size:1.43rem;}
   function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"})[c]);}
   const $=id=>document.getElementById(id);
   function setText(id,v){$(id).textContent=v;}
-  function renderDungeonMap(){
+
+    // 1.1.48: show earned progress after an expedition, including a defeat.
+   function renderRunRecap(){
+     const recap=state.ui.lastReturn;
+     const panel=$("run-recap");
+     panel.hidden=Boolean(state.expedition)||!recap;
+     if(panel.hidden)return;
+     const cleared=recap.outcome==="clear";
+     setText("run-recap-title",cleared?"迷宮を踏破した！":recap.outcome==="defeat"?"道半ばで探索を終えた":"無事に帰還した");
+     setText("run-recap-context",`${recap.place}での旅の記録。${cleared?"奥まで歩き通した。":recap.outcome==="defeat"?"踏破はできなかったが、得た経験と回収できた戦利品は残る。":"戦利品を確保して拠点に戻った。"}`);
+     setText("run-recap-floor",recap.floor);
+     setText("run-recap-wins",recap.wins===null?"記録なし":`${recap.wins}勝`);
+     setText("run-recap-xp",recap.xp===null?"途中の記録なし":`+${recap.xp} XP`);
+     setText("run-recap-loot",`装備 ${recap.items}点 / 古銭 ${recap.coins}枚`);
+     const gains=[];
+     if(recap.levelBefore!==null&&recap.levelAfter>recap.levelBefore)gains.push(`Lv.${recap.levelBefore} → Lv.${recap.levelAfter}`);
+     if(recap.skills?.length)gains.push(`新しく覚えた技：${recap.skills.join("・")}`);
+     const news=$("run-recap-news");news.hidden=!gains.length;news.textContent=gains.join(" ／ ");
+     let next;
+     if(state.growth.points>0)next=`鍛錬点が${state.growth.points}点あります。ギルドの鍛錬所で能力を伸ばせます。`;
+     else if(recap.items>0)next="持ち帰った装備を見直してみましょう。今の技と相性のよい品があるかもしれません。";
+     else if(state.economy.coins>=MARKET_PRICES.herbs&&!state.economy.prepared.herbs)next="古物商で薬草包を準備すると、次の探索の小休止が少し楽になります。";
+     else next="これまでの経験値と勝利は残っています。装備と技を確認して、次の行き先を考えましょう。";
+     setText("run-recap-next",next);
+   }
+   function renderFirstSteps(){
+     const stats=state.expeditionStats;
+     const visible=!state.expedition&&stats.runs<=5&&stats.trialRuns===0&&stats.bellRuns===0;
+     const panel=$("first-steps");panel.hidden=!visible;
+     if(!visible)return;
+     const completed=stats.runs;
+     setText("first-steps-progress",`${completed} / 5探索`);
+     setText("first-steps-note",`これまでの勝利 ${state.stats.wins}回 ／ 最深到達 第${stats.deepest||0}階層。${completed<5?"最初は途中で引き返しても、経験値と持ち帰った装備が次の旅に残ります。":"ここまでの探索で得た経験と装備が、次の挑戦の土台になります。"}`);
+   }
+
+   // 1.1.47: a factual, non-gating overview of the current camp preparation.
+   function renderDepartureKit(){
+    const gear=SLOT_ORDER.map(slot=>equippedItem(slot)).filter(Boolean);
+    const rareRank={common:0,uncommon:1,rare:2,epic:3,legendary:4};
+    const rareCount=gear.filter(item=>(rareRank[item.rarity]||0)>=2).length;
+    const missing=4-gear.length;
+    const points=state.growth.points;
+    const hasHerbs=Boolean(state.economy.prepared.herbs);
+    setText("departure-level",`Lv.${state.growth.level}`);
+    setText("departure-bag",`鞄 ${state.inventory.length} / ${MAX_INVENTORY}枠`);
+    setText("departure-rare",`${rareCount} / 4部位`);
+    setText("departure-points",`${points}点`);
+    setText("departure-herbs",hasHerbs?"準備済み":"未準備");
+    let hint;
+    if(state.inventory.length>=MAX_INVENTORY-15)hint=`鞄が${state.inventory.length}/${MAX_INVENTORY}枠です。満杯になると新しい装備を拾えず古銭に替わります。大切な品を保護し、不要品を整理しましょう。`;
+    else if(missing>0)hint=`装備の空き部位が${missing}か所あります。拾った装備を見直してみましょう。`;
+    else if(points>0)hint=`鍛錬点が${points}点あります。鍛錬所で能力を伸ばしてから出発することもできます。`;
+    else if(!hasHerbs&&state.economy.coins>=MARKET_PRICES.herbs)hint="古物商で薬草包を準備すると、階層を越えるたびの回復が増えます。";
+    else if(!hasHerbs)hint="薬草包は古銭36枚で購入できます。装備を探しながら、次の探索の備えを整えましょう。";
+    else if(state.expeditionStats.clears>0 && rareCount<2)hint="深層で苦戦したら、回廊に戻って装備と追加効果の組み合わせを探してみましょう。";
+    else hint="装備が整っていても油断は禁物。魔物の気配を見ながら、自分に合う技を選びましょう。";
+         setText("departure-kit-hint",hint);
+     renderFirstSteps();
+   }
+   function renderDungeonMap(){
     const running=Boolean(state.expedition);
-    $("dungeon-map").hidden=running;
-    const toolbar=document.querySelector('.battle-toolbar');
+         $("dungeon-map").hidden=running;
+     renderRunRecap();
+     const toolbar=document.querySelector('.battle-toolbar');
     if(toolbar)toolbar.hidden=!running;
     setText("battle-page-title",running?dungeonForRun(state.expedition).title:"冒険の地図");
     setText("dungeon-map-count",`探索先 ${PUBLIC_DUNGEONS.length}か所`);
+    renderDepartureKit();
     const stats=state.expeditionStats;
     for(const place of PUBLIC_DUNGEONS){
       const card=$("dungeon-card-"+place.id);
@@ -5007,7 +5231,7 @@ h2 {font-size:1.43rem;}
     }
     if(r.phase==="choice"){
       $("expedition-choice").hidden=false;
-      $("expedition-next").textContent=`整備された側道（HP8%回復）`;
+      $("expedition-next").textContent=`整備された側道（HP10%回復）`;
       const risky=RISK_ROUTES[routeOfferFor(r)];
       $("expedition-risk").textContent=risky.name;
       $("expedition-risk-hint").textContent=risky.desc;
@@ -5015,6 +5239,57 @@ h2 {font-size:1.43rem;}
       $("expedition-checkpoint").textContent=r.floor%5===0?"帰還地点！ 古銭20%増で帰れる。次の階へ行くなら道を選ぼう。":"次の階へ進む道を選ぼう。安全な道と、報酬の大きい道がある。";
     }
   }
+
+  // v1.1.43: observation hints show the current foe's next likely move.
+  // This reads existing state and uses no RNG or combat mutation. Do not
+  // promise a strike when status ticks can defeat the foe first.
+  function enemyTell(b){
+    if(!b?.active||!b.enemy)return null;
+    const foe=b.enemy,n=foe.actionsTaken+1;
+    const slots=b.skillSlots||[];
+    const knows=id=>slots.includes(id);
+    const heavy=b.enemy.charging;
+    const resistantBurn=foe.burnResist>=.4;
+    const resistantPoison=foe.poisonResist>=.35;
+    let now="",tip="",warning=false;
+    if(foe.interrupted){
+      now="体勢を崩され、立ち直ろうとしている。";
+      tip="次の敵行動は体勢の立て直しに費やされる。今は攻め直す好機。";
+    }else if(heavy){
+      now="重い一撃の構えが完成しつつある。";
+      tip=knows("bind")?"影縫いで体勢を崩すか、防御で備えよう。中断できるかは大技予測を確認。":"防御で備えるか、十分に回復してから受けよう。";
+      warning=true;
+    }else if(foe.armorStance){
+      now="甲殻が閉じている。次の直接攻撃は軽減される。";
+      tip=knows("poison")||knows("ignite")?"毒・燃焼の継続ダメージは甲殻に妨げられない。":knows("flurry")?"連続斬りは殻が開いてからのほうが有効。通常攻撃で様子を見られる。":"防御姿勢は次の自分の行動の後に解ける。攻め方を選ぼう。";
+      warning=true;
+    }else if(foe.pattern==="heavy"){
+      warning=n%3===0;
+      now=warning?"武器を大きく引いた。次は大技を構えそうだ。":"武器を構え、間合いを測っている。";
+      tip="大技は構えた次の行動で放たれる。防御や体勢崩しで対応できる。";
+    }else if(foe.pattern==="swift"){
+      warning=n%3===0;
+      now=warning?"足音が二つ重なった。二連撃が迫る。":"短い間合いを出入りしながら、隙を探している。";
+      tip=knows("riposte")?"返し刃なら攻撃を受け流して反撃できる。通常攻撃で押す道もある。":"連撃に備えて防御するか、先に攻め込もう。";
+    }else if(foe.pattern==="shell"){
+      warning=n%3===0;
+      now=warning?"硬い甲殻が軋む。次は殻を閉じそうだ。":"甲殻を半ば開き、こちらの様子をうかがっている。";
+      tip="殻を閉じている間は直接攻撃が軽減される。毒・燃焼なら削り続けられる。";
+    }else if(foe.pattern==="regenerate"){
+      warning=n%4===0;
+      now=warning?"苔の緑が強くなった。傷を塞ごうとしている。":"苔の奥で、小さな傷がうごめいている。";
+      tip="定期的にHPを回復する。直接攻撃で押すか、毒・燃焼で削り続けよう。";
+    }else if(foe.pattern==="drain"){
+      warning=n%3===0;
+      now=warning?"指先が骨笛に触れた。集中力が乱されそうだ。":"細い音が鳴り、集中が少し揺らぐ。";
+      tip="骨笛の日は通常の攻撃をせず集中力を奪う。使いたい技は先に使う手もある。";
+    }
+    // Resistance is a consideration, not a forced counter or an exact solve.
+    if(resistantBurn)tip+=" この敵は燃焼が効きにくい。";
+    else if(resistantPoison)tip+=" この敵は毒が効きにくい。";
+    return {now,tip,warning};
+  }
+
   function renderBattle(){
     const b=state.battle, hero=state.hero, active=hasActiveBattle();
     const displayed=b && b.active ? b : null;
@@ -5034,6 +5309,15 @@ h2 {font-size:1.43rem;}
     $("enemy-hp-fill").style.width=b?`${pct(b.enemy.hp,b.enemy.maxHp)}%`:"100%";
     const muffled=state.expedition?.mode==="bell";
     setText("enemy-descr",!b?"奥から、重たい足音が聞こえる。":b.enemy.charging?(muffled?"鐘楼の振動が強まる。大技の気配は分かるが、技の名は聞き取れない。":`『${b.enemy.heavyName}』の予告！ 次の敵行動に注意。`):b.active?(gateLatePhase?`${b.enemy.desc} 第二段階：大技を2回中断すると、星灯がHPを4%回復する。`:b.enemy.desc):b.outcome==="defeat"?"敗北した。再出発に備えてHPが回復した。":"敵が倒れ、迷宮に静けさが戻った。");
+    const tell=enemyTell(b);
+    const tellBox=$("enemy-tell");
+    tellBox.hidden=!tell;
+    if(tell){
+      tellBox.classList.toggle("is-warning",tell.warning);
+      setText("enemy-tell-label",tell.warning?"敵の気配・注意":"敵の気配");
+      setText("enemy-tell-now",tell.now);
+      setText("enemy-tell-tip",tell.tip);
+    }
     const tags=[];
     if(b && poisonCount(b.enemy))tags.push(`<span class="status-tag">毒 ${poisonCount(b.enemy)}/5</span>`);
     if(b && burnCount(b.enemy))tags.push(`<span class="status-tag status-burn">燃焼 ${burnCount(b.enemy)}/5</span>`);
@@ -5526,7 +5810,7 @@ h2 {font-size:1.43rem;}
     combo:{name:"連撃で攻める",desc:"連続斬りで手数を増やす。強敵・ボスには3撃を当て切ると集中力を取り戻せる。",point:"連続斬り＋応急処置＋返し刃"},
     counter:{name:"守りながら反撃",desc:"返し刃で応戦し、影縫いで危険な大技を止める。",point:"返し刃＋影縫い＋応急処置"},
     poisonflame:{name:"毒と炎を重ねる",desc:"毒で削りつつ、集中力を確保して火種→炎刃をつなぐ。回復技なしの攻撃型。",point:"毒穿ち＋火種＋炎刃"},
-    flameflurry:{name:"炎から連撃へ",desc:"装備の燃焼特性・敵の耐性・残HPに応じて火種と連続斬りを使い分ける。連撃で早く削れる相手は先に連撃。",point:"火種＋連続斬り＋応急処置"},
+    flameflurry:{name:"炎から連撃へ",desc:"通常敵は装備の燃焼特性を活かし、強敵・ボスには連撃を優先。鐘楼の最後では燃焼で大技を弱める。甲殻が閉じたら技を温存。",point:"火種＋連続斬り＋応急処置"},
     poisoncounter:{name:"毒を付けて返す",desc:"毒穿ちで毒を付けてから返し刃を構える。回復も入れた持久戦型。",point:"毒穿ち＋返し刃＋応急処置"}
   };
   function skillAutoGuide(id){
@@ -5538,12 +5822,12 @@ h2 {font-size:1.43rem;}
     if(id==="poison"&&style==="poisoncounter")return settings.poisonThreshold<0?"毒の自動付与をOFFにしています。":"集中力4以上で毒を付与してから返し刃を構えます。";
     if(id==="ignite"&&style==="poisonflame")return settings.burnThreshold<0?"火種の自動付与をOFFにしています。":"炎刃へつなぐ集中力を残して火種を使用。集中力回復の装備があれば早く使える場合があります。";
     if(id==="flame"&&style==="poisonflame")return "火種の燃焼が消える前に炎刃を優先。毒の付与は集中力が不足していない場面を狙います。";
-    if(id==="ignite"&&style==="flameflurry")return settings.burnThreshold<0?"火種の自動付与をOFFにしています。":"燃焼特性を活かせる相手に火種を優先。通常は集中力5、『火灯』装備時は集中力4から使用を検討します。";
-    if(id==="flurry"&&style==="flameflurry")return "燃焼中は連撃を優先。燃焼がなくても敵HPが低い・燃焼耐性が高い場合には連撃から攻めます。";
+    if(id==="ignite"&&style==="flameflurry")return settings.burnThreshold<0?"火種の自動付与をOFFにしています。":"通常敵には燃焼特性を活かして火種を狙います。強敵では連続斬りを優先しますが、鐘楼の最後では燃焼で大技を弱めます。";
+    if(id==="flurry"&&style==="flameflurry")return "強敵・ボスでは連続斬りを優先し、通常敵では燃焼との連携を狙います。甲殻が閉じている間は連撃を温存します。";
     if(id==="riposte"&&style==="poisoncounter")return "毒を付与してから返し刃を構えます。毒耐性の敵には単独の返し刃も使用します。";
     if(id==="ignite"&&style==="flame")return settings.burnThreshold<0?"火種の自動使用をOFFにしています。":"炎型で優先。敵の燃焼量や集中力に応じて使います。";
     if(id==="flame"&&style==="flame")return "炎型で優先。敵の燃焼が2段階以上のときに狙います。";
-    if(id==="flurry"&&style==="combo")return "連撃型で優先。集中力と再使用待ちを確認して使います。";
+    if(id==="flurry"&&style==="combo")return "連撃型で優先。甲殻が閉じている間は通常攻撃で様子を見て、開いてから連撃を狙います。";
     if(id==="riposte"&&style==="counter")return "反撃型で優先。反撃準備中でないときに使います。";
     return "この戦術では基本的に手動用。装備固有の能力によっては自動使用される場合もあります。";
   }
@@ -5611,7 +5895,7 @@ h2 {font-size:1.43rem;}
     const h=state.settings.healThreshold?`HP${state.settings.healThreshold}%以下なら回復を優先`:'自動回復なし';
     const summaryStyle={poison:"毒を蓄積する",flame:state.settings.skillVariants.ignite==="linger"?"集中力4から燻る火種→燃焼1段階でも炎刃":"集中力4から火種→炎刃",combo:"連続斬りを優先",counter:"返し刃を構える",
       poisonflame:"毒で削りながら、火種の前に集中力を確保して炎刃につなぐ",
-      flameflurry:"装備の燃焼特性と敵の耐性・残HPに合わせ火種と連撃を使い分ける",
+      flameflurry:"通常敵は燃焼、強敵は連撃を重視。鐘楼の最後では燃焼による大技弱体化も狙う",
       poisoncounter:"集中力4から毒穿ち→返し刃を優先"}[style];
     setText("rules-summary",`${h} → ${summaryStyle} → それ以外は通常攻撃。${state.settings.reserveFocus?"大技予告中は集中力2を温存します。":""} 大技の自動対応は${{cautious:"慎重",balanced:"均衡",bold:"攻勢"}[state.settings.responseMode]}。 ${missing.length?"注意：この戦術に必要な「"+missing.map(x=>ACTION_NAMES[x]).join("・")+"」が編成されていません。":""} 編成したスキルだけが自動・手動で使用できます。`);
     renderTacticSynergy();
@@ -5836,6 +6120,14 @@ h2 {font-size:1.43rem;}
   }
   function bindEvents(){
     document.querySelectorAll(".nav-button").forEach(btn=>btn.addEventListener("click",()=>showPage(btn.dataset.page)));
+    $("departure-open-gear").addEventListener("click",()=>showPage("gear"));
+         $("departure-open-guild").addEventListener("click",()=>showPage("guild"));
+     $("run-recap-dismiss").addEventListener("click",()=>{state.ui.lastReturn=null;save();renderBattle();});
+     $("run-recap-gear").addEventListener("click",()=>showPage("gear"));
+     $("run-recap-training").addEventListener("click",()=>{
+       showPage("guild");
+       $("guild-training").scrollIntoView({behavior:"smooth",block:"start"});
+     });
     $("start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition();});
     $("trial-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("trial");});
     $("bell-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("bell");});
@@ -6104,7 +6396,7 @@ h2 {font-size:1.43rem;}
     const combatants=make('div','battle-combatants');
     const controls=$('.controls-card',battle), logs=$('.log-card',battle);
     toolbar.classList.add('battle-operations');
-    battle.querySelector('.page-heading').after($('#dungeon-map',battle),toolbar,layout);
+    battle.querySelector('.page-heading').after($('#run-recap',battle),$('#dungeon-map',battle),toolbar,layout);
     layout.append(scene,console);
     for(const selector of ['#expedition-board']) scene.append($(selector,battle));
     combatants.append($('.adventurer-card',battle),$('#enemy-card',battle));
