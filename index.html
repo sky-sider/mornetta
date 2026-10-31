@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#17383d">
 <meta name="description" content="ランダム装備とビルド構築を楽しむ、テキスト主体の半自動ハクスラ。">
-<title>モルネッタ | 1.1.48</title>
+<title>モルネッタ | 1.1.49</title>
 <style>
 :root{color-scheme:dark;--bg:#0e1725;--night:#101b2b;--panel:#182639;--panel-2:#1d2c41;--line:#344257;--line-soft:#2a394e;--text:#eee9df;--muted:#b8bcc5;--subtle:#8e9bad;--amber:#e0b881;--amber-pale:#f0d6a8;--mint:#9bc7b5;--red:#d58f8b;--blue:#a5bce0;--radius:15px;--tap:46px;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:15px}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);background:radial-gradient(circle at 70% -12%,#253651 0%,transparent 42%),var(--bg);line-height:1.65;min-height:100vh}button,select,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:not-allowed}button,select{-webkit-tap-highlight-color:transparent}button:focus-visible,select:focus-visible,input:focus-visible,label.file-import:focus-within{outline:2px solid var(--amber);outline-offset:3px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.35}h1{font-size:1.5rem;letter-spacing:.09em;font-weight:700}h2{font-size:1.45rem;font-weight:680;letter-spacing:.04em}h3{font-size:1.04rem;font-weight:650}small{font-size:.76rem}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.icon{width:20px;height:20px;display:inline-block;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.icon-lg{width:27px;height:27px}.icon-inline{width:15px;height:15px;vertical-align:-2px}.app-shell{max-width:1080px;margin:auto;padding:0 21px}.masthead{padding:32px 0 22px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--line-soft)}.brand-mark{width:49px;height:49px;border-radius:15px;border:1px solid #9c8058;color:var(--amber);display:grid;place-items:center;background:#222b39;flex-shrink:0}.eyebrow,.label{color:var(--amber);font-size:.68rem;letter-spacing:.15em;font-weight:700}.masthead .eyebrow{margin:0 0 5px}.tagline{color:var(--subtle);font-size:.79rem;margin-top:5px}.version{color:var(--subtle);font-weight:400;margin-left:8px}.app-layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:36px;padding:28px 0 20px}.nav{display:flex;flex-direction:column;gap:7px;position:sticky;top:24px;align-self:start}.nav-button{min-height:var(--tap);display:flex;align-items:center;gap:14px;background:transparent;color:var(--muted);border:1px solid transparent;border-radius:12px;padding:10px 14px;text-align:left;transition:background .14s,color .14s,border .14s}.nav-button:hover{background:#223147;color:var(--text)}.nav-button.is-current{background:#2a3442;color:var(--amber-pale);border-color:#746043}.nav-button span{font-size:.91rem}.main-content{min-width:0;max-width:680px;width:100%;margin:auto}.page[hidden]{display:none!important}.page{display:grid;gap:14px;animation:fadein .18s ease-out}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 2px 4px}.page-heading .eyebrow{margin-bottom:6px}.chip{padding:4px 11px;color:var(--amber-pale);background:#3b3540;border:1px solid #64556a;border-radius:20px;white-space:nowrap;font-size:.78rem}.glass{background:linear-gradient(150deg,#1a293c,#162336);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px}.split-line,.section-top{display:flex;justify-content:space-between;align-items:start;gap:14px}.section-top{align-items:center;margin-bottom:10px}.section-top small,.helper{color:var(--subtle);font-size:.76rem}.name-line{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.name-line strong{font-size:1.04rem}.name-line small{color:var(--amber)}.little-status{font-size:.71rem;color:var(--mint);border:1px solid #54705f;background:#263c3e;padding:2px 9px;border-radius:20px;white-space:nowrap}.meter-label{margin:14px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:.79rem}.meter-label strong{color:var(--text);font-size:.83rem;font-variant-numeric:tabular-nums}.meter{height:8px;background:#394456;border-radius:20px;overflow:hidden}.meter-fill{height:100%;border-radius:20px;transition:width .22s ease}.meter-fill.hp{background:linear-gradient(90deg,#70a892,#b6d7bc)}.meter-fill.enemy{background:linear-gradient(90deg,#ad6865,#d9a39a)}.focus-cells{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.focus-cell{height:9px;border-radius:5px;background:#394355}.focus-cell.full{background:#d6af73}.enemy-card{background:linear-gradient(150deg,#202939,#1a2434);border-color:#46505a}.enemy-card h3{margin-top:5px}.enemy-type{font-size:.67rem;letter-spacing:.1em;color:#c2a691;border:1px solid #766052;border-radius:8px;padding:4px 8px}.enemy-descr{font-size:.84rem;color:var(--muted);margin-top:12px}.status-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;min-height:0}.status-tag{font-size:.73rem;border:1px solid #567e72;color:#b4d6be;border-radius:7px;padding:2px 7px}.status-tag.warning{border-color:#ae8765;color:#f0c7a0}.log-card{padding-bottom:14px}.combat-log{list-style:none;display:flex;flex-direction:column-reverse;gap:0;max-height:216px;overflow:auto;padding:0;margin:0;scrollbar-color:#647086 transparent}.combat-log li{padding:7px 2px;border-top:1px solid #ffffff0c;font-size:.85rem;color:#cbd0d8;line-height:1.5;overflow-wrap:anywhere}.combat-log li:first-child{color:var(--text)}.combat-log li.important{color:var(--amber-pale)}.combat-log li.positive{color:var(--mint)}.combat-log li.danger{color:#e6a6a0}.combat-log li.log-hint{color:var(--subtle)}.controls-card{padding-bottom:14px}.actions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.action-btn{min-height:76px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:9px 3px;background:#24354a;color:var(--text);border:1px solid #455369;border-radius:12px}.action-btn:hover:not(:disabled){background:#2f4159}.action-btn.queued{color:var(--amber-pale);border-color:var(--amber);box-shadow:0 0 0 1px #e0b88155 inset}.action-btn span{font-size:.79rem;white-space:nowrap}.action-btn small{color:var(--subtle);font-size:.7rem;white-space:nowrap}.action-btn .icon{color:var(--amber);width:19px;height:19px}.battle-toolbar{display:grid;grid-template-columns:1fr 1fr 61px;gap:9px;margin-top:14px}.btn{min-height:var(--tap);display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:11px;padding:8px 13px;border:1px solid #46546a;color:var(--text);background:#2b3a4e;font-size:.84rem;font-weight:600;white-space:nowrap}.btn .icon{width:17px;height:17px}.btn.primary{color:#21242d;background:#d8b77f;border-color:#e2c591}.btn.primary:hover:not(:disabled){background:#f0cf98}.btn.secondary:hover:not(:disabled){background:#354861}.btn.quiet{color:var(--muted);padding:6px 5px}.small-note{color:var(--subtle);font-size:.78rem;line-height:1.72;margin-top:12px}.alert-strip{display:flex;align-items:start;gap:12px;padding:13px;border:1px solid #bb9464;background:#493d35;border-radius:12px;color:#f2d8b7}.alert-strip[hidden]{display:none}.alert-strip p{font-size:.79rem;margin-top:4px;color:#f0d9c3}.alert-strip strong{font-size:.84rem}.item-card,.settings-card,.record-card{display:grid;gap:12px}.item-title{display:flex;align-items:center;gap:10px;color:var(--amber-pale)}.item-details{font-size:.82rem;color:var(--muted)}.flavor{font-size:.83rem;font-style:italic;color:#c2bac1;border-left:2px solid #77684f;padding-left:12px}.item-tally{font-size:.82rem;color:var(--mint);padding:9px 12px;background:#25384a;border-radius:9px}.gear-options{display:grid;gap:9px}.gear-choice{width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;padding:14px;background:#213047;color:var(--text);display:grid;gap:5px;min-height:var(--tap)}.gear-choice.is-equipped{border-color:#d6b47b;background:#302f38}.gear-choice strong{font-size:.88rem}.gear-choice span{color:var(--muted);font-size:.78rem}.gear-choice em{color:var(--amber);font-size:.73rem;font-style:normal}.history-list{margin:0;padding-left:1.3rem;color:var(--muted);font-size:.85rem;display:grid;gap:7px}.form-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--line-soft);font-size:.88rem}.form-row span{min-width:0}.form-row select{max-width:160px;width:44%;min-height:42px;background:#233349;color:var(--text);border:1px solid #50617a;border-radius:10px;padding:7px}.check-row input{width:21px;height:21px;accent-color:#d8b77f}.rules-summary{background:#24354a;color:var(--muted);border:1px dashed #54677c;padding:13px;border-radius:10px;font-size:.82rem;line-height:1.8}.settings-card>p:not(.small-note){font-size:.86rem;color:var(--muted)}.settings-card h3{color:var(--amber-pale)}.utility-row{display:flex;flex-wrap:wrap;gap:8px}.file-import{position:relative;cursor:pointer}.file-import input{position:absolute;width:1px;height:1px;opacity:0}.text-danger{border:0;background:transparent;padding:8px 0;text-align:left;min-height:42px;color:#e6a6a0;font-size:.82rem;width:max-content}.record-prose{font-size:.87rem;color:var(--muted)}.stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat-box{border:1px solid var(--line-soft);border-radius:10px;padding:10px;background:#203149}.stat-box span{display:block;color:var(--subtle);font-size:.76rem}.stat-box strong{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--text)}.title-entry{padding:11px 0;border-top:1px solid var(--line-soft);font-size:.88rem;display:flex;justify-content:space-between;gap:10px}.title-entry span{color:var(--subtle);font-size:.76rem}.title-entry strong{color:var(--amber)}.title-select{margin-top:6px;min-height:38px;border:1px solid #765e45;border-radius:8px;background:#3c3540;color:var(--amber-pale);font-size:.78rem;padding:6px 11px}.site-footer{border-top:1px solid var(--line-soft);padding:22px 0 32px;color:#7f8fa4;font-size:.72rem;letter-spacing:.08em}.site-footer span{letter-spacing:0;margin-left:8px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,12px);border:1px solid #8b724e;background:#383645;color:var(--amber-pale);padding:10px 16px;box-shadow:0 12px 26px #080f1e8c;border-radius:12px;max-width:min(92vw,440px);text-align:center;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:10;font-size:.85rem}.toast.visible{opacity:1;transform:translate(-50%,0)}
@@ -1852,6 +1852,17 @@ h2 {font-size:1.43rem;}
 .first-steps p{color:#f0e5cc;margin:0;font-size:.84rem;line-height:1.6}
 @media(max-width:350px){.run-recap{padding:12px}.run-recap-metrics{gap:5px}.run-recap-metrics>div{padding:8px 6px}}
 
+/* 1.1.49 — deliberate opt-in for disposing of low-rarity items with a history. */
+.bulk-history-option{display:flex;align-items:flex-start;gap:11px;padding:11px 12px;
+  min-height:58px;border:1px solid #83a99c;border-radius:11px;background:#1e454a;
+  color:#f5ead2;cursor:pointer;line-height:1.45}
+.bulk-history-option input{flex:none;width:20px;height:20px;margin:2px 0 0;accent-color:#e8b56e;cursor:pointer}
+.bulk-history-option span{min-width:0;display:grid;gap:4px}
+.bulk-history-option strong{font-size:.93rem;line-height:1.4}
+.bulk-history-option small{font-size:.82rem;line-height:1.45;color:#d5d9c9}
+.bulk-history-option:has(input:checked){border-color:#f1c17a;background:#574332}
+.bulk-history-option:has(input:checked) strong{color:#ffebbf}
+#bulk-preview{line-height:1.6}
 </style>
 </head>
 <body>
@@ -1890,7 +1901,7 @@ h2 {font-size:1.43rem;}
 <div class="app-shell">
  <header class="masthead">
   <div class="brand-mark"><svg class="icon icon-lg"><use href="#ic-gate"/></svg></div>
-  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.48</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
+  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.49</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
  </header>
  <div class="app-layout">
   <nav class="nav" aria-label="画面を切り替える">
@@ -2098,10 +2109,13 @@ h2 {font-size:1.43rem;}
         <label class="bulk-care-select">まとめて処分する等級
           <select id="bulk-rarity"><option value="common">コモンのみ</option><option value="uncommon">アンコモン以下</option><option value="rare">レア以下</option></select>
         </label>
+        <label class="bulk-history-option" for="bulk-include-history">
+          <input id="bulk-include-history" type="checkbox">
+          <span><strong>来歴のある装備も対象に含める</strong><small>通常は除外。必要なときだけ選択してください。</small></span>
+        </label>
         <p class="small-note" id="bulk-preview" aria-live="polite">対象を確認しています。</p>
         <button type="button" id="bulk-remove" class="btn secondary">まとめて処分</button>
-        <p class="small-note">処分時は等級に応じて古銭を回収します。保護品と来歴のある品は、まとめて処分しません。</p>
-        <p class="small-note">現在表示中の部位だけを整理します。装備中・保護中・使った記録がある品・冒険開始時の品・エピック以上は除外。処分前に確認します。検索条件も対象選択に反映します。</p>
+        <p class="small-note">部位・検索条件・来歴の絞り込みが対象に反映されます。装備中・保護中・初期装備・エピック以上は常に除外。古銭回収後は元に戻せません。</p>
       </div>
     </div>
     <div class="glass item-card detail-card"><p class="label">ITEM INSPECTION</p><div class="detail-head"><div><h3 id="detail-name">名もなき短剣</h3><p class="item-details" id="detail-kind">武器 / コモン / Lv.1</p></div><span id="detail-rarity" class="rarity-flag">コモン</span></div>
@@ -5536,8 +5550,9 @@ h2 {font-size:1.43rem;}
     if(entries.length>10)$("tactic-synergy-effects").insertAdjacentHTML("beforeend",`<li>ほか${entries.length-10}件。装備詳細から確認してください。</li>`);
   }
 
-  // The bulk cleanup is conservative by design: equipped, protected, used,
-  // commemorative, starting, and epic/legendary items can never enter its list.
+  // Bulk cleanup defaults to protecting items with a history. An explicit,
+  // temporary opt-in can include them. Equipped, protected, starter and
+  // epic/legendary items are always excluded, regardless of this setting.
   const STARTER_ITEM_IDS=new Set(["w-first","c-venom","c-keen"]);
   const BULK_RARITY_RANK={common:0,uncommon:1,rare:2,epic:3,legendary:4};
   function itemHasHistory(item){
@@ -5614,7 +5629,8 @@ h2 {font-size:1.43rem;}
     save();render();toast("装備を手入れしました");
   }
   function eligibleForBulk(item){
-    if(!item||state.equipment.slots[item.slot]===item.id||item.protected||itemHasHistory(item)||STARTER_ITEM_IDS.has(item.id))return false;
+    if(!item||state.equipment.slots[item.slot]===item.id||item.protected||STARTER_ITEM_IDS.has(item.id))return false;
+    if(!$("bulk-include-history").checked&&itemHasHistory(item))return false;
     if(state.ui.filter!=="all"&&item.slot!==state.ui.filter)return false;
     if(!matchesInventorySearch(item)||(historyOnly&&!itemHasHistory(item)))return false;
     const max=BULK_RARITY_RANK[state.ui.bulkRarity]??1;
@@ -5676,7 +5692,9 @@ h2 {font-size:1.43rem;}
     $("gear-filter").value=state.ui.filter;$("gear-sort").value=state.ui.sort;
     $("bulk-rarity").value=state.ui.bulkRarity;
     const candidates=bulkCandidates(),selection=state.ui.filter==="all"?"すべての部位":SLOTS[state.ui.filter];
-    setText("bulk-preview",`${selection}：対象 ${candidates.length}点 / 古銭${candidates.reduce((s,i)=>s+saleValue(i),0)}枚 / 保護・装備中・使用履歴あり・初期装備・エピック以上は対象外`);
+    const withHistory=candidates.filter(itemHasHistory).length;
+    const optIn=$("bulk-include-history").checked;
+    setText("bulk-preview",`${selection}：対象 ${candidates.length}点（来歴あり ${withHistory}点） / 古銭${candidates.reduce((s,i)=>s+saleValue(i),0)}枚。${optIn?"来歴付きの処分を許可中。":"来歴付きは除外中。"}`);
     $("bulk-remove").disabled=active||candidates.length===0;
     setText("bulk-remove",`対象${candidates.length}点をまとめて処分`);
     let items=state.inventory.filter(item=>(state.ui.filter==="all"||item.slot===state.ui.filter)&&matchesInventorySearch(item)&&(!historyOnly||itemHasHistory(item)));
@@ -5758,7 +5776,7 @@ h2 {font-size:1.43rem;}
     tuneButton.textContent=!tunable?"レア以上の装備が対象":maxed?"調律の上限に到達":`古銭${tunePrice(item)}枚で特性を引き直す`;
     tuneNote.textContent=`調律 ${item.tuneCount||0}/${MAX_TUNES_PER_ITEM}回。追加特性1つをランダムに引き直します。固有能力・装備名・来歴は維持。`;
 
-    setText("gear-protect-note",stored?"この品は保管箱にあります。元の装備を鞄に戻すまで変更できません。":item.protected?"保護中：まとめて処分・個別処分の対象になりません。":itemHasHistory(item)?"この装備には戦闘の記録があります。一括処分から自動的に除外されます。":"保護すると、一括処分にも個別処分にも含まれません。");
+    setText("gear-protect-note",stored?"この品は保管箱にあります。元の装備を鞄に戻すまで変更できません。":item.protected?"保護中：まとめて処分・個別処分の対象になりません。":itemHasHistory(item)?"戦闘の来歴があります。通常の一括処分では除外されます（鞄の整理で変更可能）。":"保護すると、一括処分にも個別処分にも含まれません。");
     $("gear-battle-note").textContent=active?"現在の戦闘終了後に装備を変更できます。戦闘中の効果は固定されています。":"装備を変更すると能力値が更新されます。数値の差は同じ装備部位との比較です。";
   }
 
@@ -6219,6 +6237,8 @@ h2 {font-size:1.43rem;}
       if(!["common","uncommon","rare"].includes(e.target.value))return;
       state.ui.bulkRarity=e.target.value;save();renderGear();
     });
+    // Not stored in the save: opting in must be a conscious choice each session.
+    $("bulk-include-history").addEventListener("change",()=>renderGear());
     $("shop-buy-herbs").addEventListener("click",()=>buySupply("herbs"));
     $("shop-buy-lantern").addEventListener("click",()=>buySupply("lantern"));
     $("shop-buy-chart").addEventListener("click",()=>buySupply("chart"));
@@ -6227,15 +6247,24 @@ h2 {font-size:1.43rem;}
     $("bulk-remove").addEventListener("click",()=>{
       if(hasActiveBattle()||state.expedition){toast("探索中は所持品を整理できません");return;}
       const picks=bulkCandidates();if(!picks.length){toast("まとめて処分できる装備はありません");return;}
-      const example=picks.slice(0,4).map(x=>`・${x.name}`).join("\n");
-      if(!confirm(`${picks.length}点をまとめて処分して古銭${picks.reduce((s,i)=>s+saleValue(i),0)}枚を回収しますか？\n${example}${picks.length>4?`\nほか${picks.length-4}点`:""}\n\nこの操作は元に戻せません。保護・装備中・来歴あり・初期装備・エピック以上は対象外です。`))return;
-      // Revalidate against the live inventory immediately before committing.
+      const optIn=$("bulk-include-history").checked;
+      const historyPicks=picks.filter(itemHasHistory);
+      const example=picks.slice(0,4).map(x=>`・${x.name}${itemHasHistory(x)?"（来歴あり）":""}`).join("\n");
+      const warning=historyPicks.length?`\n\n【注意】来歴あり ${historyPicks.length}点の戦闘記録も消えます。`:"";
+      if(!confirm(`${picks.length}点をまとめて処分して古銭${picks.reduce((s,i)=>s+saleValue(i),0)}枚を回収しますか？\n${example}${picks.length>4?`\nほか${picks.length-4}点`:""}${warning}\n\nこの操作は元に戻せません。装備中・保護中・初期装備・エピック以上は対象外です。`))return;
+      // Keep the confirmed selection stable; reject if the candidates changed.
+      if(hasActiveBattle()||state.expedition||$("bulk-include-history").checked!==optIn){toast("対象が変わりました。もう一度確認してください");return;}
       const finalPicks=bulkCandidates();
+      if(finalPicks.length!==picks.length||finalPicks.some((x,i)=>x.id!==picks[i].id)){
+        toast("対象が変わりました。もう一度確認してください");renderGear();return;
+      }
       const ids=new Set(finalPicks.map(x=>x.id));
       const received=rewardSalvage(finalPicks);
       state.inventory=state.inventory.filter(x=>!ids.has(x.id));
       if(ids.has(state.lastDropId))state.lastDropId=null;
       if(ids.has(state.ui.inspectedId))state.ui.inspectedId=state.equipment.slots.weapon;
+      // Reset the sensitive option after every successful operation.
+      $("bulk-include-history").checked=false;
       save();render();toast(`${ids.size}点を整理し、古銭${received}枚を回収しました`);
     });
     $("gear-protect").addEventListener("click",()=>{
