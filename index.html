@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#17383d">
 <meta name="description" content="ランダム装備とビルド構築を楽しむ、テキスト主体の半自動ハクスラ。">
-<title>モルネッタ | 1.1.71</title>
+<title>モルネッタ | 1.1.72</title>
 <style>
 :root{color-scheme:dark;--bg:#0e1725;--night:#101b2b;--panel:#182639;--panel-2:#1d2c41;--line:#344257;--line-soft:#2a394e;--text:#eee9df;--muted:#b8bcc5;--subtle:#8e9bad;--amber:#e0b881;--amber-pale:#f0d6a8;--mint:#9bc7b5;--red:#d58f8b;--blue:#a5bce0;--radius:15px;--tap:46px;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:15px}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);background:radial-gradient(circle at 70% -12%,#253651 0%,transparent 42%),var(--bg);line-height:1.65;min-height:100vh}button,select,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:not-allowed}button,select{-webkit-tap-highlight-color:transparent}button:focus-visible,select:focus-visible,input:focus-visible,label.file-import:focus-within{outline:2px solid var(--amber);outline-offset:3px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.35}h1{font-size:1.5rem;letter-spacing:.09em;font-weight:700}h2{font-size:1.45rem;font-weight:680;letter-spacing:.04em}h3{font-size:1.04rem;font-weight:650}small{font-size:.76rem}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.icon{width:20px;height:20px;display:inline-block;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.icon-lg{width:27px;height:27px}.icon-inline{width:15px;height:15px;vertical-align:-2px}.app-shell{max-width:1080px;margin:auto;padding:0 21px}.masthead{padding:32px 0 22px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--line-soft)}.brand-mark{width:49px;height:49px;border-radius:15px;border:1px solid #9c8058;color:var(--amber);display:grid;place-items:center;background:#222b39;flex-shrink:0}.eyebrow,.label{color:var(--amber);font-size:.68rem;letter-spacing:.15em;font-weight:700}.masthead .eyebrow{margin:0 0 5px}.tagline{color:var(--subtle);font-size:.79rem;margin-top:5px}.version{color:var(--subtle);font-weight:400;margin-left:8px}.app-layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:36px;padding:28px 0 20px}.nav{display:flex;flex-direction:column;gap:7px;position:sticky;top:24px;align-self:start}.nav-button{min-height:var(--tap);display:flex;align-items:center;gap:14px;background:transparent;color:var(--muted);border:1px solid transparent;border-radius:12px;padding:10px 14px;text-align:left;transition:background .14s,color .14s,border .14s}.nav-button:hover{background:#223147;color:var(--text)}.nav-button.is-current{background:#2a3442;color:var(--amber-pale);border-color:#746043}.nav-button span{font-size:.91rem}.main-content{min-width:0;max-width:680px;width:100%;margin:auto}.page[hidden]{display:none!important}.page{display:grid;gap:14px;animation:fadein .18s ease-out}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 2px 4px}.page-heading .eyebrow{margin-bottom:6px}.chip{padding:4px 11px;color:var(--amber-pale);background:#3b3540;border:1px solid #64556a;border-radius:20px;white-space:nowrap;font-size:.78rem}.glass{background:linear-gradient(150deg,#1a293c,#162336);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px}.split-line,.section-top{display:flex;justify-content:space-between;align-items:start;gap:14px}.section-top{align-items:center;margin-bottom:10px}.section-top small,.helper{color:var(--subtle);font-size:.76rem}.name-line{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.name-line strong{font-size:1.04rem}.name-line small{color:var(--amber)}.little-status{font-size:.71rem;color:var(--mint);border:1px solid #54705f;background:#263c3e;padding:2px 9px;border-radius:20px;white-space:nowrap}.meter-label{margin:14px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:.79rem}.meter-label strong{color:var(--text);font-size:.83rem;font-variant-numeric:tabular-nums}.meter{height:8px;background:#394456;border-radius:20px;overflow:hidden}.meter-fill{height:100%;border-radius:20px;transition:width .22s ease}.meter-fill.hp{background:linear-gradient(90deg,#70a892,#b6d7bc)}.meter-fill.enemy{background:linear-gradient(90deg,#ad6865,#d9a39a)}.focus-cells{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.focus-cell{height:9px;border-radius:5px;background:#394355}.focus-cell.full{background:#d6af73}.enemy-card{background:linear-gradient(150deg,#202939,#1a2434);border-color:#46505a}.enemy-card h3{margin-top:5px}.enemy-type{font-size:.67rem;letter-spacing:.1em;color:#c2a691;border:1px solid #766052;border-radius:8px;padding:4px 8px}.enemy-descr{font-size:.84rem;color:var(--muted);margin-top:12px}.status-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;min-height:0}.status-tag{font-size:.73rem;border:1px solid #567e72;color:#b4d6be;border-radius:7px;padding:2px 7px}.status-tag.warning{border-color:#ae8765;color:#f0c7a0}.log-card{padding-bottom:14px}.combat-log{list-style:none;display:flex;flex-direction:column-reverse;gap:0;max-height:216px;overflow:auto;padding:0;margin:0;scrollbar-color:#647086 transparent}.combat-log li{padding:7px 2px;border-top:1px solid #ffffff0c;font-size:.85rem;color:#cbd0d8;line-height:1.5;overflow-wrap:anywhere}.combat-log li:first-child{color:var(--text)}.combat-log li.important{color:var(--amber-pale)}.combat-log li.positive{color:var(--mint)}.combat-log li.danger{color:#e6a6a0}.combat-log li.log-hint{color:var(--subtle)}.controls-card{padding-bottom:14px}.actions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.action-btn{min-height:76px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:9px 3px;background:#24354a;color:var(--text);border:1px solid #455369;border-radius:12px}.action-btn:hover:not(:disabled){background:#2f4159}.action-btn.queued{color:var(--amber-pale);border-color:var(--amber);box-shadow:0 0 0 1px #e0b88155 inset}.action-btn span{font-size:.79rem;white-space:nowrap}.action-btn small{color:var(--subtle);font-size:.7rem;white-space:nowrap}.action-btn .icon{color:var(--amber);width:19px;height:19px}.battle-toolbar{display:grid;grid-template-columns:1fr 1fr 61px;gap:9px;margin-top:14px}.btn{min-height:var(--tap);display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:11px;padding:8px 13px;border:1px solid #46546a;color:var(--text);background:#2b3a4e;font-size:.84rem;font-weight:600;white-space:nowrap}.btn .icon{width:17px;height:17px}.btn.primary{color:#21242d;background:#d8b77f;border-color:#e2c591}.btn.primary:hover:not(:disabled){background:#f0cf98}.btn.secondary:hover:not(:disabled){background:#354861}.btn.quiet{color:var(--muted);padding:6px 5px}.small-note{color:var(--subtle);font-size:.78rem;line-height:1.72;margin-top:12px}.alert-strip{display:flex;align-items:start;gap:12px;padding:13px;border:1px solid #bb9464;background:#493d35;border-radius:12px;color:#f2d8b7}.alert-strip[hidden]{display:none}.alert-strip p{font-size:.79rem;margin-top:4px;color:#f0d9c3}.alert-strip strong{font-size:.84rem}.item-card,.settings-card,.record-card{display:grid;gap:12px}.item-title{display:flex;align-items:center;gap:10px;color:var(--amber-pale)}.item-details{font-size:.82rem;color:var(--muted)}.flavor{font-size:.83rem;font-style:italic;color:#c2bac1;border-left:2px solid #77684f;padding-left:12px}.item-tally{font-size:.82rem;color:var(--mint);padding:9px 12px;background:#25384a;border-radius:9px}.gear-options{display:grid;gap:9px}.gear-choice{width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;padding:14px;background:#213047;color:var(--text);display:grid;gap:5px;min-height:var(--tap)}.gear-choice.is-equipped{border-color:#d6b47b;background:#302f38}.gear-choice strong{font-size:.88rem}.gear-choice span{color:var(--muted);font-size:.78rem}.gear-choice em{color:var(--amber);font-size:.73rem;font-style:normal}.history-list{margin:0;padding-left:1.3rem;color:var(--muted);font-size:.85rem;display:grid;gap:7px}.form-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--line-soft);font-size:.88rem}.form-row span{min-width:0}.form-row select{max-width:160px;width:44%;min-height:42px;background:#233349;color:var(--text);border:1px solid #50617a;border-radius:10px;padding:7px}.check-row input{width:21px;height:21px;accent-color:#d8b77f}.rules-summary{background:#24354a;color:var(--muted);border:1px dashed #54677c;padding:13px;border-radius:10px;font-size:.82rem;line-height:1.8}.settings-card>p:not(.small-note){font-size:.86rem;color:var(--muted)}.settings-card h3{color:var(--amber-pale)}.utility-row{display:flex;flex-wrap:wrap;gap:8px}.file-import{position:relative;cursor:pointer}.file-import input{position:absolute;width:1px;height:1px;opacity:0}.text-danger{border:0;background:transparent;padding:8px 0;text-align:left;min-height:42px;color:#e6a6a0;font-size:.82rem;width:max-content}.record-prose{font-size:.87rem;color:var(--muted)}.stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat-box{border:1px solid var(--line-soft);border-radius:10px;padding:10px;background:#203149}.stat-box span{display:block;color:var(--subtle);font-size:.76rem}.stat-box strong{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--text)}.title-entry{padding:11px 0;border-top:1px solid var(--line-soft);font-size:.88rem;display:flex;justify-content:space-between;gap:10px}.title-entry span{color:var(--subtle);font-size:.76rem}.title-entry strong{color:var(--amber)}.title-select{margin-top:6px;min-height:38px;border:1px solid #765e45;border-radius:8px;background:#3c3540;color:var(--amber-pale);font-size:.78rem;padding:6px 11px}.site-footer{border-top:1px solid var(--line-soft);padding:22px 0 32px;color:#7f8fa4;font-size:.72rem;letter-spacing:.08em}.site-footer span{letter-spacing:0;margin-left:8px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,12px);border:1px solid #8b724e;background:#383645;color:var(--amber-pale);padding:10px 16px;box-shadow:0 12px 26px #080f1e8c;border-radius:12px;max-width:min(92vw,440px);text-align:center;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:10;font-size:.85rem}.toast.visible{opacity:1;transform:translate(-50%,0)}
@@ -2020,6 +2020,15 @@ h2 {font-size:1.43rem;}
 @media(max-width:375px){.guild-feature-actions .btn{flex-basis:120px;min-width:0;padding:9px 8px}.guild-feature-panel{padding:11px}}
 @media(max-width:375px){.guild-extra-actions .guild-talk-button{min-width:120px;padding:9px 8px}}
 </style>
+<style id="swordgrave-style-1-1-72">
+.dungeon-destination[data-dungeon="swordgrave"]{background:linear-gradient(155deg,#4c3449,#332b40);border-color:#bc98ae;border-bottom-color:#795a78}
+.dungeon-destination[data-dungeon="swordgrave"].is-locked{background:linear-gradient(155deg,#3a303f,#292b38);border-color:#8b7087;border-bottom-color:#67576f}
+.dungeon-destination[data-dungeon="swordgrave"].is-cleared{border-color:#e2c081;border-bottom-color:#b69159}
+.swordgrave-mark-panel{display:grid;gap:6px;padding:11px;background:#1c283b;border:1px solid #80697e;border-radius:10px;min-width:0}
+.swordgrave-mark-panel label,.swordgrave-mark-panel small{color:#f2e3ce}.swordgrave-mark-panel select{width:100%;min-width:0;max-width:100%;background:#263044;color:#f6ebd1;border:1px solid #967e99;border-radius:8px;padding:10px}
+.swordgrave-respec{background:#263142;border:1px solid #a494a8;border-radius:12px;padding:15px;display:grid;gap:10px;margin:10px 0;color:#f5e7d9}
+.swordgrave-respec[hidden]{display:none}.swordgrave-respec p,.swordgrave-respec small{color:#d5ccd1;font-size:.87rem}.swordgrave-respec select{width:100%;min-width:0;background:#202b38;color:#ffedcc;border:1px solid #938297;border-radius:8px;padding:10px}.swordgrave-respec button{white-space:normal}
+</style>
 </head>
 <body>
 <!-- ページ内で共有するSVGシンボル。外部の画像・アイコンライブラリを使用しません。 -->
@@ -2057,7 +2066,7 @@ h2 {font-size:1.43rem;}
 <div class="app-shell">
  <header class="masthead">
   <div class="brand-mark"><svg class="icon icon-lg"><use href="#ic-gate"/></svg></div>
-  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.71</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
+  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.72</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
  </header>
  <div class="app-layout">
   <nav class="nav" aria-label="画面を切り替える">
@@ -2141,6 +2150,13 @@ h2 {font-size:1.43rem;}
           <p class="dungeon-record" id="dungeon-record-tribunal">解放条件：高難度＋の異なる2迷宮を踏破</p>
           <div class="dungeon-launch"><button type="button" class="btn trial-launch" id="tribunal-start-button" disabled><svg class="icon"><use href="#ic-gate"/></svg><span id="dungeon-tribunal-launch-label">解放後に挑戦できます</span></button></div>
         </article>
+        <article class="dungeon-destination is-locked" id="dungeon-card-swordgrave" data-dungeon="swordgrave" aria-label="名を失くした剣塚">
+          <div class="dungeon-destination-header"><span class="dungeon-symbol" aria-hidden="true"><svg class="icon"><use href="#ic-swords"/></svg></span><div class="dungeon-destination-heading"><p class="dungeon-difficulty">超難度 / 高難度＋＋ / 全5碑</p><h4>名を失くした剣塚</h4></div><span class="dungeon-map-status" id="dungeon-status-swordgrave">未解放</span></div>
+          <p class="dungeon-description">かつての旅人の残響は、使われた技を覚えて対抗してくる。第3碑の手前に一度きりの編成変更。剣の記憶を読み、戦い方を変えよう。</p>
+          <p class="dungeon-record" id="dungeon-record-swordgrave">解放条件：終わらない審問院を1回踏破</p>
+          <div class="trial-seal-panel swordgrave-mark-panel"><label for="swordgrave-mark-select">残響の刻印（初踏破後に解放）</label><select id="swordgrave-mark-select"><option value="0">無刻印 — 通常の剣塚</option><option value="1">一重 — 敵の対策＋5ポイント</option><option value="2">二重 — 回復量さらに低下</option><option value="3">三重 — 最終ボスの攻撃が鋭くなる</option></select><small id="swordgrave-mark-help">初踏破後、刻印を選べます。</small></div>
+          <div class="dungeon-launch"><button type="button" class="btn trial-launch" id="swordgrave-start-button" disabled><svg class="icon"><use href="#ic-swords"/></svg><span id="dungeon-swordgrave-launch-label">解放後に挑戦できます</span></button></div>
+        </article>
       </div>
 
       <section class="departure-kit" id="departure-kit" aria-labelledby="departure-kit-title">
@@ -2195,6 +2211,14 @@ h2 {font-size:1.43rem;}
         </section>
         <div class="expedition-options"><button type="button" class="btn primary" id="expedition-event-take"></button><button type="button" class="btn secondary" id="expedition-event-leave"></button></div>
       </div>
+      <section class="swordgrave-respec" id="swordgrave-respec" hidden aria-label="剣塚の戦術の組み直し">
+        <strong>剣塚の休息所 — 戦術を組み直す</strong>
+        <p>第3碑の手前。探索につき一度だけ、習得済みの技の組み合わせを選べる。装備の交換はできません。変更した編成は帰還後も残ります。</p>
+        <label for="swordgrave-rebuild-preset">選ぶ戦術</label>
+        <select id="swordgrave-rebuild-preset"></select>
+        <button type="button" class="btn secondary" id="swordgrave-rebuild-button">この戦術に変更する（1回限り）</button>
+        <small id="swordgrave-rebuild-status"></small>
+      </section>
       <div class="expedition-choice" id="expedition-choice" hidden>
         <p id="expedition-checkpoint"></p>
         <div class="expedition-options route-options"><button type="button" class="btn primary" id="expedition-next"><svg class="icon"><use href="#ic-gate"/></svg>整備された側道</button><button type="button" class="btn route-risk" id="expedition-risk"><svg class="icon"><use href="#ic-spark"/></svg>報酬のある道</button><button type="button" class="btn secondary" id="expedition-root" hidden><svg class="icon"><use href="#ic-gate"/></svg>根の抜け道</button></div>
@@ -2708,11 +2732,11 @@ h2 {font-size:1.43rem;}
     </section>
     <section class="guide-chapter" id="guide-gear">
      <p class="guide-chapter-kicker">05 / EQUIPMENT</p><h3>装備を集め、選び、残す</h3>
-     <p>装備には<strong>武器・防具・護符・遺物</strong>の4部位があり、レア度はコモンからレジェンダリーまで5段階です。基本装備は45種類で、うち24種類は8つの迷宮に3種類ずつ存在する固有装備です。装備は名前や追加効果で検索でき、選ぶと現在装備中の同じ部位と比較できます。</p>
+     <p>装備には<strong>武器・防具・護符・遺物</strong>の4部位があり、レア度はコモンからレジェンダリーまで5段階です。基本装備は48種類で、うち27種類は9つの迷宮に3種類ずつ存在する固有装備です。装備は名前や追加効果で検索でき、選ぶと現在装備中の同じ部位と比較できます。</p>
      <p><strong>迷宮の固有装備</strong>：共通装備20種類と、探索している迷宮だけの固有装備3種類が<strong>同じランダム抽選</strong>の候補になります。踏破しても固有装備は確定せず、未発見の装備を優先する補正もありません。繰り返し潜って発見を目指しましょう。固有装備には調律で失われない固定特性が1つ付いており、迷宮図鑑には入手場所・固定特性・迷宮ごとの発見数が表示されます。</p>
      <p><strong>図鑑達成の記念品</strong>：各迷宮の固有装備3種類を発見すると、記念品1つと専用の異名1つを自動で獲得します。記念品は「記録 → 記念品」の専用棚に永久保存され、鞄や保管箱を圧迫しません。「異名の手帳」や記念品の棚から好きな異名を名乗れます。過去のセーブですでに3種類を発見していた場合も、図鑑記録をもとに獲得済みとして扱います。記念品は収集の証で、戦闘能力は変化しません。</p>
      <p><strong>装備バランス監査（1.1.57）</strong>：同じ品質でも基礎性能と固定特性、戦術の相性で使い勝手が異なります。苔織りの胴着はHP重視、眠らずの花衣は防御とHPの両立型です。低レア装備や序盤の装備が、終盤の高品質装備より弱いのは段階的な成長として意図された仕様です。</p>
-     <p><strong>装備の調査（44種類）</strong>：共通装備20種類と迷宮固有装備24種類、計44種類の未発見が残り3種類以下になると、公開迷宮を4回踏破するごとに「調査の手がかり」を1件獲得できます。「記録 → 迷宮図鑑」から未発見の44種類のうち1点をレアで受け取れます。鞄が満杯なら保管箱へ入り、両方満杯でも手がかりは保存されます。根の聖域限定の護符だけは対象外です。</p>
+     <p><strong>装備の調査（47種類）</strong>：共通装備20種類と迷宮固有装備27種類、計47種類の未発見が残り3種類以下になると、公開迷宮を4回踏破するごとに「調査の手がかり」を1件獲得できます。「記録 → 迷宮図鑑」から未発見の47種類のうち1点をレアで受け取れます。鞄が満杯なら保管箱へ入り、両方満杯でも手がかりは保存されます。根の聖域限定の護符だけは対象外です。</p>
      <div class="guide-info-grid"><div><strong>いまの装備</strong><span>4部位の装備を確認します。</span></div><div><strong>所持品と比較</strong><span>一覧から選んで、性能・効果・来歴を確認します。</span></div><div><strong>鞄と保管箱</strong><span>鞄は80点から始まり、古物商に古銭500枚・1,000枚を支払うと90点・100点まで拡張できます。保管箱は60点。装備中の品は保管できません。</span></div><div><strong>手入れ・調律</strong><span>古銭を使って装備を育てたり、追加特性を変更したりできます。</span></div></div>
      <p><strong>複合ビルド向け特性</strong>：灰刃は燃焼中の連撃、蛇返しは毒状態での反撃、星喰いは毒と燃焼の共存、静寂は大技の中断を助けます。装備の「相性」表示で、実際に使うスキルと組み合わせて確認できます。発動条件がそろわないと効果はありません。</p>
      <p><strong>根の聖域</strong>は「眠らない温室」で根の抜け道を選ぶと奥の区画で見つかります。安全に装備と古銭を拾って帰還するか、追加の強敵「聖域の守り手」に挑んで初回勝利限定の<strong>根継ぎの護符</strong>を受け取るか選べます。専用護符は直接鞄に入り、鞄が満杯なら保管箱へ送られます。護符の「芽吹き」は探索中に一度だけ発動します。</p>
@@ -2789,10 +2813,13 @@ h2 {font-size:1.43rem;}
     {mode:"bell",titleId:"region_bell",title:"沈黙の余韻を聴く者",memento:"音のない小鈴",mark:"◇",flavor:"振っても響かない小鈴。それでも持ち主には、遠い鐘室の静けさが聞こえる。"},
     {mode:"mirror",titleId:"region_mirror",title:"裏側を歩く者",memento:"割れ目のない鏡片",mark:"◈",flavor:"表も裏もない鏡片。目を閉じると、向こうから足音だけが聞こえる。"},
     {mode:"ferry",titleId:"region_ferry",title:"向こう岸から帰った者",memento:"返されなかった渡し札",mark:"◌",flavor:"乗り場には持ち主の名がなかった。帰り道だけが小さく刻んである。"},
-    {mode:"tribunal",titleId:"region_tribunal",title:"問いを持ち帰る者",memento:"答えのない判決文",mark:"✥",flavor:"最後の一行は空白だった。誰にも答えを委ねなかった旅人の印。"}
+    {mode:"tribunal",titleId:"region_tribunal",title:"問いを持ち帰る者",memento:"答えのない判決文",mark:"✥",flavor:"最後の一行は空白だった。誰にも答えを委ねなかった旅人の印。"},
+    {mode:"swordgrave",titleId:"region_swordgrave",title:"幾千の旅を知る者",memento:"名のない墓標の欠片",mark:"✧",flavor:"忘れられた旅の数だけ、刻まれていない名がある。"}
   ]);
-  const REGION_COLLECTION_TITLES=REGION_COLLECTION_AWARDS.map(a=>({id:a.titleId,name:a.title,desc:`${({normal:"苔むす石の回廊",trial:"星の門・深層試練",library:"潮待ちの書庫",greenhouse:"眠らない温室",bell:"鳴らずの鐘楼",mirror:"裏返しの鏡館",ferry:"灰の渡し場",tribunal:"終わらない審問院"})[a.mode]}の固有装備3種類を発見した`,region:a.mode}));
-  const ALL_TITLES=[...TITLES,...REGION_COLLECTION_TITLES,{id:"tribunal_conqueror",name:"審問を越えた者",desc:"終わらない審問院を初めて踏破した"}];
+  const REGION_COLLECTION_TITLES=REGION_COLLECTION_AWARDS.map(a=>({id:a.titleId,name:a.title,desc:`${({normal:"苔むす石の回廊",trial:"星の門・深層試練",library:"潮待ちの書庫",greenhouse:"眠らない温室",bell:"鳴らずの鐘楼",mirror:"裏返しの鏡館",ferry:"灰の渡し場",tribunal:"終わらない審問院",swordgrave:"名を失くした剣塚"})[a.mode]}の固有装備3種類を発見した`,region:a.mode}));
+  const ALL_TITLES=[...TITLES,...REGION_COLLECTION_TITLES,{id:"tribunal_conqueror",name:"審問を越えた者",desc:"終わらない審問院を初めて踏破した"},
+    {id:"swordgrave_conqueror",name:"名を取り戻した者",desc:"名を失くした剣塚を初めて踏破した"},
+    {id:"swordgrave_engraved",name:"最後の剣を抜いた者",desc:"名を失くした剣塚の三重の刻印を踏破した"}];
   const regionSetItems=mode=>BASE_ITEMS.filter(item=>item.region===mode);
   const regionCollectionCount=(mode,catalog)=>regionSetItems(mode).filter(item=>!!catalog.items[item.id]).length;
   const isRegionCollectionComplete=(mode,catalog)=>regionSetItems(mode).length===3&&regionCollectionCount(mode,catalog)===3;
@@ -2958,6 +2985,7 @@ h2 {font-size:1.43rem;}
     ...Object.entries(MIRROR_ENEMIES).map(([floor,foe])=>({id:`mirror-${floor}`,name:foe.name,floor:Number(floor),...foe})),
     ...Object.entries(FERRY_ENEMIES).map(([floor,foe])=>({id:`ferry-${floor}`,name:foe.name,floor:Number(floor),...foe})),
     ...Object.entries(TRIBUNAL_ENEMIES).map(([floor,foe])=>({id:`tribunal-${floor}`,name:foe.name,floor:Number(floor),...foe})),
+    ...Object.entries(SWORDGRAVE_ENEMIES).map(([floor,foe])=>({id:`swordgrave-${floor}`,name:foe.name,floor:Number(floor),...foe})),
     {id:"greenhouse-root-guardian",floor:29,...ROOT_SANCTUARY_GUARDIAN}
   ];
   function emptyCatalog(){return {enemies:{},items:{},abilities:{},affixes:{},notices:[],collectionLeads:0};}
@@ -3213,6 +3241,21 @@ h2 {font-size:1.43rem;}
     44:{name:"残響の証人",type:"elite",pattern:"swift",desc:"判決より早く二つの刃が届く。",attackName:"二重供述",hp:2.241,atk:1.496,def:1.28,poisonResist:.25,burnResist:.20},
     45:{name:"終審の裁定者",type:"boss",pattern:"heavy",desc:"半分まで追い詰めると裁定が加速する。予告を読み、最後まで生き延びよ。",attackName:"裁定の杖",heavyName:"終わりなき宣告",hp:2.925,atk:1.608,def:1.38,poisonResist:.32,burnResist:.32}
   };
+  const SWORD_ACTIONS=["poison","fire","flurry","riposte","heal","bind","attack","guard"];
+  const SWORD_ACTION_LABELS={poison:"毒穿ち",fire:"火種・炎刃",flurry:"連続斬り",riposte:"返し刃",heal:"応急処置",bind:"影縫い",attack:"通常攻撃",guard:"防御"};
+  function swordActionGroup(action){return action==="ignite"||action==="flame"?"fire":SWORD_ACTIONS.includes(action)?action:null;}
+  function dominantSwordAction(counts){
+    const special=SWORD_ACTIONS.filter(k=>k!=="attack"&&k!=="guard"&&Number(counts?.[k])>0);
+    if(special.length)return special.reduce((best,k)=>!best||(Number(counts[k])||0)>(Number(counts[best])||0)?k:best,null);
+    return Number(counts?.guard)>0?"guard":Number(counts?.attack)>0?"attack":null;
+  }
+  const SWORDGRAVE_ENEMIES={
+    46:{name:"傷だらけの剣士",type:"normal",pattern:"heavy",desc:"刃の傷跡を辿り、予告した大技を繰り出す。",attackName:"折り重なる斬撃",heavyName:"傷跡の斬り下ろし",hp:1.98,atk:1.43,def:1.26,poisonResist:.12,burnResist:.12},
+    47:{name:"灰をまとう狩人",type:"normal",pattern:"swift",desc:"小さな隙を逃さない連撃で追い詰める。",attackName:"灰まといの矢",hp:1.91,atk:1.48,def:1.23,poisonResist:.15,burnResist:.17},
+    48:{name:"百戦の盾持ち",type:"elite",pattern:"shell",desc:"硬い盾を立て、長い戦いに耐えてきた残響。",attackName:"旧い盾の縁",hp:2.35,atk:1.53,def:1.32,poisonResist:.20,burnResist:.20},
+    49:{name:"戦術を写す者",type:"elite",pattern:"drain",desc:"相手の技を記録し、集中を奪う。",attackName:"写し身の刃",hp:2.28,atk:1.54,def:1.30,poisonResist:.24,burnResist:.20},
+    50:{name:"名のない旅人",type:"boss",pattern:"heavy",desc:"この探索で最も使われた戦術を見抜く。HP半分で読みがさらに鋭くなる。",attackName:"帰る名のない剣",heavyName:"残響の大太刀",hp:2.98,atk:1.60,def:1.37,poisonResist:.27,burnResist:.26}
+  };
   const FERRY_ENEMIES={
     36:{name:"灰掻きの船頭",type:"normal",pattern:"shell",desc:"灰を櫂で集め、岸辺を封じる。",attackName:"灰の櫂",hp:1.344,atk:1.107,def:1.20},
     37:{name:"舟影の追跡者",type:"normal",pattern:"swift",desc:"一度踏んだ灰を、二度踏み返してくる。",attackName:"渡りの双刃",hp:1.258,atk:1.161,def:1.13,poisonResist:.10},
@@ -3299,6 +3342,9 @@ h2 {font-size:1.43rem;}
     {id:"verdictblade",slot:"weapon",name:"判決前夜の長剣",attack:18,region:"tribunal",signature:"precise",flavor:"名を刻まない柄には、何度でも握り直した跡がある。"},
     {id:"oathcoat",slot:"armor",name:"沈黙の法衣",defense:7,hp:16,region:"tribunal",signature:"ward",flavor:"言い残した一言だけが、襟元に縫い込まれている。"},
     {id:"sealedscale",slot:"relic",name:"封蝋の天秤",attack:3,hp:9,region:"tribunal",signature:"resolve",flavor:"皿は傾いたまま。それでも針は壊れていない。"},
+    {id:"memoryblade",slot:"weapon",name:"追憶の長剣",attack:18,crit:.025,region:"swordgrave",signature:"precise",flavor:"その剣の名前を呼ぶ者はいない。柄の擦れた部分だけが語る。"},
+    {id:"againcloak",slot:"armor",name:"幾度目かの外套",defense:7,hp:18,region:"swordgrave",signature:"mender",flavor:"縫い直した糸の色が一つずつ違う。"},
+    {id:"traceband",slot:"relic",name:"名残の指環",attack:3,hp:10,region:"swordgrave",signature:"resolve",flavor:"名を彫る場所だけがきれいに残っている。"},
   ];
   const AFFIXES = {
     sharp:{name:"鋭利",desc:"攻撃力+5",attack:5},
@@ -3898,7 +3944,7 @@ h2 {font-size:1.43rem;}
   function hasGuildUnlock(key,s=state){
     const es=s.expeditionStats||{}, counts=(s.catalog&&s.catalog.items)||{}, extra=s.guildExtra||defaultGuildExtra();
     const seen=id=>extra.readEpisodes.includes(id);
-    const clearedModes=["clears","trialClears","bellClears","libraryClears","greenhouseClears","mirrorClears","ferryClears","tribunalClears"];
+    const clearedModes=["clears","trialClears","bellClears","libraryClears","greenhouseClears","mirrorClears","ferryClears","tribunalClears","swordgraveClears"];
     const clears=clearedModes.reduce((t,k)=>t+Math.max(0,Number(es[k])||0),0);
     switch(key){
       case "always": return true;
@@ -4032,6 +4078,10 @@ h2 {font-size:1.43rem;}
   // The third reply honors actual gear journey, rarity, protection and provenance.
   // Rotation is local to this browser session and never changes saved gameplay state.
   const GUILD_EQUIPMENT_REACTIONS = {
+    memoryblade:{merchant:["この長剣、柄には名前の跡だけが残っている。消えた字も、持ち主の一部だろうね。","研ぎ減った刃なのに芯はまっすぐだ。持ち帰った旅の数だけ重みがあるね。"],cat:["追憶の長剣ですね。持ち主の名前は不明でも、発見した場所は書き残せます！","剣塚からの帰還記録と一緒に綴っておきます。空欄は、空欄のまま大切に。"],trainer:["よく振れる長剣だね。でも長さに任せず、足を動かして使って。","相手の構えに合わせて剣筋を変えられたら、ずっと頼れる一本になるよ。"]},
+    againcloak:{merchant:["外套の糸が何色もあるね。違う持ち主が繕ったのかもしれない。","新品には戻せないけれど、直せる場所が残っている。いい外套だ。"],cat:["幾度目かの外套……『幾度目』が何回なのか、気になります！","繕った跡も記録に残したいです。見落とさないように紙を一枚足しますね！"],trainer:["その外套、動きを邪魔しない縫い方だね。何度も使って直したんだろうな。","防具は着たまま走れることも大事だよ。紐の結び目、出発前に確認してね。"]},
+    traceband:{merchant:["名前を刻まなかった指環か。空白の値段を聞かれると困るねえ。","指環は小さいのに、残された思い出はずいぶん大きそうだ。"],cat:["名残の指環……記録欄に持ち主が書けないのは落ち着きません。でも嘘は書きません！","指環の刻印は空白、と。書けないことも正式な記録にしておきます。"],trainer:["指環は小さくても邪魔になることがあるよ。握り込むとき引っかからないかな。","残したい記憶は戦い方にも出るものだよ。その指環、無事に持ち帰ってね。"]},
+
     "shortsword": {
       "merchant": [
         "小さな刃でも、手に馴染めば頼りになる。最初の一本を覚えている人は多いよ。",
@@ -4835,13 +4885,13 @@ h2 {font-size:1.43rem;}
       mastery:initialMastery(),
       lootDryStreak:0,lastDropId:null,ui:{filter:"all",sort:"new",inspectedId:"w-first",bulkRarity:"uncommon",catalogSection:"enemies",catalogShowUnknown:true},
       economy:{coins:0,spent:0,salvaged:0,polishes:0,tunings:0,chartsBought:0,bagUpgrades:0,prepared:{herbs:false,lantern:false,chart:false}},
-      settings: { speed: 1800, healThreshold: 35, poisonThreshold: 2, burnThreshold: 1, combatStyle: "poison", reserveFocus: false, responseMode: "balanced", trialSeal:"standard", skillSlots:["poison","heal","riposte"], skillVariants:normalizeSkillVariants(null) },
+      settings: { speed: 1800, healThreshold: 35, poisonThreshold: 2, burnThreshold: 1, combatStyle: "poison", reserveFocus: false, responseMode: "balanced", trialSeal:"standard", swordgraveMark:0, skillSlots:["poison","heal","riposte"], skillVariants:normalizeSkillVariants(null) },
       stats: { wins: 0, losses: 0, kills: 0, poisonKills: 0, burnKills: 0, criticals: 0, poisonsApplied: 0, burnsApplied: 0, counterAttacks: 0, combosUsed: 0, closeWins: 0, skillsUsed: 0,
         interruptions:0, guardedHeavy:0, bossKills:0, eliteKills:0, legendaryBossRewardClaimed:false,
         basicAttacks:0, guardsUsed:0, healsUsed:0, poisonSkillsUsed:0, fireSkillsUsed:0,
         riposteUsed:0, bindUsed:0, flurryUsedNew:0 },
       unlockedTitles: [], selectedTitle: null, collectionAwards:[],
-      memories: [], logs: [], battle: null, expedition:null, expeditionStats:{runs:0,clears:0,retreats:0,defeats:0,deepest:0,bankedShards:0,safeRoutes:0,riskyRoutes:0,storyFinds:0,storyCompletions:0,storyDeclines:0,storyInterrupted:0,trialRuns:0,trialClears:0,trialDefeats:0,trialRetreats:0,trialDeepest:0,bellRuns:0,bellClears:0,bellDefeats:0,bellRetreats:0,bellDeepest:0,libraryRuns:0,libraryClears:0,libraryDefeats:0,libraryRetreats:0,libraryDeepest:0,greenhouseRuns:0,greenhouseClears:0,greenhouseDefeats:0,greenhouseRetreats:0,greenhouseDeepest:0,mirrorRuns:0,mirrorClears:0,mirrorDefeats:0,mirrorRetreats:0,mirrorDeepest:0,ferryRuns:0,ferryClears:0,ferryDefeats:0,ferryRetreats:0,ferryDeepest:0,tribunalRuns:0,tribunalClears:0,tribunalDefeats:0,tribunalRetreats:0,tribunalDeepest:0,rootGuardianWins:0,rootGuardianGift:0,sealClears:{mist:0,echo:0,ember:0}},regionsSeen:[],storyHistory:[]
+      memories: [], logs: [], battle: null, expedition:null, expeditionStats:{runs:0,clears:0,retreats:0,defeats:0,deepest:0,bankedShards:0,safeRoutes:0,riskyRoutes:0,storyFinds:0,storyCompletions:0,storyDeclines:0,storyInterrupted:0,trialRuns:0,trialClears:0,trialDefeats:0,trialRetreats:0,trialDeepest:0,bellRuns:0,bellClears:0,bellDefeats:0,bellRetreats:0,bellDeepest:0,libraryRuns:0,libraryClears:0,libraryDefeats:0,libraryRetreats:0,libraryDeepest:0,greenhouseRuns:0,greenhouseClears:0,greenhouseDefeats:0,greenhouseRetreats:0,greenhouseDeepest:0,mirrorRuns:0,mirrorClears:0,mirrorDefeats:0,mirrorRetreats:0,mirrorDeepest:0,ferryRuns:0,ferryClears:0,ferryDefeats:0,ferryRetreats:0,ferryDeepest:0,tribunalRuns:0,tribunalClears:0,tribunalDefeats:0,tribunalRetreats:0,tribunalDeepest:0,swordgraveRuns:0,swordgraveClears:0,swordgraveDefeats:0,swordgraveRetreats:0,swordgraveDeepest:0,swordgraveMarks:{1:0,2:0,3:0},rootGuardianWins:0,rootGuardianGift:0,sealClears:{mist:0,echo:0,ember:0}},regionsSeen:[],storyHistory:[]
     };
   }
   function finiteInt(v, fallback = 0) { return Number.isFinite(v) ? Math.floor(v) : fallback; }
@@ -4989,6 +5039,10 @@ h2 {font-size:1.43rem;}
       s.battle.enemy.staggerLimit=Math.max(40,Math.min(120,finiteInt(s.battle.enemy.staggerLimit,s.battle.enemy.type==="boss"?100:s.battle.enemy.type==="elite"?75:45)));
       s.battle.enemy.stagger=Math.max(0,Math.min(s.battle.enemy.staggerLimit-1,finiteInt(s.battle.enemy.stagger)));
       s.battle.enemy.interrupted=Boolean(s.battle.enemy.interrupted);
+      s.battle.enemy.swordAdapt=SWORD_ACTIONS.includes(s.battle.enemy.swordAdapt)?s.battle.enemy.swordAdapt:null;
+      s.battle.enemy.swordAdaptRate=s.expedition?.mode==="swordgrave"?Math.max(0,Math.min(.30,Number(s.battle.enemy.swordAdaptRate)||0)):0;
+      s.battle.enemy.swordPhase2=s.expedition?.mode==="swordgrave"&&s.battle.enemy.swordPhase2===true;
+      s.battle.swordUsed=s.expedition?.mode==="swordgrave"?Object.fromEntries(SWORD_ACTIONS.map(k=>[k,Math.max(0,Math.min(250,finiteInt(s.battle.swordUsed?.[k])))])):null;
       s.battle.enemy.poisonResist=Math.max(0,Math.min(.9,Number(s.battle.enemy.poisonResist)||0));
       s.battle.enemy.burnResist=Math.max(0,Math.min(.9,Number(s.battle.enemy.burnResist)||0));
       s.battle.enemy.attackName=String(s.battle.enemy.attackName||"攻撃").slice(0,36);
@@ -5007,12 +5061,14 @@ h2 {font-size:1.43rem;}
       if(k==="sealClears")continue;
       s.expeditionStats[k]=Math.max(0,finiteInt(s.expeditionStats[k]));
     }
+    s.expeditionStats.swordgraveMarks=Object.fromEntries([1,2,3].map(k=>[k,Math.max(0,finiteInt(d.expeditionStats?.swordgraveMarks?.[k]))]));
     s.expeditionStats.sealClears=Object.fromEntries(["mist","echo","ember"].map(id=>[id,Math.max(0,finiteInt(s.expeditionStats.sealClears?.[id]))]));
     s.settings.trialSeal=Object.hasOwn(TRIAL_SEALS,s.settings.trialSeal)?s.settings.trialSeal:"standard";
+    s.settings.swordgraveMark=s.expeditionStats?.swordgraveClears>0?Math.max(0,Math.min(3,finiteInt(s.settings.swordgraveMark))):0;
     if(s.expeditionStats.trialClears<1)s.settings.trialSeal="standard";
     const r=s.expedition;
     if(r){
-      if(!r||typeof r!=="object"||!Number.isInteger(r.floor)||r.floor<1||r.floor>45)throw Error("探索データが不正です");
+      if(!r||typeof r!=="object"||!Number.isInteger(r.floor)||r.floor<1||r.floor>50)throw Error("探索データが不正です");
       // A declared dungeon mode must own the saved floor. Never migrate a bad run
       // to a different dungeon or award another dungeon's clear record.
       if(r.mode==="bell"){
@@ -5029,6 +5085,8 @@ h2 {font-size:1.43rem;}
         if(r.floor<36||r.floor>40)throw Error("渡し場の探索データが不正です");
       }else if(r.mode==="tribunal"){
         if(r.floor<41||r.floor>45)throw Error("審問院の探索データが不正です");
+      }else if(r.mode==="swordgrave"){
+        if(r.floor<46||r.floor>50)throw Error("剣塚の探索データが不正です");
       }else{
         r.mode="normal";
         if(r.floor>10)throw Error("通常迷宮の階層が不正です");
@@ -5043,6 +5101,10 @@ h2 {font-size:1.43rem;}
       r.sproutUsed=r.sproutUsed===true;
       r.ferryTickets=r.mode==="ferry"?Math.min(2,Math.max(0,finiteInt(r.ferryTickets,2))):null;
       r.tribunalSeals=r.mode==="tribunal"?Math.min(2,Math.max(0,finiteInt(r.tribunalSeals,2))):null;
+      r.swordMark=r.mode==="swordgrave"?Math.max(0,Math.min(3,finiteInt(r.swordMark))):0;
+      r.swordRespecUsed=r.mode==="swordgrave"&&r.swordRespecUsed===true;
+      r.swordCounts=r.mode==="swordgrave"?Object.fromEntries(SWORD_ACTIONS.map(k=>[k,Math.max(0,Math.min(500,finiteInt(r.swordCounts?.[k])))])):null;
+      r.swordLast=r.mode==="swordgrave"&&SWORD_ACTIONS.includes(r.swordLast)?r.swordLast:null;
       if(r.greenhouse&&r.greenhouse.rootAt&&(r.greenhouse.rootAt<27||r.greenhouse.rootAt>30||r.greenhouse.rootAt>r.floor))r.greenhouse.rootAt=0;
       if(r.greenhouse&&!r.greenhouse.rootAt){r.greenhouse.rootFound=false;r.greenhouse.sanctuary=null;}
       if(r.greenhouse?.sanctuary==="offered"&&r.greenhouse.rootAt)r.greenhouse.rootFound=true;
@@ -5095,9 +5157,9 @@ h2 {font-size:1.43rem;}
       r.event=(FLOOR_EVENT_IDS.includes(r.event)||REGIONAL_EVENT_IDS.includes(r.event)&&REGIONAL_EVENTS[r.event].mode===r.mode&&(!REGIONAL_EVENTS[r.event].seal||REGIONAL_EVENTS[r.event].seal===r.seal)||STORY_EVENT_IDS.includes(r.event)&&r.story||r.event==="margin_door"&&r.margin&&["offered","inside","found"].includes(r.margin.status)||r.event==="root_sanctuary"&&r.mode==="greenhouse"&&r.greenhouse?.sanctuary==="offered")?r.event:null;
       r.routeOffer=((r.mode==="library"?r.routeOffer==="flooded_shelves":r.mode==="greenhouse"?r.routeOffer==="spore_path":r.mode==="ferry"?r.routeOffer==="ferry_risky":r.mode==="tribunal"?r.routeOffer==="tribunal_risky":RISK_ROUTE_IDS.includes(r.routeOffer)))?r.routeOffer:null;
       r.route=(r.route&&typeof r.route==="object"&&["safe","ferry_shallows","ferry_boat","ferry_risky","tribunal_quiet","tribunal_seal","tribunal_risky",...RISK_ROUTE_IDS,"flooded_shelves","spore_path","root_tunnel"].includes(r.route.kind)&&r.route.floor===r.floor&&((r.mode==="library"||r.route.kind!=="flooded_shelves")&&(r.mode==="greenhouse"||!["spore_path","root_tunnel"].includes(r.route.kind))&&(r.mode==="ferry"||!["ferry_shallows","ferry_boat","ferry_risky"].includes(r.route.kind))&&(r.mode==="tribunal"||!["tribunal_quiet","tribunal_seal","tribunal_risky"].includes(r.route.kind))))?{kind:r.route.kind,floor:r.floor}:null;
-      r.routeHistory=Array.isArray(r.routeHistory)?r.routeHistory.filter(h=>h&&Number.isInteger(h.floor)&&h.floor>=2&&h.floor<=45&&["safe","ferry_shallows","ferry_boat","ferry_risky","tribunal_quiet","tribunal_seal","tribunal_risky",...RISK_ROUTE_IDS,"flooded_shelves","spore_path","root_tunnel"].includes(h.kind)).slice(-9).map(h=>({floor:h.floor,kind:h.kind})):[];
+      r.routeHistory=Array.isArray(r.routeHistory)?r.routeHistory.filter(h=>h&&Number.isInteger(h.floor)&&h.floor>=2&&h.floor<=50&&["safe","ferry_shallows","ferry_boat","ferry_risky","tribunal_quiet","tribunal_seal","tribunal_risky",...RISK_ROUTE_IDS,"flooded_shelves","spore_path","root_tunnel"].includes(h.kind)).slice(-9).map(h=>({floor:h.floor,kind:h.kind})):[];
       if(r.phase==="choice"&&!r.routeOffer)r.routeOffer=routeOfferFor(r);
-      r.visited=Array.isArray(r.visited)?r.visited.filter(n=>Number.isInteger(n)&&n>=1&&n<=45).slice(-20):[];
+      r.visited=Array.isArray(r.visited)?r.visited.filter(n=>Number.isInteger(n)&&n>=1&&n<=50).slice(-20):[];
       r.lastEvent=FLOOR_EVENT_IDS.includes(r.lastEvent)||REGIONAL_EVENT_IDS.includes(r.lastEvent)||STORY_EVENT_IDS.includes(r.lastEvent)?r.lastEvent:null;
       if(r.phase==="combat" && !s.battle?.active)r.phase="choice";
       if(r.mode==="greenhouse"&&r.greenhouse?.sanctuary==="guardian"&&!s.battle?.active){r.greenhouse.sanctuary="offered";r.phase="event";r.event="root_sanctuary";}
@@ -5490,10 +5552,11 @@ h2 {font-size:1.43rem;}
     greenhouse_heart:{name:"緑の心臓部",short:"直接攻撃+5%、敵攻撃力+5%。",desc:"眠れない根が、日も夜も土を揺らしている。",directFactor:1.05,enemyAttack:1.05},
     mirror_hall:{name:"鏡裏の廊下",short:"敵は行動ごとに鏡相が変化する。状態は敵の気配で確認できる。",desc:"自分の足音だけが左右逆に響く。"},
     ferry_bank:{name:"灰の川辺",short:"渡し札は探索につき2枚。舟は次戦の前にHP12%回復。",desc:"川面に水はない。静かな灰が流れている。"},
-    tribunal_hall:{name:"無明の法廷",short:"裁定圧は敵の3行動ごとに上昇（最大3）。戦闘が長引くほど被害が増える。",desc:"静かな床に長い判決文の影が落ちる。"}
+    tribunal_hall:{name:"無明の法廷",short:"裁定圧は敵の3行動ごとに上昇（最大3）。戦闘が長引くほど被害が増える。",desc:"静かな床に長い判決文の影が落ちる。"},
+    swordgrave:{name:"忘れられた剣の原",short:"前の戦闘で多用した行動を敵が記憶する。対策は戦闘開始時に表示される。",desc:"剣の柄に、誰かが戻ってきた痕跡が残る。"}
   };
-  const FLOOR_ENV_IDS=["lantern","lantern","spores","spores","crystals","crystals","garden","garden","winds","winds","dusk","dusk","starvein","starvein","lastgate","bellfog","bellfog","bellhall","bellhall","bellhall","library_dry","library_flood","library_dry","library_flood","library_dry","greenhouse_sun","greenhouse_sun","greenhouse_spores","greenhouse_spores","greenhouse_heart","mirror_hall","mirror_hall","mirror_hall","mirror_hall","mirror_hall","ferry_bank","ferry_bank","ferry_bank","ferry_bank","ferry_bank","tribunal_hall","tribunal_hall","tribunal_hall","tribunal_hall","tribunal_hall"];
-  function environmentAt(floor){return FLOOR_ENV_IDS[Math.max(0,Math.min(44,Number(floor)||1)-1)]||"lantern";}
+  const FLOOR_ENV_IDS=["lantern","lantern","spores","spores","crystals","crystals","garden","garden","winds","winds","dusk","dusk","starvein","starvein","lastgate","bellfog","bellfog","bellhall","bellhall","bellhall","library_dry","library_flood","library_dry","library_flood","library_dry","greenhouse_sun","greenhouse_sun","greenhouse_spores","greenhouse_spores","greenhouse_heart","mirror_hall","mirror_hall","mirror_hall","mirror_hall","mirror_hall","ferry_bank","ferry_bank","ferry_bank","ferry_bank","ferry_bank","tribunal_hall","tribunal_hall","tribunal_hall","tribunal_hall","tribunal_hall","swordgrave","swordgrave","swordgrave","swordgrave","swordgrave"];
+  function environmentAt(floor){return FLOOR_ENV_IDS[Math.max(0,Math.min(49,Number(floor)||1)-1)]||"lantern";}
   function currentEnvironment(){
     const b=state.battle;
     if(b?.active&&Object.hasOwn(ENVIRONMENTS,b.environmentId))return ENVIRONMENTS[b.environmentId];
@@ -5507,7 +5570,7 @@ h2 {font-size:1.43rem;}
     const id=environmentAt(floor);
     if(state.regionsSeen.includes(id))return;
     state.regionsSeen.push(id);
-    recordMoment("environment",`${state.expedition?.mode==="bell"?`第${floor-15}鐘室`:state.expedition?.mode==="library"?`第${floor-20}閲覧室`:state.expedition?.mode==="greenhouse"?`第${floor-25}区画`:state.expedition?.mode==="mirror"?`第${floor-30}鏡室`:state.expedition?.mode==="ferry"?`第${floor-35}渡り`:state.expedition?.mode==="tribunal"?`第${floor-40}審問`:`第${floor}階層`}で『${ENVIRONMENTS[id].name}』を初めて訪れた。${ENVIRONMENTS[id].desc}`,{stage:floor,foe:"",once:`environment-${id}`});
+    recordMoment("environment",`${state.expedition?.mode==="bell"?`第${floor-15}鐘室`:state.expedition?.mode==="library"?`第${floor-20}閲覧室`:state.expedition?.mode==="greenhouse"?`第${floor-25}区画`:state.expedition?.mode==="mirror"?`第${floor-30}鏡室`:state.expedition?.mode==="ferry"?`第${floor-35}渡り`:state.expedition?.mode==="tribunal"?`第${floor-40}審問`:state.expedition?.mode==="swordgrave"?`第${floor-45}碑`:`第${floor}階層`}で『${ENVIRONMENTS[id].name}』を初めて訪れた。${ENVIRONMENTS[id].desc}`,{stage:floor,foe:"",once:`environment-${id}`});
   }
   const FLOOR_EVENT_FLOORS=new Set([2,3,4,6,7,8,9]);
   const FLOOR_EVENT_IDS=["chest","shrine","rune","cache","altar","crossing"];
@@ -5720,7 +5783,7 @@ h2 {font-size:1.43rem;}
     r.lastEvent=chosen;
     return chosen;
   }
-  const FLOOR_NAMES=["入口の石段","きらめく水路","苔の休息地","忘れられた碑文","鉄の番所","ひび割れた宝物庫","木漏れ日の廃庭","ささやく刻印","鍵の眠る通路","無名の門","小さな灯殿","霧の渡り場","星屑の甲冑廊","響きの織り場","星の門前","欠けた踊り場","歪んだ螺旋階段","灰色の調律室","音を失った鐘室","鳴らずの大鐘","干上がった目録室","波打つ閲覧室","頁の漂う通路","水鏡の書架","閉館の間","眠れない苗床","陽だまりの小径","胞子の花廊","根の絡む回廊","夜のない花壇","曇る回廊","二重の肖像","飾り職人の部屋","破れ鏡の間","裏面の広間","灰の船着場","溶ける岸辺","折れ櫂の橋","沈む砂州","向こう岸","白紙の召喚状","静かな供述室","数えられた証言","帰れない法廷","最後の審問"];
+  const FLOOR_NAMES=["入口の石段","きらめく水路","苔の休息地","忘れられた碑文","鉄の番所","ひび割れた宝物庫","木漏れ日の廃庭","ささやく刻印","鍵の眠る通路","無名の門","小さな灯殿","霧の渡り場","星屑の甲冑廊","響きの織り場","星の門前","欠けた踊り場","歪んだ螺旋階段","灰色の調律室","音を失った鐘室","鳴らずの大鐘","干上がった目録室","波打つ閲覧室","頁の漂う通路","水鏡の書架","閉館の間","眠れない苗床","陽だまりの小径","胞子の花廊","根の絡む回廊","夜のない花壇","曇る回廊","二重の肖像","飾り職人の部屋","破れ鏡の間","裏面の広間","灰の船着場","溶ける岸辺","折れ櫂の橋","沈む砂州","向こう岸","白紙の召喚状","静かな供述室","数えられた証言","帰れない法廷","最後の審問","剣のない入口","風化した狩り場","盾を積む丘","写し取られた碑","名のない墓標"];
   // Public dungeon definitions, single source for unlock/range/UI/records.
   // Hide secret *rooms* by never registering them here.
   const PUBLIC_DUNGEONS=Object.freeze([
@@ -5731,22 +5794,23 @@ h2 {font-size:1.43rem;}
     {id:"bell",title:"鳴らずの鐘楼",difficulty:"高難度＋",first:16,last:20,clears:"bellClears",deepest:"bellDeepest",unlock:()=>state.expeditionStats.trialClears>0},
     {id:"mirror",title:"裏返しの鏡館",difficulty:"高難度＋",first:31,last:35,clears:"mirrorClears",deepest:"mirrorDeepest",unlock:()=>state.expeditionStats.trialClears>0},
     {id:"ferry",title:"灰の渡し場",difficulty:"高難度＋",first:36,last:40,clears:"ferryClears",deepest:"ferryDeepest",unlock:()=>state.expeditionStats.trialClears>0},
-    {id:"tribunal",title:"終わらない審問院",difficulty:"高難度＋＋",first:41,last:45,clears:"tribunalClears",deepest:"tribunalDeepest",unlock:()=>["bellClears","mirrorClears","ferryClears"].filter(key=>state.expeditionStats[key]>0).length>=2}
+    {id:"tribunal",title:"終わらない審問院",difficulty:"高難度＋＋",first:41,last:45,clears:"tribunalClears",deepest:"tribunalDeepest",unlock:()=>["bellClears","mirrorClears","ferryClears"].filter(key=>state.expeditionStats[key]>0).length>=2},
+    {id:"swordgrave",title:"名を失くした剣塚",difficulty:"高難度＋＋",first:46,last:50,clears:"swordgraveClears",deepest:"swordgraveDeepest",unlock:()=>state.expeditionStats.tribunalClears>0}
   ]);
   const dungeonDef=id=>PUBLIC_DUNGEONS.find(x=>x.id===id)||PUBLIC_DUNGEONS[0];
   const dungeonForRun=r=>dungeonDef(r?.mode||"normal");
   const dungeonFloorIndex=r=>(r?.floor||1)-dungeonForRun(r).first+1;
-  const displayRunFloor=r=>r.mode==="tribunal"?`第${dungeonFloorIndex(r)}審問`:r.mode==="mirror"?`第${dungeonFloorIndex(r)}鏡室`:r.mode==="ferry"?`第${dungeonFloorIndex(r)}渡り`:r.mode==="bell"?`第${dungeonFloorIndex(r)}鐘室`:r.mode==="library"?`第${dungeonFloorIndex(r)}閲覧室`:r.mode==="greenhouse"?`第${dungeonFloorIndex(r)}区画`:`第${r.floor}階層`;
+  const displayRunFloor=r=>r.mode==="tribunal"?`第${dungeonFloorIndex(r)}審問`:r.mode==="swordgrave"?`第${dungeonFloorIndex(r)}碑`:r.mode==="mirror"?`第${dungeonFloorIndex(r)}鏡室`:r.mode==="ferry"?`第${dungeonFloorIndex(r)}渡り`:r.mode==="bell"?`第${dungeonFloorIndex(r)}鐘室`:r.mode==="library"?`第${dungeonFloorIndex(r)}閲覧室`:r.mode==="greenhouse"?`第${dungeonFloorIndex(r)}区画`:`第${r.floor}階層`;
   function beginExpedition(mode="normal"){
     if(hasActiveBattle()||state.expedition)return;
     if(!PUBLIC_DUNGEONS.some(x=>x.id===mode))mode="normal";
     const dungeon=dungeonDef(mode);
     if(!dungeon.unlock()){
-      toast(mode==="tribunal"?"異なる高難度＋迷宮を2か所踏破すると審問院が解放されます":["bell","mirror","ferry"].includes(mode)?"星の門・深層試練を踏破すると高難度＋の迷宮が解放されます":mode==="library"?"通常迷宮を踏破すると書庫が解放されます":mode==="greenhouse"?"通常迷宮を踏破すると温室が解放されます":"十階層を踏破すると深層試練が解放されます");return;
+      toast(mode==="swordgrave"?"終わらない審問院を1回踏破すると剣塚が解放されます":mode==="tribunal"?"異なる高難度＋迷宮を2か所踏破すると審問院が解放されます":["bell","mirror","ferry"].includes(mode)?"星の門・深層試練を踏破すると高難度＋の迷宮が解放されます":mode==="library"?"通常迷宮を踏破すると書庫が解放されます":mode==="greenhouse"?"通常迷宮を踏破すると温室が解放されます":"十階層を踏破すると深層試練が解放されます");return;
     }
     const supplies={...state.economy.prepared,chart:mode==="trial"&&state.economy.prepared.chart};
     const seal=mode==="trial"&&state.expeditionStats.trialClears>0&&Object.hasOwn(TRIAL_SEALS,state.settings.trialSeal)?state.settings.trialSeal:"standard";
-    const r={id:`run-${state.nextId++}`,mode,seal,floor:dungeon.first,phase:"combat",loot:[],shards:0,event:null,lastEvent:null,visited:[],supplies,route:null,routeOffer:null,routeHistory:[],story:["bell","library","greenhouse","mirror","ferry","tribunal"].includes(mode)?null:makeStoryPlan(),greenhouse:mode==="greenhouse"?{spores:0,rootAt:0,rootFound:false,sanctuary:null}:null,ferryTickets:mode==="ferry"?2:null,tribunalSeals:mode==="tribunal"?2:null,sproutUsed:false,journeyStart:{xp:state.growth.xp,level:state.growth.level,wins:state.stats.wins,unlocked:[...state.growth.unlocked]}};
+    const r={id:`run-${state.nextId++}`,mode,seal,floor:dungeon.first,phase:"combat",loot:[],shards:0,event:null,lastEvent:null,visited:[],supplies,route:null,routeOffer:null,routeHistory:[],story:["bell","library","greenhouse","mirror","ferry","tribunal","swordgrave"].includes(mode)?null:makeStoryPlan(),greenhouse:mode==="greenhouse"?{spores:0,rootAt:0,rootFound:false,sanctuary:null}:null,ferryTickets:mode==="ferry"?2:null,tribunalSeals:mode==="tribunal"?2:null,swordMark:mode==="swordgrave"?(state.expeditionStats.swordgraveClears>0?state.settings.swordgraveMark:0):0,swordCounts:mode==="swordgrave"?{}:null,swordLast:null,swordRespecUsed:false,sproutUsed:false,journeyStart:{xp:state.growth.xp,level:state.growth.level,wins:state.stats.wins,unlocked:[...state.growth.unlocked]}};
     r.margin=planMargin(r);
     state.expedition=r;
      state.ui.lastReturn=null;
@@ -5760,7 +5824,8 @@ h2 {font-size:1.43rem;}
     if(mode==="mirror")state.expeditionStats.mirrorRuns++;
     if(mode==="ferry")state.expeditionStats.ferryRuns++;
     if(mode==="tribunal")state.expeditionStats.tribunalRuns++;
-    addLog(mode==="tribunal"?"終わらない審問院へ。全5審問。敵の行動3回ごとに裁定圧が増し、被害が大きくなる。封蝋は2枚。敵の予告と体勢を見極めよう。":mode==="mirror"?"裏返しの鏡館へ。閉じた鏡は堅く、開いた鏡は敵の攻撃が鋭い。敵の行動が3回進むたび鏡相が反転する。":mode==="ferry"?"灰の渡し場へ。渡し札2枚を受け取った。舟・浅瀬・川底から次の道を選ぼう。":mode==="greenhouse"?"眠らない温室へ。選んだ小径が後の区画を変える。胞子を重ねて宝を狙うか、根のしるしを残すか、それとも休むか。":mode==="library"?"潮待ちの書庫へ。満ち潮と引き潮が交互に現れる。乾いた通路で整えるか、水没した書架を探るかを選ぼう。":mode==="trial"?`深層試練『${TRIAL_SEALS[seal].name}』へ。五つの戦いの先には、星の門が待っている。`:mode==="bell"?"鳴らずの鐘楼に踏み入る。音が欠けたこの場所では、大技の名前と被害予測が分からない。五つの鐘室を越えよう。":"探索の幕が上がる。十階層の迷宮へ。戦利品は帰還するまで仮確保される。","important");
+    if(mode==="swordgrave")state.expeditionStats.swordgraveRuns++;
+    addLog(mode==="swordgrave"?`名を失くした剣塚へ。残響は前の戦闘で多用した技を覚える。第3碑の手前には一度限りの戦術変更がある。刻印${r.swordMark}。`:mode==="tribunal"?"終わらない審問院へ。全5審問。敵の行動3回ごとに裁定圧が増し、被害が大きくなる。封蝋は2枚。敵の予告と体勢を見極めよう。":mode==="mirror"?"裏返しの鏡館へ。閉じた鏡は堅く、開いた鏡は敵の攻撃が鋭い。敵の行動が3回進むたび鏡相が反転する。":mode==="ferry"?"灰の渡し場へ。渡し札2枚を受け取った。舟・浅瀬・川底から次の道を選ぼう。":mode==="greenhouse"?"眠らない温室へ。選んだ小径が後の区画を変える。胞子を重ねて宝を狙うか、根のしるしを残すか、それとも休むか。":mode==="library"?"潮待ちの書庫へ。満ち潮と引き潮が交互に現れる。乾いた通路で整えるか、水没した書架を探るかを選ぼう。":mode==="trial"?`深層試練『${TRIAL_SEALS[seal].name}』へ。五つの戦いの先には、星の門が待っている。`:mode==="bell"?"鳴らずの鐘楼に踏み入る。音が欠けたこの場所では、大技の名前と被害予測が分からない。五つの鐘室を越えよう。":"探索の幕が上がる。十階層の迷宮へ。戦利品は帰還するまで仮確保される。","important");
     newBattle();
   }
   function givePendingItem(source,originNote=null,options={}){
@@ -5787,7 +5852,7 @@ h2 {font-size:1.43rem;}
     if(totalPublicClears()%4!==0)return;
     if((state.catalog.collectionLeads||0)>=3)return;
     state.catalog.collectionLeads++;
-    addLog(`装備44種類の調査の手がかりを得た（未発見 ${unseen.length}種類）。記録の図鑑から受け取れる。`,"important");
+    addLog(`装備47種類の調査の手がかりを得た（未発見 ${unseen.length}種類）。記録の図鑑から受け取れる。`,"important");
   }
   function claimCollectionLead(){
     if(!isAtCamp()){toast("調査品は帰還後に受け取れます");return;}
@@ -5808,7 +5873,7 @@ h2 {font-size:1.43rem;}
   function finishExpedition(outcome){
     const r=state.expedition;if(!r)return;
     stopTimer();
-    const clear=outcome==="clear",failure=outcome==="defeat",trial=r.mode==="trial",bell=r.mode==="bell",library=r.mode==="library",greenhouse=r.mode==="greenhouse",mirror=r.mode==="mirror",ferry=r.mode==="ferry",tribunal=r.mode==="tribunal";
+    const clear=outcome==="clear",failure=outcome==="defeat",trial=r.mode==="trial",bell=r.mode==="bell",library=r.mode==="library",greenhouse=r.mode==="greenhouse",mirror=r.mode==="mirror",ferry=r.mode==="ferry",tribunal=r.mode==="tribunal",swordgrave=r.mode==="swordgrave";
     // Count only runs that reached the relevant floors without a door.
     // A defeat before floor 14 cannot silently consume the guarantee.
     if(trial&&r.margin&&r.margin.floor===null&&(r.visited||[]).includes(14)){
@@ -5819,7 +5884,7 @@ h2 {font-size:1.43rem;}
     // v1.1.55: Clearing a dungeon no longer awards a guaranteed regional item.
     // Local and common equipment are drawn together when ordinary loot drops.
     const checkpoint= r.floor%5===0;
-    const multiplier=trial?(clear?1.60*seal.coin:(!failure&&checkpoint?1.15:1)):tribunal?(clear?1.95:(!failure&&checkpoint?1.15:1)):(mirror||ferry)?(clear?1.70:(!failure&&checkpoint?1.15:1)):bell?(clear?1.70:(!failure&&checkpoint?1.15:1)):library?(clear?1.40:(!failure&&checkpoint?1.15:1)):greenhouse?(clear?1.40:(!failure&&checkpoint?1.15:1)):(clear?1.35:(!failure&&checkpoint?1.20:1));
+    const multiplier=trial?(clear?1.60*seal.coin:(!failure&&checkpoint?1.15:1)):swordgrave?(clear?2.0+.05*r.swordMark:(!failure&&checkpoint?1.15:1)):tribunal?(clear?1.95:(!failure&&checkpoint?1.15:1)):(mirror||ferry)?(clear?1.70:(!failure&&checkpoint?1.15:1)):bell?(clear?1.70:(!failure&&checkpoint?1.15:1)):library?(clear?1.40:(!failure&&checkpoint?1.15:1)):greenhouse?(clear?1.40:(!failure&&checkpoint?1.15:1)):(clear?1.35:(!failure&&checkpoint?1.20:1));
     const gain=failure?Math.floor(r.shards/2):Math.floor(r.shards*multiplier);
     // v0.9.5: the Star Chart is consumed only on a trial entry, and pays out
     // only on its successful completion. No extra roll on retreat or defeat.
@@ -5855,6 +5920,7 @@ h2 {font-size:1.43rem;}
     if(mirror)state.expeditionStats.mirrorDeepest=Math.max(state.expeditionStats.mirrorDeepest,r.floor);
     if(ferry)state.expeditionStats.ferryDeepest=Math.max(state.expeditionStats.ferryDeepest,r.floor);
     if(tribunal)state.expeditionStats.tribunalDeepest=Math.max(state.expeditionStats.tribunalDeepest,r.floor);
+    if(swordgrave)state.expeditionStats.swordgraveDeepest=Math.max(state.expeditionStats.swordgraveDeepest,r.floor);
     if(r.story?.status==="carried"){
       r.story.status="interrupted";
       state.expeditionStats.storyInterrupted++;
@@ -5870,6 +5936,20 @@ h2 {font-size:1.43rem;}
       else if(greenhouse)state.expeditionStats.greenhouseClears++;
       else if(mirror)state.expeditionStats.mirrorClears++;
       else if(ferry)state.expeditionStats.ferryClears++;
+      else if(swordgrave){
+        state.expeditionStats.swordgraveClears++;
+        if(state.expeditionStats.swordgraveClears===1){
+          if(!state.unlockedTitles.includes("swordgrave_conqueror"))state.unlockedTitles.push("swordgrave_conqueror");
+          addLog("名を失くした剣塚・初踏破！ 異名『名を取り戻した者』を獲得。","important");
+        }
+        if(r.swordMark>0){
+          state.expeditionStats.swordgraveMarks[r.swordMark]=(state.expeditionStats.swordgraveMarks[r.swordMark]||0)+1;
+          if(r.swordMark===3&&!state.unlockedTitles.includes("swordgrave_engraved")){
+            state.unlockedTitles.push("swordgrave_engraved");
+            addLog("三重の刻印を越えた。異名『最後の剣を抜いた者』を獲得。","important");
+          }
+        }
+      }
       else if(tribunal){
         state.expeditionStats.tribunalClears++;
         if(state.expeditionStats.tribunalClears===1){
@@ -5881,8 +5961,8 @@ h2 {font-size:1.43rem;}
       else state.expeditionStats.clears++;
       earnCollectionLead();
     }
-    else if(failure){state.expeditionStats.defeats++;if(trial)state.expeditionStats.trialDefeats++;if(bell)state.expeditionStats.bellDefeats++;if(library)state.expeditionStats.libraryDefeats++;if(greenhouse)state.expeditionStats.greenhouseDefeats++;if(mirror)state.expeditionStats.mirrorDefeats++;if(ferry)state.expeditionStats.ferryDefeats++;if(tribunal)state.expeditionStats.tribunalDefeats++;}
-    else {state.expeditionStats.retreats++;if(trial)state.expeditionStats.trialRetreats++;if(bell)state.expeditionStats.bellRetreats++;if(library)state.expeditionStats.libraryRetreats++;if(greenhouse)state.expeditionStats.greenhouseRetreats++;if(mirror)state.expeditionStats.mirrorRetreats++;if(ferry)state.expeditionStats.ferryRetreats++;if(tribunal)state.expeditionStats.tribunalRetreats++;}
+    else if(failure){state.expeditionStats.defeats++;if(trial)state.expeditionStats.trialDefeats++;if(bell)state.expeditionStats.bellDefeats++;if(library)state.expeditionStats.libraryDefeats++;if(greenhouse)state.expeditionStats.greenhouseDefeats++;if(mirror)state.expeditionStats.mirrorDefeats++;if(ferry)state.expeditionStats.ferryDefeats++;if(tribunal)state.expeditionStats.tribunalDefeats++;if(swordgrave)state.expeditionStats.swordgraveDefeats++;}
+    else {state.expeditionStats.retreats++;if(trial)state.expeditionStats.trialRetreats++;if(bell)state.expeditionStats.bellRetreats++;if(library)state.expeditionStats.libraryRetreats++;if(greenhouse)state.expeditionStats.greenhouseRetreats++;if(mirror)state.expeditionStats.mirrorRetreats++;if(ferry)state.expeditionStats.ferryRetreats++;if(tribunal)state.expeditionStats.tribunalRetreats++;if(swordgrave)state.expeditionStats.swordgraveRetreats++;}
     if(trial)state.expeditionStats.trialDeepest=Math.max(state.expeditionStats.trialDeepest,r.floor);
     if(bell)state.expeditionStats.bellDeepest=Math.max(state.expeditionStats.bellDeepest,r.floor);
     if(library)state.expeditionStats.libraryDeepest=Math.max(state.expeditionStats.libraryDeepest,r.floor);
@@ -5890,10 +5970,11 @@ h2 {font-size:1.43rem;}
     if(mirror)state.expeditionStats.mirrorDeepest=Math.max(state.expeditionStats.mirrorDeepest,r.floor);
     if(ferry)state.expeditionStats.ferryDeepest=Math.max(state.expeditionStats.ferryDeepest,r.floor);
     if(tribunal)state.expeditionStats.tribunalDeepest=Math.max(state.expeditionStats.tribunalDeepest,r.floor);
+    if(swordgrave)state.expeditionStats.swordgraveDeepest=Math.max(state.expeditionStats.swordgraveDeepest,r.floor);
     state.expedition=null;
     if(clear){
-      addLog(`${trial?"深層試練・星の門を突破！":tribunal?"終わらない審問院を踏破！":mirror?"裏返しの鏡館を踏破！":ferry?"灰の渡し場を踏破！":bell?"鳴らずの鐘楼を踏破！":library?"潮待ちの書庫を踏破！":greenhouse?"眠らない温室を踏破！":"第10階層を踏破！"} 装備${accepted}点、古銭${coins}枚を持ち帰った。`,`important`);
-      recordMoment("victory",`${trial?`星の門を越え、『${seal.name}』を踏破`:tribunal?"終わらない審問院を踏破":mirror?"裏返しの鏡館を踏破":ferry?"灰の渡し場を踏破":bell?"鳴らずの鐘楼を踏破":library?"潮待ちの書庫を踏破":greenhouse?"眠らない温室を踏破":"十階層を踏破"}。古銭${coins}枚と装備${accepted}点を持ち帰った。`,{once:`expedition-${state.nextId++}`});
+      addLog(`${trial?"深層試練・星の門を突破！":swordgrave?"名を失くした剣塚を踏破！":tribunal?"終わらない審問院を踏破！":mirror?"裏返しの鏡館を踏破！":ferry?"灰の渡し場を踏破！":bell?"鳴らずの鐘楼を踏破！":library?"潮待ちの書庫を踏破！":greenhouse?"眠らない温室を踏破！":"第10階層を踏破！"} 装備${accepted}点、古銭${coins}枚を持ち帰った。`,`important`);
+      recordMoment("victory",`${trial?`星の門を越え、『${seal.name}』を踏破`:swordgrave?"名を失くした剣塚を踏破":tribunal?"終わらない審問院を踏破":mirror?"裏返しの鏡館を踏破":ferry?"灰の渡し場を踏破":bell?"鳴らずの鐘楼を踏破":library?"潮待ちの書庫を踏破":greenhouse?"眠らない温室を踏破":"十階層を踏破"}。古銭${coins}枚と装備${accepted}点を持ち帰った。`,{once:`expedition-${state.nextId++}`});
     }else if(failure){
       addLog(`探索失敗。装備${accepted}点と古銭${coins}枚を辛うじて回収した。`,"danger");
     }else{
@@ -5918,10 +5999,16 @@ h2 {font-size:1.43rem;}
    }
    function expeditionVictory(){
     const r=state.expedition;if(!r)return;
+    if(r.mode==="swordgrave"){
+      const used=state.battle?.swordUsed||{};
+      for(const k of SWORD_ACTIONS)r.swordCounts[k]=(r.swordCounts[k]||0)+(used[k]||0);
+      r.swordLast=dominantSwordAction(used);
+      addLog(r.swordLast?`残響は『${SWORD_ACTION_LABELS[r.swordLast]}』の使い方を覚えた。次の敵は対策してくる。`:"残響は戦術の記録を探している。","important");
+    }
     r.visited.push(r.floor);
-    r.shards+=r.mode==="trial"?15+(r.floor-10)*5:r.mode==="bell"?25+(r.floor-15)*6:r.mode==="library"?12+(r.floor-20)*4:r.mode==="greenhouse"?12+(r.floor-25)*4:r.mode==="mirror"?25+(r.floor-30)*6:r.mode==="ferry"?25+(r.floor-35)*6:r.mode==="tribunal"?38+(r.floor-40)*8:5+r.floor*2;
+    r.shards+=r.mode==="trial"?15+(r.floor-10)*5:r.mode==="bell"?25+(r.floor-15)*6:r.mode==="library"?12+(r.floor-20)*4:r.mode==="greenhouse"?12+(r.floor-25)*4:r.mode==="mirror"?25+(r.floor-30)*6:r.mode==="ferry"?25+(r.floor-35)*6:r.mode==="tribunal"?38+(r.floor-40)*8:r.mode==="swordgrave"?40+(r.floor-45)*8:5+r.floor*2;
     // v1.1.46: Moderate expedition sustain tuning; affects completed floors only.
-    const recoveryRate=r.mode==="tribunal"?(r.supplies?.herbs?.11:.07):(r.supplies?.herbs?.25:.18);
+    const recoveryRate=r.mode==="swordgrave"?(r.supplies?.herbs?.15:.10)*(r.swordMark>=2?.70:1):r.mode==="tribunal"?(r.supplies?.herbs?.11:.07):(r.supplies?.herbs?.25:.18);
     const env=ENVIRONMENTS[environmentAt(r.floor)];
     const adjustedRate=recoveryRate*(1+(env.restBonus||0))*(env.healFactor||1);
     const recovery=Math.min(state.hero.maxHp-state.hero.hp,Math.floor(state.hero.maxHp*adjustedRate));
@@ -5933,6 +6020,7 @@ h2 {font-size:1.43rem;}
     else if(r.mode==="mirror")state.expeditionStats.mirrorDeepest=Math.max(state.expeditionStats.mirrorDeepest,r.floor);
     else if(r.mode==="ferry")state.expeditionStats.ferryDeepest=Math.max(state.expeditionStats.ferryDeepest,r.floor);
     else if(r.mode==="tribunal")state.expeditionStats.tribunalDeepest=Math.max(state.expeditionStats.tribunalDeepest,r.floor);
+    else if(r.mode==="swordgrave")state.expeditionStats.swordgraveDeepest=Math.max(state.expeditionStats.swordgraveDeepest,r.floor);
     else state.expeditionStats.deepest=Math.max(state.expeditionStats.deepest,r.floor);
     // Route rewards belong only to the floor where the route was taken.
     if(r.route?.floor===r.floor){
@@ -6101,14 +6189,14 @@ h2 {font-size:1.43rem;}
     const bell=state.expedition?.mode==="bell";
     const library=state.expedition?.mode==="library";
     const inGreenhouse=state.expedition?.mode==="greenhouse";
-    const foeId=guardian?"greenhouse-root-guardian":state.expedition?.mode==="tribunal"?`tribunal-${activeFloor}`:state.expedition?.mode==="mirror"?`mirror-${activeFloor}`:state.expedition?.mode==="ferry"?`ferry-${activeFloor}`:bell?`bell-${activeFloor}`:library?`library-${activeFloor}`:inGreenhouse?`greenhouse-${activeFloor}`:activeFloor>=11&&activeFloor<=15?`depth-${activeFloor}`:encounterKind(activeFloor);
-    const template=guardian?ROOT_SANCTUARY_GUARDIAN:state.expedition?.mode==="tribunal"?TRIBUNAL_ENEMIES[activeFloor]:state.expedition?.mode==="mirror"?MIRROR_ENEMIES[activeFloor]:state.expedition?.mode==="ferry"?FERRY_ENEMIES[activeFloor]:bell?BELL_ENEMIES[activeFloor]:library?LIBRARY_ENEMIES[activeFloor]:inGreenhouse?GREENHOUSE_ENEMIES[activeFloor]:activeFloor>=11&&activeFloor<=15?DEPTH_ENEMIES[activeFloor]:ENEMY_TYPES[foeId];
+    const foeId=guardian?"greenhouse-root-guardian":state.expedition?.mode==="swordgrave"?`swordgrave-${activeFloor}`:state.expedition?.mode==="tribunal"?`tribunal-${activeFloor}`:state.expedition?.mode==="mirror"?`mirror-${activeFloor}`:state.expedition?.mode==="ferry"?`ferry-${activeFloor}`:bell?`bell-${activeFloor}`:library?`library-${activeFloor}`:inGreenhouse?`greenhouse-${activeFloor}`:activeFloor>=11&&activeFloor<=15?`depth-${activeFloor}`:encounterKind(activeFloor);
+    const template=guardian?ROOT_SANCTUARY_GUARDIAN:state.expedition?.mode==="swordgrave"?SWORDGRAVE_ENEMIES[activeFloor]:state.expedition?.mode==="tribunal"?TRIBUNAL_ENEMIES[activeFloor]:state.expedition?.mode==="mirror"?MIRROR_ENEMIES[activeFloor]:state.expedition?.mode==="ferry"?FERRY_ENEMIES[activeFloor]:bell?BELL_ENEMIES[activeFloor]:library?LIBRARY_ENEMIES[activeFloor]:inGreenhouse?GREENHOUSE_ENEMIES[activeFloor]:activeFloor>=11&&activeFloor<=15?DEPTH_ENEMIES[activeFloor]:ENEMY_TYPES[foeId];
     const enemyHp=Math.round((190 + tier*14)*template.hp);
     const enemy={catalogId:foeId,name:template.name,maxHp:enemyHp,hp:enemyHp,
       attack:Math.round((19+tier*2)*template.atk),defense:Math.round((18+Math.floor(tier/2)*3)*template.def),
       actionsTaken:0,charging:false,poison:[],burn:[],stagger:0,staggerLimit:template.type==="boss"?100:template.type==="elite"?75:45,interrupted:false,pattern:template.pattern,
       type:template.type,desc:template.desc,attackName:template.attackName,heavyName:template.heavyName||"墓砕き",
-      poisonResist:template.poisonResist||0,burnResist:template.burnResist||0,armorStance:false,secondPhase:false,gateInterruptCount:0,armorCracked:false,mirrorPhase:state.expedition?.mode==="mirror"?"closed":null,mirrorCycle:0,mirrorFast:false,tribunalPressure:0,tribunalCycle:0,tribunalFast:false};
+      poisonResist:template.poisonResist||0,burnResist:template.burnResist||0,armorStance:false,secondPhase:false,gateInterruptCount:0,armorCracked:false,mirrorPhase:state.expedition?.mode==="mirror"?"closed":null,mirrorCycle:0,mirrorFast:false,tribunalPressure:0,tribunalCycle:0,tribunalFast:false,swordAdapt:null,swordAdaptRate:0,swordPhase2:false};
     const environmentId=state.expedition?environmentAt(activeFloor):null;
     const env=environmentId?ENVIRONMENTS[environmentId]:null;
     if(env?.enemyAttack)enemy.attack=Math.max(1,Math.round(enemy.attack*env.enemyAttack));
@@ -6118,6 +6206,20 @@ h2 {font-size:1.43rem;}
       enemy.attack=Math.max(1,Math.round(enemy.attack*seal.attack));
       enemy.poisonResist=Math.min(.70,enemy.poisonResist+seal.poison);
       enemy.burnResist=Math.min(.70,enemy.burnResist+seal.burn);
+    }
+    if(state.expedition?.mode==="swordgrave"){
+      const r=state.expedition;
+      const chosen=activeFloor===50?dominantSwordAction(r.swordCounts):r.swordLast;
+      if(chosen){
+        enemy.swordAdapt=chosen;
+        enemy.swordAdaptRate=Math.min(.27,.15+r.swordMark*.05);
+        if(chosen==="poison")enemy.poisonResist=Math.min(.85,enemy.poisonResist+enemy.swordAdaptRate);
+        if(chosen==="fire")enemy.burnResist=Math.min(.85,enemy.burnResist+enemy.swordAdaptRate);
+        if(chosen==="heal")enemy.attack=Math.round(enemy.attack*(1+enemy.swordAdaptRate*.6));
+      }
+      const modifier=1+r.swordMark*.055;
+      enemy.maxHp=Math.round(enemy.maxHp*modifier);enemy.hp=enemy.maxHp;
+      enemy.attack=Math.round(enemy.attack*modifier);
     }
     if(route?.floor===activeFloor&&route.kind==="ferry_boat"&&state.expedition?.mode==="ferry")enemy.attack=Math.max(1,Math.round(enemy.attack*.94));
     if(route?.floor===activeFloor&&route.kind==="tribunal_seal"&&state.expedition?.mode==="tribunal")enemy.attack=Math.max(1,Math.round(enemy.attack*.93));
@@ -6141,7 +6243,7 @@ h2 {font-size:1.43rem;}
       queued: null, hpWarned: false, acknowledgedRound: 0,
       loadout:{...state.equipment.slots},skillSlots:[...state.settings.skillSlots],skillVariants:{...state.settings.skillVariants},
       cooldowns: { poison: 0, heal: 0, ignite: 0, flame: 0, flurry: 0, riposte: 0, bind: 0 }, guard: false, counter: false, emberReady:false,
-      enemy, sanctuaryGuardian:guardian,rootBudUsed:false,recordedKeys:[],
+      enemy, sanctuaryGuardian:guardian,rootBudUsed:false,recordedKeys:[],swordUsed:state.expedition?.mode==="swordgrave"?{}:null,
       recentEvents: 0
     };
     registerItemBattleStart(state.battle);
@@ -6151,6 +6253,7 @@ h2 {font-size:1.43rem;}
     if(state.expedition?.mode==="trial"&&state.expedition.seal!=="standard")addLog(`試練の変化『${seal.name}』：${seal.desc}`,"important");
     if(enemy.poisonResist)addLog(`${enemy.name}は毒に耐性がある。`,"normal");
     if(enemy.burnResist)addLog(`${enemy.name}は燃焼に耐性がある。`,"normal");
+    if(enemy.swordAdapt)addLog(`残響の対策：${SWORD_ACTION_LABELS[enemy.swordAdapt]}への備え（${Math.round(enemy.swordAdaptRate*100)}%相当）。完全無効化はされない。`,"important");
     if(greenhouse?.spores)addLog(`眠らない温室：胞子濃度 ${greenhouse.spores}/3。これまでの選択で敵が強くなっている。`,"important");
     save(); render(); schedule();
   }
@@ -6253,6 +6356,10 @@ h2 {font-size:1.43rem;}
     if(pct(state.hero.hp,state.hero.maxHp)<=35)factor+=mods.lowHp;
     const armorMultiplier=b.enemy.armorStance?.55:1;
     factor*=env?.directFactor||1;
+    if(state.expedition?.mode==="swordgrave"){
+      const adapt=b.enemy.swordAdapt,rate=b.enemy.swordAdaptRate||0;
+      if((adapt==="attack"&&skillName==="通常攻撃")||(adapt==="flurry"&&hitIndex>0)||(adapt==="riposte"&&skillName.includes("返し刃"))||(adapt==="bind"&&skillName.includes("影縫い")))factor*=1-rate;
+    }
     const damage=Math.max(1,Math.floor(damageFormula(getHeroAtk(),power,b.enemy.defense*(b.enemy.mirrorPhase==="closed"?1.15:b.enemy.mirrorPhase==="open"?.88:1),critical)*factor*(critical?(1+mods.critDamage/1.5):1)*armorMultiplier));
     b.enemy.hp=Math.max(0,b.enemy.hp-damage);
     const weapon=equippedItem("weapon",true),weaponId=weapon?.id||null;
@@ -6331,6 +6438,10 @@ h2 {font-size:1.43rem;}
   function statusTicks(){statusTick("poison");if(state.battle?.active)statusTick("burn");}
   function useAction(action,ctx) {
     const b=state.battle;if(!b||!b.active)return "";
+    if(state.expedition?.mode==="swordgrave"&&b.swordUsed){
+      const key=swordActionGroup(action);
+      if(key)b.swordUsed[key]=(b.swordUsed[key]||0)+1;
+    }
     if(action==="attack"){
       state.stats.basicAttacks++;rememberAction("attack");
       attackEnemy(ctx,1,"通常攻撃");
@@ -6470,6 +6581,25 @@ h2 {font-size:1.43rem;}
     const bellDulledFactor=b.enemy.charging?bellHeavyFactor():1;
     statusTicks();if(!b.active)return;
     const foe=b.enemy,ctx=actionContext(),n=foe.actionsTaken+1;
+    if(state.expedition?.mode==="swordgrave"&&foe.type==="boss"&&!foe.swordPhase2&&foe.hp<=foe.maxHp*.5){
+      foe.swordPhase2=true;
+      const last=dominantSwordAction(b.swordUsed||{});
+      // Once, at half health: reading grows sharper without hard immunity.
+      const oldAdapt=foe.swordAdapt;
+      foe.swordAdaptRate=Math.min(.30,(foe.swordAdaptRate||.15)+.04);
+      if(last&&last!==oldAdapt){
+        foe.swordAdapt=last;
+        if(oldAdapt==="poison")foe.poisonResist=Math.max(0,foe.poisonResist-(foe.swordAdaptRate-.04));
+        if(oldAdapt==="fire")foe.burnResist=Math.max(0,foe.burnResist-(foe.swordAdaptRate-.04));
+        if(last==="poison")foe.poisonResist=Math.min(.85,foe.poisonResist+foe.swordAdaptRate);
+        if(last==="fire")foe.burnResist=Math.min(.85,foe.burnResist+foe.swordAdaptRate);
+      }else{
+        if(foe.swordAdapt==="poison")foe.poisonResist=Math.min(.85,foe.poisonResist+.04);
+        if(foe.swordAdapt==="fire")foe.burnResist=Math.min(.85,foe.burnResist+.04);
+      }
+      if(state.expedition.swordMark===3)foe.attack=Math.round(foe.attack*1.10);
+      addLog(`名のない旅人が構えを変えた。第二形態！ ${foe.swordAdapt?SWORD_ACTION_LABELS[foe.swordAdapt]:"旅人の攻撃"}を読み、反撃の機会を窺っている。`,"danger");
+    }
     // At half HP the star gate keeper changes its tactics once; mid-battle save is safe.
     if(state.expedition?.mode==="trial"&&foe.type==="boss"&&!foe.secondPhase&&foe.hp>0&&foe.hp<=foe.maxHp*.5){
       foe.secondPhase=true;
@@ -6822,6 +6952,13 @@ h2 {font-size:1.43rem;}
       setText("dungeon-record-"+mode,!open?"解放条件：星の門・深層試練を1回踏破":stats[d.clears]>0?`踏破 ${stats[d.clears]}回 ／ 最深到達 第${stats[d.deepest]-d.first+1}${mode==="mirror"?"鏡室":"渡り"}`:stats[d.deepest]>0?`最深到達 第${stats[d.deepest]-d.first+1}${mode==="mirror"?"鏡室":"渡り"} ／ 踏破はまだありません`:`解放済み。全5${mode==="mirror"?"鏡室":"渡り"}に挑戦できる。`);
       setText("dungeon-"+mode+"-launch-label",open?mode==="mirror"?"鏡館へ出発":"渡し場へ出発":"解放後に挑戦できます");
     }
+    const grave=dungeonDef("swordgrave"),graveOpen=grave.unlock();
+    $("swordgrave-start-button").disabled=!graveOpen;
+    setText("dungeon-record-swordgrave",!graveOpen?"解放条件：終わらない審問院を1回踏破":stats.swordgraveClears>0?`踏破 ${stats.swordgraveClears}回 ／ 最深到達 第${stats.swordgraveDeepest-45}碑`:stats.swordgraveDeepest>0?`最深到達 第${stats.swordgraveDeepest-45}碑 ／ 踏破はまだありません`:"解放済み。5つの碑が旅人の戦術を覚える。");
+    setText("dungeon-swordgrave-launch-label",graveOpen?"剣塚へ出発":"解放後に挑戦できます");
+    $("swordgrave-mark-select").disabled=!graveOpen||stats.swordgraveClears<1;
+    $("swordgrave-mark-select").value=stats.swordgraveClears>0?String(state.settings.swordgraveMark):"0";
+    setText("swordgrave-mark-help",stats.swordgraveClears>0?`最高刻印踏破：${[3,2,1].find(k=>(stats.swordgraveMarks?.[k]||0)>0)||0}。挑む刻印を選べます。`:"初踏破後、追加の刻印を選べます。");
     const court=dungeonDef("tribunal"),courtOpen=court.unlock();
     $("tribunal-start-button").disabled=!courtOpen;
     const courtCompleted=["bellClears","mirrorClears","ferryClears"].filter(k=>stats[k]>0).length;
@@ -6844,6 +6981,14 @@ h2 {font-size:1.43rem;}
     $("expedition-choice").hidden=true;
     $("expedition-root").hidden=true;
     $("greenhouse-path-note").hidden=true;
+    const rebuildPanel=$("swordgrave-respec");
+    rebuildPanel.hidden=!(r?.mode==="swordgrave"&&r.floor===47&&r.phase==="choice"&&!r.swordRespecUsed);
+    if(!rebuildPanel.hidden){
+      const options=Object.entries(SKILL_PRESETS).filter(([,skills])=>skills.every(levelUnlocked));
+      const select=$("swordgrave-rebuild-preset");
+      select.innerHTML=options.map(([style,skills])=>`<option value="${style}">${({poison:"毒",flame:"炎",combo:"連撃",counter:"反撃",poisonflame:"毒炎",flameflurry:"炎連撃",poisoncounter:"毒反撃"})[style]} — ${skills.map(id=>SKILLS[id]?.name).join("・")}</option>`).join("");
+      setText("swordgrave-rebuild-status","第3碑に進む前に1回だけ変更できます。変更しなくても進めます。");
+    }
     const storyBox=$("expedition-story");storyBox.hidden=!r?.story||r.story.status!=="carried";
     if(!storyBox.hidden)$("expedition-story-text").textContent=STORY_DATA[r.story.kind].prompt;
     if(!r){
@@ -6868,11 +7013,11 @@ h2 {font-size:1.43rem;}
     $("expedition-environment").hidden=false;
     $("expedition-environment-name").textContent=`区域：${env.name}`;
     $("expedition-environment-effect").textContent=env.short;
-    title.textContent=`${r.mode==="trial"?`深層試練・${TRIAL_SEALS[r.seal].name}・`:r.mode==="bell"?"鳴らずの鐘楼・":r.mode==="library"?"潮待ちの書庫・":r.mode==="greenhouse"?"眠らない温室・":r.mode==="mirror"?"裏返しの鏡館・":r.mode==="ferry"?"灰の渡し場・":r.mode==="tribunal"?"終わらない審問院・":""}${r.mode==="bell"?`第${dungeonFloorIndex(r)}鐘室`:`${displayRunFloor(r)}`} — ${FLOOR_NAMES[r.floor-1]}`;
+    title.textContent=`${r.mode==="trial"?`深層試練・${TRIAL_SEALS[r.seal].name}・`:r.mode==="bell"?"鳴らずの鐘楼・":r.mode==="library"?"潮待ちの書庫・":r.mode==="greenhouse"?"眠らない温室・":r.mode==="mirror"?"裏返しの鏡館・":r.mode==="ferry"?"灰の渡し場・":r.mode==="tribunal"?"終わらない審問院・":r.mode==="swordgrave"?"名を失くした剣塚・":""}${r.mode==="bell"?`第${dungeonFloorIndex(r)}鐘室`:`${displayRunFloor(r)}`} — ${FLOOR_NAMES[r.floor-1]}`;
     info.textContent=`${r.phase==="combat"?"敵との戦闘中":r.phase==="event"?"探索中に発見したもの":"分かれ道"} / ${dungeonFloorIndex(r)} / ${dungeonForRun(r).last-dungeonForRun(r).first+1}`;
     hint.textContent=r.phase==="combat"?"敵を倒すと進路を選べます。戦闘中は途中帰還できません。":r.phase==="event"?"どちらかを選ぶと次へ進めます。":"進むほど古銭と装備が増えますが、敗北すれば失います。";
     $("expedition-progress").style.width=`${Math.round(((dungeonFloorIndex(r)-1)+(r.phase==="combat"?0:1))*100/(dungeonForRun(r).last-dungeonForRun(r).first+1))}%`;
-    $("expedition-cargo").textContent=`仮確保：装備${r.loot.length}点 / 古銭${r.shards}枚${r.loot.length?`（最新：${r.loot[r.loot.length-1].name}）`:""}${r.supplies?.herbs||r.supplies?.lantern?` / 探索の支度：${[r.supplies.herbs?"薬草包":null,r.supplies.lantern?"探し物の灯り":null].filter(Boolean).join("・")}`:""}${r.route?.floor===r.floor?` / 選択した道：${r.route.kind==="tribunal_quiet"?"無言の廊下":r.route.kind==="tribunal_seal"?"封蝋の祈り":r.route.kind==="tribunal_risky"?"不服の回廊":r.route.kind==="ferry_shallows"?"灰色の浅瀬":r.route.kind==="ferry_boat"?"静かな渡し舟":r.route.kind==="safe"?(r.mode==="library"?"乾いた通路":r.mode==="greenhouse"?"陽だまりの小径":"整備された側道"):RISK_ROUTES[r.route.kind]?.name||"不明"}`:""}${r.mode==="ferry"?` / 渡し札 ${r.ferryTickets}/2枚`:r.mode==="tribunal"?` / 封蝋 ${r.tribunalSeals}/2枚`:""}${r.mode==="greenhouse"?` / 胞子濃度${r.greenhouse?.spores||0}/3 ／ 根のしるし：${r.greenhouse?.rootFound?"隠し部屋を発見済み":r.greenhouse?.rootAt?"所持":"未発見"}`:""}`;
+    $("expedition-cargo").textContent=`仮確保：装備${r.loot.length}点 / 古銭${r.shards}枚${r.loot.length?`（最新：${r.loot[r.loot.length-1].name}）`:""}${r.supplies?.herbs||r.supplies?.lantern?` / 探索の支度：${[r.supplies.herbs?"薬草包":null,r.supplies.lantern?"探し物の灯り":null].filter(Boolean).join("・")}`:""}${r.route?.floor===r.floor?` / 選択した道：${r.route.kind==="tribunal_quiet"?"無言の廊下":r.route.kind==="tribunal_seal"?"封蝋の祈り":r.route.kind==="tribunal_risky"?"不服の回廊":r.route.kind==="ferry_shallows"?"灰色の浅瀬":r.route.kind==="ferry_boat"?"静かな渡し舟":r.route.kind==="safe"?(r.mode==="library"?"乾いた通路":r.mode==="greenhouse"?"陽だまりの小径":"整備された側道"):RISK_ROUTES[r.route.kind]?.name||"不明"}`:""}${r.mode==="ferry"?` / 渡し札 ${r.ferryTickets}/2枚`:r.mode==="tribunal"?` / 封蝋 ${r.tribunalSeals}/2枚`:r.mode==="swordgrave"?` / 刻印${r.swordMark} ／ 戦術変更 ${r.swordRespecUsed?"使用済み":"未使用"}`:""}${r.mode==="greenhouse"?` / 胞子濃度${r.greenhouse?.spores||0}/3 ／ 根のしるし：${r.greenhouse?.rootFound?"隠し部屋を発見済み":r.greenhouse?.rootAt?"所持":"未発見"}`:""}`;
     if(r.phase==="event"){
       $("expedition-event").hidden=false;
       $("expedition-fragment-paper").hidden=true;
@@ -7015,7 +7160,7 @@ h2 {font-size:1.43rem;}
   function renderBattle(){
     const b=state.battle, hero=state.hero, active=hasActiveBattle();
     const displayed=b && b.active ? b : null;
-    setText("floor-label",state.expedition?state.expedition.mode==="mirror"?`第${dungeonFloorIndex(state.expedition)}鏡室 / 5`:state.expedition.mode==="ferry"?`第${dungeonFloorIndex(state.expedition)}渡り / 5`:state.expedition.mode==="tribunal"?`第${dungeonFloorIndex(state.expedition)}審問 / 5`:state.expedition.mode==="bell"?`第${dungeonFloorIndex(state.expedition)}鐘室 / 5`:state.expedition.mode==="library"?`第${dungeonFloorIndex(state.expedition)}閲覧室 / 5`:state.expedition.mode==="greenhouse"?`第${dungeonFloorIndex(state.expedition)}区画 / 5`:`第${state.expedition.floor}階層 / ${dungeonForRun(state.expedition).last}`:"探索準備");
+    setText("floor-label",state.expedition?state.expedition.mode==="mirror"?`第${dungeonFloorIndex(state.expedition)}鏡室 / 5`:state.expedition.mode==="ferry"?`第${dungeonFloorIndex(state.expedition)}渡り / 5`:state.expedition.mode==="tribunal"?`第${dungeonFloorIndex(state.expedition)}審問 / 5`:state.expedition.mode==="swordgrave"?`第${dungeonFloorIndex(state.expedition)}碑 / 5`:state.expedition.mode==="bell"?`第${dungeonFloorIndex(state.expedition)}鐘室 / 5`:state.expedition.mode==="library"?`第${dungeonFloorIndex(state.expedition)}閲覧室 / 5`:state.expedition.mode==="greenhouse"?`第${dungeonFloorIndex(state.expedition)}区画 / 5`:`第${state.expedition.floor}階層 / ${dungeonForRun(state.expedition).last}`:"探索準備");
     setText("player-name",hero.name);
     const selected=ALL_TITLES.find(t=>t.id===state.selectedTitle);
     setText("title-label",selected ? `『${selected.name}』` : "異名なし");
@@ -7048,6 +7193,9 @@ h2 {font-size:1.43rem;}
     if(b?.enemy.armorCracked && state.expedition?.mode==="normal" && state.expedition.floor===10)tags.push(`<span class="status-tag">石鎧の亀裂</span>`);
     if(b?.active && state.expedition?.mode==="bell" && state.expedition.floor===20 && bellHeavyFactor()<1)tags.push(`<span class="status-tag">鐘の鈍り${bellHeavyFactor()===.80?"・重ねがけ":""}</span>`);
     if(b?.enemy.mirrorPhase)tags.push(`<span class="status-tag${b.enemy.mirrorPhase==="open"?" warning":""}">鏡相：${b.enemy.mirrorPhase==="closed"?"閉じた鏡（防御+15%／攻撃−10%）":"開いた鏡（防御−12%／攻撃+15%）"}</span>`);
+    if(state.expedition?.mode==="swordgrave"&&b?.enemy&&b.enemy.swordAdapt){
+      tags.push(`<span class="status-tag warning">残響の対策：${SWORD_ACTION_LABELS[b.enemy.swordAdapt]}（${Math.round(b.enemy.swordAdaptRate*100)}%）</span>`);
+    }
     if(state.expedition?.mode==="tribunal"&&b?.enemy){
       tags.push(`<span class="status-tag warning">裁定圧 ${b.enemy.tribunalPressure||0}/3・敵攻撃+${(b.enemy.tribunalPressure||0)*10}%</span>`);
       if((b.enemy.tribunalPressure||0)<3)tags.push(`<span class="status-tag">圧の上昇まで ${(b.enemy.tribunalFast?2:3)-(b.enemy.tribunalCycle||0)}敵行動</span>`);
@@ -7815,12 +7963,12 @@ h2 {font-size:1.43rem;}
     const active=missing>0&&missing<=3;
     const leads=state.catalog.collectionLeads||0;
     const toNext=4-totalPublicClears()%4;
-    const researchMessage=complete?"44種類の装備調査は完了しました。":active
+    const researchMessage=complete?"47種類の装備調査は完了しました。":active
       ?`調査対象は残り${missing}種類。公開迷宮をあと${toNext}回踏破すると、未発見品の調査の手がかりを1つ獲得できます（4踏破ごと）。`
       :`調査対象は残り${missing}種類。残り3種類になると、4回の踏破ごとに未発見品の調査が始まります。`;
     const space=state.inventory.length<bagCapacity()||state.storage.length<MAX_STORAGE;
     const claimable=leads>0&&!complete&&space&&isAtCamp();
-    const buttonText=!isAtCamp()?"帰還後に受け取れます":!space?"鞄と保管箱を整理してください":complete?"44種類の装備をすべて発見済み":"未発見の装備を1点受け取る";
+    const buttonText=!isAtCamp()?"帰還後に受け取れます":!space?"鞄と保管箱を整理してください":complete?"47種類の装備をすべて発見済み":"未発見の装備を1点受け取る";
     $("catalog-region-goals").innerHTML=`<p class="catalog-region-heading">迷宮別・固有装備の発見 <small>（それぞれの迷宮でランダム入手）</small></p><div class="catalog-region-list">${regions.join("")}</div><p class="region-award-catalog-note">固有装備3種類の発見で、迷宮ごとの異名と記念品を獲得します。「記録 → 記念品」で確認できます。</p><div class="collection-research"><strong>装備の調査 ${RESEARCHABLE_BASES().length-missing}/${RESEARCHABLE_BASES().length} ／ 手がかり ${leads}件</strong><p>${researchMessage}</p>${leads>0?`<button type="button" class="btn secondary" data-claim-collection ${claimable?"":"disabled"}>${buttonText}</button>`:""}<p>共通20種類と迷宮固有21種類が調査対象です。手がかりは保管でき、空き枠ができたら使用できます。根の聖域限定の護符は対象外です。</p></div>`;
     function knownItems(id){return !!state.catalog.items[id];}
   }
@@ -7865,8 +8013,8 @@ h2 {font-size:1.43rem;}
     $("record-stats").innerHTML=stats.map(([k,v])=>`<div class="stat-box"><span>${k}</span><strong>${v}</strong></div>`).join("");
     $("titles-list").innerHTML=ALL_TITLES.map(t=>{
       const got=state.unlockedTitles.includes(t.id);
-      const count=t.region?regionCollectionCount(t.region,state.catalog):Math.min(t.requirement,state.stats[t.key]);
-      const requirement=t.region?3:t.requirement;
+      const count=t.region?regionCollectionCount(t.region,state.catalog):t.key?Math.min(t.requirement,state.stats[t.key]||0):(got?1:0);
+      const requirement=t.region?3:(t.requirement||1);
       return `<div class="title-entry"><div><strong>${got?escapeHTML(t.name):"未獲得："+escapeHTML(t.name)}</strong><div class="helper">${escapeHTML(t.desc)}</div>${got?`<button class="title-select" data-title="${t.id}" type="button" ${state.selectedTitle===t.id?"disabled":""}>${state.selectedTitle===t.id?"設定中":"この異名を名乗る"}</button>`:""}</div><span>${count} / ${requirement}</span></div>`;
     }).join("");
     renderRegionAwards();
@@ -7964,6 +8112,22 @@ h2 {font-size:1.43rem;}
     $("mirror-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("mirror");});
     $("ferry-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("ferry");});
     $("tribunal-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("tribunal");});
+    $("swordgrave-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("swordgrave");});
+    $("swordgrave-mark-select").addEventListener("change",e=>{
+      if(state.expedition||hasActiveBattle()||state.expeditionStats.swordgraveClears<1)return;
+      state.settings.swordgraveMark=Math.max(0,Math.min(3,finiteInt(Number(e.target.value))));save();render();
+    });
+    $("swordgrave-rebuild-button").addEventListener("click",()=>{
+      const r=state.expedition,style=$("swordgrave-rebuild-preset").value;
+      if(!r||r.mode!=="swordgrave"||r.floor!==47||r.phase!=="choice"||r.swordRespecUsed||hasActiveBattle())return;
+      if(!Object.hasOwn(SKILL_PRESETS,style)||!SKILL_PRESETS[style].every(levelUnlocked))return;
+      const current={skillSlots:[...state.settings.skillSlots],combatStyle:state.settings.combatStyle};
+      r.swordRespecUsed=true;state.settings.skillSlots=[...SKILL_PRESETS[style]];state.settings.combatStyle=style;
+      if(!save()){
+        r.swordRespecUsed=false;state.settings.skillSlots=current.skillSlots;state.settings.combatStyle=current.combatStyle;toast("保存できないため変更を取り消しました");return;
+      }
+      addLog(`剣塚の休息所で戦術を組み直した：${style}。`,"important");render();
+    });
     $("library-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("library");});
     $("greenhouse-start-button").addEventListener("click",()=>{if(!hasActiveBattle()&&!state.expedition)beginExpedition("greenhouse");});
     $("trial-seal-select").addEventListener("change",e=>{
