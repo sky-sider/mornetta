@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#17383d">
 <meta name="description" content="ランダム装備とビルド構築を楽しむ、テキスト主体の半自動ハクスラ。">
-<title>モルネッタ | 1.1.69</title>
+<title>モルネッタ | 1.1.71</title>
 <style>
 :root{color-scheme:dark;--bg:#0e1725;--night:#101b2b;--panel:#182639;--panel-2:#1d2c41;--line:#344257;--line-soft:#2a394e;--text:#eee9df;--muted:#b8bcc5;--subtle:#8e9bad;--amber:#e0b881;--amber-pale:#f0d6a8;--mint:#9bc7b5;--red:#d58f8b;--blue:#a5bce0;--radius:15px;--tap:46px;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:15px}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);background:radial-gradient(circle at 70% -12%,#253651 0%,transparent 42%),var(--bg);line-height:1.65;min-height:100vh}button,select,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:not-allowed}button,select{-webkit-tap-highlight-color:transparent}button:focus-visible,select:focus-visible,input:focus-visible,label.file-import:focus-within{outline:2px solid var(--amber);outline-offset:3px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.35}h1{font-size:1.5rem;letter-spacing:.09em;font-weight:700}h2{font-size:1.45rem;font-weight:680;letter-spacing:.04em}h3{font-size:1.04rem;font-weight:650}small{font-size:.76rem}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.icon{width:20px;height:20px;display:inline-block;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.icon-lg{width:27px;height:27px}.icon-inline{width:15px;height:15px;vertical-align:-2px}.app-shell{max-width:1080px;margin:auto;padding:0 21px}.masthead{padding:32px 0 22px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--line-soft)}.brand-mark{width:49px;height:49px;border-radius:15px;border:1px solid #9c8058;color:var(--amber);display:grid;place-items:center;background:#222b39;flex-shrink:0}.eyebrow,.label{color:var(--amber);font-size:.68rem;letter-spacing:.15em;font-weight:700}.masthead .eyebrow{margin:0 0 5px}.tagline{color:var(--subtle);font-size:.79rem;margin-top:5px}.version{color:var(--subtle);font-weight:400;margin-left:8px}.app-layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:36px;padding:28px 0 20px}.nav{display:flex;flex-direction:column;gap:7px;position:sticky;top:24px;align-self:start}.nav-button{min-height:var(--tap);display:flex;align-items:center;gap:14px;background:transparent;color:var(--muted);border:1px solid transparent;border-radius:12px;padding:10px 14px;text-align:left;transition:background .14s,color .14s,border .14s}.nav-button:hover{background:#223147;color:var(--text)}.nav-button.is-current{background:#2a3442;color:var(--amber-pale);border-color:#746043}.nav-button span{font-size:.91rem}.main-content{min-width:0;max-width:680px;width:100%;margin:auto}.page[hidden]{display:none!important}.page{display:grid;gap:14px;animation:fadein .18s ease-out}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 2px 4px}.page-heading .eyebrow{margin-bottom:6px}.chip{padding:4px 11px;color:var(--amber-pale);background:#3b3540;border:1px solid #64556a;border-radius:20px;white-space:nowrap;font-size:.78rem}.glass{background:linear-gradient(150deg,#1a293c,#162336);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px}.split-line,.section-top{display:flex;justify-content:space-between;align-items:start;gap:14px}.section-top{align-items:center;margin-bottom:10px}.section-top small,.helper{color:var(--subtle);font-size:.76rem}.name-line{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.name-line strong{font-size:1.04rem}.name-line small{color:var(--amber)}.little-status{font-size:.71rem;color:var(--mint);border:1px solid #54705f;background:#263c3e;padding:2px 9px;border-radius:20px;white-space:nowrap}.meter-label{margin:14px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:.79rem}.meter-label strong{color:var(--text);font-size:.83rem;font-variant-numeric:tabular-nums}.meter{height:8px;background:#394456;border-radius:20px;overflow:hidden}.meter-fill{height:100%;border-radius:20px;transition:width .22s ease}.meter-fill.hp{background:linear-gradient(90deg,#70a892,#b6d7bc)}.meter-fill.enemy{background:linear-gradient(90deg,#ad6865,#d9a39a)}.focus-cells{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.focus-cell{height:9px;border-radius:5px;background:#394355}.focus-cell.full{background:#d6af73}.enemy-card{background:linear-gradient(150deg,#202939,#1a2434);border-color:#46505a}.enemy-card h3{margin-top:5px}.enemy-type{font-size:.67rem;letter-spacing:.1em;color:#c2a691;border:1px solid #766052;border-radius:8px;padding:4px 8px}.enemy-descr{font-size:.84rem;color:var(--muted);margin-top:12px}.status-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;min-height:0}.status-tag{font-size:.73rem;border:1px solid #567e72;color:#b4d6be;border-radius:7px;padding:2px 7px}.status-tag.warning{border-color:#ae8765;color:#f0c7a0}.log-card{padding-bottom:14px}.combat-log{list-style:none;display:flex;flex-direction:column-reverse;gap:0;max-height:216px;overflow:auto;padding:0;margin:0;scrollbar-color:#647086 transparent}.combat-log li{padding:7px 2px;border-top:1px solid #ffffff0c;font-size:.85rem;color:#cbd0d8;line-height:1.5;overflow-wrap:anywhere}.combat-log li:first-child{color:var(--text)}.combat-log li.important{color:var(--amber-pale)}.combat-log li.positive{color:var(--mint)}.combat-log li.danger{color:#e6a6a0}.combat-log li.log-hint{color:var(--subtle)}.controls-card{padding-bottom:14px}.actions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.action-btn{min-height:76px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:9px 3px;background:#24354a;color:var(--text);border:1px solid #455369;border-radius:12px}.action-btn:hover:not(:disabled){background:#2f4159}.action-btn.queued{color:var(--amber-pale);border-color:var(--amber);box-shadow:0 0 0 1px #e0b88155 inset}.action-btn span{font-size:.79rem;white-space:nowrap}.action-btn small{color:var(--subtle);font-size:.7rem;white-space:nowrap}.action-btn .icon{color:var(--amber);width:19px;height:19px}.battle-toolbar{display:grid;grid-template-columns:1fr 1fr 61px;gap:9px;margin-top:14px}.btn{min-height:var(--tap);display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:11px;padding:8px 13px;border:1px solid #46546a;color:var(--text);background:#2b3a4e;font-size:.84rem;font-weight:600;white-space:nowrap}.btn .icon{width:17px;height:17px}.btn.primary{color:#21242d;background:#d8b77f;border-color:#e2c591}.btn.primary:hover:not(:disabled){background:#f0cf98}.btn.secondary:hover:not(:disabled){background:#354861}.btn.quiet{color:var(--muted);padding:6px 5px}.small-note{color:var(--subtle);font-size:.78rem;line-height:1.72;margin-top:12px}.alert-strip{display:flex;align-items:start;gap:12px;padding:13px;border:1px solid #bb9464;background:#493d35;border-radius:12px;color:#f2d8b7}.alert-strip[hidden]{display:none}.alert-strip p{font-size:.79rem;margin-top:4px;color:#f0d9c3}.alert-strip strong{font-size:.84rem}.item-card,.settings-card,.record-card{display:grid;gap:12px}.item-title{display:flex;align-items:center;gap:10px;color:var(--amber-pale)}.item-details{font-size:.82rem;color:var(--muted)}.flavor{font-size:.83rem;font-style:italic;color:#c2bac1;border-left:2px solid #77684f;padding-left:12px}.item-tally{font-size:.82rem;color:var(--mint);padding:9px 12px;background:#25384a;border-radius:9px}.gear-options{display:grid;gap:9px}.gear-choice{width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;padding:14px;background:#213047;color:var(--text);display:grid;gap:5px;min-height:var(--tap)}.gear-choice.is-equipped{border-color:#d6b47b;background:#302f38}.gear-choice strong{font-size:.88rem}.gear-choice span{color:var(--muted);font-size:.78rem}.gear-choice em{color:var(--amber);font-size:.73rem;font-style:normal}.history-list{margin:0;padding-left:1.3rem;color:var(--muted);font-size:.85rem;display:grid;gap:7px}.form-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--line-soft);font-size:.88rem}.form-row span{min-width:0}.form-row select{max-width:160px;width:44%;min-height:42px;background:#233349;color:var(--text);border:1px solid #50617a;border-radius:10px;padding:7px}.check-row input{width:21px;height:21px;accent-color:#d8b77f}.rules-summary{background:#24354a;color:var(--muted);border:1px dashed #54677c;padding:13px;border-radius:10px;font-size:.82rem;line-height:1.8}.settings-card>p:not(.small-note){font-size:.86rem;color:var(--muted)}.settings-card h3{color:var(--amber-pale)}.utility-row{display:flex;flex-wrap:wrap;gap:8px}.file-import{position:relative;cursor:pointer}.file-import input{position:absolute;width:1px;height:1px;opacity:0}.text-danger{border:0;background:transparent;padding:8px 0;text-align:left;min-height:42px;color:#e6a6a0;font-size:.82rem;width:max-content}.record-prose{font-size:.87rem;color:var(--muted)}.stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat-box{border:1px solid var(--line-soft);border-radius:10px;padding:10px;background:#203149}.stat-box span{display:block;color:var(--subtle);font-size:.76rem}.stat-box strong{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--text)}.title-entry{padding:11px 0;border-top:1px solid var(--line-soft);font-size:.88rem;display:flex;justify-content:space-between;gap:10px}.title-entry span{color:var(--subtle);font-size:.76rem}.title-entry strong{color:var(--amber)}.title-select{margin-top:6px;min-height:38px;border:1px solid #765e45;border-radius:8px;background:#3c3540;color:var(--amber-pale);font-size:.78rem;padding:6px 11px}.site-footer{border-top:1px solid var(--line-soft);padding:22px 0 32px;color:#7f8fa4;font-size:.72rem;letter-spacing:.08em}.site-footer span{letter-spacing:0;margin-left:8px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,12px);border:1px solid #8b724e;background:#383645;color:var(--amber-pale);padding:10px 16px;box-shadow:0 12px 26px #080f1e8c;border-radius:12px;max-width:min(92vw,440px);text-align:center;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:10;font-size:.85rem}.toast.visible{opacity:1;transform:translate(-50%,0)}
@@ -2057,7 +2057,7 @@ h2 {font-size:1.43rem;}
 <div class="app-shell">
  <header class="masthead">
   <div class="brand-mark"><svg class="icon icon-lg"><use href="#ic-gate"/></svg></div>
-  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.69</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
+  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.71</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
  </header>
  <div class="app-layout">
   <nav class="nav" aria-label="画面を切り替える">
@@ -3873,12 +3873,12 @@ h2 {font-size:1.43rem;}
 
 
   // 1.1.66: Narrative-only guild extras. Combat RNG, economy and equipment are untouched.
-  const GUILD_STORIES_DATA = {"dialogues":[{"id":"merchant-01","character":"merchant","kind":"daily","unlock":"always","text":"「昨日、鈴の鳴らない鈴を買ったんだ。役に立つかって？ 静かな店にはぴったりだろう。」"},{"id":"merchant-02","character":"merchant","kind":"daily","unlock":"always","text":"「欠けた皿が一枚あってね。欠けた側を壁に向けて飾ったら、誰も欠けてると気づかない。困ったものさ。」"},{"id":"merchant-03","character":"merchant","kind":"daily","unlock":"always","text":"「店の棚は乱雑じゃないよ。私には置き場所がわかる。……去年の領収書以外はね。」"},{"id":"merchant-04","character":"merchant","kind":"daily","unlock":"always","text":"「受付猫が値札をつけたがっていたよ。私の帽子にまで。商売熱心で感心したね。」"},{"id":"merchant-05","character":"merchant","kind":"daily","unlock":"always","text":"「小さな鍵を見つけると、つい取っておくんだ。合う錠前がない鍵は、まだ旅の途中だからね。」"},{"id":"merchant-06","character":"merchant","kind":"daily","unlock":"always","text":"「古銭には傷があるだろう？ 使われなかった古銭より、ずいぶん賑やかな顔をしている。」"},{"id":"merchant-07","character":"merchant","kind":"daily","unlock":"always","text":"「朝は窓を開けることにしてる。外が静かだと、店の時計の音が少し大きく聞こえるんだ。」"},{"id":"merchant-08","character":"merchant","kind":"daily","unlock":"always","text":"「あの受付猫、今日こそ一日じゅう書類をなくさないと宣言したよ。私は夕方まで賭けないことにした。」"},{"id":"merchant-09","character":"merchant","kind":"daily","unlock":"always","text":"「昨日、鍛錬所から曲がった木の棒を借りてきたよ。棚の奥の埃を払うには、あれが一番だった。」"},{"id":"merchant-10","character":"merchant","kind":"daily","unlock":"always","text":"「新しい品ほど説明書が長いね。古い品は短いよ。『気をつけて使うこと』、だいたいそれで済む。」"},{"id":"merchant-11","character":"merchant","kind":"daily","unlock":"always","text":"「革の匂いを嗅いでいると時間を忘れるんだ。仕入れじゃなくて、手入れの話だよ。」"},{"id":"merchant-12","character":"merchant","kind":"daily","unlock":"always","text":"「誰も買わないものでも、毎日磨いていれば店の一員みたいになる。家賃は払わないけどね。」"},{"id":"merchant-13","character":"merchant","kind":"daily","unlock":"always","text":"「この棚には宝物があるんだ。どれかって？ それを聞かれると商売がやりにくくなるねえ。」"},{"id":"merchant-14","character":"merchant","kind":"daily","unlock":"always","text":"「値切るのは結構。でも、受付猫の新しい印章の値段を私に聞いても無駄だよ。秘密らしいからね。」"},{"id":"merchant-15","character":"merchant","kind":"adventure","unlock":"first_clear","text":"「初めての踏破かい。戻ってきてから見る装備は、出発前と同じでも少し違って見えるものさ。」"},{"id":"merchant-16","character":"merchant","kind":"adventure","unlock":"legendary_owned","text":"「見事な品だ。でも、光っているからって大事に扱わなくていいわけじゃない。むしろ逆だね。」"},{"id":"merchant-17","character":"merchant","kind":"adventure","unlock":"bag_100","text":"「鞄が百枠か。これで忘れ物が減るならいいけど、増えた場所に別の忘れ物を作りそうだね。」"},{"id":"merchant-18","character":"merchant","kind":"adventure","unlock":"mirror_clear","text":"「鏡館の品は手入れが難しいんだ。磨くと自分の顔が映る。仕事をしてる気がしなくなってね。」"},{"id":"merchant-19","character":"merchant","kind":"quiet","unlock":"episode_05_read","text":"「あの方位盤は、北を示すためだけにここにあるんじゃない。……まあ、今日は値札の話をしようか。」"},{"id":"merchant-20","character":"merchant","kind":"quiet","unlock":"episode_11_read","text":"「約束ってのは面白いよ。守るために、何もしないで待っている日もあるんだ。」"},{"id":"cat-01","character":"cat","kind":"daily","unlock":"always","text":"「今日の依頼書は完璧に整理してあります！ あ、いまの一枚だけ上下が逆ですね。」"},{"id":"cat-02","character":"cat","kind":"daily","unlock":"always","text":"「新しい紐で書類を結んだんです。強く結びすぎて、今度はほどけなくなりました。」"},{"id":"cat-03","character":"cat","kind":"daily","unlock":"always","text":"「ギルドの窓から見える雲を記録しているんです。業務ですか？ いえ、これは趣味です！」"},{"id":"cat-04","character":"cat","kind":"daily","unlock":"always","text":"「古物商さんが『三日前の昨日』って言ったんです。日付を訂正したら、笑われました。」"},{"id":"cat-05","character":"cat","kind":"daily","unlock":"always","text":"「お名前を聞き間違えないよう、復唱することにしました。たまに自分の名前も復唱します。」"},{"id":"cat-06","character":"cat","kind":"daily","unlock":"always","text":"「印章の押し方にはコツがあります。まっすぐ、ゆっくり、しっぽを机から下ろして……あっ。」"},{"id":"cat-07","character":"cat","kind":"daily","unlock":"always","text":"「鍛錬所の受付嬢さんが、お茶をいれてくれたんです。カップの下に書類を敷くのは止められました。」"},{"id":"cat-08","character":"cat","kind":"daily","unlock":"always","text":"「昼休みに棚の並びを変えました。皆さん元の場所を覚えているみたいで、少し困っています。」"},{"id":"cat-09","character":"cat","kind":"daily","unlock":"always","text":"「依頼の見出しは短いほどいいですね。『急ぎの至急案件』は、直したほうがいいでしょうか？」"},{"id":"cat-10","character":"cat","kind":"daily","unlock":"always","text":"「店長さんから小さな鈴を借りました。鳴らないので受付には使えませんが、見た目は立派です。」"},{"id":"cat-11","character":"cat","kind":"daily","unlock":"always","text":"「紙の角がぴったり揃うと、今日一日いいことがありそうな気がします。」"},{"id":"cat-12","character":"cat","kind":"daily","unlock":"always","text":"「しっぽは便利なんですよ。椅子が冷たいときに巻けますし。書類の上には置かないよう努力中です。」"},{"id":"cat-13","character":"cat","kind":"daily","unlock":"always","text":"「昨日、受付嬢さんに『仕事が速くなったね』って言われました！ 書類を急いで落としましたけど！」"},{"id":"cat-14","character":"cat","kind":"daily","unlock":"always","text":"「帳面の余白に、誰かが小さな猫を描いたんです。私じゃありません。……たぶん。」"},{"id":"cat-15","character":"cat","kind":"adventure","unlock":"first_clear","text":"「初踏破、おめでとうございます！ 帰還の欄にはちゃんと記入しました。二重線まで引いて確認済みです！」"},{"id":"cat-16","character":"cat","kind":"adventure","unlock":"commissions_3","text":"「巡回依頼の記録が増えましたね。あなたの名前の欄、少し広く取っておくべきでした！」"},{"id":"cat-17","character":"cat","kind":"adventure","unlock":"catalog_20","text":"「発見した装備が増えましたね！ 名前が長いものも、帳面にはきちんと収めてありますよ。」"},{"id":"cat-18","character":"cat","kind":"adventure","unlock":"tribunal_clear","text":"「審問院からお帰りですね。報告は後でも大丈夫です。まず、椅子をどうぞ！」"},{"id":"cat-19","character":"cat","kind":"quiet","unlock":"episode_06_read","text":"「帰還の記録は、数字だけじゃないと思うんです。ここに来た人の『今日』の記録ですから。」"},{"id":"cat-20","character":"cat","kind":"quiet","unlock":"episode_12_read","text":"「灯りを消す時間は決まっています。でも、誰かの足音がしたら、一度だけ振り返ってしまうんです。」"},{"id":"trainer-01","character":"trainer","kind":"daily","unlock":"always","text":"「鍛錬所の床、昨日ちゃんと拭いたんだよ。今朝にはもう足跡だらけ。使われてる証拠かな。」"},{"id":"trainer-02","character":"trainer","kind":"daily","unlock":"always","text":"「準備運動を省きたがる人ほど、終わってから『身体が硬い』って言うんだよね。」"},{"id":"trainer-03","character":"trainer","kind":"daily","unlock":"always","text":"「受付猫ちゃん、書類の束を持つ姿勢がよくなったよ。本人には鍛錬だって言ってないけど。」"},{"id":"trainer-04","character":"trainer","kind":"daily","unlock":"always","text":"「店長が曲がった棒を借りていったでしょ。武器じゃなくて掃除に使うとは思わなかったな。」"},{"id":"trainer-05","character":"trainer","kind":"daily","unlock":"always","text":"「ここで一番人気の訓練は休憩時間かも。みんな休み方だけ上達が早いんだから。」"},{"id":"trainer-06","character":"trainer","kind":"daily","unlock":"always","text":"「昨日、靴ひもを結び直すだけの講習をしたよ。地味？ それが意外と大事なんだ。」"},{"id":"trainer-07","character":"trainer","kind":"daily","unlock":"always","text":"「記録用の鉛筆が短くなってきたなあ。受付猫ちゃんに言うと新しい帳面まで持ってきそう。」"},{"id":"trainer-08","character":"trainer","kind":"daily","unlock":"always","text":"「強い人の練習を見てるとね、休むタイミングがうまいんだ。ずっと動いてるわけじゃないんだよ。」"},{"id":"trainer-09","character":"trainer","kind":"daily","unlock":"always","text":"「店長のお茶、苦いんだよね。本人は『味が長持ちする』って言うけど、そういう問題かな。」"},{"id":"trainer-10","character":"trainer","kind":"daily","unlock":"always","text":"「最近、鍛錬所の窓辺に誰かが小石を並べてるの。きれいだからそのままにしてるよ。」"},{"id":"trainer-11","character":"trainer","kind":"daily","unlock":"always","text":"「失敗した動きは覚えやすいよ。悔しいからね。だから一度できなくても、悪いことばかりじゃない。」"},{"id":"trainer-12","character":"trainer","kind":"daily","unlock":"always","text":"「新しい技を覚えると試したくなるでしょ？ 私も新しい靴を買うと遠回りしたくなる。」"},{"id":"trainer-13","character":"trainer","kind":"daily","unlock":"always","text":"「今日は私も早めに休むつもり。……うん、その顔は信用してないね。ちゃんと休むってば。」"},{"id":"trainer-14","character":"trainer","kind":"daily","unlock":"always","text":"「入口の椅子はね、練習する人だけのものじゃないよ。見てるだけの日だってあっていいんだから。」"},{"id":"trainer-15","character":"trainer","kind":"adventure","unlock":"level_3","text":"「少し動きが変わってきたね。伸びたところを自分でも確かめてみて。」"},{"id":"trainer-16","character":"trainer","kind":"adventure","unlock":"level_10","text":"「ここまで鍛えてきたんだ。得意な戦術と苦手な場面、そろそろ言葉にできそうじゃない？」"},{"id":"trainer-17","character":"trainer","kind":"adventure","unlock":"bell_clear","text":"「鐘楼を抜けたんだね。見えない合図がある相手ほど、急がないほうがいいときもあるよ。」"},{"id":"trainer-18","character":"trainer","kind":"adventure","unlock":"tribunal_first_attempt","text":"「審問院に行ったんだって？ 無茶するなとは言うよ。でも、挑んだ理由まで否定するつもりはない。」"},{"id":"trainer-19","character":"trainer","kind":"quiet","unlock":"episode_09_read","text":"「昔の遠征の話？ ああ、あれね。成功したかどうかと、よかったかどうかは別なんだよ。」"},{"id":"trainer-20","character":"trainer","kind":"quiet","unlock":"episode_12_read","text":"「いつか私も早めに仕事を切り上げて、あの二人と夕飯を食べたいな。今度こそ、ね。」"}],"chapters":[{"id":"EP-01","num":1,"title":"なくなった依頼書","focus":"cat","unlock_label":"ギルドに初めて立ち寄る","unlock_key":"guild_visit","body":"午後のギルドカウンターで、受付猫が帳面をめくる音だけが続いていた。\n「変なんです。受け取ったはずの依頼書が一枚、どうしても見当たらなくて」\n机の上には分類された書類が三つの山になっている。受付猫は一つずつ番号を読み上げ、数え直しては首をかしげた。\nそこへ鍛錬所の受付嬢が顔を出す。「椅子の下は見た？」\n「もちろんです。三回も！」\n「じゃあ、そこじゃないね。今日はずいぶん落ち着いて探してるじゃない」\n受付猫は少し胸を張った。「前なら、真っ先に全部ひっくり返してましたから！」\nその拍子に、しっぽの下から紙の角がのぞいた。\n「あっ」\n受付嬢は笑いをこらえ、机の空いた場所を指さした。「見つけたなら、まずそこに置こう」\n受付猫は依頼書にしっかり印を押す。「これで一件落着です。……今日の報告書には、場所を書かなくてもいいでしょうか」\n「書くなら『すぐ近く』でいいんじゃない？」\n二人の笑い声が、カウンターの奥へ小さく転がった。"},{"id":"EP-02","num":2,"title":"値段のつかない皿","focus":"merchant","unlock_label":"古物商で1回購入","unlock_key":"first_purchase","body":"古物商の棚のいちばん下に、ふちの欠けた小皿があった。値札はついていない。\n受付猫が通りがかり、首を伸ばす。「このお皿、売らないんですか？」\n「売ってもいいんだけどね。値段を決めるのが難しくて」\n「欠けているから、お安くするんですか？」\n「いいや。毎朝ここにお菓子を置くと、なぜか店じゅうの仕事がはかどるんだ。だから高くしたい」\n「それは皿の効能ではなく、お菓子の効能では？」\n店長はしばらく考え込み、「鋭いねえ」と頷いた。\n翌日、皿には小さな丸い菓子が二つ乗っていた。一つは店長のもの、もう一つは受付猫のものだ。\n「昨日の鑑定のお礼だよ」\n受付猫は礼を言ってから、皿の欠けたところを指でなぞった。「ここ、痛くならないように磨いてあるんですね」\n「そう。ものは直せなくても、使い方を直せることがある」\n店長は少しだけ得意そうだった。"},{"id":"EP-03","num":3,"title":"鍛錬所の昼休み","focus":"trainer","unlock_label":"Lv.3に到達","unlock_key":"level_3","body":"昼休みの鍛錬所は、朝よりも静かだった。誰かの掛け声も、木剣のぶつかる音もしない。\n受付嬢は窓を開け、少し冷めたお茶を飲んでいた。そこへ受付猫が書類の束を抱えて現れる。\n「確認の印をいただきに来ました！ 休憩中でしたか？」\n「うん。ちょうど今、休む練習をしてるところ」\n「休むのにも練習が必要なんですか？」\n「必要な人にはね。時間が空くと、つい次の仕事を探すから」\n受付猫は自分の手元に目を落とした。届ける必要のない紙が、一枚混ざっている。\n「わたしも、ちょっとだけ座っていいですか」\n「もちろん。あそこの椅子は、使われるのを待ってる」\n二人は並んで座り、通りの向こうを行く旅人たちを眺めた。\nしばらくして受付猫が言う。「こんなに何もしないと、何か忘れた気がします」\n「そういう日もあるよ」\n受付嬢は空のカップを机に置いた。午後の鐘が鳴るまで、二人とも立ち上がらなかった。"},{"id":"EP-04","num":4,"title":"新しい印章","focus":"cat","unlock_label":"巡回依頼を3回達成","unlock_key":"commissions_3","body":"受付猫は新しい印章を三人に見せて回った。\n「ほら、前のより細かい文字までくっきり出るんです！」\n古物商の店長はその印面を眺め、「立派だね。押す紙が追いつくかな」と言った。\n「追いつきます！ きちんとした帳面も買いましたから！」\n鍛錬所の受付嬢は笑って、紙を一枚差し出した。「試してみたら？」\n受付猫は大きくうなずき、机の上に印章を置く。ところが、いつもの癖で力を入れすぎた。印章は紙を通り越して、自分の手の甲に丸い跡を残した。\n三人はしばらく、その手を見つめた。\n「……人の名前を記録する道具で、自分を記録してしまいました」\n「持ち主がわかって便利じゃないか」と店長。\n「しばらく消えないかもね」と受付嬢。\n翌朝、受付猫は片手に手袋をはめていた。カウンターの帳面には、揃ったきれいな印が並んでいる。\n手袋の理由を聞かれるたび、受付猫は「印章の取り扱いには経験が必要です」と胸を張った。"},{"id":"EP-05","num":5,"title":"誰も買わない方位盤","focus":"merchant","unlock_label":"異なる迷宮を3か所踏破","unlock_key":"three_distinct_dungeons","body":"古物商の店の奥には、小さな方位盤があった。金具は磨かれているのに、針は少しだけ北からずれている。\n「壊れているんですか？」と受付猫。\n「いいや。置き方によっては、ちゃんと北を向くよ」\n「じゃあ、売り物ですね」\n店長は方位盤を棚の奥へ戻した。「これは預かり物なんだ」\n受付猫は驚いて帳面を開く。「預かり証はありますか？ お名前は？ お預かりした日付は？」\n「昔の話でね。紙はだいぶくたびれたよ」\n「大切な品なら、書き直しましょう。わたし、きれいに写します！」\n店長は少し迷ってから、擦り切れた紙を渡した。そこには短い言葉だけが残っていた。\n『いつか向きを確かめに来る』\n「それだけですか」\n「それだけで十分だったんだろうね、その人には」\n受付猫は何も書き足さず、文字の形を丁寧に写した。店長は方位盤をもう一度磨き、いつもの場所に戻した。"},{"id":"EP-06","num":6,"title":"帰還者の名前","focus":"cat","unlock_label":"通算50勝","unlock_key":"wins_50","body":"夕方のカウンターで、受付猫が帰還簿の一行を見つめていた。日付と迷宮名はあるのに、旅人の名前だけが空欄になっている。\n「ここ、記入し忘れたのかな」と鍛錬所の受付嬢。\n「そうみたいです。でも、誰が帰った日だったのか、ちゃんと確かめたいんです」\n受付猫は依頼の控えと店の購入記録を比べ、ひとつずつ可能性を消していった。時計の針が進み、机に置いたお茶が冷める。\n「急がなくてもいいよ」と受付嬢が言う。「明日、また調べよう」\n「はい。でも、今日のうちに気づけてよかったです」\n翌朝、受付猫は当人が残した署名入りの受領証を見つけ、空欄を埋めた。\n大仕事のわりに、帳面は見た目にはほとんど変わらない。\nそれでも受付猫は満足そうだった。「勝った記録も大事ですけど、帰ってきた記録は、もっと大事かもしれません」\n受付嬢は静かに頷き、新しいお茶を置いた。"},{"id":"EP-07","num":7,"title":"褒め言葉の練習","focus":"trainer","unlock_label":"Lv.10に到達","unlock_key":"level_10","body":"鍛錬所の受付嬢は、朝から一枚の紙とにらめっこしていた。\n「どうしたんですか？」と受付猫がたずねる。\n「頑張ってる旅人に、もっと上手に声をかけたくてさ。『すごい』ばかりじゃ足りない気がして」\n紙には『昨日より足がぶれない』『無理をしない判断ができた』と書かれている。\n受付猫は目を輝かせた。「記録ですね！ それなら私も得意です！」\n二人は言葉をいくつも書き足した。『剣を振る音が変わった』『休む時間を自分で決めた』。\nそこへ古物商の店長が現れ、紙を一瞥する。「褒めるのに準備がいるのかい」\n「いるよ。見てたことを、ちゃんと伝えたいから」\n店長は笑って頷いた。「なら、その紙を見ながらでもいいじゃないか」\n午後、受付嬢は練習を終えた旅人に声をかけた。\n「今日はね、昨日より落ち着いていたよ」\n紙は結局、机の上に置いたままだった。"},{"id":"EP-08","num":8,"title":"靴下の鑑定","focus":"ensemble","unlock_label":"古銭を通算1,500枚使用","unlock_key":"coins_spent_1500","body":"古物商が大切そうに差し出したのは、片方だけの古い靴下だった。\n「鑑定をお願いしたくてね」\n受付猫は背筋を伸ばす。「素材と年代を確認します！ ……えっと、靴下、ですよね？」\n鍛錬所の受付嬢は腕を組む。「それ、また英雄の持ち物って言うんじゃないでしょうね」\n「今日は王様のものかもしれないと思ってる」\n「昨日は英雄だったでしょ」\n「英雄が王様になったのかもしれないじゃないか」\n受付猫は真剣に帳面を開いた。「所有者不明。片方のみ。由来について意見が分かれる、と」\n「わざわざ書くこと？」と受付嬢。\n「由来がはっきりしない品ほど、記録は正確にするべきです！」\n店長は満足げに笑い、靴下を受け取った。\n翌日、その靴下は店の棚で、小さな花瓶の下に敷かれていた。\n受付嬢が呆れると、店長は言った。「由来はともかく、滑り止めとしては一級品さ」\n受付猫の帳面には、新たに『用途判明』と書き足された。"},{"id":"EP-09","num":9,"title":"帰還の約束","focus":"trainer","unlock_label":"高難度＋を初踏破","unlock_key":"plus_clear","body":"雨の日、鍛錬所の受付嬢は閉じた窓を見つめていた。古物商が熱い飲み物を置く。\n「今日は静かだね」\n「昔の遠征も、帰ってきた日はこんな雨だったんだ」\n彼女は、まだ補給を任されていたころの話をした。出発前、一人の冒険者が自信たっぷりに言ったのだという。\n『今度こそ、必ず目標を果たす』\n彼女は笑って返した。『果たせなくても帰ってきて。ごはんは用意しておくから』\nその隊は、目指した場所へ届かなかった。けれど、全員が帰還した。\n「帰ってきた人、悔しそうだった？」と店長。\n「うん。すごくね。でも、温かいものを飲んだら、次の計画を話し始めたよ」\n彼女はカップを両手で持った。「あのとき、諦めたわけじゃなかったんだよね。帰る道を選んだだけ」\n店長は頷いた。「それなら、続きのある遠征だ」\n雨音の向こうで、鍛錬所の床を踏む足音がまた聞こえ始めた。"},{"id":"EP-10","num":10,"title":"閉店後のギルド","focus":"ensemble","unlock_label":"通算30回探索","unlock_key":"runs_30","body":"閉店の札を裏返したあとも、ギルドには三つの仕事が残っていた。受付猫は帳面を閉じ、受付嬢は鍛錬所の窓を確かめ、古物商は店の奥から妙な箱を持ってきた。\n「何ですか、それ」と受付猫。\n「今日の売れ残りの整理だよ」\n箱には、鈴の鳴らない鈴、片方の靴下、蓋のない小瓶が並んでいる。\n受付嬢は笑った。「売れ残りっていうより、残したいものばかりじゃない？」\n「そうとも言うね」\n受付猫は一つずつ番号を書き始めた。「こういう品でも、一覧があると安心ですから！」\n「帳面を増やしすぎないでね」と受付嬢。\n「増やすなら棚のほうがいいかもしれない」と店長。\n誰も急いで帰ろうとしなかった。外では風が吹き、ギルドの灯りが窓に映る。\n最後の一枚を書き終えると、受付猫は小さく伸びをした。「今日は、何もなくてよかったですね」\n受付嬢は頷いた。「うん。何もなかった日の片付けも、嫌いじゃないよ」"},{"id":"EP-11","num":11,"title":"売らない品物","focus":"merchant","unlock_label":"迷宮固有装備を累計9種類発見、かつ05話既読","unlock_key":"regional_items_9_and_05_read","body":"店の奥の方位盤は、いつ見ても同じ場所にあった。受付猫が写した預かり証も、隣の引き出しに大事にしまわれている。\nある日、鍛錬所の受付嬢が言った。「その人、取りに来なかったの？」\n店長は方位盤を持ち上げ、針の揺れが止まるのを待った。\n「来なかったね。少なくとも、今までは」\n「ずっと待ってるの？」\n「待ってると言うと大げさだな。ここに置いて、店を開けてるだけさ」\n彼女は少し考えてから聞いた。「もし来たら、何を言うつもり？」\n「『今度はちゃんと北を向くかい』、かな」\n「それだけ？」\n「何か話したければ、その人が話すだろう」\n店長は方位盤を元の場所に戻した。磨かれた金具が夕暮れを映す。\nそのあと、客が来て店はいつもの賑やかさに戻った。方位盤は動かなかったけれど、店長の仕事が止まることもなかった。"},{"id":"EP-12","num":12,"title":"灯りの消えない夜","focus":"ensemble","unlock_label":"審問院を初踏破","unlock_key":"tribunal_clear","body":"審問院から旅人が帰った夜、ギルドは閉店時間を少し過ぎても明るかった。受付猫が帰還簿に新しい一行を記し、受付嬢は鍛錬所の長椅子を片づけ、古物商は小さなランプの芯を整えていた。\n「もう閉めてもいいころですよね」と受付猫。\n「そうだね。帳面は片づいたかい」と店長。\n「はい！ 何度も確認しました」\n受付嬢は窓の外を見た。「今日は、あの迷宮へ行った人が帰ってきた日なんだね」\n「そうです。だから、ここに書いてあります」\n受付猫は帳面の一行をそっと指で示した。長い説明も、立派な飾りもない。名前と日付と、帰還した事実だけ。\n店長はランプの火を少し弱くした。「じゃあ、今日の明かりはこれで十分だ」\n三人はそれぞれの持ち場へ戻る。新しい朝になれば、また依頼書が届き、装備が売れ、床に足跡が増える。\n最後に受付猫が振り返り、小さな声で言った。「明日も、おかえりなさいって言えるといいですね」\n受付嬢は微笑んだ。「うん。まずは私たちが元気に来よう」"}]};
+  const GUILD_STORIES_DATA = {"dialogues":[{"id":"merchant-01","character":"merchant","kind":"daily","unlock":"always","text":"「鈴の鳴らない鈴を仕入れたことがあってね。役に立つかって？ 静かな店にはぴったりだろう。」"},{"id":"merchant-02","character":"merchant","kind":"daily","unlock":"always","text":"「欠けた皿が一枚あってね。欠けた側を壁に向けて飾ったら、誰も欠けてると気づかない。困ったものさ。」"},{"id":"merchant-03","character":"merchant","kind":"daily","unlock":"always","text":"「店の棚は乱雑じゃないよ。私には置き場所がわかる。……去年の領収書以外はね。」"},{"id":"merchant-04","character":"merchant","kind":"daily","unlock":"always","text":"「受付猫が値札をつけたがっていたよ。私の帽子にまで。商売熱心で感心したね。」"},{"id":"merchant-05","character":"merchant","kind":"daily","unlock":"always","text":"「小さな鍵を見つけると、つい取っておくんだ。合う錠前がない鍵は、まだ旅の途中だからね。」"},{"id":"merchant-06","character":"merchant","kind":"daily","unlock":"always","text":"「古銭には傷があるだろう？ 使われなかった古銭より、ずいぶん賑やかな顔をしている。」"},{"id":"merchant-07","character":"merchant","kind":"daily","unlock":"always","text":"「朝は窓を開けることにしてる。外が静かだと、店の時計の音が少し大きく聞こえるんだ。」"},{"id":"merchant-08","character":"merchant","kind":"daily","unlock":"always","text":"「あの受付猫、一日じゅう書類をなくさないってよく宣言するんだ。私は夕方まで賭けないことにしてる。」"},{"id":"merchant-09","character":"merchant","kind":"daily","unlock":"always","text":"「この前、鍛錬所から曲がった木の棒を借りてね。棚の奥の埃を払うには、あれが一番だった。」"},{"id":"merchant-10","character":"merchant","kind":"daily","unlock":"always","text":"「新しい品ほど説明書が長いね。古い品は短いよ。『気をつけて使うこと』、だいたいそれで済む。」"},{"id":"merchant-11","character":"merchant","kind":"daily","unlock":"always","text":"「革の匂いを嗅いでいると時間を忘れるんだ。仕入れじゃなくて、手入れの話だよ。」"},{"id":"merchant-12","character":"merchant","kind":"daily","unlock":"always","text":"「誰も買わないものでも、毎日磨いていれば店の一員みたいになる。家賃は払わないけどね。」"},{"id":"merchant-13","character":"merchant","kind":"daily","unlock":"always","text":"「この棚には宝物があるんだ。どれかって？ それを聞かれると商売がやりにくくなるねえ。」"},{"id":"merchant-14","character":"merchant","kind":"daily","unlock":"always","text":"「値切るのは結構。でも、受付猫の新しい印章の値段を私に聞いても無駄だよ。秘密らしいからね。」"},{"id":"merchant-15","character":"merchant","kind":"adventure","unlock":"first_clear","text":"「初めて迷宮を越えた日のこと、覚えているかい。帰ってから見る装備は、出発前と同じでも少し違って見えるものさ。」"},{"id":"merchant-16","character":"merchant","kind":"adventure","unlock":"legendary_owned","text":"「見事な品だ。でも、光っているからって大事に扱わなくていいわけじゃない。むしろ逆だね。」"},{"id":"merchant-17","character":"merchant","kind":"adventure","unlock":"bag_100","text":"「鞄が百枠か。これで忘れ物が減るならいいけど、増えた場所に別の忘れ物を作りそうだね。」"},{"id":"merchant-18","character":"merchant","kind":"adventure","unlock":"mirror_clear","text":"「鏡館の品は手入れが難しいんだ。磨くと自分の顔が映る。仕事をしてる気がしなくなってね。」"},{"id":"merchant-19","character":"merchant","kind":"quiet","unlock":"episode_05_read","text":"「あの方位盤は、北を示すためだけにここにあるんじゃない。……まあ、今日は値札の話をしようか。」"},{"id":"merchant-20","character":"merchant","kind":"quiet","unlock":"episode_11_read","text":"「約束ってのは面白いよ。守るために、何もしないで待っている日もあるんだ。」"},{"id":"cat-01","character":"cat","kind":"daily","unlock":"always","text":"「今日の依頼書は完璧に整理してあります！ あ、いまの一枚だけ上下が逆ですね。」"},{"id":"cat-02","character":"cat","kind":"daily","unlock":"always","text":"「新しい紐で書類を結んだんです。強く結びすぎて、今度はほどけなくなりました。」"},{"id":"cat-03","character":"cat","kind":"daily","unlock":"always","text":"「ギルドの窓から見える雲を記録しているんです。業務ですか？ いえ、これは趣味です！」"},{"id":"cat-04","character":"cat","kind":"daily","unlock":"always","text":"「古物商さんが『三日前の昨日』って言ったんです。日付を訂正したら、笑われました。」"},{"id":"cat-05","character":"cat","kind":"daily","unlock":"always","text":"「お名前を聞き間違えないよう、復唱することにしました。たまに自分の名前も復唱します。」"},{"id":"cat-06","character":"cat","kind":"daily","unlock":"always","text":"「印章の押し方にはコツがあります。まっすぐ、ゆっくり、しっぽを机から下ろして……あっ。」"},{"id":"cat-07","character":"cat","kind":"daily","unlock":"always","text":"「鍛錬所の受付嬢さんが、お茶をいれてくれたんです。カップの下に書類を敷くのは止められました。」"},{"id":"cat-08","character":"cat","kind":"daily","unlock":"always","text":"「昼休みに棚の並びを変えました。皆さん元の場所を覚えているみたいで、少し困っています。」"},{"id":"cat-09","character":"cat","kind":"daily","unlock":"always","text":"「依頼の見出しは短いほどいいですね。『急ぎの至急案件』は、直したほうがいいでしょうか？」"},{"id":"cat-10","character":"cat","kind":"daily","unlock":"always","text":"「店長さんから小さな鈴を借りました。鳴らないので受付には使えませんが、見た目は立派です。」"},{"id":"cat-11","character":"cat","kind":"daily","unlock":"always","text":"「紙の角がぴったり揃うと、今日一日いいことがありそうな気がします。」"},{"id":"cat-12","character":"cat","kind":"daily","unlock":"always","text":"「しっぽは便利なんですよ。椅子が冷たいときに巻けますし。書類の上には置かないよう努力中です。」"},{"id":"cat-13","character":"cat","kind":"daily","unlock":"always","text":"「この前、受付嬢さんに『仕事が速くなったね』って言われました！ 書類を急いで落としましたけど！」"},{"id":"cat-14","character":"cat","kind":"daily","unlock":"always","text":"「帳面の余白に、誰かが小さな猫を描いたんです。私じゃありません。……たぶん。」"},{"id":"cat-15","character":"cat","kind":"adventure","unlock":"first_clear","text":"「最初の踏破記録も、大切に保管しています！ 帰還の欄にはちゃんと記入しました。二重線まで引いて確認済みです！」"},{"id":"cat-16","character":"cat","kind":"adventure","unlock":"commissions_3","text":"「巡回依頼の記録が増えましたね。あなたの名前の欄、少し広く取っておくべきでした！」"},{"id":"cat-17","character":"cat","kind":"adventure","unlock":"catalog_20","text":"「発見した装備が増えましたね！ 名前が長いものも、帳面にはきちんと収めてありますよ。」"},{"id":"cat-18","character":"cat","kind":"adventure","unlock":"tribunal_clear","text":"「審問院の踏破記録、何度見てもすごいですね！ 報告は急がなくても大丈夫です。まず、椅子をどうぞ！」"},{"id":"cat-19","character":"cat","kind":"quiet","unlock":"episode_06_read","text":"「帰還の記録は、数字だけじゃないと思うんです。ここに来た人の『今日』の記録ですから。」"},{"id":"cat-20","character":"cat","kind":"quiet","unlock":"episode_12_read","text":"「灯りを消す時間は決まっています。でも、誰かの足音がしたら、一度だけ振り返ってしまうんです。」"},{"id":"trainer-01","character":"trainer","kind":"daily","unlock":"always","text":"「鍛錬所の床、きれいに拭いても、すぐ足跡だらけになるんだ。使われてる証拠かな。」"},{"id":"trainer-02","character":"trainer","kind":"daily","unlock":"always","text":"「準備運動を省きたがる人ほど、終わってから『身体が硬い』って言うんだよね。」"},{"id":"trainer-03","character":"trainer","kind":"daily","unlock":"always","text":"「受付猫ちゃん、書類の束を持つ姿勢がよくなったよ。本人には鍛錬だって言ってないけど。」"},{"id":"trainer-04","character":"trainer","kind":"daily","unlock":"always","text":"「店長が曲がった棒を借りていったでしょ。武器じゃなくて掃除に使うとは思わなかったな。」"},{"id":"trainer-05","character":"trainer","kind":"daily","unlock":"always","text":"「ここで一番人気の訓練は休憩時間かも。みんな休み方だけ上達が早いんだから。」"},{"id":"trainer-06","character":"trainer","kind":"daily","unlock":"always","text":"「靴ひもを結び直すだけの講習を開いたことがあるよ。地味？ それが意外と大事なんだ。」"},{"id":"trainer-07","character":"trainer","kind":"daily","unlock":"always","text":"「記録用の鉛筆が短くなってきたなあ。受付猫ちゃんに言うと新しい帳面まで持ってきそう。」"},{"id":"trainer-08","character":"trainer","kind":"daily","unlock":"always","text":"「強い人の練習を見てるとね、休むタイミングがうまいんだ。ずっと動いてるわけじゃないんだよ。」"},{"id":"trainer-09","character":"trainer","kind":"daily","unlock":"always","text":"「店長のお茶、苦いんだよね。本人は『味が長持ちする』って言うけど、そういう問題かな。」"},{"id":"trainer-10","character":"trainer","kind":"daily","unlock":"always","text":"「最近、鍛錬所の窓辺に誰かが小石を並べてるの。きれいだからそのままにしてるよ。」"},{"id":"trainer-11","character":"trainer","kind":"daily","unlock":"always","text":"「失敗した動きは覚えやすいよ。悔しいからね。だから一度できなくても、悪いことばかりじゃない。」"},{"id":"trainer-12","character":"trainer","kind":"daily","unlock":"always","text":"「新しい技を覚えると試したくなるでしょ？ 私も新しい靴を買うと遠回りしたくなる。」"},{"id":"trainer-13","character":"trainer","kind":"daily","unlock":"always","text":"「今日は私も早めに休むつもり。……うん、その顔は信用してないね。ちゃんと休むってば。」"},{"id":"trainer-14","character":"trainer","kind":"daily","unlock":"always","text":"「入口の椅子はね、練習する人だけのものじゃないよ。見てるだけの日だってあっていいんだから。」"},{"id":"trainer-15","character":"trainer","kind":"adventure","unlock":"level_3","text":"「少し動きが変わってきたね。伸びたところを自分でも確かめてみて。」"},{"id":"trainer-16","character":"trainer","kind":"adventure","unlock":"level_10","text":"「ここまで鍛えてきたんだ。得意な戦術と苦手な場面、そろそろ言葉にできそうじゃない？」"},{"id":"trainer-17","character":"trainer","kind":"adventure","unlock":"bell_clear","text":"「鐘楼を抜けたんだね。見えない合図がある相手ほど、急がないほうがいいときもあるよ。」"},{"id":"trainer-18","character":"trainer","kind":"adventure","unlock":"tribunal_first_attempt","text":"「審問院に行ったんだって？ 無茶するなとは言うよ。でも、挑んだ理由まで否定するつもりはない。」"},{"id":"trainer-19","character":"trainer","kind":"quiet","unlock":"episode_09_read","text":"「昔の遠征の話？ ああ、あれね。成功したかどうかと、よかったかどうかは別なんだよ。」"},{"id":"trainer-20","character":"trainer","kind":"quiet","unlock":"episode_12_read","text":"「いつか私も早めに仕事を切り上げて、あの二人と夕飯を食べたいな。今度こそ、ね。」"}],"chapters":[{"id":"EP-01","num":1,"title":"なくなった依頼書","focus":"cat","unlock_label":"ギルドに初めて立ち寄る","unlock_key":"guild_visit","body":"午後のギルドカウンターで、受付猫が帳面をめくる音だけが続いていた。\n「変なんです。受け取ったはずの依頼書が一枚、どうしても見当たらなくて」\n机の上には分類された書類が三つの山になっている。受付猫は一つずつ番号を読み上げ、数え直しては首をかしげた。\nそこへ鍛錬所の受付嬢が顔を出す。「椅子の下は見た？」\n「もちろんです。三回も！」\n「じゃあ、そこじゃないね。今日はずいぶん落ち着いて探してるじゃない」\n受付猫は少し胸を張った。「前なら、真っ先に全部ひっくり返してましたから！」\nその拍子に、しっぽの下から紙の角がのぞいた。\n「あっ」\n受付嬢は笑いをこらえ、机の空いた場所を指さした。「見つけたなら、まずそこに置こう」\n受付猫は依頼書にしっかり印を押す。「これで一件落着です。……今日の報告書には、場所を書かなくてもいいでしょうか」\n「書くなら『すぐ近く』でいいんじゃない？」\n二人の笑い声が、カウンターの奥へ小さく転がった。"},{"id":"EP-02","num":2,"title":"値段のつかない皿","focus":"merchant","unlock_label":"古物商で1回購入","unlock_key":"first_purchase","body":"古物商の棚のいちばん下に、ふちの欠けた小皿があった。値札はついていない。\n受付猫が通りがかり、首を伸ばす。「このお皿、売らないんですか？」\n「売ってもいいんだけどね。値段を決めるのが難しくて」\n「欠けているから、お安くするんですか？」\n「いいや。毎朝ここにお菓子を置くと、なぜか店じゅうの仕事がはかどるんだ。だから高くしたい」\n「それは皿の効能ではなく、お菓子の効能では？」\n店長はしばらく考え込み、「鋭いねえ」と頷いた。\n翌日、皿には小さな丸い菓子が二つ乗っていた。一つは店長のもの、もう一つは受付猫のものだ。\n「昨日の鑑定のお礼だよ」\n受付猫は礼を言ってから、皿の欠けたところを指でなぞった。「ここ、痛くならないように磨いてあるんですね」\n「そう。ものは直せなくても、使い方を直せることがある」\n店長は少しだけ得意そうだった。"},{"id":"EP-03","num":3,"title":"鍛錬所の昼休み","focus":"trainer","unlock_label":"Lv.3に到達","unlock_key":"level_3","body":"昼休みの鍛錬所は、朝よりも静かだった。誰かの掛け声も、木剣のぶつかる音もしない。\n受付嬢は窓を開け、少し冷めたお茶を飲んでいた。そこへ受付猫が書類の束を抱えて現れる。\n「確認の印をいただきに来ました！ 休憩中でしたか？」\n「うん。ちょうど今、休む練習をしてるところ」\n「休むのにも練習が必要なんですか？」\n「必要な人にはね。時間が空くと、つい次の仕事を探すから」\n受付猫は自分の手元に目を落とした。届ける必要のない紙が、一枚混ざっている。\n「わたしも、ちょっとだけ座っていいですか」\n「もちろん。あそこの椅子は、使われるのを待ってる」\n二人は並んで座り、通りの向こうを行く旅人たちを眺めた。\nしばらくして受付猫が言う。「こんなに何もしないと、何か忘れた気がします」\n「そういう日もあるよ」\n受付嬢は空のカップを机に置いた。午後の鐘が鳴るまで、二人とも立ち上がらなかった。"},{"id":"EP-04","num":4,"title":"新しい印章","focus":"cat","unlock_label":"巡回依頼を3回達成","unlock_key":"commissions_3","body":"受付猫は新しい印章を三人に見せて回った。\n「ほら、前のより細かい文字までくっきり出るんです！」\n古物商の店長はその印面を眺め、「立派だね。押す紙が追いつくかな」と言った。\n「追いつきます！ きちんとした帳面も買いましたから！」\n鍛錬所の受付嬢は笑って、紙を一枚差し出した。「試してみたら？」\n受付猫は大きくうなずき、机の上に印章を置く。ところが、いつもの癖で力を入れすぎた。印章は紙を通り越して、自分の手の甲に丸い跡を残した。\n三人はしばらく、その手を見つめた。\n「……人の名前を記録する道具で、自分を記録してしまいました」\n「持ち主がわかって便利じゃないか」と店長。\n「しばらく消えないかもね」と受付嬢。\n翌朝、受付猫は片手に手袋をはめていた。カウンターの帳面には、揃ったきれいな印が並んでいる。\n手袋の理由を聞かれるたび、受付猫は「印章の取り扱いには経験が必要です」と胸を張った。"},{"id":"EP-05","num":5,"title":"誰も買わない方位盤","focus":"merchant","unlock_label":"異なる迷宮を3か所踏破","unlock_key":"three_distinct_dungeons","body":"古物商の店の奥には、小さな方位盤があった。金具は磨かれているのに、針は少しだけ北からずれている。\n「壊れているんですか？」と受付猫。\n「いいや。置き方によっては、ちゃんと北を向くよ」\n「じゃあ、売り物ですね」\n店長は方位盤を棚の奥へ戻した。「これは預かり物なんだ」\n受付猫は驚いて帳面を開く。「預かり証はありますか？ お名前は？ お預かりした日付は？」\n「昔の話でね。紙はだいぶくたびれたよ」\n「大切な品なら、書き直しましょう。わたし、きれいに写します！」\n店長は少し迷ってから、擦り切れた紙を渡した。そこには短い言葉だけが残っていた。\n『いつか向きを確かめに来る』\n「それだけですか」\n「それだけで十分だったんだろうね、その人には」\n受付猫は何も書き足さず、文字の形を丁寧に写した。店長は方位盤をもう一度磨き、いつもの場所に戻した。"},{"id":"EP-06","num":6,"title":"帰還者の名前","focus":"cat","unlock_label":"通算50勝","unlock_key":"wins_50","body":"夕方のカウンターで、受付猫が帰還簿の一行を見つめていた。日付と迷宮名はあるのに、旅人の名前だけが空欄になっている。\n「ここ、記入し忘れたのかな」と鍛錬所の受付嬢。\n「そうみたいです。でも、誰が帰った日だったのか、ちゃんと確かめたいんです」\n受付猫は依頼の控えと店の購入記録を比べ、ひとつずつ可能性を消していった。時計の針が進み、机に置いたお茶が冷める。\n「急がなくてもいいよ」と受付嬢が言う。「明日、また調べよう」\n「はい。でも、今日のうちに気づけてよかったです」\n翌朝、受付猫は当人が残した署名入りの受領証を見つけ、空欄を埋めた。\n大仕事のわりに、帳面は見た目にはほとんど変わらない。\nそれでも受付猫は満足そうだった。「勝った記録も大事ですけど、帰ってきた記録は、もっと大事かもしれません」\n受付嬢は静かに頷き、新しいお茶を置いた。"},{"id":"EP-07","num":7,"title":"褒め言葉の練習","focus":"trainer","unlock_label":"Lv.10に到達","unlock_key":"level_10","body":"鍛錬所の受付嬢は、朝から一枚の紙とにらめっこしていた。\n「どうしたんですか？」と受付猫がたずねる。\n「頑張ってる旅人に、もっと上手に声をかけたくてさ。『すごい』ばかりじゃ足りない気がして」\n紙には『昨日より足がぶれない』『無理をしない判断ができた』と書かれている。\n受付猫は目を輝かせた。「記録ですね！ それなら私も得意です！」\n二人は言葉をいくつも書き足した。『剣を振る音が変わった』『休む時間を自分で決めた』。\nそこへ古物商の店長が現れ、紙を一瞥する。「褒めるのに準備がいるのかい」\n「いるよ。見てたことを、ちゃんと伝えたいから」\n店長は笑って頷いた。「なら、その紙を見ながらでもいいじゃないか」\n午後、受付嬢は練習を終えた旅人に声をかけた。\n「今日はね、昨日より落ち着いていたよ」\n紙は結局、机の上に置いたままだった。"},{"id":"EP-08","num":8,"title":"靴下の鑑定","focus":"ensemble","unlock_label":"古銭を通算1,500枚使用","unlock_key":"coins_spent_1500","body":"古物商が大切そうに差し出したのは、片方だけの古い靴下だった。\n「鑑定をお願いしたくてね」\n受付猫は背筋を伸ばす。「素材と年代を確認します！ ……えっと、靴下、ですよね？」\n鍛錬所の受付嬢は腕を組む。「それ、また英雄の持ち物って言うんじゃないでしょうね」\n「今日は王様のものかもしれないと思ってる」\n「昨日は英雄だったでしょ」\n「英雄が王様になったのかもしれないじゃないか」\n受付猫は真剣に帳面を開いた。「所有者不明。片方のみ。由来について意見が分かれる、と」\n「わざわざ書くこと？」と受付嬢。\n「由来がはっきりしない品ほど、記録は正確にするべきです！」\n店長は満足げに笑い、靴下を受け取った。\n翌日、その靴下は店の棚で、小さな花瓶の下に敷かれていた。\n受付嬢が呆れると、店長は言った。「由来はともかく、滑り止めとしては一級品さ」\n受付猫の帳面には、新たに『用途判明』と書き足された。"},{"id":"EP-09","num":9,"title":"帰還の約束","focus":"trainer","unlock_label":"高難度＋を初踏破","unlock_key":"plus_clear","body":"雨の日、鍛錬所の受付嬢は閉じた窓を見つめていた。古物商が熱い飲み物を置く。\n「今日は静かだね」\n「昔の遠征も、帰ってきた日はこんな雨だったんだ」\n彼女は、まだ補給を任されていたころの話をした。出発前、一人の冒険者が自信たっぷりに言ったのだという。\n『今度こそ、必ず目標を果たす』\n彼女は笑って返した。『果たせなくても帰ってきて。ごはんは用意しておくから』\nその隊は、目指した場所へ届かなかった。けれど、全員が帰還した。\n「帰ってきた人、悔しそうだった？」と店長。\n「うん。すごくね。でも、温かいものを飲んだら、次の計画を話し始めたよ」\n彼女はカップを両手で持った。「あのとき、諦めたわけじゃなかったんだよね。帰る道を選んだだけ」\n店長は頷いた。「それなら、続きのある遠征だ」\n雨音の向こうで、鍛錬所の床を踏む足音がまた聞こえ始めた。"},{"id":"EP-10","num":10,"title":"閉店後のギルド","focus":"ensemble","unlock_label":"通算30回探索","unlock_key":"runs_30","body":"閉店の札を裏返したあとも、ギルドには三つの仕事が残っていた。受付猫は帳面を閉じ、受付嬢は鍛錬所の窓を確かめ、古物商は店の奥から妙な箱を持ってきた。\n「何ですか、それ」と受付猫。\n「今日の売れ残りの整理だよ」\n箱には、鈴の鳴らない鈴、片方の靴下、蓋のない小瓶が並んでいる。\n受付嬢は笑った。「売れ残りっていうより、残したいものばかりじゃない？」\n「そうとも言うね」\n受付猫は一つずつ番号を書き始めた。「こういう品でも、一覧があると安心ですから！」\n「帳面を増やしすぎないでね」と受付嬢。\n「増やすなら棚のほうがいいかもしれない」と店長。\n誰も急いで帰ろうとしなかった。外では風が吹き、ギルドの灯りが窓に映る。\n最後の一枚を書き終えると、受付猫は小さく伸びをした。「今日は、何もなくてよかったですね」\n受付嬢は頷いた。「うん。何もなかった日の片付けも、嫌いじゃないよ」"},{"id":"EP-11","num":11,"title":"売らない品物","focus":"merchant","unlock_label":"迷宮固有装備を累計9種類発見、かつ05話既読","unlock_key":"regional_items_9_and_05_read","body":"店の奥の方位盤は、いつ見ても同じ場所にあった。受付猫が写した預かり証も、隣の引き出しに大事にしまわれている。\nある日、鍛錬所の受付嬢が言った。「その人、取りに来なかったの？」\n店長は方位盤を持ち上げ、針の揺れが止まるのを待った。\n「来なかったね。少なくとも、今までは」\n「ずっと待ってるの？」\n「待ってると言うと大げさだな。ここに置いて、店を開けてるだけさ」\n彼女は少し考えてから聞いた。「もし来たら、何を言うつもり？」\n「『今度はちゃんと北を向くかい』、かな」\n「それだけ？」\n「何か話したければ、その人が話すだろう」\n店長は方位盤を元の場所に戻した。磨かれた金具が夕暮れを映す。\nそのあと、客が来て店はいつもの賑やかさに戻った。方位盤は動かなかったけれど、店長の仕事が止まることもなかった。"},{"id":"EP-12","num":12,"title":"灯りの消えない夜","focus":"ensemble","unlock_label":"審問院を初踏破","unlock_key":"tribunal_clear","body":"審問院から旅人が帰った夜、ギルドは閉店時間を少し過ぎても明るかった。受付猫が帰還簿に新しい一行を記し、受付嬢は鍛錬所の長椅子を片づけ、古物商は小さなランプの芯を整えていた。\n「もう閉めてもいいころですよね」と受付猫。\n「そうだね。帳面は片づいたかい」と店長。\n「はい！ 何度も確認しました」\n受付嬢は窓の外を見た。「今日は、あの迷宮へ行った人が帰ってきた日なんだね」\n「そうです。だから、ここに書いてあります」\n受付猫は帳面の一行をそっと指で示した。長い説明も、立派な飾りもない。名前と日付と、帰還した事実だけ。\n店長はランプの火を少し弱くした。「じゃあ、今日の明かりはこれで十分だ」\n三人はそれぞれの持ち場へ戻る。新しい朝になれば、また依頼書が届き、装備が売れ、床に足跡が増える。\n最後に受付猫が振り返り、小さな声で言った。「明日も、おかえりなさいって言えるといいですね」\n受付嬢は微笑んだ。「うん。まずは私たちが元気に来よう」"}]};
   const GUILD_NPCS = ["merchant","cat","trainer"];
   const GUILD_TALK_IDS = new Set(GUILD_STORIES_DATA.dialogues.map(entry=>entry.id));
   const GUILD_EPISODE_IDS = new Set(GUILD_STORIES_DATA.chapters.map(entry=>entry.id));
   let guildOpenedEpisode=null; // Ephemeral reading state, not gameplay state.
-  function defaultGuildExtra(){return {visited:false,shopPurchased:false,lastTalks:{merchant:[],cat:[],trainer:[]},readEpisodes:[]};}
+  function defaultGuildExtra(){return {visited:false,shopPurchased:false,lastTalks:{merchant:[],cat:[],trainer:[]},seenTalks:{merchant:[],cat:[],trainer:[]},readEpisodes:[]};}
   function normalizeGuildExtra(raw){
     const base=defaultGuildExtra();
     if(!raw || typeof raw!=="object" || Array.isArray(raw))return base;
@@ -3888,6 +3888,9 @@ h2 {font-size:1.43rem;}
     for(const npc of GUILD_NPCS){
       const list=Array.isArray(history?.[npc])?history[npc]:[];
       base.lastTalks[npc]=[...new Set(list.filter(id=>typeof id==="string"&&GUILD_TALK_IDS.has(id)&&id.startsWith(npc+"-")))].slice(-3);
+      // Preserve a completed conversation cycle across reloads; old saves start from their recent IDs.
+      const seen=Array.isArray(raw.seenTalks?.[npc])?raw.seenTalks[npc]:base.lastTalks[npc];
+      base.seenTalks[npc]=[...new Set(seen.filter(id=>typeof id==="string"&&GUILD_TALK_IDS.has(id)&&id.startsWith(npc+"-")))].slice(-20);
     }
     base.readEpisodes=Array.isArray(raw.readEpisodes)?[...new Set(raw.readEpisodes.filter(id=>typeof id==="string"&&GUILD_EPISODE_IDS.has(id)))]:[];
     return base;
@@ -3935,14 +3938,21 @@ h2 {font-size:1.43rem;}
     const options=GUILD_STORIES_DATA.dialogues.filter(d=>d.character===npc&&hasGuildUnlock(d.unlock));
     if(!options.length)return;
     const recent=state.guildExtra.lastTalks[npc];
-    let pool=options.filter(d=>!recent.includes(d.id));
-    if(!pool.length)pool=options;
+    const seen=state.guildExtra.seenTalks[npc];
+    const oldSeen=[...seen];
+    // Finish the currently available dialogue cycle before repeating a line.
+    let pool=options.filter(d=>!seen.includes(d.id));
+    if(!pool.length){seen.length=0;pool=options.filter(d=>!recent.includes(d.id));}
+    const notRecent=pool.filter(d=>!recent.includes(d.id));
+    if(notRecent.length)pool=notRecent;
     // Independent of combat's persisted random seed and outcome.
     const choice=pool[Math.floor(Math.random()*pool.length)];
     const oldList=[...recent];
     recent.push(choice.id);
     if(recent.length>3)recent.shift();
+    seen.push(choice.id);
     if(!save()){
+      state.guildExtra.seenTalks[npc]=oldSeen;
       state.guildExtra.lastTalks[npc]=oldList;
       toast("保存できなかったため、会話は更新しませんでした");return;
     }
@@ -3966,7 +3976,7 @@ h2 {font-size:1.43rem;}
         const cap=bagCapacity(),used=state.inventory.length,free=cap-used;
         if(free<=5)return `いまの鞄は${used}/${cap}枠。あと${free}枠しか空いていないね。大切な品は保護して、保管箱に預けるか整理しておくといい。持ち帰るための場所も必要だからね。`;
         if(free<=20)return `鞄は${used}/${cap}枠。まだ余裕はあるけど、次の探索の戦利品を考えると少し整理しておきたいね。保管箱には${state.storage.length}点あるよ。`;
-        return `鞄は${used}/${cap}枠。今のところ余裕があるね。増やすなら古銭で10枠ずつ、最大100枠まで直してあげられるよ。`;
+        return cap>=100?`鞄は${used}/${cap}枠。広げられるところまで広げたね。今は余裕があるから、次の探索で拾うものを楽しみにしておいで。`:`鞄は${used}/${cap}枠。今のところ余裕があるね。増やすなら古銭で10枠ずつ、最大100枠まで直してあげられるよ。`;
       }
       if(topic==="coins"){
         const n=state.economy.bagUpgrades||0;
@@ -3981,6 +3991,7 @@ h2 {font-size:1.43rem;}
         if(!(es.clears>0))return "まずは『苔むす石の回廊』を目標にしましょう！　通常の10階層を一度踏破すると、挑戦先が増えるんです。報告書もお待ちしています！";
         if(!(es.trialClears>0))return "石の回廊を越えたなら、次は『星の門・深層試練』でしょうか。深層の初回踏破で、新しい試練にも挑戦できるようになります！";
         if(["bellClears","mirrorClears","ferryClears"].filter(k=>(es[k]||0)>0).length<2)return "高難度＋の鐘楼・鏡館・渡し場を比べてみるのはいかがでしょう？　異なる2か所を踏破すると、さらに奥の審問院も解放されるそうです。";
+        if((es.tribunalClears||0)>0)return "審問院まで踏破されたんですね！　記録を見るたびに驚きます。別の迷宮に戻って、まだ見ぬ装備を探す旅も素敵だと思います！";
         return "審問院に挑戦する道も開けていますね！　ただ、危険度は相当なものです。もちろん、ほかの迷宮で装備を探す日があってもいいと思います。";
       }
       if(topic==="catalog"){
@@ -4017,36 +4028,698 @@ h2 {font-size:1.43rem;}
     if(!select||!speech||!GUILD_CONSULT_TOPICS[npc].has(select.value))return;
     speech.textContent=guildAdvice(npc,select.value);
   }
-  function guildGearRemark(npc,item){
-    const b=itemBase(item.baseId),j=item.journey||{};
-    const name=b?.name||item.name;
-    const battles=Math.max(0,Number(j.battles)||0),bosses=Math.max(0,Number(j.bossWins)||0);
-    const legendary=item.rarity==="legendary";
-    const wellUsed=battles>=40,used=battles>=10;
+  // Guild equipment appreciation: two authored reactions per NPC and equipment base.
+  // The third reply honors actual gear journey, rarity, protection and provenance.
+  // Rotation is local to this browser session and never changes saved gameplay state.
+  const GUILD_EQUIPMENT_REACTIONS = {
+    "shortsword": {
+      "merchant": [
+        "小さな刃でも、手に馴染めば頼りになる。最初の一本を覚えている人は多いよ。",
+        "飾り気がないぶん、使い手の癖が出るんだ。柄の減り方を見せておくれ。"
+      ],
+      "cat": [
+        "旅人の短剣！　図鑑の一番初めに置きたいような品ですね。",
+        "初めての記録にこの短剣が載っていたら、なんだか嬉しくなります。"
+      ],
+      "trainer": [
+        "軽い刃は動きを覚えるのにいいんだよ。振りやすさも強さだから。",
+        "扱い慣れた短剣で勝つ人もいるよ。大事なのは、敵に合わせた使い方だね。"
+      ]
+    },
+    "sabre": {
+      "merchant": [
+        "何度も研いだ跡が残っているね。切れ味以上に、手入れの歴史がある。",
+        "錆の色って一言で言うけれど、この刃には不思議と温かみがあるよ。"
+      ],
+      "cat": [
+        "錆色の曲剣ですね！　研ぎ直した痕まで記録しておきたいです。",
+        "曲がった刃の分類は難しいんです。見た目と使い方、両方書いておきます！"
+      ],
+      "trainer": [
+        "曲剣は踏み込みが大切。勢いだけで振ると次の動きが遅れるよ。",
+        "その刃の曲がり方なら、間合いの取り方を変えてみると面白いかも。"
+      ]
+    },
+    "spear": {
+      "merchant": [
+        "穂先より、この長い柄が気になるな。迷宮の埃がよく染みている。",
+        "槍は持ち歩くにも工夫が要る。旅人の道具って実用だけじゃないね。"
+      ],
+      "cat": [
+        "石突きの長槍！　名前にある石突きも、きちんと観察したいです。",
+        "柄に付いた埃はどこの迷宮のものでしょう。調査欄が増えそうです！"
+      ],
+      "trainer": [
+        "長い間合いは強みだよ。でも近づかれたときの備えも考えておこう。",
+        "先に届く武器でも、焦って突きすぎないこと。立ち位置が大事だよ。"
+      ]
+    },
+    "axe": {
+      "merchant": [
+        "岩を割ったのか魔物を倒したのか。鉈とも違う、気の利いた形だね。",
+        "手斧の傷は正直だ。何に当てたか、だいたい語ってくれるよ。"
+      ],
+      "cat": [
+        "坑道の手斧ですね！　採掘道具なのか武器なのか、分類に迷います。",
+        "この刃の欠け方、坑道の記録と照らしてみたいです。"
+      ],
+      "trainer": [
+        "重みを活かせば一撃は頼れる。でも空振りの隙には気をつけて。",
+        "力任せに振るより、当てる瞬間を選んだ方がいい斧だね。"
+      ]
+    },
+    "rapier": {
+      "merchant": [
+        "淡い青の光があるね。派手な宝飾より、ずっと目を引くよ。",
+        "こういう細い剣は刃先が命だ。箱にしまうなら気をつけてね。"
+      ],
+      "cat": [
+        "薄青の細剣！　光の色は採光によって変わるのでしょうか？",
+        "細剣の記録に青い光まで書き込めるなんて、素敵です！"
+      ],
+      "trainer": [
+        "細剣は素早い動きと相性がよさそう。攻め時を見極めて。",
+        "力で押すより、隙をついていく戦い方を考えてみて。"
+      ]
+    },
+    "leather": {
+      "merchant": [
+        "革の匂いがまだ残っているね。手入れ次第で長く使える品だ。",
+        "地味な鎧ほど修繕しやすい。旅の道具には大事なことさ。"
+      ],
+      "cat": [
+        "丈夫な革鎧ですね！　素材の記録も忘れずに書きます。",
+        "こういう基本装備の発見記録って、案外とても重要なんですよ。"
+      ],
+      "trainer": [
+        "動きやすい鎧だね。防御だけでなく身のこなしも意識して。",
+        "強い鎧に替える前でも、工夫次第でちゃんと戦えるよ。"
+      ]
+    },
+    "coat": {
+      "merchant": [
+        "袖のほつれがいい味になっている。誰かの旅を覚えている外套だね。",
+        "外套は寒さも埃も引き受ける。見た目以上に働き者だよ。"
+      ],
+      "cat": [
+        "古い旅の外套！　ほつれも来歴の一部として残したいです。",
+        "何度も直された袖を見ると、前の持ち主のことが気になりますね。"
+      ],
+      "trainer": [
+        "防御の硬さだけが守りじゃない。体力を支える外套も頼りになるよ。",
+        "軽装で進むなら、受ける傷の大きさを見ておくことが大事だね。"
+      ]
+    },
+    "chain": {
+      "merchant": [
+        "鳴らない鎖か。職人が何を考えて編んだのか、会って聞きたいね。",
+        "鎖帷子は手入れが大変なのに、これは妙に静かだ。面白い品だよ。"
+      ],
+      "cat": [
+        "鳴らない鎖帷子！　本当に音がしないのか試したくなります。",
+        "音が出ない理由、図鑑の備考欄が足りなくなりそうです！"
+      ],
+      "trainer": [
+        "守りは堅そうだね。重さに振り回されないようにして。",
+        "鎖帷子なら、攻撃を受ける場面を見極める練習が役立つよ。"
+      ]
+    },
+    "scale": {
+      "merchant": [
+        "緑の鱗を縫い合わせてあるね。元の持ち主が何者かはわからない。",
+        "素材の来歴がわからない品ほど、手放せなくなる人もいるのさ。"
+      ],
+      "cat": [
+        "緑鱗の胸当てです！　鱗の持ち主、図鑑にはまだ載っていません。",
+        "一枚ずつ形が違うんですね。数えていたら日が暮れそうです！"
+      ],
+      "trainer": [
+        "硬さと体力を支える作りだね。長い戦いにも使いやすそう。",
+        "見た目は重そうでも、動きとの相性を確かめるのが一番だよ。"
+      ]
+    },
+    "guardian": {
+      "merchant": [
+        "門番が着ていたのかな。胸の傷に、妙な几帳面さがあるね。",
+        "持ち主の誇りは売りに出せない。鎧だけなら値は付けられるけどね。"
+      ],
+      "cat": [
+        "門番の胸甲ですね！　どこの門を守っていたのでしょう？",
+        "記録に持ち主の名前がないのは残念です。せめて品物は残しましょう。"
+      ],
+      "trainer": [
+        "硬い守りが頼りになる鎧だね。受ける場面を選ぶとさらにいい。",
+        "守るのが得意な装備だよ。攻撃に回るタイミングも忘れないでね。"
+      ]
+    },
+    "amber": {
+      "merchant": [
+        "琥珀の気泡が小さいね。閉じ込められた時間を眺めるのは好きだよ。",
+        "古いものほど静かだと思うだろう？　こういう品は意外と雄弁さ。"
+      ],
+      "cat": [
+        "琥珀の護符！　内側の気泡も特徴として記録しますね。",
+        "気泡を数えていたら書類が進みませんでした……あとで続けます。"
+      ],
+      "trainer": [
+        "小さな護符でも体力を支えてくれるなら心強いね。",
+        "危険な迷宮では、少しの余裕が次の一手につながるよ。"
+      ]
+    },
+    "venom": {
+      "merchant": [
+        "毒の気配で震える護符かい。怖がりなのか、働き者なのか。",
+        "こういう品は触り方に気を遣う。持ち主も気をつけておくれ。"
+      ],
+      "cat": [
+        "毒霧の護符ですね！　毒への反応を記録したいけど、実験は慎重にします。",
+        "気配を感じる護符だなんて……受付に置いておくのは少し怖いです。"
+      ],
+      "trainer": [
+        "毒を活かす戦術なら、集中力との相性を確かめてみて。",
+        "敵に毒が効かない場面もあるから、別の手段も残しておこう。"
+      ]
+    },
+    "keen": {
+      "merchant": [
+        "澄んでいるのに、会心の瞬間だけ光る。ずいぶん気の利く品だね。",
+        "派手に光る品より、必要なときだけ応える品のほうが好みだよ。"
+      ],
+      "cat": [
+        "透きとおる護符！　光るタイミングまで記録できたら完璧です。",
+        "透明なので書類の上に置くと見失いそうです。置き場所に注意ですね。"
+      ],
+      "trainer": [
+        "会心を狙うなら、技やほかの装備も合わせて考えてみて。",
+        "一撃が決まったときの強さだけでなく、決まらない時も想定しよう。"
+      ]
+    },
+    "moon": {
+      "merchant": [
+        "夜露に似た光だね。朝になると消えそうで、少し惜しい。",
+        "月の名を持つ道具は多いけれど、これは静かな顔をしている。"
+      ],
+      "cat": [
+        "月露の護符ですね！　夜と昼で見え方が違うのでしょうか。",
+        "名前がきれいで、書類の見出しまで少し丁寧に書きたくなります。"
+      ],
+      "trainer": [
+        "会心を少し後押しする護符だね。攻めの組み合わせも試してみて。",
+        "幸運任せにしすぎず、いつもの攻撃も磨いておくといいよ。"
+      ]
+    },
+    "rootcharm": {
+      "merchant": [
+        "一度枯れた根が伸びる護符か。あきらめの悪い品は嫌いじゃない。",
+        "見た目より大事な瞬間に働く品だ。しまいっぱなしは惜しいね。"
+      ],
+      "cat": [
+        "根継ぎの護符！　聖域の記録と一緒に大切に保管したいです。",
+        "一度きりの力には、発動したときの記録も添えたくなりますね。"
+      ],
+      "trainer": [
+        "切り札を持っているからこそ、いつ使うかは慎重にね。",
+        "強い相手との連戦なら、その一度の助けが大きいかもしれないよ。"
+      ]
+    },
+    "moss": {
+      "merchant": [
+        "苔の匂いがする守り札だね。古物商にはこういう控えめな品が似合う。",
+        "苔まで包んでしまうと傷むかな。保管方法を考えたいね。"
+      ],
+      "cat": [
+        "苔色の守り札！　図鑑に匂いの欄が欲しくなります。",
+        "守り札なのに植物の観察記録まで増えそうです……！"
+      ],
+      "trainer": [
+        "守りを固めたいとき、こういう小さな支えも役に立つよ。",
+        "攻めに偏った装備に合わせると、安定感が変わるかもね。"
+      ]
+    },
+    "compass": {
+      "merchant": [
+        "この針、北を指さないのかい。方角より行き先を知っていそうだ。",
+        "店に置いたら、私の方位盤とけんかをするかな。少し見てみたいね。"
+      ],
+      "cat": [
+        "欠けた方位磁針！　どちらを北として記録すればいいのでしょう。",
+        "針が違う場所を示すなら、その場所を確かめたくなりますね。"
+      ],
+      "trainer": [
+        "道具の力だけに頼らず、自分の進む道も選んでね。",
+        "小さな遺物でも攻め方を変えることがあるよ。組み合わせを試そう。"
+      ]
+    },
+    "glass": {
+      "merchant": [
+        "覗くたび景色が違う硝子か。値札を書いている間に景色も変わりそうだ。",
+        "欠片なのに、窓より遠くが見える。売り物にするには惜しいね。"
+      ],
+      "cat": [
+        "曇り硝子の欠片！　観察するたび内容が変わったら困ります！",
+        "記録係としては、まず見えた景色を全部書き留めたいところです。"
+      ],
+      "trainer": [
+        "見た目に惑わされず、実際の能力を確かめてみてね。",
+        "遺物はほかの装備との組み合わせで思わぬ働きをするよ。"
+      ]
+    },
+    "bell": {
+      "merchant": [
+        "鳴らない鈴なら店は静かで助かる。……本当に鳴らないのかな。",
+        "誰もいない場所で揺れるのかい。夜の店番には向かなそうだ。"
+      ],
+      "cat": [
+        "音のない鈴ですね！　音がないのに鈴として記録していいのでしょうか？",
+        "机の端に置くと、気づかないうちに動いていそうで心配です。"
+      ],
+      "trainer": [
+        "守りの役に立つなら、不思議な鈴でも立派な装備だよ。",
+        "小さな防御の積み重ねが、長い探索では効いてくるからね。"
+      ]
+    },
+    "coin": {
+      "merchant": [
+        "知らない王国の硬貨か。古銭と間違えて使わないでおくれよ。",
+        "名前の消えた王国でも、硬貨だけは残るものなんだね。"
+      ],
+      "cat": [
+        "古い王国の硬貨！　通貨なのか遺物なのか、分類に悩みます。",
+        "発行国が不明……この空欄、いつか埋まるといいですね。"
+      ],
+      "trainer": [
+        "古い硬貨でも体力を支えるなら立派な戦力だよ。",
+        "攻撃ばかり見ずに、余裕を作る装備も大事にしてね。"
+      ]
+    },
+    "hourglass": {
+      "merchant": [
+        "砂が落ちないのに砂時計か。これは時間を測るより眺める品だね。",
+        "ひっくり返しても変わらないなら、店の閉店時刻には使えないな。"
+      ],
+      "cat": [
+        "逆さまの砂時計！　経過時間をどう記録すればいいのでしょう。",
+        "砂が動かないのに記憶を数えるなんて、ちょっと詩みたいです。"
+      ],
+      "trainer": [
+        "一瞬の好機を捉える装備は、技の組み合わせが大事になるよ。",
+        "時計に惑わされず、自分の戦闘のリズムを保ってね。"
+      ]
+    },
+    "stonebill": {
+      "merchant": [
+        "石の筋を刃に写したんだね。土地の模様を持ち帰ったような鉈だ。",
+        "岩肌をじっと見て作ったのかな。職人の手つきを想像したくなる。"
+      ],
+      "cat": [
+        "石脈の鉈！　回廊の岩肌と見比べて記録したいです。",
+        "石の模様が刃になっているなんて、図鑑の挿絵にしたいですね。"
+      ],
+      "trainer": [
+        "とどめを狙う一撃に向いた刃だね。敵の残り体力を意識して。",
+        "強く振る前に、確実に届くかを見極めよう。"
+      ]
+    },
+    "mossrobe": {
+      "merchant": [
+        "苔がほころびを繕ってくれるとは。針仕事が苦手な人にはありがたいね。",
+        "緑が少しずつ増えていくのかな。しまう場所を選びそうだ。"
+      ],
+      "cat": [
+        "苔織りの胴着ですね！　修繕の経過も記録したくなります。",
+        "服なのか苔なのか……分類表に注釈が必要です！"
+      ],
+      "trainer": [
+        "体力を支える防具だね。受けきれない攻撃には注意しよう。",
+        "回復を活かせるなら、長い戦いにも役立ちそうだよ。"
+      ]
+    },
+    "springring": {
+      "merchant": [
+        "近づけると水音が聞こえるのかい。枯れた水路にも思い出が残るんだね。",
+        "小さな石環なのに、聞こえる景色はずいぶん広いらしい。"
+      ],
+      "cat": [
+        "水音の石環！　音の出所を調べたいけれど、水は見当たりません。",
+        "枯れた水路の記録に、この石環のことも書き足します！"
+      ],
+      "trainer": [
+        "身を守る働きがある遺物だね。油断せず、受ける攻撃も見ておこう。",
+        "小さな支えでも、何戦も続けば差が出るよ。"
+      ]
+    },
+    "starstitch": {
+      "merchant": [
+        "星を縫い合わせる刃か。研いだら夜空に傷がつきそうだね。",
+        "光をつないだような剣だ。こういうものは値札が苦手でね。"
+      ],
+      "cat": [
+        "星縫いの剣！　星の位置まで書いた方がいいのでしょうか。",
+        "切先の光がどこへ続くのか、調べたらきりがなさそうです！"
+      ],
+      "trainer": [
+        "攻めの起点を作りやすそうだね。最初の一手を大事に。",
+        "鋭さに頼りすぎず、次の行動につなげる意識も持とう。"
+      ]
+    },
+    "gateward": {
+      "merchant": [
+        "門の向こうからこぼれた星かい。よく手のひらに収まったね。",
+        "こんな小さな護りがあるなら、鞄の底に忘れたくないな。"
+      ],
+      "cat": [
+        "門星の守り札！　星の門由来として特別な欄に記録します！",
+        "護りの星はどのくらい光るのでしょう。眩しくないといいですね。"
+      ],
+      "trainer": [
+        "安定した守りをくれる護符だね。強敵には小さな軽減も大切。",
+        "守りに余裕ができたら、攻めの組み立ても見直してみて。"
+      ]
+    },
+    "stellarcompass": {
+      "merchant": [
+        "北ではなく遠い光を指すのか。私の店まで帰ってこられるかな。",
+        "針が迷わないのなら、持ち主も少し安心できそうだね。"
+      ],
+      "cat": [
+        "星屑の羅針盤！　地図にない方角を指すなんて困ります！",
+        "『最も遠い光』……図鑑の測定方法を考えなくちゃ。"
+      ],
+      "trainer": [
+        "狙いを定める力は頼れるね。会心だけに賭けない準備もして。",
+        "攻めの精度を上げるなら、ほかの装備との相乗効果を見よう。"
+      ]
+    },
+    "hushhook": {
+      "merchant": [
+        "音のしない鉤剣か。静かな店で振るのは遠慮しておくれ。",
+        "重さだけが腕に残るとは、物騒なのに妙に詩的だね。"
+      ],
+      "cat": [
+        "無音の鉤剣！　音がない戦闘の記録って、難しそうです。",
+        "振っても鳴らないなんて……本当に振らないでくださいね！"
+      ],
+      "trainer": [
+        "敵の大技を止めたい場面で考えたい武器だね。",
+        "音がなくても動作は大きいかも。攻防のタイミングを見て。"
+      ]
+    },
+    "bellmantle": {
+      "merchant": [
+        "擦り切れた袖まで残っている。鐘を守った人は粘り強かったのかな。",
+        "鎧は新しくできても、この袖の使い方までは真似できないね。"
+      ],
+      "cat": [
+        "鐘守の袖鎧！　どうして袖だけこんなに擦れているのでしょう。",
+        "鐘楼にいた誰かの記録と、照合してみたくなります。"
+      ],
+      "trainer": [
+        "受け止める力を活かす防具だね。強い一撃への備えにしよう。",
+        "敵の大技が読みにくい場所でも、自分の守りを固めておこう。"
+      ]
+    },
+    "echoshard": {
+      "merchant": [
+        "音がないのに返す刃に震える欠片。妙な律儀さがあるね。",
+        "触ると反響するのかな。試すなら、割らないように頼むよ。"
+      ],
+      "cat": [
+        "反響の欠片！　聞こえない反響をどう書けばいいでしょう。",
+        "反撃のときだけ震えるのなら、その瞬間を観察したいです！"
+      ],
+      "trainer": [
+        "攻撃を受けて返す戦い方に合いそうだね。",
+        "反撃を狙うなら、まず生き残れる守りが必要だよ。"
+      ]
+    },
+    "marginblade": {
+      "merchant": [
+        "書かれなかった言葉を切る刃か。店の帳簿には近づけたくないね。",
+        "余白にまで役目がある。紙も剣も、案外似ているのかもしれない。"
+      ],
+      "cat": [
+        "余白切りの刃！　書類の余白は切らないでください！",
+        "名前だけで、図鑑の余白が足りなくなる気がします……。"
+      ],
+      "trainer": [
+        "手数を活かす戦術と合わせると面白そうだね。",
+        "小ぶりな刃は動きやすい。連続した攻めを意識してみて。"
+      ]
+    },
+    "mirrorbookmark": {
+      "merchant": [
+        "本にはさんだらもう一人が読む？　私は同じページを二度読む方だけど。",
+        "栞ひとつにも持ち主の癖が出る。これは少し独特だね。"
+      ],
+      "cat": [
+        "水鏡の栞ですね！　読んでいるのが自分だけじゃないなんて……。",
+        "同じページを二人で読んだら、感想も二つ書いておきたいです。"
+      ],
+      "trainer": [
+        "集中力を保つ組み合わせを考えたい護符だね。",
+        "補助の力を活かせる技を選ぶと、見た目以上に頼れるよ。"
+      ]
+    },
+    "unreturned": {
+      "merchant": [
+        "誰も返しに来なかった一頁か。私の店にも似た品があるよ。",
+        "濡れた最後の一行は、無理に乾かさない方がいい気がするね。"
+      ],
+      "cat": [
+        "未返却の頁！　返却期限の欄が空いています……。",
+        "誰に返すべき頁なのか、記録がないのが気になりますね。"
+      ],
+      "trainer": [
+        "持久戦を支えるなら、こういう静かな遺物も頼りになる。",
+        "すぐ効果が見えなくても、最後まで立っていることが大事だよ。"
+      ]
+    },
+    "dewpruner": {
+      "merchant": [
+        "朝露だけを切る鋏とは、ずいぶん繊細な仕事をするね。",
+        "花を傷つけない刃なら、店の植木にも使えるかな。"
+      ],
+      "cat": [
+        "露切りの鋏！　武器なのか園芸道具なのか迷います！",
+        "朝露の記録なら得意です。……でも鋏の分類は難しいですね。"
+      ],
+      "trainer": [
+        "素早い一撃を活かしたい武器だね。",
+        "刃が短い分、近づくタイミングには気をつけて。"
+      ]
+    },
+    "sleeplessdress": {
+      "merchant": [
+        "夜通し花が咲いて繕う衣か。私より働き者かもしれないね。",
+        "眠らない服でも、着る人はちゃんと眠っておくれよ。"
+      ],
+      "cat": [
+        "眠らずの花衣！　花が咲くたびに記録が増えてしまいます！",
+        "毎朝違う柄になっていたら、図鑑の絵が追いつきません。"
+      ],
+      "trainer": [
+        "回復を支える衣だね。長い戦闘で持ち味が出そう。",
+        "回復があっても無理は禁物。大技には先に備えよう。"
+      ]
+    },
+    "nightseed": {
+      "merchant": [
+        "まだ見ぬ夜が種の中にあるのかい。芽が出たら誰が育てるんだろう。",
+        "何が育つかわからない品を置いておくのは、少し楽しいね。"
+      ],
+      "cat": [
+        "夜芽の種子！　発芽日を記録する欄が欲しくなります。",
+        "植木鉢に入れていいのか、誰かに確認してからにします！"
+      ],
+      "trainer": [
+        "粘り強く戦う組み合わせに使えそうな遺物だね。",
+        "攻め急がず、長期戦を見据えた組み方を考えてみて。"
+      ]
+    },
+    "mirrorthin": {
+      "merchant": [
+        "鏡の裏から抜いたような刃か。こちら側の姿まで映りそうだ。",
+        "冷たい刃先だね。磨くときは手袋が欲しくなるな。"
+      ],
+      "cat": [
+        "鏡抜けの細剣！　刃の表と裏、どちらを記録すればいいのでしょう。",
+        "鏡館の装備なら、見た目どおりとは限りませんね……！"
+      ],
+      "trainer": [
+        "狙いの鋭さを活かすなら、攻め時を逃さないで。",
+        "鏡の相が開く瞬間を見極めて、慎重に踏み込もう。"
+      ]
+    },
+    "mirrorvest": {
+      "merchant": [
+        "打撃を糸が覚える服か。仕立て屋に見せたいが、怖がるかな。",
+        "服が戦いを覚えてくれるなら、持ち主は少し楽になるのかね。"
+      ],
+      "cat": [
+        "反照の胸衣！　糸に戦闘記録が残るなんて、私と似ています！",
+        "この服の記憶、いつか読めるようになるのでしょうか。"
+      ],
+      "trainer": [
+        "受ける攻撃に備える防具だね。防御を固めた戦術とも合いそう。",
+        "反射に期待しすぎず、まず守りを崩さないようにしよう。"
+      ]
+    },
+    "mirrorloop": {
+      "merchant": [
+        "影が反対側に残る指輪。なくしたらどちらを探せばいいんだろう。",
+        "こういう小物は箱に入れても落ち着かない顔をしている。"
+      ],
+      "cat": [
+        "裏硝子の指輪！　影の位置まで記録した方がよさそうです。",
+        "指輪は一つなのに影が二つ。数を間違えそうです！"
+      ],
+      "trainer": [
+        "反撃を活かすなら、受ける攻撃の重さも見積もろう。",
+        "攻守を両立させる装備として組み合わせを試してみて。"
+      ]
+    },
+    "ashcleaver": {
+      "merchant": [
+        "灰を渡るために短く磨いた鉈か。道具の工夫は面白いね。",
+        "磨き跡が新しい。誰かが使い勝手を考え直したんだろう。"
+      ],
+      "cat": [
+        "灰渡りの鉈！　渡し場の灰は刃に残らないのでしょうか。",
+        "刃の長さに理由があるなら、ちゃんと図鑑に書きたいです。"
+      ],
+      "trainer": [
+        "とどめを狙う戦い方に向く鉈だね。",
+        "一撃に賭けすぎないで、危険な経路では守りも考えて。"
+      ]
+    },
+    "ferrycloak": {
+      "merchant": [
+        "裾の灰が落ちない外套か。店の床には敷きたくないな。",
+        "洗っても残る灰には、持ち帰れない何かがあるのかもしれないね。"
+      ],
+      "cat": [
+        "渡守の外套！　灰の重さをどう量ればいいでしょう。",
+        "裾だけ灰色……記録には大切な特徴ですね。"
+      ],
+      "trainer": [
+        "体力を支えてくれる外套だね。渡し場の連戦に合いそう。",
+        "守りを整えたら、札をどこで使うかも考えておこう。"
+      ]
+    },
+    "onewaycharm": {
+      "merchant": [
+        "片道切符の護符かい。帰り道の刻印も見せておくれ。",
+        "往きと帰りで印が違うなら、旅の前と後で価値も変わりそうだね。"
+      ],
+      "cat": [
+        "片道切符の護符！　切符なのに護符……分類に困ります！",
+        "往路と復路、二つの印を両方控えておきますね。"
+      ],
+      "trainer": [
+        "生存力を支える護符だね。無理な経路でも助かるかもしれない。",
+        "帰り道まで考えるのが強い旅人だよ。札も体力も大事にね。"
+      ]
+    },
+    "verdictblade": {
+      "merchant": [
+        "名を刻まない柄か。誰の剣でもあり、誰の剣でもないんだね。",
+        "握り直した跡がある。ためらった回数も旅の一部なんだろう。"
+      ],
+      "cat": [
+        "判決前夜の長剣！　持ち主の名がないと記録が難しいです。",
+        "名前がなくても、使われた事実は消えません。きちんと書きます。"
+      ],
+      "trainer": [
+        "強い一撃を支える剣だね。でも審問院は焦るほど危険だよ。",
+        "一度構え直してもいい。大事なのは最後まで戦い切ること。"
+      ]
+    },
+    "oathcoat": {
+      "merchant": [
+        "言い残した言葉を縫い込む衣か。ほどかずに残しておきたいね。",
+        "沈黙にも形があるなら、これはずいぶん丁寧な形だ。"
+      ],
+      "cat": [
+        "沈黙の法衣！　縫われた言葉は図鑑に書くべきでしょうか。",
+        "読めない一言でも、ここにあることだけは記録できますね。"
+      ],
+      "trainer": [
+        "守りを固めたい連戦で心強い衣だよ。",
+        "敵の圧が高まる場所ほど、落ち着いて守りを選んでね。"
+      ]
+    },
+    "sealedscale": {
+      "merchant": [
+        "皿が傾いたままの天秤か。つり合いが取れないものもあるさ。",
+        "壊れていないなら、いつか針が動く日も来るのかな。"
+      ],
+      "cat": [
+        "封蝋の天秤！　重さを量れない天秤なんて、記録に困ります！",
+        "傾いた状態も、今の姿としてきちんと残しておきます。"
+      ],
+      "trainer": [
+        "力だけで押し切れない相手には、判断を支える遺物もいいね。",
+        "審問院では焦らないこと。切り札を切るタイミングを考えよう。"
+      ]
+    }
+  };
+  const guildEquipmentShowCounts=new Map();
+  function guildGearJourneyRemark(npc,item,b){
+    const j=item.journey||{};
+    const battles=Math.max(0,Number(j.battles)||0);
+    const bosses=Math.max(0,Number(j.bossWins)||0);
+    const name=item.name||b?.name||"この装備";
+    const title=`『${name}』`;
     const region=b?.region?dungeonDef(b.region)?.title:null;
-    if(npc==="merchant"){
-      if(bosses>0)return `『${item.name}』かい。${bosses}度も大物との戦いを越えてきた品だね。値段は付けられる。でも、その時間までは買い取れないのさ。`;
-      if(wellUsed)return `『${item.name}』は、もう${battles}戦も共にしたんだね。使い続けた品には持ち主の癖が残るものさ。売る前に、もう一度眺めたくなるね。`;
-      if(legendary)return `『${item.name}』、なかなか立派な品だ。希少な力が宿っているね。でも、使い手との相性だけは、値札じゃ決められないよ。`;
-      if(region)return `『${name}』。${region}から持ち帰ったのかい。土地が違えば品物の作りも変わる。こういう細部が面白いんだよ。`;
-      if(item.protected)return `『${item.name}』は大事に取ってあるのかい。うん、残しておきたい理由がある品もあるよね。`;
-      return `『${item.name}』か。${used?"旅の跡が少しずつ付いてきたね。":"まだこれからの品だね。"}どんなふうに使われるか、私も見てみたいよ。`;
+    const rarity=item.rarity==="legendary";
+    if(bosses>0){
+      if(npc==="merchant")return `${title}で大物との勝負を${bosses}度も越えたのかい。傷の数より、持ち帰った時間の方が値打ちがあるかもしれないね。`;
+      if(npc==="cat")return `${title}の来歴にはボス勝利${bosses}回とあります！　${j.firstBoss?.enemy?`最初の相手は「${j.firstBoss.enemy}」。`:`相手の記録も確かめたいですね。`}大事な記録です！`;
+      return `${title}で強敵を${bosses}度も倒したんだね。でも、その装備の良さを引き出したのは、あなたの判断だよ。`;
     }
-    if(npc==="cat"){
-      if(region)return `わあ、『${name}』ですね！　${region}に由来する品です。図鑑に記録しておきましょう。……あっ、もう記録済みでした！`;
-      if(bosses>0)return `この『${item.name}』で${bosses}回も強敵を倒したんですね！　すごいです。記録欄をもう一つ増やしたくなってしまいます！`;
-      if(legendary)return `レジェンダリーの『${item.name}』ですか！　珍しい品ですね。図鑑では基本の種類ごとに記録しているんですよ。`;
-      if(wellUsed)return `『${item.name}』の使用記録が${battles}戦もあります！　こうして続けた記録が残るの、いいですね。`;
-      return `『${item.name}』ですね！　${b?.slot?SLOTS[b.slot]:"装備"}として記録できる品です。細かな違いもちゃんと調べたくなっちゃいます。`;
+    if(battles>=40){
+      if(npc==="merchant")return `${title}と${battles}戦か。新品よりも、今の方が持ち主に似合うのかもしれないね。`;
+      if(npc==="cat")return `${title}の戦闘記録が${battles}件も！　一つひとつは短くても、積み重なると立派な旅の記録ですね。`;
+      return `${title}と${battles}戦も歩いたんだね。手に馴染んでいるはずだけど、新しい敵には合わせ方も考えてみよう。`;
     }
-    if(npc==="trainer"){
-      if(bosses>0)return `その『${item.name}』でボスを${bosses}回越えたんだね。武器だけが強いんじゃない。ちゃんと使いこなしてきた証拠だよ。`;
-      if(b?.slot==="armor")return `『${item.name}』だね。防御とHPの組み合わせを見てみて。守り方が変われば、戦闘の組み立ても変わるよ。`;
-      if(b?.slot==="weapon")return `『${item.name}』、${wellUsed?`${battles}戦も使っているんだね。`:`${legendary?"強い力があるね。でも":""}攻撃力だけで選ばずに、`}技との相性も確かめてみて。`;
-      if(b?.slot==="charm")return `その『${item.name}』は護符だね。回復や集中力、戦術への影響を一度見直してみよう。小さな違いが強敵には効くから。`;
-      return `『${item.name}』だね。遺物の追加特性は、ほかの装備や技との組み合わせも大事。今の戦術と比べてみて。`;
+    if(battles>=10){
+      if(npc==="merchant")return `${title}はもう${battles}戦を経験したんだ。少しずつ、あなたの品物になってきたね。`;
+      if(npc==="cat")return `${title}と${battles}戦！　まだ増えていく来歴を読むのが楽しみです。`;
+      return `${title}とは${battles}戦の付き合いなんだね。使い慣れた動きに、少しずつ工夫を重ねていこう。`;
     }
-    return "見せてくれてありがとう。";
+    if(item.protected){
+      if(npc==="merchant")return `${title}には保護をかけたんだね。手放さないと決めた理由は、私が聞かなくてもいいことさ。`;
+      if(npc==="cat")return `${title}は保護済みですね！　間違って整理しないように、とても大切な設定です。`;
+      return `${title}を大事に残したいんだね。普段の戦いに使わなくても、手元に置く意味はあるよ。`;
+    }
+    if(rarity){
+      if(npc==="merchant")return `${title}はレジェンダリーかい。珍しさと使いやすさは別物だから、試してから決めるといいよ。`;
+      if(npc==="cat")return `${title}はレジェンダリー品質！　同じ種類でも、個体ごとに違う記録が生まれるんですよね。`;
+      return `${title}の力は大きそう。でも、4部位の組み合わせと戦術が合っているか確かめてね。`;
+    }
+    if(region){
+      if(npc==="merchant")return `${title}は${region}で見つけた品だね。違う土地のものが並ぶと、店が賑やかになるよ。`;
+      if(npc==="cat")return `${title}は${region}由来の装備です！　迷宮ごとに発見した種類を記録しておきましょう。`;
+      return `${title}は${region}から持ち帰ったんだね。そこの敵と、別の迷宮の敵では活かし方も変わるよ。`;
+    }
+    if(npc==="merchant")return `${title}はまだ新しい旅の途中なんだね。これから付く傷まで、私は見てみたいな。`;
+    if(npc==="cat")return `${title}の来歴は、これから増えていきますね！　最初の記録も大切にしておきます。`;
+    return `${title}はこれから使い方を覚えていく品だね。無理に強い敵で試さなくてもいいんだよ。`;
+  }
+  function guildGearRemark(npc,item,visit=0){
+    const b=itemBase(item.baseId);
+    const reactions=GUILD_EQUIPMENT_REACTIONS[b?.id]?.[npc];
+    if(!reactions)return guildGearJourneyRemark(npc,item,b);
+    const index=Math.max(0,Number(visit)||0)%3;
+    if(index===1)return guildGearJourneyRemark(npc,item,b);
+    // Starter or historical equipment can have a display name unlike its base type.
+    // Address the exact owned item, rather than silently renaming it in dialogue.
+    const displayName=item.name||b.name;
+    const introduction=npc==="merchant"?`『${displayName}』かい。`:npc==="cat"?`『${displayName}』ですね！`:`『${displayName}』だね。`;
+    const remark=reactions[index===0?0:1];
+    // If an authored line starts with the base name, replace just that opener
+    // with the owner's actual item name and avoid a repeated greeting.
+    return remark.startsWith(b.name)?displayName+remark.slice(b.name.length):`${introduction} ${remark}`;
   }
   function renderGuildGearOptions(){
     // Only rebuild when holdings change; retained selection survives normal render passes.
@@ -4072,7 +4745,10 @@ h2 {font-size:1.43rem;}
     if(!select||!speech)return;
     const item=[...state.inventory,...state.storage].find(item=>item.id===select.value);
     if(!item){toast("見せたい装備を選んでください");return;}
-    speech.textContent=guildGearRemark(npc,item);
+    const key=`${npc}:${item.id}`;
+    const count=guildEquipmentShowCounts.get(key)||0;
+    speech.textContent=guildGearRemark(npc,item,count);
+    guildEquipmentShowCounts.set(key,count+1);
   }
   function toggleGuildFeature(npc,mode){
     if(!GUILD_NPCS.includes(npc)||!["consult","show"].includes(mode)||!isAtCamp())return;
