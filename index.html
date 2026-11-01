@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#17383d">
 <meta name="description" content="ランダム装備とビルド構築を楽しむ、テキスト主体の半自動ハクスラ。">
-<title>モルネッタ | 1.1.65</title>
+<title>モルネッタ | 1.1.69</title>
 <style>
 :root{color-scheme:dark;--bg:#0e1725;--night:#101b2b;--panel:#182639;--panel-2:#1d2c41;--line:#344257;--line-soft:#2a394e;--text:#eee9df;--muted:#b8bcc5;--subtle:#8e9bad;--amber:#e0b881;--amber-pale:#f0d6a8;--mint:#9bc7b5;--red:#d58f8b;--blue:#a5bce0;--radius:15px;--tap:46px;font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:15px}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;color:var(--text);background:radial-gradient(circle at 70% -12%,#253651 0%,transparent 42%),var(--bg);line-height:1.65;min-height:100vh}button,select,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:not-allowed}button,select{-webkit-tap-highlight-color:transparent}button:focus-visible,select:focus-visible,input:focus-visible,label.file-import:focus-within{outline:2px solid var(--amber);outline-offset:3px}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.35}h1{font-size:1.5rem;letter-spacing:.09em;font-weight:700}h2{font-size:1.45rem;font-weight:680;letter-spacing:.04em}h3{font-size:1.04rem;font-weight:650}small{font-size:.76rem}.svg-defs{position:absolute;width:0;height:0;overflow:hidden}.icon{width:20px;height:20px;display:inline-block;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.icon-lg{width:27px;height:27px}.icon-inline{width:15px;height:15px;vertical-align:-2px}.app-shell{max-width:1080px;margin:auto;padding:0 21px}.masthead{padding:32px 0 22px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--line-soft)}.brand-mark{width:49px;height:49px;border-radius:15px;border:1px solid #9c8058;color:var(--amber);display:grid;place-items:center;background:#222b39;flex-shrink:0}.eyebrow,.label{color:var(--amber);font-size:.68rem;letter-spacing:.15em;font-weight:700}.masthead .eyebrow{margin:0 0 5px}.tagline{color:var(--subtle);font-size:.79rem;margin-top:5px}.version{color:var(--subtle);font-weight:400;margin-left:8px}.app-layout{display:grid;grid-template-columns:172px minmax(0,1fr);gap:36px;padding:28px 0 20px}.nav{display:flex;flex-direction:column;gap:7px;position:sticky;top:24px;align-self:start}.nav-button{min-height:var(--tap);display:flex;align-items:center;gap:14px;background:transparent;color:var(--muted);border:1px solid transparent;border-radius:12px;padding:10px 14px;text-align:left;transition:background .14s,color .14s,border .14s}.nav-button:hover{background:#223147;color:var(--text)}.nav-button.is-current{background:#2a3442;color:var(--amber-pale);border-color:#746043}.nav-button span{font-size:.91rem}.main-content{min-width:0;max-width:680px;width:100%;margin:auto}.page[hidden]{display:none!important}.page{display:grid;gap:14px;animation:fadein .18s ease-out}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 2px 4px}.page-heading .eyebrow{margin-bottom:6px}.chip{padding:4px 11px;color:var(--amber-pale);background:#3b3540;border:1px solid #64556a;border-radius:20px;white-space:nowrap;font-size:.78rem}.glass{background:linear-gradient(150deg,#1a293c,#162336);border:1px solid var(--line-soft);border-radius:var(--radius);padding:18px}.split-line,.section-top{display:flex;justify-content:space-between;align-items:start;gap:14px}.section-top{align-items:center;margin-bottom:10px}.section-top small,.helper{color:var(--subtle);font-size:.76rem}.name-line{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.name-line strong{font-size:1.04rem}.name-line small{color:var(--amber)}.little-status{font-size:.71rem;color:var(--mint);border:1px solid #54705f;background:#263c3e;padding:2px 9px;border-radius:20px;white-space:nowrap}.meter-label{margin:14px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:.79rem}.meter-label strong{color:var(--text);font-size:.83rem;font-variant-numeric:tabular-nums}.meter{height:8px;background:#394456;border-radius:20px;overflow:hidden}.meter-fill{height:100%;border-radius:20px;transition:width .22s ease}.meter-fill.hp{background:linear-gradient(90deg,#70a892,#b6d7bc)}.meter-fill.enemy{background:linear-gradient(90deg,#ad6865,#d9a39a)}.focus-cells{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.focus-cell{height:9px;border-radius:5px;background:#394355}.focus-cell.full{background:#d6af73}.enemy-card{background:linear-gradient(150deg,#202939,#1a2434);border-color:#46505a}.enemy-card h3{margin-top:5px}.enemy-type{font-size:.67rem;letter-spacing:.1em;color:#c2a691;border:1px solid #766052;border-radius:8px;padding:4px 8px}.enemy-descr{font-size:.84rem;color:var(--muted);margin-top:12px}.status-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;min-height:0}.status-tag{font-size:.73rem;border:1px solid #567e72;color:#b4d6be;border-radius:7px;padding:2px 7px}.status-tag.warning{border-color:#ae8765;color:#f0c7a0}.log-card{padding-bottom:14px}.combat-log{list-style:none;display:flex;flex-direction:column-reverse;gap:0;max-height:216px;overflow:auto;padding:0;margin:0;scrollbar-color:#647086 transparent}.combat-log li{padding:7px 2px;border-top:1px solid #ffffff0c;font-size:.85rem;color:#cbd0d8;line-height:1.5;overflow-wrap:anywhere}.combat-log li:first-child{color:var(--text)}.combat-log li.important{color:var(--amber-pale)}.combat-log li.positive{color:var(--mint)}.combat-log li.danger{color:#e6a6a0}.combat-log li.log-hint{color:var(--subtle)}.controls-card{padding-bottom:14px}.actions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.action-btn{min-height:76px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:9px 3px;background:#24354a;color:var(--text);border:1px solid #455369;border-radius:12px}.action-btn:hover:not(:disabled){background:#2f4159}.action-btn.queued{color:var(--amber-pale);border-color:var(--amber);box-shadow:0 0 0 1px #e0b88155 inset}.action-btn span{font-size:.79rem;white-space:nowrap}.action-btn small{color:var(--subtle);font-size:.7rem;white-space:nowrap}.action-btn .icon{color:var(--amber);width:19px;height:19px}.battle-toolbar{display:grid;grid-template-columns:1fr 1fr 61px;gap:9px;margin-top:14px}.btn{min-height:var(--tap);display:inline-flex;justify-content:center;align-items:center;gap:8px;border-radius:11px;padding:8px 13px;border:1px solid #46546a;color:var(--text);background:#2b3a4e;font-size:.84rem;font-weight:600;white-space:nowrap}.btn .icon{width:17px;height:17px}.btn.primary{color:#21242d;background:#d8b77f;border-color:#e2c591}.btn.primary:hover:not(:disabled){background:#f0cf98}.btn.secondary:hover:not(:disabled){background:#354861}.btn.quiet{color:var(--muted);padding:6px 5px}.small-note{color:var(--subtle);font-size:.78rem;line-height:1.72;margin-top:12px}.alert-strip{display:flex;align-items:start;gap:12px;padding:13px;border:1px solid #bb9464;background:#493d35;border-radius:12px;color:#f2d8b7}.alert-strip[hidden]{display:none}.alert-strip p{font-size:.79rem;margin-top:4px;color:#f0d9c3}.alert-strip strong{font-size:.84rem}.item-card,.settings-card,.record-card{display:grid;gap:12px}.item-title{display:flex;align-items:center;gap:10px;color:var(--amber-pale)}.item-details{font-size:.82rem;color:var(--muted)}.flavor{font-size:.83rem;font-style:italic;color:#c2bac1;border-left:2px solid #77684f;padding-left:12px}.item-tally{font-size:.82rem;color:var(--mint);padding:9px 12px;background:#25384a;border-radius:9px}.gear-options{display:grid;gap:9px}.gear-choice{width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;padding:14px;background:#213047;color:var(--text);display:grid;gap:5px;min-height:var(--tap)}.gear-choice.is-equipped{border-color:#d6b47b;background:#302f38}.gear-choice strong{font-size:.88rem}.gear-choice span{color:var(--muted);font-size:.78rem}.gear-choice em{color:var(--amber);font-size:.73rem;font-style:normal}.history-list{margin:0;padding-left:1.3rem;color:var(--muted);font-size:.85rem;display:grid;gap:7px}.form-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--line-soft);font-size:.88rem}.form-row span{min-width:0}.form-row select{max-width:160px;width:44%;min-height:42px;background:#233349;color:var(--text);border:1px solid #50617a;border-radius:10px;padding:7px}.check-row input{width:21px;height:21px;accent-color:#d8b77f}.rules-summary{background:#24354a;color:var(--muted);border:1px dashed #54677c;padding:13px;border-radius:10px;font-size:.82rem;line-height:1.8}.settings-card>p:not(.small-note){font-size:.86rem;color:var(--muted)}.settings-card h3{color:var(--amber-pale)}.utility-row{display:flex;flex-wrap:wrap;gap:8px}.file-import{position:relative;cursor:pointer}.file-import input{position:absolute;width:1px;height:1px;opacity:0}.text-danger{border:0;background:transparent;padding:8px 0;text-align:left;min-height:42px;color:#e6a6a0;font-size:.82rem;width:max-content}.record-prose{font-size:.87rem;color:var(--muted)}.stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat-box{border:1px solid var(--line-soft);border-radius:10px;padding:10px;background:#203149}.stat-box span{display:block;color:var(--subtle);font-size:.76rem}.stat-box strong{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--text)}.title-entry{padding:11px 0;border-top:1px solid var(--line-soft);font-size:.88rem;display:flex;justify-content:space-between;gap:10px}.title-entry span{color:var(--subtle);font-size:.76rem}.title-entry strong{color:var(--amber)}.title-select{margin-top:6px;min-height:38px;border:1px solid #765e45;border-radius:8px;background:#3c3540;color:var(--amber-pale);font-size:.78rem;padding:6px 11px}.site-footer{border-top:1px solid var(--line-soft);padding:22px 0 32px;color:#7f8fa4;font-size:.72rem;letter-spacing:.08em}.site-footer span{letter-spacing:0;margin-left:8px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,12px);border:1px solid #8b724e;background:#383645;color:var(--amber-pale);padding:10px 16px;box-shadow:0 12px 26px #080f1e8c;border-radius:12px;max-width:min(92vw,440px);text-align:center;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:10;font-size:.85rem}.toast.visible{opacity:1;transform:translate(-50%,0)}
@@ -1983,6 +1983,43 @@ h2 {font-size:1.43rem;}
   border-bottom-color:#b69159;
 }
 </style>
+
+<style id="guild-extras-style-1-1-66">
+/* Non-disruptive use of the existing NPC portraits and their speech bubbles */
+.guild-extra-actions {display:flex;flex-wrap:wrap;align-items:center;gap:9px 14px;margin:-5px 0 17px;min-width:0}
+.guild-extra-actions .guild-talk-button{min-height:44px;min-width:132px;flex:0 1 calc((100% - 8px)/2);max-width:250px;padding:9px 13px;white-space:normal}
+.guild-extra-actions .guild-talk-helper{font-size:.84rem;color:var(--muted);line-height:1.5}
+.guild-extra-actions .guild-talk-button:disabled{opacity:.53}
+.guild-episode-list{display:grid;gap:11px;margin-top:15px;min-width:0}
+.guild-episode-card{border:1px solid #c6ac7b;border-radius:12px;background:#f6ebd3;min-width:0;overflow:hidden}
+.guild-episode-card.is-locked{background:#ebe2d1;border-color:#d0c3ab}
+.guild-episode-button{display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;width:100%;min-height:64px;padding:12px 13px;border:0;background:transparent;color:#473729;white-space:normal;cursor:pointer}
+.guild-episode-button:disabled{cursor:not-allowed;color:#786e60;opacity:1}
+.guild-episode-button:focus-visible{outline:3px solid #b88737;outline-offset:-3px}
+.guild-episode-head{display:grid;gap:2px;min-width:0;flex:1}
+.guild-episode-title{font-weight:700;line-height:1.5;overflow-wrap:anywhere}
+.guild-episode-condition{font-size:.79rem;line-height:1.5;color:#73634f;overflow-wrap:anywhere}
+.guild-episode-label{flex-shrink:0;font-size:.75rem;border-radius:20px;border:1px solid #beab87;padding:3px 8px;color:#715a3b;white-space:nowrap}
+.guild-episode-text{white-space:pre-line;overflow-wrap:anywhere;line-height:1.95;font-size:.92rem;padding:15px 14px 18px;background:#fff9eb;border-top:1px solid #d8c7a6;color:#49392c}
+@media(max-width:420px){.guild-extra-actions .guild-talk-button{flex:0 1 calc((100% - 8px)/2)}.guild-episode-button{padding:12px 10px}.guild-episode-text{padding:13px 11px}.guild-episode-label{font-size:.7rem}}
+</style>
+
+<style id="guild-consult-and-gear-1-1-67">
+.guild-conversation-tool{min-width:0;margin:-7px 0 20px}
+.guild-feature-actions{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:7px}
+.guild-feature-actions .btn{min-height:44px;padding:9px 13px;flex:1 1 132px;max-width:250px;white-space:normal}
+.guild-feature-actions .btn.is-selected{outline:2px solid var(--amber);outline-offset:-2px}
+.guild-feature-actions .btn:disabled{opacity:.5}
+.guild-feature-panel{background:rgba(14,33,44,.72);border:1px solid rgba(176,196,180,.55);border-radius:12px;padding:14px;max-width:100%;min-width:0}
+.guild-feature-panel[hidden],.guild-feature-panel [hidden]{display:none!important}
+.guild-feature-panel label{display:block;font-size:.91rem;font-weight:700;color:var(--amber-pale);margin-bottom:7px}
+.guild-feature-panel select{display:block;min-height:46px;max-width:100%;width:100%;border:1px solid #a1b6b4;border-radius:10px;background:#1b3640;color:#f8f1e6;padding:8px 11px;font-size:.96rem}
+.guild-feature-panel .guild-feature-respond{margin-top:11px;min-height:45px;padding:9px 17px;white-space:normal}
+.guild-feature-panel .guild-feature-respond:disabled{opacity:.5}
+.guild-feature-note{margin:9px 0 0;font-size:.82rem;color:var(--muted);line-height:1.6}
+@media(max-width:375px){.guild-feature-actions .btn{flex-basis:120px;min-width:0;padding:9px 8px}.guild-feature-panel{padding:11px}}
+@media(max-width:375px){.guild-extra-actions .guild-talk-button{min-width:120px;padding:9px 8px}}
+</style>
 </head>
 <body>
 <!-- ページ内で共有するSVGシンボル。外部の画像・アイコンライブラリを使用しません。 -->
@@ -2020,7 +2057,7 @@ h2 {font-size:1.43rem;}
 <div class="app-shell">
  <header class="masthead">
   <div class="brand-mark"><svg class="icon icon-lg"><use href="#ic-gate"/></svg></div>
-  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.65</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
+  <div class="brand-copy"><p class="eyebrow">MORNETTA <span class="version">1.1.69</span></p><h1>モルネッタ</h1><p class="tagline">剣を拾う。物語が残る。</p></div>
  </header>
  <div class="app-layout">
   <nav class="nav" aria-label="画面を切り替える">
@@ -2365,9 +2402,33 @@ h2 {font-size:1.43rem;}
           <figcaption>古物商の店長</figcaption>
         </figure>
         <div class="npc-dialogue-bubble shop-copy" role="group" aria-label="古物商の店長の台詞">
-          <p class="npc-dialogue-text shop-prose">出発前に、鞄の中をひとつ見ておいで。迷宮は親切じゃないからね。</p>
+          <p id="guild-speech-merchant" aria-live="polite" class="npc-dialogue-text shop-prose">出発前に、鞄の中をひとつ見ておいで。迷宮は親切じゃないからね。</p>
         </div>
       </div>
+      <div class="guild-extra-actions" aria-label="古物商の店長と交流">
+        <button class="btn secondary guild-talk-button" type="button" data-guild-talk="merchant">雑談する</button>
+        
+      </div>
+<div class="guild-conversation-tool" data-guild-tool="merchant">
+  <div class="guild-feature-actions" role="group" aria-label="古物商の店長との交流">
+    <button type="button" class="btn secondary" data-guild-feature="consult" data-guild-npc="merchant" aria-expanded="false" aria-controls="guild-feature-panel-merchant">相談する</button>
+    <button type="button" class="btn secondary" data-guild-feature="show" data-guild-npc="merchant" aria-expanded="false" aria-controls="guild-feature-panel-merchant">装備を見せる</button>
+  </div>
+  <div class="guild-feature-panel" id="guild-feature-panel-merchant" hidden>
+    <div data-guild-mode="consult" hidden>
+      <label for="guild-consult-topic-merchant">相談したいこと</label>
+      <select id="guild-consult-topic-merchant" data-guild-consult-select="merchant"><option value="bag">鞄がいっぱいになった</option><option value="coins">古銭の使い道に迷う</option><option value="sorting">装備を残すか処分するか</option></select>
+      <button type="button" class="btn secondary guild-feature-respond" data-guild-consult="merchant">話を聞く</button>
+    </div>
+    <div data-guild-mode="show" hidden>
+      <label for="guild-show-item-merchant">見せる装備</label>
+      <select id="guild-show-item-merchant" data-guild-item-select="merchant" aria-label="見せる装備を選ぶ"><option value="">鞄または保管箱から選ぶ</option></select>
+      <button type="button" class="btn secondary guild-feature-respond" data-guild-show="merchant">この装備を見せる</button>
+      <p class="guild-feature-note">見せても装備は移動・消費されません。鞄と保管箱の両方から選べます。</p>
+    </div>
+  </div>
+</div>
+
       <div class="shop-purse"><span>手持ちの古銭</span><strong id="shop-wallet">0 枚</strong></div>
       <div class="shop-wares">
         <article class="shop-ware"><div class="shop-ware-title"><svg class="icon"><use href="#ic-leaf"/></svg><strong>薬草包</strong></div><p>次の探索で、階層突破時の小休止回復が18%→25%に。</p><button type="button" class="btn secondary" id="shop-buy-herbs">古銭36枚で用意</button><small id="shop-herbs-status">未準備</small></article>
@@ -2396,10 +2457,33 @@ h2 {font-size:1.43rem;}
           <figcaption>ギルドの受付係</figcaption>
         </figure>
         <div class="npc-dialogue-bubble" role="group" aria-label="受付猫の台詞">
-          <p class="npc-dialogue-text">ようこそ！ 依頼書はきちんと揃えてあります。……しっぽの下の一枚を除いて。</p>
+          <p id="guild-speech-cat" aria-live="polite" class="npc-dialogue-text">ようこそ！ 依頼書はきちんと揃えてあります。……しっぽの下の一枚を除いて。</p>
         </div>
       </div>
-      <div class="guild-counter-help"><p class="small-note guild-counter-description">図鑑の発見から調査章を集め、古銭を受け取れます。報酬は各章1回限り。巡回依頼は受注後の行動だけを数え、繰り返し挑戦できます。</p></div>
+      <div class="guild-extra-actions" aria-label="ギルドの受付猫と交流">
+        <button class="btn secondary guild-talk-button" type="button" data-guild-talk="cat">雑談する</button>
+        
+      </div>
+<div class="guild-conversation-tool" data-guild-tool="cat">
+  <div class="guild-feature-actions" role="group" aria-label="ギルドの受付猫との交流">
+    <button type="button" class="btn secondary" data-guild-feature="consult" data-guild-npc="cat" aria-expanded="false" aria-controls="guild-feature-panel-cat">相談する</button>
+    <button type="button" class="btn secondary" data-guild-feature="show" data-guild-npc="cat" aria-expanded="false" aria-controls="guild-feature-panel-cat">装備を見せる</button>
+  </div>
+  <div class="guild-feature-panel" id="guild-feature-panel-cat" hidden>
+    <div data-guild-mode="consult" hidden>
+      <label for="guild-consult-topic-cat">相談したいこと</label>
+      <select id="guild-consult-topic-cat" data-guild-consult-select="cat"><option value="destination">次はどの迷宮に行こう？</option><option value="catalog">装備図鑑を埋めたい</option><option value="commission">巡回依頼について</option></select>
+      <button type="button" class="btn secondary guild-feature-respond" data-guild-consult="cat">話を聞く</button>
+    </div>
+    <div data-guild-mode="show" hidden>
+      <label for="guild-show-item-cat">見せる装備</label>
+      <select id="guild-show-item-cat" data-guild-item-select="cat" aria-label="見せる装備を選ぶ"><option value="">鞄または保管箱から選ぶ</option></select>
+      <button type="button" class="btn secondary guild-feature-respond" data-guild-show="cat">この装備を見せる</button>
+      <p class="guild-feature-note">見せても装備は移動・消費されません。鞄と保管箱の両方から選べます。</p>
+    </div>
+  </div>
+</div>
+
       <h4 class="research-heading">巡回依頼掲示板</h4>
       <div id="research-commission"></div>
       <details class="research-fold"><summary>図鑑の調査章 <span>発見した種類に応じた目標を見る</span></summary>
@@ -2416,9 +2500,33 @@ h2 {font-size:1.43rem;}
           <figcaption>鍛錬所の受付嬢</figcaption>
         </figure>
         <div class="npc-dialogue-bubble">
-          <p class="npc-dialogue-text">探索に出る前に、鍛錬も見ていかない？</p>
+          <p id="guild-speech-trainer" aria-live="polite" class="npc-dialogue-text">探索に出る前に、鍛錬も見ていかない？</p>
         </div>
       </div>
+      <div class="guild-extra-actions" aria-label="鍛錬所の受付嬢と交流">
+        <button class="btn secondary guild-talk-button" type="button" data-guild-talk="trainer">雑談する</button>
+        
+      </div>
+<div class="guild-conversation-tool" data-guild-tool="trainer">
+  <div class="guild-feature-actions" role="group" aria-label="鍛錬所の受付嬢との交流">
+    <button type="button" class="btn secondary" data-guild-feature="consult" data-guild-npc="trainer" aria-expanded="false" aria-controls="guild-feature-panel-trainer">相談する</button>
+    <button type="button" class="btn secondary" data-guild-feature="show" data-guild-npc="trainer" aria-expanded="false" aria-controls="guild-feature-panel-trainer">装備を見せる</button>
+  </div>
+  <div class="guild-feature-panel" id="guild-feature-panel-trainer" hidden>
+    <div data-guild-mode="consult" hidden>
+      <label for="guild-consult-topic-trainer">相談したいこと</label>
+      <select id="guild-consult-topic-trainer" data-guild-consult-select="trainer"><option value="training">鍛錬点はどう使おう？</option><option value="tactics">戦術を見直したい</option><option value="tribunal">審問院に勝てない</option></select>
+      <button type="button" class="btn secondary guild-feature-respond" data-guild-consult="trainer">話を聞く</button>
+    </div>
+    <div data-guild-mode="show" hidden>
+      <label for="guild-show-item-trainer">見せる装備</label>
+      <select id="guild-show-item-trainer" data-guild-item-select="trainer" aria-label="見せる装備を選ぶ"><option value="">鞄または保管箱から選ぶ</option></select>
+      <button type="button" class="btn secondary guild-feature-respond" data-guild-show="trainer">この装備を見せる</button>
+      <p class="guild-feature-note">見せても装備は移動・消費されません。鞄と保管箱の両方から選べます。</p>
+    </div>
+  </div>
+</div>
+
       <p class="small-note">戦闘で経験値がたまると自動でレベルアップし、新しい技も習得します。レベルアップで獲得した<strong>鍛錬点</strong>は、帰還後ここで能力に割り振れます。</p>
       <div class="growth-xp-track" aria-label="次のレベルまでの進捗"><div id="growth-progress"></div></div>
       <div class="growth-meta"><span id="growth-xp">経験 0</span><span>残りの鍛錬点 <strong id="growth-points">0 点</strong></span></div>
@@ -2443,6 +2551,7 @@ h2 {font-size:1.43rem;}
       <button type="button" data-record-jump="record-stories">小さな物語</button>
       <button type="button" data-record-jump="record-fragments" hidden>世界の断章</button>
       <button type="button" data-record-jump="record-titles">異名</button>
+      <button type="button" data-record-jump="record-guild-stories">ギルド小話</button>
       <button type="button" data-record-jump="record-mementos">記念品</button>
       <button type="button" data-record-jump="record-save">保存</button>
     </nav>
@@ -2489,6 +2598,12 @@ h2 {font-size:1.43rem;}
     </div>
     <div class="glass record-card" id="record-stories"><p class="label">SMALL TALES</p><h3>迷宮で結ばれた縁</h3><p class="small-note">出会いの選択と、後の階層で起きたことを記録します。途中帰還で終わった物語も残ります。</p><ul class="history-list" id="story-chronicles"></ul></div>
     <div class="glass record-card" id="record-titles"><p class="label">EPITHETS</p><h3>異名の手帳</h3><div id="titles-list"></div><p class="small-note">毒・燃焼・連撃・反撃に加えて、大技の中断や防御、ボス討伐も異名につながります。</p></div>
+    <section class="glass record-card guild-story-card" id="record-guild-stories" aria-label="ギルド小話帳">
+      <p class="label">GUILD / SMALL STORIES</p>
+      <div class="section-top"><h3>ギルド小話帳</h3><strong id="guild-episode-progress">0 / 12話</strong></div>
+      <p class="small-note">ギルドの人たちに起きた、小さな出来事。冒険の記録に応じて読める話が増えます。話を読むことで古銭や戦闘能力は変化しません。</p>
+      <div class="guild-episode-list" id="guild-episode-list"></div>
+    </section>
     <div class="glass record-card region-memento-shelf" id="record-mementos" aria-label="図鑑達成の記念品の棚">
       <p class="label">KEEPSAKES / THE FIVE LABYRINTHS</p>
       <div class="section-top"><h3>図鑑達成・記念品の棚</h3><strong id="region-awards-count">0 / 5</strong></div>
@@ -3756,9 +3871,280 @@ h2 {font-size:1.43rem;}
     setText("saved-build-info",active?"探索中は保存・切り替え・削除をできません。帰還後に利用できます。":"保存した装備は自動で保護されません。処分すると編成を適用できなくなります。保管箱の品は先に鞄に戻してください。名前を変えた場合は上書き保存で確定します。");
   }
 
+
+  // 1.1.66: Narrative-only guild extras. Combat RNG, economy and equipment are untouched.
+  const GUILD_STORIES_DATA = {"dialogues":[{"id":"merchant-01","character":"merchant","kind":"daily","unlock":"always","text":"「昨日、鈴の鳴らない鈴を買ったんだ。役に立つかって？ 静かな店にはぴったりだろう。」"},{"id":"merchant-02","character":"merchant","kind":"daily","unlock":"always","text":"「欠けた皿が一枚あってね。欠けた側を壁に向けて飾ったら、誰も欠けてると気づかない。困ったものさ。」"},{"id":"merchant-03","character":"merchant","kind":"daily","unlock":"always","text":"「店の棚は乱雑じゃないよ。私には置き場所がわかる。……去年の領収書以外はね。」"},{"id":"merchant-04","character":"merchant","kind":"daily","unlock":"always","text":"「受付猫が値札をつけたがっていたよ。私の帽子にまで。商売熱心で感心したね。」"},{"id":"merchant-05","character":"merchant","kind":"daily","unlock":"always","text":"「小さな鍵を見つけると、つい取っておくんだ。合う錠前がない鍵は、まだ旅の途中だからね。」"},{"id":"merchant-06","character":"merchant","kind":"daily","unlock":"always","text":"「古銭には傷があるだろう？ 使われなかった古銭より、ずいぶん賑やかな顔をしている。」"},{"id":"merchant-07","character":"merchant","kind":"daily","unlock":"always","text":"「朝は窓を開けることにしてる。外が静かだと、店の時計の音が少し大きく聞こえるんだ。」"},{"id":"merchant-08","character":"merchant","kind":"daily","unlock":"always","text":"「あの受付猫、今日こそ一日じゅう書類をなくさないと宣言したよ。私は夕方まで賭けないことにした。」"},{"id":"merchant-09","character":"merchant","kind":"daily","unlock":"always","text":"「昨日、鍛錬所から曲がった木の棒を借りてきたよ。棚の奥の埃を払うには、あれが一番だった。」"},{"id":"merchant-10","character":"merchant","kind":"daily","unlock":"always","text":"「新しい品ほど説明書が長いね。古い品は短いよ。『気をつけて使うこと』、だいたいそれで済む。」"},{"id":"merchant-11","character":"merchant","kind":"daily","unlock":"always","text":"「革の匂いを嗅いでいると時間を忘れるんだ。仕入れじゃなくて、手入れの話だよ。」"},{"id":"merchant-12","character":"merchant","kind":"daily","unlock":"always","text":"「誰も買わないものでも、毎日磨いていれば店の一員みたいになる。家賃は払わないけどね。」"},{"id":"merchant-13","character":"merchant","kind":"daily","unlock":"always","text":"「この棚には宝物があるんだ。どれかって？ それを聞かれると商売がやりにくくなるねえ。」"},{"id":"merchant-14","character":"merchant","kind":"daily","unlock":"always","text":"「値切るのは結構。でも、受付猫の新しい印章の値段を私に聞いても無駄だよ。秘密らしいからね。」"},{"id":"merchant-15","character":"merchant","kind":"adventure","unlock":"first_clear","text":"「初めての踏破かい。戻ってきてから見る装備は、出発前と同じでも少し違って見えるものさ。」"},{"id":"merchant-16","character":"merchant","kind":"adventure","unlock":"legendary_owned","text":"「見事な品だ。でも、光っているからって大事に扱わなくていいわけじゃない。むしろ逆だね。」"},{"id":"merchant-17","character":"merchant","kind":"adventure","unlock":"bag_100","text":"「鞄が百枠か。これで忘れ物が減るならいいけど、増えた場所に別の忘れ物を作りそうだね。」"},{"id":"merchant-18","character":"merchant","kind":"adventure","unlock":"mirror_clear","text":"「鏡館の品は手入れが難しいんだ。磨くと自分の顔が映る。仕事をしてる気がしなくなってね。」"},{"id":"merchant-19","character":"merchant","kind":"quiet","unlock":"episode_05_read","text":"「あの方位盤は、北を示すためだけにここにあるんじゃない。……まあ、今日は値札の話をしようか。」"},{"id":"merchant-20","character":"merchant","kind":"quiet","unlock":"episode_11_read","text":"「約束ってのは面白いよ。守るために、何もしないで待っている日もあるんだ。」"},{"id":"cat-01","character":"cat","kind":"daily","unlock":"always","text":"「今日の依頼書は完璧に整理してあります！ あ、いまの一枚だけ上下が逆ですね。」"},{"id":"cat-02","character":"cat","kind":"daily","unlock":"always","text":"「新しい紐で書類を結んだんです。強く結びすぎて、今度はほどけなくなりました。」"},{"id":"cat-03","character":"cat","kind":"daily","unlock":"always","text":"「ギルドの窓から見える雲を記録しているんです。業務ですか？ いえ、これは趣味です！」"},{"id":"cat-04","character":"cat","kind":"daily","unlock":"always","text":"「古物商さんが『三日前の昨日』って言ったんです。日付を訂正したら、笑われました。」"},{"id":"cat-05","character":"cat","kind":"daily","unlock":"always","text":"「お名前を聞き間違えないよう、復唱することにしました。たまに自分の名前も復唱します。」"},{"id":"cat-06","character":"cat","kind":"daily","unlock":"always","text":"「印章の押し方にはコツがあります。まっすぐ、ゆっくり、しっぽを机から下ろして……あっ。」"},{"id":"cat-07","character":"cat","kind":"daily","unlock":"always","text":"「鍛錬所の受付嬢さんが、お茶をいれてくれたんです。カップの下に書類を敷くのは止められました。」"},{"id":"cat-08","character":"cat","kind":"daily","unlock":"always","text":"「昼休みに棚の並びを変えました。皆さん元の場所を覚えているみたいで、少し困っています。」"},{"id":"cat-09","character":"cat","kind":"daily","unlock":"always","text":"「依頼の見出しは短いほどいいですね。『急ぎの至急案件』は、直したほうがいいでしょうか？」"},{"id":"cat-10","character":"cat","kind":"daily","unlock":"always","text":"「店長さんから小さな鈴を借りました。鳴らないので受付には使えませんが、見た目は立派です。」"},{"id":"cat-11","character":"cat","kind":"daily","unlock":"always","text":"「紙の角がぴったり揃うと、今日一日いいことがありそうな気がします。」"},{"id":"cat-12","character":"cat","kind":"daily","unlock":"always","text":"「しっぽは便利なんですよ。椅子が冷たいときに巻けますし。書類の上には置かないよう努力中です。」"},{"id":"cat-13","character":"cat","kind":"daily","unlock":"always","text":"「昨日、受付嬢さんに『仕事が速くなったね』って言われました！ 書類を急いで落としましたけど！」"},{"id":"cat-14","character":"cat","kind":"daily","unlock":"always","text":"「帳面の余白に、誰かが小さな猫を描いたんです。私じゃありません。……たぶん。」"},{"id":"cat-15","character":"cat","kind":"adventure","unlock":"first_clear","text":"「初踏破、おめでとうございます！ 帰還の欄にはちゃんと記入しました。二重線まで引いて確認済みです！」"},{"id":"cat-16","character":"cat","kind":"adventure","unlock":"commissions_3","text":"「巡回依頼の記録が増えましたね。あなたの名前の欄、少し広く取っておくべきでした！」"},{"id":"cat-17","character":"cat","kind":"adventure","unlock":"catalog_20","text":"「発見した装備が増えましたね！ 名前が長いものも、帳面にはきちんと収めてありますよ。」"},{"id":"cat-18","character":"cat","kind":"adventure","unlock":"tribunal_clear","text":"「審問院からお帰りですね。報告は後でも大丈夫です。まず、椅子をどうぞ！」"},{"id":"cat-19","character":"cat","kind":"quiet","unlock":"episode_06_read","text":"「帰還の記録は、数字だけじゃないと思うんです。ここに来た人の『今日』の記録ですから。」"},{"id":"cat-20","character":"cat","kind":"quiet","unlock":"episode_12_read","text":"「灯りを消す時間は決まっています。でも、誰かの足音がしたら、一度だけ振り返ってしまうんです。」"},{"id":"trainer-01","character":"trainer","kind":"daily","unlock":"always","text":"「鍛錬所の床、昨日ちゃんと拭いたんだよ。今朝にはもう足跡だらけ。使われてる証拠かな。」"},{"id":"trainer-02","character":"trainer","kind":"daily","unlock":"always","text":"「準備運動を省きたがる人ほど、終わってから『身体が硬い』って言うんだよね。」"},{"id":"trainer-03","character":"trainer","kind":"daily","unlock":"always","text":"「受付猫ちゃん、書類の束を持つ姿勢がよくなったよ。本人には鍛錬だって言ってないけど。」"},{"id":"trainer-04","character":"trainer","kind":"daily","unlock":"always","text":"「店長が曲がった棒を借りていったでしょ。武器じゃなくて掃除に使うとは思わなかったな。」"},{"id":"trainer-05","character":"trainer","kind":"daily","unlock":"always","text":"「ここで一番人気の訓練は休憩時間かも。みんな休み方だけ上達が早いんだから。」"},{"id":"trainer-06","character":"trainer","kind":"daily","unlock":"always","text":"「昨日、靴ひもを結び直すだけの講習をしたよ。地味？ それが意外と大事なんだ。」"},{"id":"trainer-07","character":"trainer","kind":"daily","unlock":"always","text":"「記録用の鉛筆が短くなってきたなあ。受付猫ちゃんに言うと新しい帳面まで持ってきそう。」"},{"id":"trainer-08","character":"trainer","kind":"daily","unlock":"always","text":"「強い人の練習を見てるとね、休むタイミングがうまいんだ。ずっと動いてるわけじゃないんだよ。」"},{"id":"trainer-09","character":"trainer","kind":"daily","unlock":"always","text":"「店長のお茶、苦いんだよね。本人は『味が長持ちする』って言うけど、そういう問題かな。」"},{"id":"trainer-10","character":"trainer","kind":"daily","unlock":"always","text":"「最近、鍛錬所の窓辺に誰かが小石を並べてるの。きれいだからそのままにしてるよ。」"},{"id":"trainer-11","character":"trainer","kind":"daily","unlock":"always","text":"「失敗した動きは覚えやすいよ。悔しいからね。だから一度できなくても、悪いことばかりじゃない。」"},{"id":"trainer-12","character":"trainer","kind":"daily","unlock":"always","text":"「新しい技を覚えると試したくなるでしょ？ 私も新しい靴を買うと遠回りしたくなる。」"},{"id":"trainer-13","character":"trainer","kind":"daily","unlock":"always","text":"「今日は私も早めに休むつもり。……うん、その顔は信用してないね。ちゃんと休むってば。」"},{"id":"trainer-14","character":"trainer","kind":"daily","unlock":"always","text":"「入口の椅子はね、練習する人だけのものじゃないよ。見てるだけの日だってあっていいんだから。」"},{"id":"trainer-15","character":"trainer","kind":"adventure","unlock":"level_3","text":"「少し動きが変わってきたね。伸びたところを自分でも確かめてみて。」"},{"id":"trainer-16","character":"trainer","kind":"adventure","unlock":"level_10","text":"「ここまで鍛えてきたんだ。得意な戦術と苦手な場面、そろそろ言葉にできそうじゃない？」"},{"id":"trainer-17","character":"trainer","kind":"adventure","unlock":"bell_clear","text":"「鐘楼を抜けたんだね。見えない合図がある相手ほど、急がないほうがいいときもあるよ。」"},{"id":"trainer-18","character":"trainer","kind":"adventure","unlock":"tribunal_first_attempt","text":"「審問院に行ったんだって？ 無茶するなとは言うよ。でも、挑んだ理由まで否定するつもりはない。」"},{"id":"trainer-19","character":"trainer","kind":"quiet","unlock":"episode_09_read","text":"「昔の遠征の話？ ああ、あれね。成功したかどうかと、よかったかどうかは別なんだよ。」"},{"id":"trainer-20","character":"trainer","kind":"quiet","unlock":"episode_12_read","text":"「いつか私も早めに仕事を切り上げて、あの二人と夕飯を食べたいな。今度こそ、ね。」"}],"chapters":[{"id":"EP-01","num":1,"title":"なくなった依頼書","focus":"cat","unlock_label":"ギルドに初めて立ち寄る","unlock_key":"guild_visit","body":"午後のギルドカウンターで、受付猫が帳面をめくる音だけが続いていた。\n「変なんです。受け取ったはずの依頼書が一枚、どうしても見当たらなくて」\n机の上には分類された書類が三つの山になっている。受付猫は一つずつ番号を読み上げ、数え直しては首をかしげた。\nそこへ鍛錬所の受付嬢が顔を出す。「椅子の下は見た？」\n「もちろんです。三回も！」\n「じゃあ、そこじゃないね。今日はずいぶん落ち着いて探してるじゃない」\n受付猫は少し胸を張った。「前なら、真っ先に全部ひっくり返してましたから！」\nその拍子に、しっぽの下から紙の角がのぞいた。\n「あっ」\n受付嬢は笑いをこらえ、机の空いた場所を指さした。「見つけたなら、まずそこに置こう」\n受付猫は依頼書にしっかり印を押す。「これで一件落着です。……今日の報告書には、場所を書かなくてもいいでしょうか」\n「書くなら『すぐ近く』でいいんじゃない？」\n二人の笑い声が、カウンターの奥へ小さく転がった。"},{"id":"EP-02","num":2,"title":"値段のつかない皿","focus":"merchant","unlock_label":"古物商で1回購入","unlock_key":"first_purchase","body":"古物商の棚のいちばん下に、ふちの欠けた小皿があった。値札はついていない。\n受付猫が通りがかり、首を伸ばす。「このお皿、売らないんですか？」\n「売ってもいいんだけどね。値段を決めるのが難しくて」\n「欠けているから、お安くするんですか？」\n「いいや。毎朝ここにお菓子を置くと、なぜか店じゅうの仕事がはかどるんだ。だから高くしたい」\n「それは皿の効能ではなく、お菓子の効能では？」\n店長はしばらく考え込み、「鋭いねえ」と頷いた。\n翌日、皿には小さな丸い菓子が二つ乗っていた。一つは店長のもの、もう一つは受付猫のものだ。\n「昨日の鑑定のお礼だよ」\n受付猫は礼を言ってから、皿の欠けたところを指でなぞった。「ここ、痛くならないように磨いてあるんですね」\n「そう。ものは直せなくても、使い方を直せることがある」\n店長は少しだけ得意そうだった。"},{"id":"EP-03","num":3,"title":"鍛錬所の昼休み","focus":"trainer","unlock_label":"Lv.3に到達","unlock_key":"level_3","body":"昼休みの鍛錬所は、朝よりも静かだった。誰かの掛け声も、木剣のぶつかる音もしない。\n受付嬢は窓を開け、少し冷めたお茶を飲んでいた。そこへ受付猫が書類の束を抱えて現れる。\n「確認の印をいただきに来ました！ 休憩中でしたか？」\n「うん。ちょうど今、休む練習をしてるところ」\n「休むのにも練習が必要なんですか？」\n「必要な人にはね。時間が空くと、つい次の仕事を探すから」\n受付猫は自分の手元に目を落とした。届ける必要のない紙が、一枚混ざっている。\n「わたしも、ちょっとだけ座っていいですか」\n「もちろん。あそこの椅子は、使われるのを待ってる」\n二人は並んで座り、通りの向こうを行く旅人たちを眺めた。\nしばらくして受付猫が言う。「こんなに何もしないと、何か忘れた気がします」\n「そういう日もあるよ」\n受付嬢は空のカップを机に置いた。午後の鐘が鳴るまで、二人とも立ち上がらなかった。"},{"id":"EP-04","num":4,"title":"新しい印章","focus":"cat","unlock_label":"巡回依頼を3回達成","unlock_key":"commissions_3","body":"受付猫は新しい印章を三人に見せて回った。\n「ほら、前のより細かい文字までくっきり出るんです！」\n古物商の店長はその印面を眺め、「立派だね。押す紙が追いつくかな」と言った。\n「追いつきます！ きちんとした帳面も買いましたから！」\n鍛錬所の受付嬢は笑って、紙を一枚差し出した。「試してみたら？」\n受付猫は大きくうなずき、机の上に印章を置く。ところが、いつもの癖で力を入れすぎた。印章は紙を通り越して、自分の手の甲に丸い跡を残した。\n三人はしばらく、その手を見つめた。\n「……人の名前を記録する道具で、自分を記録してしまいました」\n「持ち主がわかって便利じゃないか」と店長。\n「しばらく消えないかもね」と受付嬢。\n翌朝、受付猫は片手に手袋をはめていた。カウンターの帳面には、揃ったきれいな印が並んでいる。\n手袋の理由を聞かれるたび、受付猫は「印章の取り扱いには経験が必要です」と胸を張った。"},{"id":"EP-05","num":5,"title":"誰も買わない方位盤","focus":"merchant","unlock_label":"異なる迷宮を3か所踏破","unlock_key":"three_distinct_dungeons","body":"古物商の店の奥には、小さな方位盤があった。金具は磨かれているのに、針は少しだけ北からずれている。\n「壊れているんですか？」と受付猫。\n「いいや。置き方によっては、ちゃんと北を向くよ」\n「じゃあ、売り物ですね」\n店長は方位盤を棚の奥へ戻した。「これは預かり物なんだ」\n受付猫は驚いて帳面を開く。「預かり証はありますか？ お名前は？ お預かりした日付は？」\n「昔の話でね。紙はだいぶくたびれたよ」\n「大切な品なら、書き直しましょう。わたし、きれいに写します！」\n店長は少し迷ってから、擦り切れた紙を渡した。そこには短い言葉だけが残っていた。\n『いつか向きを確かめに来る』\n「それだけですか」\n「それだけで十分だったんだろうね、その人には」\n受付猫は何も書き足さず、文字の形を丁寧に写した。店長は方位盤をもう一度磨き、いつもの場所に戻した。"},{"id":"EP-06","num":6,"title":"帰還者の名前","focus":"cat","unlock_label":"通算50勝","unlock_key":"wins_50","body":"夕方のカウンターで、受付猫が帰還簿の一行を見つめていた。日付と迷宮名はあるのに、旅人の名前だけが空欄になっている。\n「ここ、記入し忘れたのかな」と鍛錬所の受付嬢。\n「そうみたいです。でも、誰が帰った日だったのか、ちゃんと確かめたいんです」\n受付猫は依頼の控えと店の購入記録を比べ、ひとつずつ可能性を消していった。時計の針が進み、机に置いたお茶が冷める。\n「急がなくてもいいよ」と受付嬢が言う。「明日、また調べよう」\n「はい。でも、今日のうちに気づけてよかったです」\n翌朝、受付猫は当人が残した署名入りの受領証を見つけ、空欄を埋めた。\n大仕事のわりに、帳面は見た目にはほとんど変わらない。\nそれでも受付猫は満足そうだった。「勝った記録も大事ですけど、帰ってきた記録は、もっと大事かもしれません」\n受付嬢は静かに頷き、新しいお茶を置いた。"},{"id":"EP-07","num":7,"title":"褒め言葉の練習","focus":"trainer","unlock_label":"Lv.10に到達","unlock_key":"level_10","body":"鍛錬所の受付嬢は、朝から一枚の紙とにらめっこしていた。\n「どうしたんですか？」と受付猫がたずねる。\n「頑張ってる旅人に、もっと上手に声をかけたくてさ。『すごい』ばかりじゃ足りない気がして」\n紙には『昨日より足がぶれない』『無理をしない判断ができた』と書かれている。\n受付猫は目を輝かせた。「記録ですね！ それなら私も得意です！」\n二人は言葉をいくつも書き足した。『剣を振る音が変わった』『休む時間を自分で決めた』。\nそこへ古物商の店長が現れ、紙を一瞥する。「褒めるのに準備がいるのかい」\n「いるよ。見てたことを、ちゃんと伝えたいから」\n店長は笑って頷いた。「なら、その紙を見ながらでもいいじゃないか」\n午後、受付嬢は練習を終えた旅人に声をかけた。\n「今日はね、昨日より落ち着いていたよ」\n紙は結局、机の上に置いたままだった。"},{"id":"EP-08","num":8,"title":"靴下の鑑定","focus":"ensemble","unlock_label":"古銭を通算1,500枚使用","unlock_key":"coins_spent_1500","body":"古物商が大切そうに差し出したのは、片方だけの古い靴下だった。\n「鑑定をお願いしたくてね」\n受付猫は背筋を伸ばす。「素材と年代を確認します！ ……えっと、靴下、ですよね？」\n鍛錬所の受付嬢は腕を組む。「それ、また英雄の持ち物って言うんじゃないでしょうね」\n「今日は王様のものかもしれないと思ってる」\n「昨日は英雄だったでしょ」\n「英雄が王様になったのかもしれないじゃないか」\n受付猫は真剣に帳面を開いた。「所有者不明。片方のみ。由来について意見が分かれる、と」\n「わざわざ書くこと？」と受付嬢。\n「由来がはっきりしない品ほど、記録は正確にするべきです！」\n店長は満足げに笑い、靴下を受け取った。\n翌日、その靴下は店の棚で、小さな花瓶の下に敷かれていた。\n受付嬢が呆れると、店長は言った。「由来はともかく、滑り止めとしては一級品さ」\n受付猫の帳面には、新たに『用途判明』と書き足された。"},{"id":"EP-09","num":9,"title":"帰還の約束","focus":"trainer","unlock_label":"高難度＋を初踏破","unlock_key":"plus_clear","body":"雨の日、鍛錬所の受付嬢は閉じた窓を見つめていた。古物商が熱い飲み物を置く。\n「今日は静かだね」\n「昔の遠征も、帰ってきた日はこんな雨だったんだ」\n彼女は、まだ補給を任されていたころの話をした。出発前、一人の冒険者が自信たっぷりに言ったのだという。\n『今度こそ、必ず目標を果たす』\n彼女は笑って返した。『果たせなくても帰ってきて。ごはんは用意しておくから』\nその隊は、目指した場所へ届かなかった。けれど、全員が帰還した。\n「帰ってきた人、悔しそうだった？」と店長。\n「うん。すごくね。でも、温かいものを飲んだら、次の計画を話し始めたよ」\n彼女はカップを両手で持った。「あのとき、諦めたわけじゃなかったんだよね。帰る道を選んだだけ」\n店長は頷いた。「それなら、続きのある遠征だ」\n雨音の向こうで、鍛錬所の床を踏む足音がまた聞こえ始めた。"},{"id":"EP-10","num":10,"title":"閉店後のギルド","focus":"ensemble","unlock_label":"通算30回探索","unlock_key":"runs_30","body":"閉店の札を裏返したあとも、ギルドには三つの仕事が残っていた。受付猫は帳面を閉じ、受付嬢は鍛錬所の窓を確かめ、古物商は店の奥から妙な箱を持ってきた。\n「何ですか、それ」と受付猫。\n「今日の売れ残りの整理だよ」\n箱には、鈴の鳴らない鈴、片方の靴下、蓋のない小瓶が並んでいる。\n受付嬢は笑った。「売れ残りっていうより、残したいものばかりじゃない？」\n「そうとも言うね」\n受付猫は一つずつ番号を書き始めた。「こういう品でも、一覧があると安心ですから！」\n「帳面を増やしすぎないでね」と受付嬢。\n「増やすなら棚のほうがいいかもしれない」と店長。\n誰も急いで帰ろうとしなかった。外では風が吹き、ギルドの灯りが窓に映る。\n最後の一枚を書き終えると、受付猫は小さく伸びをした。「今日は、何もなくてよかったですね」\n受付嬢は頷いた。「うん。何もなかった日の片付けも、嫌いじゃないよ」"},{"id":"EP-11","num":11,"title":"売らない品物","focus":"merchant","unlock_label":"迷宮固有装備を累計9種類発見、かつ05話既読","unlock_key":"regional_items_9_and_05_read","body":"店の奥の方位盤は、いつ見ても同じ場所にあった。受付猫が写した預かり証も、隣の引き出しに大事にしまわれている。\nある日、鍛錬所の受付嬢が言った。「その人、取りに来なかったの？」\n店長は方位盤を持ち上げ、針の揺れが止まるのを待った。\n「来なかったね。少なくとも、今までは」\n「ずっと待ってるの？」\n「待ってると言うと大げさだな。ここに置いて、店を開けてるだけさ」\n彼女は少し考えてから聞いた。「もし来たら、何を言うつもり？」\n「『今度はちゃんと北を向くかい』、かな」\n「それだけ？」\n「何か話したければ、その人が話すだろう」\n店長は方位盤を元の場所に戻した。磨かれた金具が夕暮れを映す。\nそのあと、客が来て店はいつもの賑やかさに戻った。方位盤は動かなかったけれど、店長の仕事が止まることもなかった。"},{"id":"EP-12","num":12,"title":"灯りの消えない夜","focus":"ensemble","unlock_label":"審問院を初踏破","unlock_key":"tribunal_clear","body":"審問院から旅人が帰った夜、ギルドは閉店時間を少し過ぎても明るかった。受付猫が帰還簿に新しい一行を記し、受付嬢は鍛錬所の長椅子を片づけ、古物商は小さなランプの芯を整えていた。\n「もう閉めてもいいころですよね」と受付猫。\n「そうだね。帳面は片づいたかい」と店長。\n「はい！ 何度も確認しました」\n受付嬢は窓の外を見た。「今日は、あの迷宮へ行った人が帰ってきた日なんだね」\n「そうです。だから、ここに書いてあります」\n受付猫は帳面の一行をそっと指で示した。長い説明も、立派な飾りもない。名前と日付と、帰還した事実だけ。\n店長はランプの火を少し弱くした。「じゃあ、今日の明かりはこれで十分だ」\n三人はそれぞれの持ち場へ戻る。新しい朝になれば、また依頼書が届き、装備が売れ、床に足跡が増える。\n最後に受付猫が振り返り、小さな声で言った。「明日も、おかえりなさいって言えるといいですね」\n受付嬢は微笑んだ。「うん。まずは私たちが元気に来よう」"}]};
+  const GUILD_NPCS = ["merchant","cat","trainer"];
+  const GUILD_TALK_IDS = new Set(GUILD_STORIES_DATA.dialogues.map(entry=>entry.id));
+  const GUILD_EPISODE_IDS = new Set(GUILD_STORIES_DATA.chapters.map(entry=>entry.id));
+  let guildOpenedEpisode=null; // Ephemeral reading state, not gameplay state.
+  function defaultGuildExtra(){return {visited:false,shopPurchased:false,lastTalks:{merchant:[],cat:[],trainer:[]},readEpisodes:[]};}
+  function normalizeGuildExtra(raw){
+    const base=defaultGuildExtra();
+    if(!raw || typeof raw!=="object" || Array.isArray(raw))return base;
+    base.visited=raw.visited===true;
+    base.shopPurchased=raw.shopPurchased===true;
+    const history=raw.lastTalks;
+    for(const npc of GUILD_NPCS){
+      const list=Array.isArray(history?.[npc])?history[npc]:[];
+      base.lastTalks[npc]=[...new Set(list.filter(id=>typeof id==="string"&&GUILD_TALK_IDS.has(id)&&id.startsWith(npc+"-")))].slice(-3);
+    }
+    base.readEpisodes=Array.isArray(raw.readEpisodes)?[...new Set(raw.readEpisodes.filter(id=>typeof id==="string"&&GUILD_EPISODE_IDS.has(id)))]:[];
+    return base;
+  }
+  function hasGuildUnlock(key,s=state){
+    const es=s.expeditionStats||{}, counts=(s.catalog&&s.catalog.items)||{}, extra=s.guildExtra||defaultGuildExtra();
+    const seen=id=>extra.readEpisodes.includes(id);
+    const clearedModes=["clears","trialClears","bellClears","libraryClears","greenhouseClears","mirrorClears","ferryClears","tribunalClears"];
+    const clears=clearedModes.reduce((t,k)=>t+Math.max(0,Number(es[k])||0),0);
+    switch(key){
+      case "always": return true;
+      case "guild_visit": return extra.visited===true;
+      case "first_purchase":return extra.shopPurchased===true||Number(s.economy?.chartsBought)>0||Number(s.economy?.bagUpgrades)>0||Object.values(s.economy?.prepared||{}).some(Boolean);
+      case "first_clear":return clears>0;
+      case "three_distinct_dungeons":return clearedModes.filter(k=>(Number(es[k])||0)>0).length>=3;
+      case "bell_clear":return (es.bellClears||0)>0;
+      case "mirror_clear":return (es.mirrorClears||0)>0;
+      case "tribunal_clear":return (es.tribunalClears||0)>0;
+      case "tribunal_first_attempt":return (es.tribunalRuns||0)>0;
+      case "plus_clear":return (es.bellClears||0)+(es.mirrorClears||0)+(es.ferryClears||0)>0;
+      case "level_3":return (s.growth?.level||0)>=3;
+      case "level_10":return (s.growth?.level||0)>=10;
+      case "wins_50":return (s.stats?.wins||0)>=50;
+      case "runs_30":return (es.runs||0)+(es.trialRuns||0)+(es.bellRuns||0)+(es.libraryRuns||0)+(es.greenhouseRuns||0)+(es.mirrorRuns||0)+(es.ferryRuns||0)+(es.tribunalRuns||0)>=30;
+      case "catalog_20":return Object.keys(counts).length>=20;
+      case "commissions_3":return (s.research?.completedJobs||0)>=3;
+      case "coins_spent_1500":return (s.economy?.spent||0)>=1500;
+      case "bag_100":return (s.economy?.bagUpgrades||0)>=2;
+      case "legendary_owned":return [...(s.inventory||[]),...(s.storage||[])].some(item=>item.rarity==="legendary");
+      case "regional_items_9_and_05_read":return seen("EP-05")&&BASE_ITEMS.filter(item=>item.region&&counts[item.id]).length>=9;
+      default:
+        if(key.startsWith("episode_")&&key.endsWith("_read")){
+          const num=Number(key.slice(8,-5));
+          return Number.isInteger(num)&&num>=1&&num<=12&&seen(`EP-${String(num).padStart(2,"0")}`);
+        }
+        return false;
+    }
+  }
+  function guildTalk(npc){
+    if(!GUILD_NPCS.includes(npc))return;
+    if(!isAtCamp()){toast("雑談は拠点で楽しめます");return;}
+    if(saveReadOnly){toast("セーブが利用できないため会話を更新できません");return;}
+    const speech=$("guild-speech-"+npc);
+    if(!speech)return;
+    const options=GUILD_STORIES_DATA.dialogues.filter(d=>d.character===npc&&hasGuildUnlock(d.unlock));
+    if(!options.length)return;
+    const recent=state.guildExtra.lastTalks[npc];
+    let pool=options.filter(d=>!recent.includes(d.id));
+    if(!pool.length)pool=options;
+    // Independent of combat's persisted random seed and outcome.
+    const choice=pool[Math.floor(Math.random()*pool.length)];
+    const oldList=[...recent];
+    recent.push(choice.id);
+    if(recent.length>3)recent.shift();
+    if(!save()){
+      state.guildExtra.lastTalks[npc]=oldList;
+      toast("保存できなかったため、会話は更新しませんでした");return;
+    }
+    speech.textContent=choice.text.replace(/^「|」$/g,"");
+  }
+
+  // v1.1.67 — Optional guild advice and item-showing. No save keys or gameplay mutations.
+  // Every answer comes from currently verified state, not fabricated history.
+  const GUILD_CONSULT_TOPICS={
+    merchant:new Set(["bag","coins","sorting"]),
+    cat:new Set(["destination","catalog","commission"]),
+    trainer:new Set(["training","tactics","tribunal"])
+  };
+  let guildSelectedFeature={merchant:null,cat:null,trainer:null};
+  let guildItemSelectKey="";
+  function guildAdvice(npc,topic){
+    const coins=state.economy.coins||0;
+    const es=state.expeditionStats||{};
+    if(npc==="merchant"){
+      if(topic==="bag"){
+        const cap=bagCapacity(),used=state.inventory.length,free=cap-used;
+        if(free<=5)return `いまの鞄は${used}/${cap}枠。あと${free}枠しか空いていないね。大切な品は保護して、保管箱に預けるか整理しておくといい。持ち帰るための場所も必要だからね。`;
+        if(free<=20)return `鞄は${used}/${cap}枠。まだ余裕はあるけど、次の探索の戦利品を考えると少し整理しておきたいね。保管箱には${state.storage.length}点あるよ。`;
+        return `鞄は${used}/${cap}枠。今のところ余裕があるね。増やすなら古銭で10枠ずつ、最大100枠まで直してあげられるよ。`;
+      }
+      if(topic==="coins"){
+        const n=state.economy.bagUpgrades||0;
+        const next=n>=2?null:BAG_UPGRADE_PRICES[n];
+        if(next!==null)return `古銭は${coins}枚かい。鞄を次の${bagCapacity()+10}枠にするなら${next}枚必要だよ。調律や探索の支度もあるから、今いちばん困っていることに使うのがいいね。`;
+        return `古銭は${coins}枚。鞄はもう十分広くなったね。装備の手入れや調律、次の探索の支度に回すのもいい。貯めるばかりが正解じゃないさ。`;
+      }
+      if(topic==="sorting")return `鞄には${state.inventory.length}点、保管箱には${state.storage.length}点。性能で選ぶなら特性やビルドとの相性も見てごらん。売りたくない品は保護しておけばいい。思い出は、値札に書けないからね。`;
+    }
+    if(npc==="cat"){
+      if(topic==="destination"){
+        if(!(es.clears>0))return "まずは『苔むす石の回廊』を目標にしましょう！　通常の10階層を一度踏破すると、挑戦先が増えるんです。報告書もお待ちしています！";
+        if(!(es.trialClears>0))return "石の回廊を越えたなら、次は『星の門・深層試練』でしょうか。深層の初回踏破で、新しい試練にも挑戦できるようになります！";
+        if(["bellClears","mirrorClears","ferryClears"].filter(k=>(es[k]||0)>0).length<2)return "高難度＋の鐘楼・鏡館・渡し場を比べてみるのはいかがでしょう？　異なる2か所を踏破すると、さらに奥の審問院も解放されるそうです。";
+        return "審問院に挑戦する道も開けていますね！　ただ、危険度は相当なものです。もちろん、ほかの迷宮で装備を探す日があってもいいと思います。";
+      }
+      if(topic==="catalog"){
+        const found=Object.keys(state.catalog.items||{}).length;
+        return `現在、装備図鑑には${found}/${BASE_ITEMS.length}種類の記録があります！　迷宮固有の装備は、それぞれの迷宮でしか見つからないんです。装備を手放しても発見記録は残りますから安心してください！`;
+      }
+      if(topic==="commission"){
+        const n=state.research?.completedJobs||0;
+        return `巡回依頼の達成記録は${n}件です！　依頼は受注してからの行動が対象です。調査章の報酬は一度きりですが、巡回依頼は繰り返し受けられます。……書類の取り違えには私も気をつけます！`;
+      }
+    }
+    if(npc==="trainer"){
+      if(topic==="training"){
+        const g=state.growth;
+        if(g.points>0)return `Lv.${g.level}で、まだ鍛錬点が${g.points}点あるよ。刃・守り・体力のどれを伸ばすかは装備と戦術次第。振り直しはできないから、先に今の得意な戦い方を考えてみて。`;
+        return `今はLv.${g.level}で未使用の鍛錬点はないね。勝利を重ねてレベルを上げれば、また成長できるよ。装備の特性との組み合わせも見てね。`;
+      }
+      if(topic==="tactics"){
+        const style=state.settings.combatStyle;
+        const presets={poison:"毒を活かす",flame:"燃焼を活かす",combo:"連撃で押す",counter:"反撃と中断を使う",poisonflame:"毒と炎を合わせる",flameflurry:"炎と連撃を合わせる",poisoncounter:"毒と反撃を合わせる"};
+        return `今の戦術は『${presets[style]||"標準"}』方向だね。勝てないときは、回復条件・技の3枠・守り方を一度見直してみて。敵の大技が怖いなら、影縫いや防御を活かせるか考えよう。`;
+      }
+      if(topic==="tribunal"){
+        if(!(es.tribunalRuns>0))return "審問院は、強い装備だけで押し切る場所じゃないよ。敵の裁定圧と大技の予告を見て、封蝋の使いどころを決めておこう。挑戦前に装備と戦術を確かめてね。";
+        if(es.tribunalClears>0)return "審問院から帰ってきたんだね。おめでとう！　それでも油断は禁物。次はどの戦術を磨くか、じっくり考えていこう。";
+        return "審問院に挑んだんだね。裁定圧が上がる戦いを長引かせすぎるのは危険だよ。封蝋2枚をどこで使うか、大技をどう受けるかが鍵になると思う。";
+      }
+    }
+    return "今は、いつもの話をしようか。";
+  }
+  function respondGuildConsult(npc){
+    if(!GUILD_NPCS.includes(npc)||!isAtCamp())return;
+    const select=$("guild-consult-topic-"+npc),speech=$("guild-speech-"+npc);
+    if(!select||!speech||!GUILD_CONSULT_TOPICS[npc].has(select.value))return;
+    speech.textContent=guildAdvice(npc,select.value);
+  }
+  function guildGearRemark(npc,item){
+    const b=itemBase(item.baseId),j=item.journey||{};
+    const name=b?.name||item.name;
+    const battles=Math.max(0,Number(j.battles)||0),bosses=Math.max(0,Number(j.bossWins)||0);
+    const legendary=item.rarity==="legendary";
+    const wellUsed=battles>=40,used=battles>=10;
+    const region=b?.region?dungeonDef(b.region)?.title:null;
+    if(npc==="merchant"){
+      if(bosses>0)return `『${item.name}』かい。${bosses}度も大物との戦いを越えてきた品だね。値段は付けられる。でも、その時間までは買い取れないのさ。`;
+      if(wellUsed)return `『${item.name}』は、もう${battles}戦も共にしたんだね。使い続けた品には持ち主の癖が残るものさ。売る前に、もう一度眺めたくなるね。`;
+      if(legendary)return `『${item.name}』、なかなか立派な品だ。希少な力が宿っているね。でも、使い手との相性だけは、値札じゃ決められないよ。`;
+      if(region)return `『${name}』。${region}から持ち帰ったのかい。土地が違えば品物の作りも変わる。こういう細部が面白いんだよ。`;
+      if(item.protected)return `『${item.name}』は大事に取ってあるのかい。うん、残しておきたい理由がある品もあるよね。`;
+      return `『${item.name}』か。${used?"旅の跡が少しずつ付いてきたね。":"まだこれからの品だね。"}どんなふうに使われるか、私も見てみたいよ。`;
+    }
+    if(npc==="cat"){
+      if(region)return `わあ、『${name}』ですね！　${region}に由来する品です。図鑑に記録しておきましょう。……あっ、もう記録済みでした！`;
+      if(bosses>0)return `この『${item.name}』で${bosses}回も強敵を倒したんですね！　すごいです。記録欄をもう一つ増やしたくなってしまいます！`;
+      if(legendary)return `レジェンダリーの『${item.name}』ですか！　珍しい品ですね。図鑑では基本の種類ごとに記録しているんですよ。`;
+      if(wellUsed)return `『${item.name}』の使用記録が${battles}戦もあります！　こうして続けた記録が残るの、いいですね。`;
+      return `『${item.name}』ですね！　${b?.slot?SLOTS[b.slot]:"装備"}として記録できる品です。細かな違いもちゃんと調べたくなっちゃいます。`;
+    }
+    if(npc==="trainer"){
+      if(bosses>0)return `その『${item.name}』でボスを${bosses}回越えたんだね。武器だけが強いんじゃない。ちゃんと使いこなしてきた証拠だよ。`;
+      if(b?.slot==="armor")return `『${item.name}』だね。防御とHPの組み合わせを見てみて。守り方が変われば、戦闘の組み立ても変わるよ。`;
+      if(b?.slot==="weapon")return `『${item.name}』、${wellUsed?`${battles}戦も使っているんだね。`:`${legendary?"強い力があるね。でも":""}攻撃力だけで選ばずに、`}技との相性も確かめてみて。`;
+      if(b?.slot==="charm")return `その『${item.name}』は護符だね。回復や集中力、戦術への影響を一度見直してみよう。小さな違いが強敵には効くから。`;
+      return `『${item.name}』だね。遺物の追加特性は、ほかの装備や技との組み合わせも大事。今の戦術と比べてみて。`;
+    }
+    return "見せてくれてありがとう。";
+  }
+  function renderGuildGearOptions(){
+    // Only rebuild when holdings change; retained selection survives normal render passes.
+    const entries=[...(state.inventory||[]).map(item=>({item,where:"bag"})),...(state.storage||[]).map(item=>({item,where:"storage"}))];
+    const key=JSON.stringify([state.equipment.slots,entries.map(({item,where})=>[where,item.id,item.name,item.rarity,item.journey?.battles,item.journey?.bossWins])]);
+    if(key===guildItemSelectKey)return;
+    guildItemSelectKey=key;
+    const renderItems=where=>entries.filter(e=>e.where===where).map(({item})=>{
+      const tier=RARITIES[item.rarity]?.name||"装備";
+      const isEquipped=Object.values(state.equipment.slots).includes(item.id);
+      return `<option value="${escapeHTML(item.id)}">${escapeHTML(item.name)}（${tier}${isEquipped?"・装備中":""}）</option>`;
+    }).join("");
+    const opts=`<option value="">見せる装備を選ぶ</option><optgroup label="鞄">${renderItems("bag")}</optgroup><optgroup label="保管箱">${renderItems("storage")}</optgroup>`;
+    for(const npc of GUILD_NPCS){
+      const sel=$("guild-show-item-"+npc);if(!sel)continue;
+      const prev=sel.value;sel.innerHTML=opts;
+      if(entries.some(e=>e.item.id===prev))sel.value=prev;
+    }
+  }
+  function respondGuildShowItem(npc){
+    if(!GUILD_NPCS.includes(npc)||!isAtCamp())return;
+    const select=$("guild-show-item-"+npc),speech=$("guild-speech-"+npc);
+    if(!select||!speech)return;
+    const item=[...state.inventory,...state.storage].find(item=>item.id===select.value);
+    if(!item){toast("見せたい装備を選んでください");return;}
+    speech.textContent=guildGearRemark(npc,item);
+  }
+  function toggleGuildFeature(npc,mode){
+    if(!GUILD_NPCS.includes(npc)||!["consult","show"].includes(mode)||!isAtCamp())return;
+    const current=guildSelectedFeature[npc];
+    guildSelectedFeature[npc]=current===mode?null:mode;
+    renderGuildFeaturePanel(npc);
+  }
+  function renderGuildFeaturePanel(npc){
+    const current=guildSelectedFeature[npc];
+    const panel=$("guild-feature-panel-"+npc);
+    if(!panel)return;
+    panel.hidden=!current;
+    for(const mode of ["consult","show"]){
+      const pane=panel.querySelector(`[data-guild-mode="${mode}"]`);
+      if(pane)pane.hidden=current!==mode;
+      const btn=document.querySelector(`[data-guild-feature="${mode}"][data-guild-npc="${npc}"]`);
+      if(btn){btn.disabled=!isAtCamp();btn.classList.toggle("is-selected",current===mode);btn.setAttribute("aria-expanded",String(current===mode));}
+    }
+    const show=$("guild-show-item-"+npc);
+    const send=document.querySelector(`[data-guild-show="${npc}"]`);
+    if(show)show.disabled=!isAtCamp();
+    if(send)send.disabled=!isAtCamp();
+  }
+
+  function renderGuildExtras(){
+    document.querySelectorAll("[data-guild-talk]").forEach(btn=>{
+      btn.disabled=!isAtCamp();
+      btn.title=isAtCamp()?"雑談する":"帰還後に話せます";
+    });
+    for(const npc of GUILD_NPCS){
+      if(!isAtCamp())guildSelectedFeature[npc]=null;
+    }
+    renderGuildGearOptions();
+    for(const npc of GUILD_NPCS)renderGuildFeaturePanel(npc);
+  }
+  function renderGuildStories(){
+    const unlocked=GUILD_STORIES_DATA.chapters.filter(c=>hasGuildUnlock(c.unlock_key));
+    const read=state.guildExtra.readEpisodes;
+    const count=read.filter(id=>unlocked.some(c=>c.id===id)).length;
+    $("guild-episode-progress").textContent=`解放 ${unlocked.length}/12 ・読了 ${count}/12`;
+    if(guildOpenedEpisode&&!unlocked.some(c=>c.id===guildOpenedEpisode))guildOpenedEpisode=null;
+    $("guild-episode-list").innerHTML=GUILD_STORIES_DATA.chapters.map(ep=>{
+      const canRead=hasGuildUnlock(ep.unlock_key),isRead=canRead&&read.includes(ep.id),open=canRead&&guildOpenedEpisode===ep.id;
+      const status=!canRead?"未解放":open?"閉じる":isRead?"読了":"読む";
+      return `<article class="guild-episode-card${canRead?"":" is-locked"}">
+        <button type="button" class="guild-episode-button" data-guild-episode="${ep.id}" aria-expanded="${open}" aria-controls="guild-episode-body-${ep.id}" ${canRead?"":"disabled"}>
+          <span class="guild-episode-head"><span class="guild-episode-title">第${String(ep.num).padStart(2,"0")}話　${escapeHTML(ep.title)}</span><span class="guild-episode-condition">${canRead?"ギルドの人たちの小さな出来事":`解放条件：${escapeHTML(ep.unlock_label)}`}</span></span><span class="guild-episode-label">${status}</span>
+        </button>
+        ${open?`<div class="guild-episode-text" id="guild-episode-body-${ep.id}" role="region" aria-label="${escapeHTML(ep.title)}">${escapeHTML(ep.body)}</div>`:""}
+      </article>`;
+    }).join("");
+  }
+  function guildStoryToggle(id){
+    const chapter=GUILD_STORIES_DATA.chapters.find(c=>c.id===id);
+    if(!chapter||!hasGuildUnlock(chapter.unlock_key))return;
+    const wasOpened=guildOpenedEpisode===id;
+    if(!wasOpened&&!state.guildExtra.readEpisodes.includes(id)){
+      const oldRead=[...state.guildExtra.readEpisodes];
+      state.guildExtra.readEpisodes.push(id);
+      if(!save()){
+        state.guildExtra.readEpisodes=oldRead;
+        toast("保存できないため、読了記録は変更していません");return;
+      }
+    }
+    guildOpenedEpisode=wasOpened?null:id;
+    renderGuildStories();
+  }
+
   function defaultState() {
     return {
       version: 25, seed: 79314371, nextId: 1,
+      guildExtra:defaultGuildExtra(),
       research:initialResearch(),
       fragments:EMPTY_FRAGMENTS(),
       regionalEventHistory:emptyRegionalEventHistory(),
@@ -3818,6 +4204,7 @@ h2 {font-size:1.43rem;}
     d.version=25;
     const s={...base,...d,hero:{...base.hero,...d.hero},equipment:{...base.equipment,slots:{...base.equipment.slots,...d.equipment.slots}},settings:{...base.settings,...d.settings},stats:{...base.stats,...d.stats},ui:{...base.ui,...d.ui},
       economy:{...base.economy,...d.economy,prepared:{...base.economy.prepared,...d.economy?.prepared}}};
+    s.guildExtra=normalizeGuildExtra(d.guildExtra);
     s.fragments=normalizeFragments(d.fragments);
     s.regionalEventHistory=normalizeRegionalEventHistory(d.regionalEventHistory);
     s.growth=normalizeGrowth(d.growth,s.stats.wins,legacyGrowth);
@@ -6233,16 +6620,19 @@ h2 {font-size:1.43rem;}
     // Recheck conditions after the confirmation dialog.
     if(!isAtCamp()||state.economy.bagUpgrades!==stage||state.economy.coins<cost)return;
     const beforeCoins=state.economy.coins,beforeSpent=state.economy.spent;
+    const beforeGuildPurchase=state.guildExtra.shopPurchased;
     const beforeLog=[...state.logs],beforeId=state.nextId;
     state.economy.coins-=cost;
     state.economy.spent=Math.min(COIN_CAP,state.economy.spent+cost);
     state.economy.bagUpgrades=stage+1;
+    state.guildExtra.shopPurchased=true;
     addLog(`古物商に古銭${cost}枚を支払い、鞄を${next}枠に広げてもらった。`,"positive");
     if(!save()){
       // Never pretend a one-time purchase survived if persistence failed.
       state.economy.coins=beforeCoins;
       state.economy.spent=beforeSpent;
       state.economy.bagUpgrades=stage;
+      state.guildExtra.shopPurchased=beforeGuildPurchase;
       state.logs=beforeLog;
       state.nextId=beforeId;
       render();toast("保存に失敗したため、購入を取り消しました。古銭は減っていません");return;
@@ -6258,6 +6648,7 @@ h2 {font-size:1.43rem;}
     state.economy.coins-=price;state.economy.spent+=price;
     if(key==="chart")state.economy.chartsBought++;
     state.economy.prepared[key]=true;
+    state.guildExtra.shopPurchased=true;
     addLog(`${{herbs:"薬草包",lantern:"探し物の灯り",chart:"星図の写し"}[key]}を古銭${price}枚で用意した。${key==="chart"?"次に挑戦する深層試練で使われる。":"次の探索で使われる。"}`,"positive");
     save();render();toast("次の探索の準備が整いました");
   }
@@ -6812,9 +7203,10 @@ h2 {font-size:1.43rem;}
     $("memories-list").innerHTML=recentMoments.length?recentMoments.map(renderMoment).join("")
       :"<li>新しい記録は、冒険を続けると増えていきます。</li>";
   }
-  function render(){renderBattle();renderShop();renderGear();renderTactics();renderRecords();renderGrowth();renderCatalog();renderResearch();}
+  function render(){renderBattle();renderShop();renderGear();renderTactics();renderRecords();renderGrowth();renderCatalog();renderResearch();renderGuildExtras();renderGuildStories();}
   function showPage(page){
     if(!["battle","gear","guild","records"].includes(page))return;
+    if(page==="guild"&&!state.guildExtra.visited){state.guildExtra.visited=true;save();renderGuildStories();}
     for(const section of document.querySelectorAll("[data-panel]"))section.hidden=section.dataset.panel!==page;
     for(const btn of document.querySelectorAll(".nav-button")){
       const selected=btn.dataset.page===page;
@@ -6873,6 +7265,14 @@ h2 {font-size:1.43rem;}
     render();showPage("battle");toast("記録を初期化しました");
   }
   function bindEvents(){
+    document.querySelectorAll("[data-guild-talk]").forEach(btn=>btn.addEventListener("click",()=>guildTalk(btn.dataset.guildTalk)));
+    document.querySelectorAll("[data-guild-feature]").forEach(btn=>btn.addEventListener("click",()=>toggleGuildFeature(btn.dataset.guildNpc,btn.dataset.guildFeature)));
+    document.querySelectorAll("[data-guild-consult]").forEach(btn=>btn.addEventListener("click",()=>respondGuildConsult(btn.dataset.guildConsult)));
+    document.querySelectorAll("[data-guild-show]").forEach(btn=>btn.addEventListener("click",()=>respondGuildShowItem(btn.dataset.guildShow)));
+    $("guild-episode-list").addEventListener("click",event=>{
+      const btn=event.target.closest("button[data-guild-episode]");
+      if(btn)guildStoryToggle(btn.dataset.guildEpisode);
+    });
     document.querySelectorAll(".nav-button").forEach(btn=>btn.addEventListener("click",()=>showPage(btn.dataset.page)));
     $("departure-open-gear").addEventListener("click",()=>showPage("gear"));
          $("departure-open-guild").addEventListener("click",()=>showPage("guild"));
@@ -6962,7 +7362,7 @@ h2 {font-size:1.43rem;}
     $("record-quick-nav").addEventListener("click",e=>{
       const btn=e.target.closest("button[data-record-jump]");if(!btn)return;
       const id=btn.dataset.recordJump;
-      if(!["record-catalog","record-save","record-mastery","record-history","record-stories","record-fragments","record-titles","record-mementos"].includes(id))return;
+      if(!["record-catalog","record-save","record-mastery","record-history","record-stories","record-fragments","record-titles","record-mementos","record-guild-stories"].includes(id))return;
       document.getElementById(id)?.scrollIntoView({behavior:"smooth",block:"start"});
     });
     $("battle-log-count").addEventListener("change",e=>{
@@ -7276,7 +7676,7 @@ h2 {font-size:1.43rem;}
     const container=make('div','records-workspace');
     const nav=make('nav','record-mode-nav',{'id':'record-quick-nav','aria-label':'手帳の分類'});
     const content=make('div','record-view-content');
-    const definitions=[['adventurer','冒険者'],['catalog','図鑑'],['journey','冒険の物語'],['keepsakes','記念品'],['save','保存と設定']];
+    const definitions=[['adventurer','冒険者'],['catalog','図鑑'],['journey','冒険の物語'],['guildstories','ギルド小話'],['keepsakes','記念品'],['save','保存と設定']];
     const panes={};
     for(const [id,label] of definitions){
       const btn=make('button','mode-button',{'type':'button','data-record-mode':id,'aria-pressed':'false'});
@@ -7292,6 +7692,7 @@ h2 {font-size:1.43rem;}
       let key='journey';
       if(i===0||['record-mastery','record-titles'].includes(id))key='adventurer';
       else if(id==='record-catalog')key='catalog';
+      else if(id==='record-guild-stories')key='guildstories';
       else if(id==='record-mementos')key='keepsakes';
       else if(id==='record-save')key='save';
       panes[key].append(card);
